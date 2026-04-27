@@ -5,11 +5,11 @@ Con el propósito de mantener un control adecuado del código fuente y facilitar
 Asimismo, dentro de la organización se han creado repositorios independientes, cada uno destinado a un producto específico:
 
 - Repositorio correspondiente al informe del proyecto: https://github.com/Edu-VLL/AgroTrack.git
-- Repositorio correspondiente a la landing page:
+- Repositorio correspondiente a la landing page: https://github.com/AgroTrack-Project/Landing-Page.git
 
 Para organizar el proceso de desarrollo y asegurar una integración eficiente de los avances, se aplicará la metodología **GitFlow**, la cual estructura el trabajo mediante ramas con responsabilidades definidas.
 
-*** Ramas principales ***
+**Ramas principales**
 
 - **main**
     - Contiene la versión estable del proyecto.
@@ -21,7 +21,7 @@ Para organizar el proceso de desarrollo y asegurar una integración eficiente de
     - Integra nuevas funcionalidades y correcciones antes de pasar a producción.
     - Sirve como base para la creación de nuevas ramas de trabajo.
 
-*** Ramas de apoyo ***
+**Ramas de apoyo**
 
 - **feature/***
     - Se crean desde `develop` para implementar nuevas funcionalidades o mejoras.
@@ -54,7 +54,7 @@ Para organizar el proceso de desarrollo y asegurar una integración eficiente de
 
 ---
 
-*** Conventional Commits ***
+**Conventional Commits**
 
 Con el fin de mantener claridad y consistencia en el historial del repositorio, los mensajes de commit seguirán la especificación **Conventional Commits**.
 
@@ -80,7 +80,7 @@ Ejemplos:
 
 `docs(readme): update project structure`
 
-*** Integrantes del equipo en GitHub ***
+** Integrantes del equipo en GitHub **
 
 | User Name | Nombre Completo |
 |-----------|-----------------|
