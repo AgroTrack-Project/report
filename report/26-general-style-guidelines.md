@@ -7,7 +7,7 @@
 * **Logo:** El logotipo está compuesto por un ícono que representa una hoja o planta estilizada acompañada del nombre "AgroTrack" en tipografía sans-serif legible, reflejando el equilibrio entre el campo y la tecnología.
 * **Valores visuales:** Confianza, simplicidad, eficiencia y cercanía con el campo.
 
-![Logo de AgroTrack](assets/agrotrack_logo.png)
+![Logo de AgroTrack](assets/agrotrack-logo.png)
 
 ---
 
