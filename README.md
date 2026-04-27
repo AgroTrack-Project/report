@@ -1,4 +1,4 @@
-![Logo UPC](assets/UPC_logo_transparente.png)
+![Logo UPC](report/assets/UPC_logo_transparente.png)
 
 <h1>
 Universidad Peruana de Ciencias Aplicadas
@@ -52,7 +52,7 @@ https://github.com/AgroTrack-Project/report/tree/docs/chapter-1
 
 <br>
 
-![Foto de la claboracion](assets/contributors.png)
+![Foto de la claboracion](report/assets/contributors.png)
 
   -----------------------------------------------------------------------
   Integrante                  Tareas Designadas
@@ -211,11 +211,11 @@ uso responsable de los recursos.
 
 |||
 |------|-------------|
-| ![Foto](assets/Joaquin_foto.png) | **Nombres y apellidos:** Alberto Joaquín Alfaro Mallma <br><br> **Código:** U20241A267 <br><br> **Descripción de carrera:** La ingeniería de software es una carrera enfocada en el diseño, desarrollo, prueba y mantenimiento de programas y aplicaciones informáticas. Los ingenieros de software aplican principios de ingeniería y métodos sistemáticos para crear soluciones de software eficientes, fiables y escalables que satisfacen las necesidades de usuarios y organizaciones. <br><br>**Principales conocimientos técnicos y habilidades:** Creatividad, trabajo en equipo, responsabilidad y conocimientos básicos en frameworks JavaScript, HTML, CSS, Angular 7 y Node.js |
-| <br>![Foto](assets/Edu_foto.png) | <br>**Eder Edu Quispe Perez**<br><br> Código de Estudiante: U202324623<br><br>Me llamo Eder Edu Quispe Pérez, soy estudiante de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas (UPC), manejo lenguajes como Python y C++, y en mi tiempo libre me gusta ver películas y series<br><br>|
-| <br>![Foto](assets/Miler_foto.png) | <br> **Rodriguez Rojas, Miler Alexander U20241A827**<br><br>Soy estudiante de Ingeniería de Software de quinto ciclo, con 22 años, enfocado en el desarrollo de soluciones tecnológicas eficientes. Me considero una persona con liderazgo, capaz de trabajar en equipo y adaptarme rápidamente a distintos entornos y necesidades del proyecto.<br>Cuento con conocimientos en lenguajes y herramientas como SQL Server, C++, HTML, CSS y Python, los cuales aplico en el desarrollo de proyectos académicos y personales.<br>En mis tiempos libres disfruto jugar fútbol, escuchar música, programar y ver películas, actividades que complementan mi creatividad y disciplina.|
-| <br>![Foto](assets/Pablo_foto.png) |<br> **Martinez Gaona, Pablo Afranio U202120011** <br><br> Tengo 24 años y estudio la carrera de Ingeniería de Software. Me considero alguien adaptable a la situación, así como alguien que trabaja muy bien en equipo. Manejo lenguajes de programación como C++ y Python. Busco aprender más acerca de la ciencia de datos asi como de la inteligencia artificial. Me gusta los videojuegos y escuchar música.
-|<br>![Foto](assets/Eduardo_foto.png) |<br> **Velasquez Laquihuanaco, Eduardo David U202323350** <br><br> Mi nombre es Eduardo David Velasquez Laquihuanaco, tengo 20 años, estudio la carrera de Ingeniería de Software con un gran interés en la tecnología y la innovación con el objetivo de desarrollar soluciones que mejoren la vida de las personas. Actualmente estoy en el 5to ciclo en la Universidad Peruana de Ciencias Aplicadas. <br> En mis ratos libres me gusta escuchar música, jugar en línea con amigos y programar.<br><br>|
+| ![Foto](report/assets/Joaquin_foto.png) | **Nombres y apellidos:** Alberto Joaquín Alfaro Mallma <br><br> **Código:** U20241A267 <br><br> **Descripción de carrera:** La ingeniería de software es una carrera enfocada en el diseño, desarrollo, prueba y mantenimiento de programas y aplicaciones informáticas. Los ingenieros de software aplican principios de ingeniería y métodos sistemáticos para crear soluciones de software eficientes, fiables y escalables que satisfacen las necesidades de usuarios y organizaciones. <br><br>**Principales conocimientos técnicos y habilidades:** Creatividad, trabajo en equipo, responsabilidad y conocimientos básicos en frameworks JavaScript, HTML, CSS, Angular 7 y Node.js |
+| <br>![Foto](report/assets/Edu_foto.png) | <br>**Eder Edu Quispe Perez**<br><br> Código de Estudiante: U202324623<br><br>Me llamo Eder Edu Quispe Pérez, soy estudiante de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas (UPC), manejo lenguajes como Python y C++, y en mi tiempo libre me gusta ver películas y series<br><br>|
+| <br>![Foto](report/assets/Miler_foto.png) | <br> **Rodriguez Rojas, Miler Alexander U20241A827**<br><br>Soy estudiante de Ingeniería de Software de quinto ciclo, con 22 años, enfocado en el desarrollo de soluciones tecnológicas eficientes. Me considero una persona con liderazgo, capaz de trabajar en equipo y adaptarme rápidamente a distintos entornos y necesidades del proyecto.<br>Cuento con conocimientos en lenguajes y herramientas como SQL Server, C++, HTML, CSS y Python, los cuales aplico en el desarrollo de proyectos académicos y personales.<br>En mis tiempos libres disfruto jugar fútbol, escuchar música, programar y ver películas, actividades que complementan mi creatividad y disciplina.|
+| <br>![Foto](report/assets/Pablo_foto.png) |<br> **Martinez Gaona, Pablo Afranio U202120011** <br><br> Tengo 24 años y estudio la carrera de Ingeniería de Software. Me considero alguien adaptable a la situación, así como alguien que trabaja muy bien en equipo. Manejo lenguajes de programación como C++ y Python. Busco aprender más acerca de la ciencia de datos asi como de la inteligencia artificial. Me gusta los videojuegos y escuchar música.
+|<br>![Foto](report/assets/Eduardo_foto.png) |<br> **Velasquez Laquihuanaco, Eduardo David U202323350** <br><br> Mi nombre es Eduardo David Velasquez Laquihuanaco, tengo 20 años, estudio la carrera de Ingeniería de Software con un gran interés en la tecnología y la innovación con el objetivo de desarrollar soluciones que mejoren la vida de las personas. Actualmente estoy en el 5to ciclo en la Universidad Peruana de Ciencias Aplicadas. <br> En mis ratos libres me gusta escuchar música, jugar en línea con amigos y programar.<br><br>|
 
 
 ## 1.2. Solution Profile
@@ -463,7 +463,7 @@ iniciales basadas en el enfoque Lean UX:
 
 ### 1.2.2.4. Lean UX Canvas
 
-![Lean UX Canvas de AgroTrack](assets/Lean_UX_Canvas.jpg)
+![Lean UX Canvas de AgroTrack](report/assets/Lean_UX_Canvas.jpg)
 
 ## 1.3. Segmentes Objetivo
 
@@ -653,7 +653,7 @@ cosecha esperaría para considerar que esta plataforma es un éxito?
 
   ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-![Entrevista 1](assets/Entrevista-01.png)
+![Entrevista 1](report/assets/Entrevista-01.png)
 
 **Resumen:** Walter, de 26 años y estudiante de Ingeniería de Sistemas,
 proviene de una familia dedicada al cultivo de café. Utilizan
@@ -687,7 +687,7 @@ más eficiente que sus métodos actuales.
 
   --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-![Entrevista 2](assets/Entrevista-02.png)
+![Entrevista 2](report/assets/Entrevista-02.png)
 
 **Resumen:** Lucía, de 25 años y estudiante de Psicología, es una
 agricultora que cultiva maíz y hortalizas como tomate y lechuga. Utiliza
@@ -722,7 +722,7 @@ producción, reducir pérdidas y sea fácil de usar.
 
   ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-![Entrevista 3](assets/Entrevista-03.png)
+![Entrevista 3](report/assets/Entrevista-03.png)
 
 **Resumen:** Luz, de 24 años y estudiante de Psicología, es una
 agricultora que se dedica al cultivo de frutas como mango, palta y
@@ -759,7 +759,7 @@ no consuma mucho internet.
 
   -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-![Entrevista 4](assets/Entrevista-04.png)
+![Entrevista 4](report/assets/Entrevista-04.png)
 
 **Resumen:** Renzo Sebastián Quispe Mamani, de 28 años y egresado de la
 Universidad de Lima, es fundador de Ecotrack, un emprendimiento agrícola
@@ -794,7 +794,7 @@ considerar exitosa una solución tecnológica.
 
   --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-![Entrevista 5](assets/Entrevista-05.png)
+![Entrevista 5](report/assets/Entrevista-05.png)
 
 **Resumen:** Sofía, de 26 años y estudiante de Psicología, es una joven
 empresaria agrícola en la empresa Viru. La empresa está estructurada en
@@ -831,7 +831,7 @@ y disminuya pérdidas en un 10%.
 
   ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-![Entrevista 5](assets/Entrevista-06.png)
+![Entrevista 5](report/assets/Entrevista-06.png)
 
 **Resumen:** Christopher Ordalla, de 29 años, se integró hace
 aproximadamente un año y medio a una pequeña empresa agrícola familiar
@@ -917,13 +917,13 @@ artistas como de sus posibles clientes.
 
 **User persona - Agricultores**
 
-![FOTO](assets/user_personaAgricultor.png)
+![FOTOreport/assets/user_personaAgricultor.png)
 
 `<br>`{=html}
 
 **User persona - Empresarios Agrícolas**
 
-![FOTO](assets/user_personaEmpresario.png)
+![FOTO](report/assets/user_personaEmpresario.png)
 
 ### 2.3.2. User Task Matrix
 
@@ -934,11 +934,11 @@ necesitan herramientas para controlar su inversión, reducir pérdidas y
 aumentar sus ganancias. La propuesta busca brindar información clara y
 útil para ambos perfiles.
 
-![FOTO](assets/user_Agricola.png)
+![FOTO](report/assets/user_Agricola.png)
 
 <br>
 
-![FOTO](assets/user_empresario_agricola.png)
+![FOTO](report/assets/user_empresario_agricola.png)
 
 <br>
 
@@ -962,10 +962,10 @@ uso de una solución tecnológica como AgroTrack.
 
 **User Journey Mapping - Agricultor**
 
-![FOTO](assets/Journey-agricultor.png)
+![FOTO](report/assets/Journey-agricultor.png)
 
 **User Journey Mapping - Empresario Agrícola**
-![FOTO](assets/journey-empresario.png)
+![FOTO](report/assets/journey-empresario.png)
 
 ### 2.3.4. Empathy Mapping
 
@@ -976,7 +976,7 @@ de los usuarios finales.
 
 **Empathy Mapping - Agricultor**
 
-![Empathy map del agricultor](assets/empathy_Mapping_Agricultor.png)
+![Empathy map del agricultor](report/assets/empathy_Mapping_Agricultor.png)
 
 **Empathy Mapping - Empresario Agricola**
 
@@ -990,7 +990,7 @@ dominio del negocio de alto nivel, identificando procesos clave y
 eventos significativos de AgroTrack. La organización visual sigue una
 línea de tiempo narrativa de izquierda a derecha.
 
-![Big event storming image](assets/big_event_storming_Image.png)
+![Big event storming image](report/assets/big_event_storming_Image.png)
 https://miro.com/app/board/uXjVGhuhZ48=/?share_link_id=264887531428
 
 Descripción del proceso modelado: \* **Exploración de Eventos
@@ -1128,13 +1128,13 @@ Este artefacto estratégico permite al equipo de Andes Smart asegurar que cada f
 
 **Segmento Agricultor**
 
-![FOTO](assets/Claudia_Sanchez_Impact_Map.png)
+![FOTO](report/assets/Claudia_Sanchez_Impact_Map.png)
 
 <br>
 
 **Segmento Empresario Agricola**
 
-![FOTO](assets/Luis_Alberto_Impact_Map.png)
+![FOTO](report/assets/Luis_Alberto_Impact_Map.png)
 
 
 ## 3.3. Product Backlog
@@ -1231,7 +1231,7 @@ Este artefacto estratégico permite al equipo de Andes Smart asegurar que cada f
 - **Valores visuales:** Confianza, simplicidad, eficiencia y cercanía
   con el campo.
 
-![Logo de AgroTrack](assets/agrotrack-logo.png)
+![Logo de AgroTrack](report/assets/agrotrack-logo.png)
 
 ------------------------------------------------------------------------
 
@@ -1260,7 +1260,7 @@ La paleta cromática busca evocar el entorno natural del campo peruano
 (tierra, vegetación y agua) combinada con tonos neutros que transmiten
 confianza y claridad de información.
 
-![Paleta de colores de AgroTrack](assets/colores_agotrack.png)
+![Paleta de colores de AgroTrack](report/assets/colores_agotrack.png)
 
 La tabla a continuación resume la paleta con su aplicación principal:
 
@@ -1338,7 +1338,7 @@ llegue la helada."*
   - Tablet: 769--1024 px
   - Desktop: ≥1025 px
 
-![Tamaños de Breakpoints](assets/breakpoints.png)
+![Tamaños de Breakpoints](report/assets/breakpoints.png)
 
 *Figura 15. Tamaños de Breakpoints definidos para AgroTrack. Nota.
 Elaboración propia.*
@@ -1362,7 +1362,7 @@ Elaboración propia.*
   - **Estados:** *hover* (tono más oscuro), *active* (sombra ligera),
     *disabled* (opacidad reducida).
 
-![Variantes de botones CTA](assets/var_botones.png)
+![Variantes de botones CTA](report/assets/var_botones.png)
 
 *Figura 16. Variantes de botones CTA de AgroTrack. Nota. Elaboración
 propia.*
@@ -1765,7 +1765,7 @@ encuentra en la parte superior de la pantalla permitiendo que el usuario
 pueda acceder en todo momento a las funciones principales del sitio sin
 la necesidad de scrollear.
 
-![Navigation](assets/landing-page-navigation.png)
+![Navigation](report/assets/landing-page-navigation.png)
 
 *Fuente: Propia.*
 
@@ -1774,7 +1774,7 @@ contenido principal. Esta sección de registro que va luego de que el
 usuario haya visto el contenido principal del sitio, le ayuda a tomar
 decisiones como agricultor.
 
-![Registration](assets/landing-page-registration.png)
+![Registration](report/assets/landing-page-registration.png)
 
 *Fuente: Propia.*
 
@@ -1784,7 +1784,7 @@ empresarios agrícolas, permitiendo que los usuarios que llegaron al
 final del sitio continúen navegando fácilmente sin necesidad de regresar
 al inicio.
 
-![Footer](assets/landing-page-footer.png)
+![Footer](report/assets/landing-page-footer.png)
 
 *Fuente: Propia.*
 
@@ -1795,7 +1795,7 @@ al inicio.
 Para la landing page se realizaron los Wireframes en figma de toda la
 página web
 
-![Wirefram1](assets/wireframe1.png) ![Wirefram2](assets/wireframe2.png)
+![Wirefram1](report/assets/wireframe1.png) ![Wirefram2](report/assets/wireframe2.png)
 
 *Nota: Elaboración propia. Elaborado en:
 https://www.figma.com/design/tQSFHjZZpLcvBWkbzUfWLw/Untitled?node-id=0-1&p=f&t=rDZhOjwZFkCWZdXw-0*
@@ -1806,14 +1806,14 @@ https://www.figma.com/design/tQSFHjZZpLcvBWkbzUfWLw/Untitled?node-id=0-1&p=f&t=r
 
 **Desktop Web Browser**
 
-![Mock Up 1](assets/mockup1.png) ![Mock Up 2](assets/mockup2.png)
+![Mock Up 1](report/assets/mockup1.png) ![Mock Up 2](report/assets/mockup2.png)
 
 `<br>`{=html}
 
 **Mobile Web Browser**
 
-![Mock Up 1](assets/mockupMobile1.png) ![Mock Up
-2](assets/mockupMobile2.png) ![Mock Up 2](assets/mockupMobile3.png)
+![Mock Up 1](report/assets/mockupMobile1.png) ![Mock Up
+2](assets/mockupMobile2.png) ![Mock Up 2](report/assets/mockupMobile3.png)
 
 `<br>`{=html}
 
@@ -1822,7 +1822,7 @@ https://www.figma.com/design/tQSFHjZZpLcvBWkbzUfWLw/Untitled?node-id=0-1&p=f&t=r
 
 ### 4.4.1. Web Applications Wireframes
 
-![Wireframe 1](assets/wireframe-maqueta.png) ![Wireframe
+![Wireframe 1](report/assets/wireframe-maqueta.png) ![Wireframe
 2](assets/wireframe-maqueta2.png) ![Wireframe
 3](assets/wireframe-maqueta3.png) ![Wireframe
 4](assets/wireframe-maqueta4.png) ![Wireframe
@@ -1836,13 +1836,13 @@ diagramas combinan elementos de wireframes y diagramas de flujo para
 proporcionar una vista general de cómo los usuarios navegarán a través
 de la aplicación y cómo interactuarán con ella.
 
-![Wireflow Diagram](assets/wireflowdiagrams.png)
+![Wireflow Diagram](report/assets/wireflowdiagrams.png)
 
 ### 4.4.3. Web Applications Mock-ups
 
-![Mock-up 1](assets/web-mockups.png) ![Mock-up
-2](assets/web-mockups2.png) ![Mock-up 3](assets/web-mockups3.png)
-![Mock-up 4](assets/web-mockups4.png)
+![Mock-up 1](report/assets/web-mockups.png) ![Mock-up
+2](assets/web-mockups2.png) ![Mock-up 3](report/assets/web-mockups3.png)
+![Mock-up 4](report/assets/web-mockups4.png)
 
 ### 4.4.4. Web Applications User Flow Diagrams
 
@@ -1852,15 +1852,15 @@ web. Muestra la secuencia de acciones que el usuario realiza para
 completar una tarea específica, lo que nos ayuda a identificar posibles
 puntos de fricción y a optimizar la experiencia del usuario.
 
-![User Flow Diagram 1](assets/userflow.png) ![User Flow Diagram
-2](assets/userflow2.png) ![User Flow Diagram 3](assets/userflow3.png)
+![User Flow Diagram 1](report/assets/userflow.png) ![User Flow Diagram
+2](assets/userflow2.png) ![User Flow Diagram 3](report/assets/userflow3.png)
 
 ### 4.5. Web Applications Prototyping
 
 Prototipo de la aplicación web AgroTrack en Figma:
 [Prototipo-AgroTrack](https://www.figma.com/design/tQSFHjZZpLcvBWkbzUfWLw/Untitled?node-id=0-1&p=f&t=VDnBfHM1uPU4jdXO-0)
 
-![FLUJO-PROTOTIPO](assets/FLUJO-PROTOTIPO.png)
+![FLUJO-PROTOTIPO](report/assets/FLUJO-PROTOTIPO.png)
 
 Video del flujo del prototipo:
 [FLUJO-PROTOTIPO-AGROTRACK.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a267_upc_edu_pe/IQBGdqAI0J_NR7IAsWPnBl3TAe0ieQNo8cg4MmurJ2Owfuc?e=2yMdi8&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
@@ -1886,56 +1886,56 @@ Moisture, Weather Alert e Irrigation Schedule.
 
 **Identity & Access Management**
 
-![Identity&AccesManagement](assets/Identity&AccesManagement.png)
+![Identity&AccesManagement](report/assets/Identity&AccesManagement.png)
 
 **Farm Management**
 
-![FarmManagementBC](assets/FarmManagementBC.png)
+![FarmManagementBC](report/assets/FarmManagementBC.png)
 
 **Soil Monitoring**
 
-![SoilMonitoringBC](assets/SoilMonitoringBC.png)
+![SoilMonitoringBC](report/assets/SoilMonitoringBC.png)
 
 **Irrigation & Weather Advisory**
 
-![IrrigationAndWeatherBC](assets/IrrigationAndWeatherBC.png)
+![IrrigationAndWeatherBC](report/assets/IrrigationAndWeatherBC.png)
 
 **Analytics & Reporting**
 
-![Analytics&Reporting](assets/Analytics&Reporting.png)
+![Analytics&Reporting](report/assets/Analytics&Reporting.png)
 
 Miro:
 https://miro.com/app/board/uXjVHcOGric=/?share_link_id=857544303236
 
 ### 4.6.2. Software Architecture Context Diagram.
 
-![SystemContext-AgroTrack](assets/SystemContext-AgroTrack.png)
+![SystemContext-AgroTrack](report/assets/SystemContext-AgroTrack.png)
 
 ### 4.6.3. Software Architecture Container Diagrams.
 
-![ContainerDiagram-AgroTrack](assets/ContainerDiagram-AgroTrack.png)
+![ContainerDiagram-AgroTrack](areport/ssets/ContainerDiagram-AgroTrack.png)
 
 ### 4.6.4. Software Architecture Components Diagrams.
 
 **Identity & Access Management**
 
-![IAMC4](assets/IAMC4.png)
+![IAMC4](report/assets/IAMC4.png)
 
 **Farm Management**
 
-![FarmManagementC4](assets/FarmManagementC4.png)
+![FarmManagementC4](report/assets/FarmManagementC4.png)
 
 **Soil Monitoring**
 
-![SoilMonitoringC4](assets/SoilMonitoringC4.png)
+![SoilMonitoringC4](report/assets/SoilMonitoringC4.png)
 
 **Irrigation & Weather Advisory**
 
-![IrrigationWeatherAdvisoryC4](assets/IrrigationWeatherAdvisoryC4.png)
+![IrrigationWeatherAdvisoryC4](report/assets/IrrigationWeatherAdvisoryC4.png)
 
 **Analytics & Reporting**
 
-![AnalyticsReportingC4](assets/AnalyticsReportingC4.png)
+![AnalyticsReportingC4](report/assets/AnalyticsReportingC4.png)
 
 ## 4.7. Software Object-Oriented Design
 
@@ -2432,7 +2432,7 @@ User "1" --> "0..*" SupportTicket: creates >
 
 ### 4.8.1. Database Diagrams.
 
-![Imagen de la base de datos](assets/DiagramaDBagrotrack.png)
+![Imagen de la base de datos](report/assets/DiagramaDBagrotrack.png)
 
 
 <br>
@@ -2478,7 +2478,7 @@ antes de iniciar la etapa de desarrollo.
 **Figura 1**\
 *Logo de Figma*
 
-![logo-figma](assets/logo-figma.webp)
+![logo-figma](report/assets/logo-figma.webp)
 
 *Nota.* Obtenido de:
 https://www.iebschool.com/hub/wp-content/uploads/2024/01/s-1024x529-1-768x397.png
@@ -2492,7 +2492,7 @@ dentro del sitio web.
 **Figura 2**\
 *Logo de HTML*
 
-![logo-html](assets/logo-html.png)
+![logo-html](report/assets/logo-html.png)
 
 *Nota.* Obtenido de:
 <https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/250px-HTML5_logo_and_wordmark.svg.png>
@@ -2506,7 +2506,7 @@ dispositivos.
 **Figura 3**\
 *Logo de CSS*
 
-![logo-css](assets/logo-css.png)
+![logo-css](report/assets/logo-css.png)
 
 *Nota.* Obtenido de:
 <https://lineadecodigo.com/wp-content/uploads/2014/04/css.png>
@@ -2520,7 +2520,7 @@ experiencia general de navegación.
 **Figura 4**\
 *Logo de JavaScript*
 
-![logo-javascript](assets/logo-javascript.png)
+![logo-javascript](report/assets/logo-javascript.png)
 
 *Nota.* Obtenido de:
 <https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuHnJDLOcdm_0b6N6kNj-1OvO9KhKYgqIy0w&s>
@@ -2539,7 +2539,7 @@ de forma ordenada al proyecto principal.
 **Figura 5**\
 Logo de Git
 
-![logo-git](assets/logo-git.png)
+![logo-git](report/assets/logo-git.png)
 
 *Nota.* Obtenido de:
 <https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdd25hyNQOMs4Xx1Cv_A_oaT0zagfSWlXMBA&s>
@@ -2555,7 +2555,7 @@ proyecto y conservar un historial completo de los avances realizados.
 **Figura 6**\
 *Logo de GitHub*
 
-![logo-github](assets/logo-github.jpg)
+![logo-github](report/assets/logo-github.jpg)
 
 *Nota.* Obtenido de:
 <https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuYIprEvJ5lj-58xOPTE1xD_DBgdbrNhicyg&s>
@@ -3290,7 +3290,7 @@ organización y seguimiento del backlog, se utilizó la herramienta
 
 **Figura**
 
-![Sprint Backlog 1](assets/sprint-backlog.png)
+![Sprint Backlog 1](report/assets/sprint-backlog.png)
 
 *Sprint 1 de AgroTrack*
 
@@ -3313,7 +3313,7 @@ https://trello.com/invite/b/69ec6b9c1f448409979be07f/ATTI57cb684f86da5dce34b16c2
 Fotos de la landing implementada y video que ilustre y explique la
 visualización y navegación.
 
-![landing page](assets/landing-page-en-web.png)
+![landing page](report/assets/landing-page-en-web.png)
 
 link de la landing: https://agrotrack-project.github.io/Landing-Page/
 
@@ -3363,20 +3363,20 @@ que los cambios se reflejen nuevamente en la página publicada.
 **Figura**\
 *Evidencia de deployment 1*
 
-![Repo de la landing pade](assets/git-repo-laning-page.jpeg)
+![Repo de la landing pade](report/assets/git-repo-laning-page.jpeg)
 
 *Nota.* Elaboración propia.
 
 **Figura**\
 *Evidencia de deployment 2*
 
-![Landing page en funcionamiento](assets/landing-page-en-web.png)
+![Landing page en funcionamiento](report/assets/landing-page-en-web.png)
 
 *Nota.* Elaboración propia.
 
 #### 5.2.1.8 Team Collaboration Insights during Sprint
 
-![contribucion del equipo](assets/team-contribution.png)
+![contribucion del equipo](report/assets/team-contribution.png)
 
 *Nota.* Elaboración propia.
 
