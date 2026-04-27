@@ -36,25 +36,14 @@ Universidad Peruana de Ciencias Aplicadas
 
 # Registro de Versiones del Informe
 
-  --------------------------------------------------------------------------------
-  Versión      Fecha        Autor          Descripción de modificación
-  ------------ ------------ -------------- ---------------------------------------
-  AV1          26/04/2026   Alberto        Para esta primera entrega, elaboramos
-                            Joaquin Alfaro los cinco capítulos iniciales del
-                            Mallma, Pablo  informe y desarrollamos la versión
-                            Afranio        inicial del landing page de AgroTrack.
-                            Martínez       
-                            Gaona, Eder    
-                            Edu Quispe     
-                            Perez, Miler   
-                            Alexander      
-                            Rodriguez      
-                            Rojas, Eduardo 
-                            David          
-                            Velasquez      
-                            Laquihuanaco   
+| Versión | Fecha | Autor | Descripción de modificación |
+|---------|-------|-------|-----------------------------|
+| AV1 | 26/04/2026 | Alberto Joaquin Alfaro Mallma, Pablo Afranio Martínez Gaona, Eder Edu Quispe Perez, Miler Alexander Rodriguez Rojas, Eduardo David Velasquez Laquihuanaco | Para esta primera entrega, elaboramos los cinco capítulos iniciales del informe y desarrollamos la versión inicial del landing page de AgroTrack. |
 
-  --------------------------------------------------------------------------------
+
+<br>
+<br>
+
 
 # Project Report Collaboration Insights
 
@@ -62,6 +51,8 @@ Universidad Peruana de Ciencias Aplicadas
 https://github.com/AgroTrack-Project/report/tree/docs/chapter-1
 
 <br>
+
+![Foto de la claboracion](assets/contributors.png)
 
   -----------------------------------------------------------------------
   Integrante                  Tareas Designadas
