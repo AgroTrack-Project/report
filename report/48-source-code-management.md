@@ -37,7 +37,7 @@ Para organizar el proceso de desarrollo y asegurar una integración eficiente de
 
     - Una vez completadas, se integran nuevamente en `develop` mediante *pull request*.
 
-- **release/***
+- **release/**
     - Se crean cuando el proyecto está listo para preparar una nueva versión.
     - Permiten realizar ajustes finales, correcciones menores o cambios de documentación.
     - Convención de nombres:
