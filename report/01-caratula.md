@@ -1,4 +1,4 @@
-![Logo UPC](assets/upc_logo.png)
+![Logo UPC](assets/UPC_logo_transparente.png)
 
 <h1>Universidad Peruana de Ciencias Aplicadas</h1>
 
