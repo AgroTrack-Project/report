@@ -1989,28 +1989,7 @@ package "Identity.domain.model" {
     +isMultiUserEnabled(): boolean
     +hasPrioritySupport(): boolean
   }
- 
-  class TeamMemberId
-  {
-    *value: UUID
-  }
-  class TeamMember {
-    *id : TeamMemberId
-    -email : String
-    -role : TeamRole
-    -managerId : UserId
-    -joinedAt : LocalDateTime
-    +invite(email: String, role: TeamRole) : TeamMember
-    +remove() : void
-    +getRole() : TeamRole
-    +getManagerId() : UserId
-  }
- 
-  enum TeamRole {
-    VIEWER
-    EDITOR
-  }
- 
+   
   class UserId
   {
     *value: UUID
@@ -2065,7 +2044,6 @@ package "Identity.domain.model" {
   }
  
   AlertPreference o--> "1" AlertPreferenceId : has >
-  TeamMember o--> "1" TeamMemberId : has >
   User o--> "1" UserId : has >
   User <|-- Farmer
   User <|-- AgriculturalManager
@@ -2073,9 +2051,7 @@ package "Identity.domain.model" {
   Plan <|.. ProPlan
   Plan <|.. EnterprisePlan
   User "1" --> "1" Plan : subscribes to >
-  User "1" *-- "0..1" AlertPreference : configures >
-  AgriculturalManager "1" *-- "0..*" TeamMember: manages>
-  TeamMember "1" --> "1" TeamRole : has>
+  User "1" *-- "0..1" AlertPreference : configures > 
 }
  
  
@@ -2432,7 +2408,7 @@ User "1" --> "0..*" SupportTicket: creates >
 
 ### 4.8.1. Database Diagrams.
 
-![Imagen de la base de datos](report/assets/DiagramaDBagrotrack.png)
+![Imagen de la base de datos](report/assets/DiagramaDataBaseAgrotrack.png)
 
 
 <br>
