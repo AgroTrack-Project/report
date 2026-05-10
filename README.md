@@ -48,7 +48,7 @@ Universidad Peruana de Ciencias Aplicadas
 # Project Report Collaboration Insights
 
 **Enlace del repositorio - Informe:**
-https://github.com/AgroTrack-Project/report/tree/docs/chapter-1
+https://github.com/AgroTrack-Project/report
 
 <br>
 
@@ -2549,9 +2549,9 @@ Asimismo, dentro de la organización se han creado repositorios
 independientes, cada uno destinado a un producto específico:
 
 - Repositorio correspondiente al informe del proyecto:
-  https://github.com/Edu-VLL/AgroTrack.git
+  https://github.com/AgroTrack-Project/report
 - Repositorio correspondiente a la landing page:
-  https://github.com/AgroTrack-Project/Landing-Page.git
+  https://github.com/AgroTrack-Project/Landing-Page
 
 Para organizar el proceso de desarrollo y asegurar una integración
 eficiente de los avances, se aplicará la metodología **GitFlow**, la
