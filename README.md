@@ -1943,19 +1943,18 @@ https://miro.com/app/board/uXjVHcOGric=/?share_link_id=857544303236
 
 ``` plantuml
 @startuml AgroTrack_ClassDiagram
- 
+
 'BOUNDED CONTEXT: User & Auth
 package "Identity.domain.model" {
- 
+
   interface Plan {
     +getMaxPlots() : int
     +getPrice() : double
     +isEnterpriseDashboardEnabled() : boolean
     +isExportEnabled() : boolean
-    +isMultiUserEnabled(): boolean
     +hasPrioritySupport(): boolean
   }
- 
+
   class BasicPlan {
     -price : double
     -maxPlots : int
@@ -1963,10 +1962,9 @@ package "Identity.domain.model" {
     +getPrice() : double
     +isEnterpriseDashboardEnabled() : boolean
     +isExportEnabled() : boolean
-    +isMultiUserEnabled() : boolean
     +hasPrioritySupport() : boolean
   }
- 
+
   class ProPlan
   {
     - price: double
@@ -1975,10 +1973,9 @@ package "Identity.domain.model" {
     + getPrice() : double
     + isEnterpriseDashboardEnabled(): boolean
     + isExportEnabled(): boolean
-    + isMultiUserEnabled() : boolean
     + hasPrioritySupport() : boolean
   }
- 
+
   class EnterprisePlan {
     -price : double
     -maxPlots : int
@@ -1986,36 +1983,14 @@ package "Identity.domain.model" {
     +getPrice() : double
     +isEnterpriseDashboardEnabled() : boolean
     +isExportEnabled() : boolean
-    +isMultiUserEnabled(): boolean
     +hasPrioritySupport(): boolean
   }
- 
-  class TeamMemberId
-  {
-    *value: UUID
-  }
-  class TeamMember {
-    *id : TeamMemberId
-    -email : String
-    -role : TeamRole
-    -managerId : UserId
-    -joinedAt : LocalDateTime
-    +invite(email: String, role: TeamRole) : TeamMember
-    +remove() : void
-    +getRole() : TeamRole
-    +getManagerId() : UserId
-  }
- 
-  enum TeamRole {
-    VIEWER
-    EDITOR
-  }
- 
+
   class UserId
   {
     *value: UUID
   }
- 
+
   abstract class User {
     *id : UserId
     #name : String
@@ -2030,14 +2005,14 @@ package "Identity.domain.model" {
     +getEmail() : String
     +getPlan() : Plan
   }
- 
+
   class Farmer {
     -plots : List<Plot>
     +getPlots() : List<Plot>
     +addPlot(plot: Plot) : void
     +removePlot(plotId: PlotId) : void
   }
- 
+
   class AgriculturalManager {
     -companyName : String
     -managedPlots : List<Plot>
@@ -2047,12 +2022,12 @@ package "Identity.domain.model" {
     +getLossSummary() : List<LossSummary>
     +getWaterConsumption() : List<WaterConsumption>
   }
- 
+
   class AlertPreferenceId
   {
     *value: UUID
   }
- 
+
   class AlertPreference {
     *id : AlertPreferenceId
     -userId : UserId
@@ -2063,9 +2038,8 @@ package "Identity.domain.model" {
     +isEnabled(type: AlertType) : boolean
     +getUserId() : UserId
   }
- 
+
   AlertPreference o--> "1" AlertPreferenceId : has >
-  TeamMember o--> "1" TeamMemberId : has >
   User o--> "1" UserId : has >
   User <|-- Farmer
   User <|-- AgriculturalManager
@@ -2074,14 +2048,12 @@ package "Identity.domain.model" {
   Plan <|.. EnterprisePlan
   User "1" --> "1" Plan : subscribes to >
   User "1" *-- "0..1" AlertPreference : configures >
-  AgriculturalManager "1" *-- "0..*" TeamMember: manages>
-  TeamMember "1" --> "1" TeamRole : has>
 }
- 
- 
+
+
 ' Support
 package Support.domain.model{
- 
+
     class SupportTicketId
     {
         *value: UUID
@@ -2099,7 +2071,7 @@ package Support.domain.model{
       +getId() : SupportTicketId
       +getStatus() : TicketStatus
     }
- 
+
     enum TicketStatus {
       OPEN
       IN_PROGRESS
@@ -2108,29 +2080,29 @@ package Support.domain.model{
     SupportTicket o--> "1" SupportTicketId : has >
     SupportTicket "1" --> "1" TicketStatus : has >
 }
- 
- 
+
+
 ' BOUNDED CONTEXT: Plot & Crop
- 
+
 package "Plot & Crop.domain.model" {
- 
+
   enum PlotStatus {
     ACTIVE
     INACTIVE
     DELETED
   }
- 
+
   enum CropStatus {
     ACTIVE
     HARVESTED
     LOST
   }
- 
+
   class PlotId
   {
     *value: UUID
   }
- 
+
   class Plot {
     *id: PlotId
     -name : String
@@ -2149,12 +2121,12 @@ package "Plot & Crop.domain.model" {
     +getCropHistory() : List<Crop>
     +getCurrentSoilStatus() : SoilStatus
   }
- 
+
   class CropId
   {
     *value: UUID
   }
- 
+
   class Crop {
     *id : CropId
     -type : String
@@ -2170,49 +2142,49 @@ package "Plot & Crop.domain.model" {
     +getStatus() : CropStatus
     +isActive() : boolean
   }
- 
+
   Crop o--> "1" CropId : has >
   Plot o--> "1" PlotId : has >
   Plot "1" --> "1" PlotStatus : has >
   Plot "1" *-- "0..*" Crop : contains >
   Crop "1" --> "1" CropStatus : has >
 }
- 
- 
+
+
 ' BOUNDED CONTEXT: Soil Monitoring
- 
+
 package "Soil Monitoring.domain.model" {
- 
+
   enum SoilStatus {
     LOW
     NORMAL
     HIGH
   }
- 
+
   enum UrgencyLevel {
     LOW
     MEDIUM
     HIGH
     CRITICAL
   }
- 
+
   enum RecommendationStatus {
     PENDING
     CONFIRMED
     REJECTED
   }
- 
+
   enum ScheduleStatus {
     PENDING
     COMPLETED
     SKIPPED
   }
- 
+
   class SoilRecordId
   {
     *value: UUID
   }
- 
+
   class SoilRecord {
     *id : SoilRecordId
     -humidity : double
@@ -2226,12 +2198,12 @@ package "Soil Monitoring.domain.model" {
     +getRecordedAt() : LocalDateTime
     +getSoilStatus() : SoilStatus
   }
- 
+
   class IrrigationRecommendationId
   {
     *value: UUID
   }
- 
+
   class IrrigationRecommendation {
     *id : IrrigationRecommendationId
     -message : String
@@ -2247,12 +2219,12 @@ package "Soil Monitoring.domain.model" {
     +getStatus() : RecommendationStatus
     +getUrgency() : UrgencyLevel
   }
- 
+
   class IrrigationScheduleId
   {
     *value:UUID
   }
- 
+
   class IrrigationSchedule {
     *id : IrrigationScheduleId
     -suggestedAt : LocalDateTime
@@ -2264,12 +2236,12 @@ package "Soil Monitoring.domain.model" {
     +getSuggestedAt() : LocalDateTime
     +getStatus() : ScheduleStatus
   }
- 
+
   interface RecommendationEngine {
     +evaluate(soilRecord: SoilRecord) : IrrigationRecommendation
     +generateSchedule(plot: Plot) : IrrigationSchedule
   }
- 
+
   class SoilBasedRecommendationEngine {
     -lowThreshold : double
     -highThreshold : double
@@ -2278,8 +2250,8 @@ package "Soil Monitoring.domain.model" {
     -classifyHumidity(humidity: double) : SoilStatus
     -calculateUrgency(humidity: double) : UrgencyLevel
   }
- 
- 
+
+
   IrrigationSchedule o--> "1" IrrigationScheduleId : has >
   IrrigationRecommendation o--> "1" IrrigationRecommendationId : has >
   SoilRecord o--> "1" SoilRecordId : has >
@@ -2294,29 +2266,29 @@ package "Soil Monitoring.domain.model" {
   SoilBasedRecommendationEngine ..> SoilStatus : uses >
   SoilBasedRecommendationEngine ..> UrgencyLevel : uses >
 }
- 
- 
+
+
 ' BOUNDED CONTEXT: Climate Alerts
- 
+
 package "Climate Alerts.domain.model" {
- 
+
   enum AlertType {
     FROST
     DROUGHT
     HEAVY_RAIN
   }
- 
+
   enum AlertStatus {
     ACTIVE
     DISMISSED
     EXPIRED
   }
- 
+
   class ClimateAlertId
   {
     *value: UUID
   }
- 
+
   class ClimateAlert {
     *id : ClimateAlertId
     -type : AlertType
@@ -2330,7 +2302,7 @@ package "Climate Alerts.domain.model" {
     +getType() : AlertType
     +getStatus() : AlertStatus
   }
- 
+
   class WeatherForecast {
     -location : String
     -minTemperature : double
@@ -2345,14 +2317,14 @@ package "Climate Alerts.domain.model" {
     +hasDroughtRisk() : boolean
     +hasHeavyRainRisk() : boolean
   }
- 
+
   interface WeatherService {
     +getForecast(location: String) : WeatherForecast
     +checkFrostRisk(location: String) : boolean
     +checkDroughtRisk(location: String) : boolean
     +checkHeavyRainRisk(location: String) : boolean
   }
- 
+
   ClimateAlert o--> "1" ClimateAlertId : has >
   ClimateAlert "1" --> "1" AlertType : has >
   ClimateAlert "1" --> "1" AlertStatus : has >
@@ -2360,12 +2332,12 @@ package "Climate Alerts.domain.model" {
   WeatherForecast ..> ClimateAlert : triggers >
   AlertPreference ..> AlertType : filters >
 }
- 
- 
+
+
 ' BOUNDED CONTEXT: Enterprise Dashboard
- 
-package "Enterprise Dashboard.domain.model" {
- 
+
+package "Dashboard.domain.model" {
+
   class Dashboard {
     -plots : List<Plot>
     -yieldSummaries : List<YieldSummary>
@@ -2378,7 +2350,7 @@ package "Enterprise Dashboard.domain.model" {
     +exportPDF() : byte[]
     +exportExcel() : byte[]
   }
- 
+
   class YieldSummary {
     -plotId : PlotId
     -plotName : String
@@ -2388,7 +2360,7 @@ package "Enterprise Dashboard.domain.model" {
     +getYieldPerHectare() : double
     +getSeason() : String
   }
- 
+
   class LossSummary {
     -plotId : PlotId
     -plotName : String
@@ -2398,7 +2370,7 @@ package "Enterprise Dashboard.domain.model" {
     +getLossPercentage() : double
     +getCause() : String
   }
- 
+
   class WaterConsumption {
     -plotId : PlotId
     -plotName : String
@@ -2408,16 +2380,16 @@ package "Enterprise Dashboard.domain.model" {
     +getTotalLiters() : double
     +getSeason() : String
   }
- 
-  User "1" ..> "0..1" Dashboard: Accesses if the plan is suitable
+
+  User "1" ..> "0..1" Dashboard : views if Pro or Enterprise >
   Dashboard "1" *-- "0..*" YieldSummary : contains >
   Dashboard "1" *-- "0..*" LossSummary : contains >
   Dashboard "1" *-- "0..*" WaterConsumption : contains >
 }
- 
- 
+
+
 ' RELACIONES ENTRE BOUNDED CONTEXTS
- 
+
 Farmer "1" --> "0..*" Plot : owns >
 AgriculturalManager "1" --> "0..*" Plot : manages >
 Plot "1" *-- "0..*" SoilRecord : records >
