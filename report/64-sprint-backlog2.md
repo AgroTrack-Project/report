@@ -2,7 +2,7 @@ A continuación, presentamos el Sprint Backlog correspondiente al Sprint 2 del p
 
 **Figura**
 
-![Sprint Backlog 2](../assets/sprint-backlog2.png)
+![Sprint Backlog 2](assets/sprint-backlog-2.png)
 
 *Sprint 2 de AgroTrack*
 
