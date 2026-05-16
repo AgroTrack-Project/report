@@ -3397,7 +3397,7 @@ A continuación, presentamos el Sprint Backlog correspondiente al Sprint 2 del p
 
 **Figura**
 
-![Sprint Backlog 2](assets/sprint-backlog-2.png)
+![Sprint Backlog 2](report/assets/sprint-backlog-2.png)
 
 *Sprint 2 de AgroTrack*
 
@@ -3445,22 +3445,22 @@ A continuación, presentamos el Sprint Backlog correspondiente al Sprint 2 del p
 Al finalizar el Sprint 2, se realizó el despliegue de la primera versión funcional de la aplicación web frontend de AgroTrack en Vercel, quedando disponible para acceso público. La plataforma permite interactuar con los módulos de autenticación, administración de activos, monitoreo operativo y generación de reportes de cumplimiento. A continuación, se muestran las principales interfaces desarrolladas durante este sprint.
 
 #### Home Page
-![home](assets/home.png)
+![home](report/assets/home.png)
 
 #### Plots Page
-![plots](assets/plots.png)
+![plots](report/assets/plots.png)
 
 #### Alert Page
-![alerts](assets/alerts.png)
+![alerts](report/assets/alerts.png)
 
 #### Configuration Page
-![config](assets/config.png)
+![config](report/assets/config.png)
 
 #### Profile Page
-![profile](assets/profile.png)
+![profile](report/assets/profile.png)
 
 #### Configuration Profile Page
-![config-profile](assets/config-profile.png)
+![config-profile](report/assets/config-profile.png)
 
 #### 5.2.2.6. Services Documentation Evidence for Sprint Review
 
@@ -3533,8 +3533,6 @@ A continuación se documentan los principales endpoints del servidor MockAPI que
 | `/water_consumptions` | GET | `GET /water_consumptions?userId={id}` | `userId` (query, recomendado): ID del usuario. | Retorna el historial de consumo de agua por parcela y temporada para análisis de eficiencia hídrica. | `{ "id": "901", "userId": "1", "plotId": "101", "liters": 12400, "season": "2026-Q1", "month": "Enero" }` |
 
 ---
-
-**URL base del servidor MockAPI:** `https://6a02c43e0d92f63dd25406d7.mockapi.io/api/v1`
 
 Commits relacionados con la configuración del servidor MockAPI y la integración del frontend:
 
