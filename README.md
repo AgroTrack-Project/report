@@ -3367,33 +3367,45 @@ que los cambios se reflejen nuevamente en la página publicada.
 
 El segundo sprint se centrará en el desarrollo del Frontend Web Application de AgroTrack, distribuyendo las funcionalidades entre los miembros del equipo. El objetivo es construir las vistas principales de la plataforma, permitiendo a los agricultores acceder al sistema, registrarse y gestionar sus parcelas y cultivos desde un panel funcional e intuitivo.
 
-#### 5.2.2.1 Sprint Planning 2
+#### 5.2.2.1. Sprint Planning 2
 
-El segundo sprint se centró en el desarrollo del Frontend Web Application de AgroTrack, distribuyendo el trabajo entre los miembros del equipo para construir las vistas principales de la plataforma.
+Se presenta a continuación el resumen del Sprint Planning Meeting para el Sprint 2.
 
 | Campo | Detalle |
 |-------|---------|
 | **Sprint #** | Sprint 2 |
-| **Date** | 2025/05/19 |
-| **Time** | 19:00 |
-| **Location** | Discord (canal General) |
-| **Prepared By** | Eduardo David Velasquez Laquihuanaco |
-| **Attendees** | Alfaro Mallma, Alberto Joaquin / Martínez Gaona, Pablo Afranio / Quispe Perez, Eder Edu / Rodriguez Rojas, Miler Alexander / Velasquez Laquihuanaco, Eduardo David |
+| **Sprint Planning Background** | |
+| **Date** | 2025-05-19 |
+| **Time** | 19:00 PM |
+| **Location** | Virtual – Discord (canal General) |
+| **Prepared By** | Velasquez Laquihuanaco, Eduardo David |
+| **Attendees (to planning meeting)** | Alfaro Mallma, Alberto Joaquin / Martínez Gaona, Pablo Afranio / Quispe Perez, Eder Edu / Rodriguez Rojas, Miler Alexander / Velasquez Laquihuanaco, Eduardo David |
+| **Sprint 1 – Review Summary** | Durante el Sprint 1 se desarrolló e implementó la primera versión del Landing Page de AgroTrack, cubriendo las User Stories correspondientes a la Épica 01. La Landing Page fue desplegada exitosamente mediante GitHub Pages. |
+| **Sprint 1 – Retrospective Summary** | El equipo identificó como oportunidad de mejora la corrección de enlaces internos del Landing Page. En términos generales, la dinámica de trabajo colaborativo fue adecuada para el alcance del Sprint. |
+| **Sprint Goal & User Stories** | |
 | **Sprint 2 Goal** | Our focus is on implementing the Frontend Web Application. We believe it delivers a clear entry point and structured onboarding experience to farmers and agricultural staff. This will be confirmed when users are able to successfully access the platform, complete the registration process, and navigate to their plots dashboard without friction. |
 | **Sprint 2 Velocity** | 7 |
 | **Sum of Story Points** | 7 |
 
-En el Sprint 2, el equipo se enfocó en la implementación del Frontend Web Application de AgroTrack. Los aspectos considerados corresponden a los grandes bloques funcionales y técnicos que conforman el alcance del sprint: Autenticación y Gestión de Cuenta (registro, login, logout y selección de tipo de usuario), Gestión de Parcelas (CRUD completo y vista de detalle), Gestión de Cultivos (registro y visualización de cultivos por parcela), Monitoreo del Suelo (formulario de entrada de datos y visualización del estado), y Infraestructura Frontend (enrutamiento protegido con Auth Guard y despliegue en GitHub Pages). La asignación de líderes y colaboradores tiene correspondencia directa con los Work-Items/Tasks definidos en el Sprint Backlog 2.
 
-| Team Member (Last Name, First Name) | GitHub Username | Autenticación y Gestión de Cuenta | Gestión de Parcelas | Gestión de Cultivos | Monitoreo del Suelo | Infraestructura Frontend |
+#### 5.2.2.2. Aspect Leaders and Collaborators
+
+En el Sprint 2, los principales aspectos considerados corresponden a los bounded contexts y componentes técnicos trabajados: Gestión de Parcelas, Gestión de Cultivos, Monitoreo del Suelo, Alertas Climáticas e Interfaz de Perfil de Usuario.
+
+| Team Member (Last Name, First Name) | GitHub Username | Gestión de Parcelas | Gestión de Cultivos | Monitoreo del Suelo | Alertas Climáticas | Perfil de Usuario |
 |---|---|---|---|---|---|---|
-| Alfaro Mallma, Alberto Joaquin | albertoalfaro | C | L | C | C | C |
-| Martínez Gaona, Pablo Afranio | pabloafranio | C | C | C | L | C |
-| Quispe Perez, Eder Edu | ederedu0912 | L | C | L | C | C |
-| Rodriguez Rojas, Miler Alexander | milerrodr | C | C | C | C | L |
-| Velasquez Laquihuanaco, Eduardo David | eduardovlq | C | C | C | C | C |
+| Alfaro Mallma, Alberto Joaquin | albertoalfaro | L | C | C | C | C |
+| Martínez Gaona, Pablo Afranio | pabloafranio | C | C | L | C | C |
+| Quispe Perez, Eder Edu | ederedu0912 | C | L | C | C | C |
+| Rodriguez Rojas, Miler Alexander | milerrodr | C | C | C | L | C |
+| Velasquez Laquihuanaco, Eduardo David | Edu-VLL | C | C | C | C | L |
 
-A continuación, presentamos el Sprint Backlog correspondiente al Sprint 2 del proyecto AgroTrack. El objetivo principal de este Sprint fue implementar el Frontend Web Application, cubriendo los flujos críticos de autenticación de usuarios, gestión de parcelas, gestión de cultivos y registro manual de datos del suelo. La descomposición se realizó a partir de los User Stories definidos en el Product Backlog (Capítulo III), priorizando aquellos que habilitan el onboarding y la operación básica de un agricultor sobre la plataforma. Cada User Story fue descompuesto en uno o más Work-Items/Tasks técnicos, e incluimos además tareas transversales (TS-EXTRA) que no dependen de un User Story específico pero son necesarias para satisfacer restricciones del producto como la protección de rutas y el despliegue.
+#### 5.2.2.3. Sprint Backlog 2
+
+El objetivo principal del Sprint 2 fue implementar el Frontend Web Application de AgroTrack, 
+cubriendo la gestión de perfil de usuario, parcelas, cultivos, monitoreo del suelo, 
+recomendaciones de riego y alertas climáticas. A continuación se presenta el tablero 
+del sprint y la descomposición de User Stories en Work-Items/Tasks.
 
 **Figura**
 
@@ -3401,160 +3413,327 @@ A continuación, presentamos el Sprint Backlog correspondiente al Sprint 2 del p
 
 *Sprint 2 de AgroTrack*
 
-*Nota* Elaboración propia. Obtenido de https://trello.com/invite/b/6a082c484e76c24a6bf159db/ATTIeacb888e3799fbf438b8caf8a0d78ced55CA92BA/agrotrack-sprint-backlog-2
+*Nota.* Elaboración propia. Obtenido de https://trello.com/invite/b/6a082c484e76c24a6bf159db/ATTIeacb888e3799fbf438b8caf8a0d78ced55CA92BA/agrotrack-sprint-backlog-2
 
 | User Story Id | User Story | Work-Item / Task Id | Work-Item / Task Title | Work-Item / Task Description | Estimation (Hours) | Assigned To | Status |
 |---|---|---|---|---|---|---|---|
-| US09 | Registrar una cuenta nueva | T-001 | Maquetar vista de registro (Sign Up) | Construir el componente RegisterPage con formulario reactivo: campos nombre, correo, contraseña, confirmación de contraseña. Aplicar variables CSS y validaciones HTML5 básicas (required, type=email, minlength). | 4 | Quispe Perez, Eder Edu | Done |
-| | | T-002 | Implementar validaciones de formulario en JS | Validar formato de correo, fortaleza mínima de contraseña (≥ 8 caracteres) y coincidencia de contraseña/confirmación. Mostrar mensajes de error inline bajo cada campo. | 3 | Quispe Perez, Eder Edu | Done |
-| | | T-003 | Conectar formulario con endpoint POST /auth/register | Realizar la llamada al endpoint de registro mediante fetch, manejar estados de carga, éxito (redirección a /dashboard) y error (correo ya registrado). | 3 | Velasquez Laquihuanaco, Eduardo David | Done |
-| US10 | Iniciar sesión con correo y contraseña | T-004 | Maquetar vista de inicio de sesión (Login) | Construir el componente LoginPage con campos de correo y contraseña, enlaces a recuperación de contraseña y registro, y diseño responsive consistente con la identidad visual de AgroTrack. | 3 | Alfaro Mallma, Alberto Joaquin | Done |
-| | | T-005 | Implementar manejo de sesión con token JWT | Recibir el token devuelto por el endpoint POST /auth/login, almacenarlo en localStorage y crear un servicio AuthService para verificar la sesión en cada vista protegida. | 4 | Velasquez Laquihuanaco, Eduardo David | Done |
-| | | T-006 | Mostrar feedback en credenciales inválidas | Capturar la respuesta 401 del backend y mostrar un mensaje de error claro al usuario sin revelar si el correo o la contraseña fue el campo incorrecto. | 2 | Alfaro Mallma, Alberto Joaquin | Done |
-| US11 | Cerrar sesión | T-007 | Implementar funcionalidad de logout en navbar | Agregar la opción "Cerrar sesión" en el menú del usuario del navbar autenticado, eliminar el token JWT del localStorage y redirigir a /login. | 2 | Rodriguez Rojas, Miler Alexander | Done |
-| US14 | Seleccionar tipo de usuario al registrarse | T-008 | Agregar selector de tipo de usuario en registro | Añadir un radio-group con las opciones "Agricultor" y "Empresario Agrícola" en el formulario de registro. Enviar el valor seleccionado como campo userType en el body del POST /auth/register. | 2 | Quispe Perez, Eder Edu | Done |
-| | | T-009 | Redireccionar a dashboard según tipo de usuario | Configurar el router para que tras un login exitoso, los Agricultores accedan a /dashboard/farmer y los Empresarios Agrícolas a /dashboard/business. | 3 | Velasquez Laquihuanaco, Eduardo David | Done |
-| US15 | Registrar una nueva parcela | T-010 | Maquetar formulario de registro de parcela | Construir el componente PlotForm con los campos nombre, ubicación (texto), tamaño (hectáreas) y tipo de suelo, con validaciones reactivas. | 3 | Martínez Gaona, Pablo Afranio | Done |
-| | | T-011 | Integrar POST /plots con manejo de errores | Enviar los datos del formulario al backend, mostrar spinner durante la petición y notificar al usuario con un toast de éxito o un mensaje de error si la validación falla. | 3 | Martínez Gaona, Pablo Afranio | Done |
-| US16 | Ver listado de mis parcelas | T-012 | Construir vista PlotsListPage con grilla de tarjetas | Maquetar una grilla responsive de tarjetas, cada una mostrando nombre, ubicación, tamaño y estado actual de la parcela. Incluir botón flotante para crear una nueva parcela. | 4 | Alfaro Mallma, Alberto Joaquin | Done |
-| | | T-013 | Implementar estado vacío (empty state) | Cuando el endpoint GET /plots responde con un array vacío, mostrar una ilustración y un mensaje con un CTA para registrar la primera parcela. | 2 | Alfaro Mallma, Alberto Joaquin | Done |
-| US17 | Editar información de una parcela | T-014 | Reutilizar PlotForm en modo edición | Adaptar el componente PlotForm para precargar los datos existentes mediante GET /plots/:id y enviar los cambios con PUT /plots/:id. | 3 | Martínez Gaona, Pablo Afranio | Done |
-| US18 | Eliminar una parcela registrada | T-015 | Implementar modal de confirmación de eliminación | Mostrar un modal de advertencia antes de ejecutar DELETE /plots/:id, indicando que la acción es permanente. Refrescar el listado tras la eliminación exitosa. | 2 | Rodriguez Rojas, Miler Alexander | Done |
-| US19 | Ver detalle de una parcela específica | T-016 | Construir vista PlotDetailPage | Maquetar la vista de detalle con tres secciones: información general, cultivos activos y estado del suelo. Consumir GET /plots/:id, GET /plots/:id/crops y GET /plots/:id/soil. | 5 | Velasquez Laquihuanaco, Eduardo David | Done |
-| US20 | Registrar un cultivo en una parcela | T-017 | Maquetar formulario CropForm | Construir el formulario con campos tipo de cultivo (select), fecha de siembra (date picker) y notas opcionales. Asociarlo automáticamente al plotId de la parcela actual. | 3 | Quispe Perez, Eder Edu | Done |
-| | | T-018 | Conectar formulario con POST /plots/:id/crops | Enviar el cultivo al backend, actualizar la lista de cultivos activos en la vista de detalle de la parcela y mostrar confirmación. | 2 | Quispe Perez, Eder Edu | Done |
-| US25 | Ingresar manualmente datos de humedad del suelo | T-019 | Maquetar formulario SoilEntryForm con validación 0–100 | Construir el formulario con un input numérico para humedad (rango 0–100) y validación inline que bloquee el botón guardar si el valor está fuera de rango. | 3 | Martínez Gaona, Pablo Afranio | Done |
-| | | T-020 | Mostrar indicador visual del estado del suelo | Tras guardar el registro, mostrar un badge con estado (Bajo < 40%, Normal 40–70%, Alto > 70%) usando los colores de la paleta institucional. | 2 | Alfaro Mallma, Alberto Joaquin | Done |
-| TS-EXTRA | Tareas técnicas transversales | T-021 | Configurar enrutamiento protegido (Auth Guard) | Crear un guard que verifique la presencia y validez del token JWT en localStorage antes de permitir el acceso a rutas privadas (/dashboard, /plots, /plots/:id, etc.). | 3 | Velasquez Laquihuanaco, Eduardo David | Done |
-| | | T-022 | Desplegar Frontend Web App en GitHub Pages | Configurar el workflow de despliegue desde el repositorio AgroTrack de NexumDevs, publicar en la rama gh-pages y validar el dominio público de la web app. | 2 | Rodriguez Rojas, Miler Alexander | Done |
+| US13 | Editar datos del perfil personal | T-001 | Maquetar vista de perfil de usuario | Construir el componente ProfilePage con formulario para editar nombre, correo y datos personales del usuario. Aplicar validaciones reactivas. | 3 | Velasquez Laquihuanaco, Eduardo David | Done |
+| | | T-002 | Conectar formulario de perfil con MockAPI | Enviar los cambios del perfil mediante PUT al endpoint correspondiente y mostrar mensaje de confirmación. | 2 | Velasquez Laquihuanaco, Eduardo David | Done |
+| US15 | Registrar una nueva parcela | T-003 | Maquetar formulario de registro de parcela | Construir el componente PlotForm con campos nombre, ubicación, tamaño y tipo de suelo, con validaciones reactivas. | 3 | Alfaro Mallma, Alberto Joaquin | Done |
+| | | T-004 | Conectar formulario con endpoint POST /plots | Enviar los datos al endpoint, mostrar spinner durante la petición y notificar al usuario con mensaje de éxito o error. | 2 | Alfaro Mallma, Alberto Joaquin | Done |
+| US16 | Ver listado de mis parcelas | T-005 | Construir vista PlotsListPage con grilla de tarjetas | Maquetar grilla responsive de tarjetas mostrando nombre, ubicación, tamaño y estado de cada parcela. Incluir botón para crear nueva parcela. | 4 | Alfaro Mallma, Alberto Joaquin | Done |
+| | | T-006 | Implementar estado vacío (empty state) | Cuando GET /plots responde vacío, mostrar mensaje con CTA para registrar la primera parcela. | 2 | Alfaro Mallma, Alberto Joaquin | Done |
+| US17 | Editar información de una parcela | T-007 | Reutilizar PlotForm en modo edición | Adaptar PlotForm para precargar datos existentes via GET /plots/:id y guardar cambios con PUT /plots/:id. | 3 | Martínez Gaona, Pablo Afranio | Done |
+| US18 | Eliminar una parcela registrada | T-008 | Implementar modal de confirmación de eliminación | Mostrar modal de advertencia antes de ejecutar DELETE /plots/:id. Refrescar listado tras eliminación exitosa. | 2 | Rodriguez Rojas, Miler Alexander | Done |
+| US19 | Ver detalle de una parcela específica | T-009 | Construir vista PlotDetailPage | Maquetar vista de detalle con secciones de información general, cultivos activos y estado del suelo. Consumir endpoints correspondientes. | 4 | Quispe Perez, Eder Edu | Done |
+| US20 | Registrar un cultivo en una parcela | T-010 | Maquetar formulario CropForm | Construir formulario con campos tipo de cultivo, fecha de siembra y notas opcionales, vinculado al plotId de la parcela actual. | 3 | Quispe Perez, Eder Edu | Done |
+| | | T-011 | Conectar formulario con POST /crops | Enviar el cultivo al endpoint, actualizar lista de cultivos activos en la vista de detalle y mostrar confirmación. | 2 | Quispe Perez, Eder Edu | Done |
+| US21 | Ver los cultivos activos de una parcela | T-012 | Construir sección de cultivos activos en PlotDetailPage | Mostrar lista de cultivos activos con tipo, fecha de siembra y estado. Incluir empty state si no hay cultivos. | 3 | Quispe Perez, Eder Edu | Done |
+| US22 | Editar información de un cultivo | T-013 | Implementar edición de cultivo | Adaptar CropForm para modo edición, precargando datos via GET y guardando cambios con PUT. | 2 | Quispe Perez, Eder Edu | Done |
+| US23 | Marcar un cultivo como cosechado o finalizado | T-014 | Implementar botón de marcar cultivo como finalizado | Agregar opción para cambiar estado del cultivo a "Finalizado" mediante PATCH y moverlo al historial. | 3 | Quispe Perez, Eder Edu | Done |
+| US24 | Ver historial de cultivos anteriores por parcela | T-015 | Construir sección de historial de cultivos | Mostrar cultivos finalizados con tipo, fecha de siembra y fecha de cosecha en la vista de detalle de la parcela. | 3 | Quispe Perez, Eder Edu | Done |
+| US25 | Ingresar manualmente datos de humedad del suelo | T-016 | Maquetar formulario SoilEntryForm con validación 0–100 | Construir formulario con input numérico para humedad con validación inline que bloquee el guardado si el valor está fuera de rango. | 3 | Martínez Gaona, Pablo Afranio | Done |
+| US26 | Ingresar manualmente datos de temperatura del suelo | T-017 | Agregar campo de temperatura al SoilEntryForm | Añadir input numérico para temperatura con validación de formato numérico al formulario de datos del suelo. | 2 | Martínez Gaona, Pablo Afranio | Done |
+| US27 | Ver el estado actual del suelo de una parcela | T-018 | Mostrar indicador visual del estado del suelo | Mostrar badge con estado (Bajo, Normal, Alto) usando los colores de la paleta institucional tras guardar el registro. | 2 | Martínez Gaona, Pablo Afranio | Done |
+| US28 | Ver historial de registros del suelo por parcela | T-019 | Construir sección de historial del suelo | Mostrar registros de suelo ordenados del más reciente al más antiguo con fecha, humedad y temperatura. | 3 | Martínez Gaona, Pablo Afranio | Done |
+| US29 | Recibir recomendación de riego basada en datos del suelo | T-020 | Implementar lógica de recomendación de riego | Mostrar recomendación de riego basada en el último nivel de humedad registrado usando los umbrales definidos. | 3 | Rodriguez Rojas, Miler Alexander | Done |
+| US30 | Ver el cronograma de riego sugerido | T-021 | Construir vista de cronograma de riego | Maquetar sección con fechas y horarios sugeridos de riego basados en los datos del suelo registrados. | 3 | Rodriguez Rojas, Miler Alexander | Done |
+| US31 | Confirmar o rechazar una recomendación de riego | T-022 | Implementar botones de confirmar/rechazar recomendación | Agregar botones de confirmación y rechazo en la vista de recomendación y registrar la respuesta en el historial. | 2 | Rodriguez Rojas, Miler Alexander | Done |
+| US32 | Ver historial de riegos aplicados en una parcela | T-023 | Construir sección de historial de riegos | Mostrar registros de riego con fecha, hora e indicador de si la recomendación fue seguida o no. | 2 | Rodriguez Rojas, Miler Alexander | Done |
+| US33 | Recibir alerta ante riesgo de helada | T-024 | Implementar lógica de alerta por helada | Conectar con OpenWeatherMap y generar alerta cuando temp_min <= 5°C o feels_like <= 5°C. | 4 | Velasquez Laquihuanaco, Eduardo David | In-Process |
+| US34 | Recibir alerta ante riesgo de sequía | T-025 | Implementar lógica de alerta por sequía | Detectar sequía cuando 80%+ de registros del forecast de 5 días tienen pop < 0.1. | 4 | Velasquez Laquihuanaco, Eduardo David | In-Process |
+| US35 | Recibir alerta ante lluvias intensas previstas | T-026 | Implementar lógica de alerta por lluvia intensa | Generar alerta cuando algún registro del forecast tiene pop > 0.7. Mostrar notificación en dashboard. | 3 | Velasquez Laquihuanaco, Eduardo David | Done |
+| US36 | Ver historial de alertas climáticas recibidas | T-027 | Construir vista de historial de alertas | Mostrar alertas ordenadas por fecha con tipo y descripción. Incluir empty state si no hay alertas. | 3 | Velasquez Laquihuanaco, Eduardo David | Done |
+| US37 | Configurar qué tipo de alertas quiero recibir | T-028 | Implementar configuración de alertas | Agregar toggles para activar/desactivar cada tipo de alerta desde la vista de configuración. | 2 | Velasquez Laquihuanaco, Eduardo David | Done |
+| US38 | Ver panel de control con resumen de todas mis parcelas | T-029 | Construir dashboard para empresario agrícola | Maquetar panel con resumen de cada parcela mostrando estado de humedad, cultivo activo y última alerta. | 4 | Alfaro Mallma, Alberto Joaquin | Done |
+| US39 | Ver rendimiento por parcela | T-030 | Construir sección de rendimiento por parcela | Mostrar métricas de producción por parcela ordenadas de mayor a menor rendimiento. | 3 | Martínez Gaona, Pablo Afranio | Done |
+| US40 | Ver porcentaje de pérdidas estimadas por parcela | T-031 | Construir sección de pérdidas estimadas | Mostrar porcentaje de pérdidas por parcela junto con las causas registradas. | 3 | Martínez Gaona, Pablo Afranio | Done |
+| US41 | Ver consumo de agua registrado por temporada | T-032 | Construir sección de consumo de agua | Mostrar consumo total de agua por parcela agrupado por temporada. | 3 | Rodriguez Rojas, Miler Alexander | Done |
+| US42 | Exportar reporte de producción en formato PDF o Excel | T-033 | Implementar exportación de reporte | Agregar botones para exportar reporte de producción en PDF y Excel desde la sección de reportes. | 4 | Rodriguez Rojas, Miler Alexander | Done |
+| TS03 | Endpoint para crear una parcela | T-034 | Configurar endpoint POST /plots en MockAPI | Verificar y configurar el endpoint de creación de parcelas en MockAPI con los campos requeridos. | 1 | Alfaro Mallma, Alberto Joaquin | Done |
+| TS04 | Endpoint para obtener parcelas de un usuario | T-035 | Configurar endpoint GET /plots en MockAPI | Verificar endpoint de listado de parcelas filtrando por userId. | 1 | Alfaro Mallma, Alberto Joaquin | Done |
+| TS05 | Endpoint para actualizar una parcela | T-036 | Configurar endpoint PUT /plots/:id en MockAPI | Verificar endpoint de actualización de parcela por ID. | 1 | Martínez Gaona, Pablo Afranio | Done |
+| TS06 | Endpoint para eliminar una parcela | T-037 | Configurar endpoint DELETE /plots/:id en MockAPI | Verificar endpoint de eliminación de parcela por ID. | 1 | Rodriguez Rojas, Miler Alexander | Done |
+| TS07 | Endpoint para crear un cultivo | T-038 | Configurar endpoint POST /crops en MockAPI | Verificar endpoint de creación de cultivo vinculado a una parcela. | 1 | Quispe Perez, Eder Edu | Done |
+| TS08 | Endpoint para obtener cultivos de una parcela | T-039 | Configurar endpoint GET /crops en MockAPI | Verificar endpoint de listado de cultivos filtrando por plotId. | 1 | Quispe Perez, Eder Edu | Done |
+| TS09 | Endpoint para actualizar el estado de un cultivo | T-040 | Configurar endpoint PATCH /crops/:id en MockAPI | Verificar endpoint para actualizar estado de cultivo a finalizado. | 1 | Quispe Perez, Eder Edu | Done |
+| TS10 | Endpoint para registrar datos del suelo | T-041 | Configurar endpoint POST /soil-records en MockAPI | Verificar endpoint de registro de humedad y temperatura del suelo con validaciones de rango. | 1 | Martínez Gaona, Pablo Afranio | Done |
+| TS11 | Endpoint para obtener historial de datos del suelo | T-042 | Configurar endpoint GET /soil-records en MockAPI | Verificar endpoint de historial de suelo ordenado por fecha descendente. | 1 | Martínez Gaona, Pablo Afranio | Done |
+| TS12 | Endpoint para obtener alertas climáticas de una parcela | T-043 | Configurar endpoint GET /climate-alerts en MockAPI | Verificar endpoint de alertas climáticas activas filtrando por plotId. | 1 | Velasquez Laquihuanaco, Eduardo David | Done |
+| TS13 | Endpoint para crear una alerta climática | T-044 | Configurar endpoint POST /climate-alerts en MockAPI | Verificar endpoint de creación de alertas climáticas vinculadas a una parcela. | 1 | Velasquez Laquihuanaco, Eduardo David | Done |
+| TS14 | Endpoint para obtener recomendación de riego | T-045 | Configurar endpoint GET /irrigation-recommendations en MockAPI | Verificar endpoint de recomendación de riego basado en último registro del suelo. | 1 | Rodriguez Rojas, Miler Alexander | Done |
+| TS15 | Endpoint para registrar respuesta a una recomendación | T-046 | Configurar endpoint POST /irrigation-recommendations/:id/response en MockAPI | Verificar endpoint para registrar si el agricultor aceptó o rechazó la recomendación. | 1 | Rodriguez Rojas, Miler Alexander | Done |
+
 
 #### 5.2.2.4. Development Evidence for Sprint Review
 
-| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on |
+Durante el S los bounded contexts de farming, soil monitoring, climate alerts e identity. El desarrollo se realizó en ramas feature independientes por cada integrante, las cuales fueron integradas a develop mediante pull requests revisados por el Team Leader. A continuación se presentan los commits realizados por repositorio durante el Sprint 2.
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
 |---|---|---|---|---|---|
-| AgroTrack-Project/web-Application | feature/EderQuispe | a3f2c91 | `feat(farming): implement plot and crop bounded context` | Added plot and crop entities, assemblers and API endpoints | 2026-05-13 |
-| AgroTrack-Project/web-Application | feature/EderQuispe | b7e4d02 | `feat(farming): configure MockAPI environment and endpoints` | Set up environment variables and MockAPI base URLs | 2026-05-13 |
-| AgroTrack-Project/web-Application | feature/EduardoVelasquez | c1a8f53 | `feat(monitoring): implement soil records and irrigation services` | Added soil record and irrigation recommendation endpoints | 2026-05-14 |
-| AgroTrack-Project/web-Application | feature/JoaquinAlfaro | d5b3e74 | `feat(alerts): implement climate alerts and notification preferences` | Added climate alert entity and alert preferences service | 2026-05-14 |
-| AgroTrack-Project/web-Application | feature/Pablo-Martinez | e9c6a15 | `feat(analytics): implement yield and water consumption summaries` | Added yield summary and water consumption endpoints | 2026-05-15 |
-| AgroTrack-Project/web-Application | feature/miler-rodriguez | f2d7b36 | `feat(identity): implement user profile and plan management` | Added user profile view and subscription plan endpoints | 2026-05-15 |
-| AgroTrack-Project/web-Application | develop | 4a1c823 | `merge(develop): integrate all feature branches into develop` | Merged all bounded context feature branches into develop | 2026-05-15 |
+| AgroTrack-Project/web-Application | feature/EduardoVelasquez | 37323a1 | feat: Add language files | Added i18n language files for en and es | 2026-05-12 |
+| AgroTrack-Project/web-Application | feature/EduardoVelasquez | 6750147 | feat: add shared components and views | Added shared components and views for base layout | 2026-05-12 |
+| AgroTrack-Project/web-Application | feature/EduardoVelasquez | f22f516 | feat: add project structure | Set up base Angular project structure with DDD folders | 2026-05-12 |
+| AgroTrack-Project/web-Application | feature/EduardoVelasquez | e6fb4ff | feat: configure layout with navbar, sidebar and base routing | Configured app layout with navbar, sidebar and base routing | 2026-05-12 |
+| AgroTrack-Project/web-Application | feature/EduardoVelasquez | db2e432 | feat: update shared infrastructure base classes | Updated base classes for shared infrastructure layer | 2026-05-14 |
+| AgroTrack-Project/web-Application | feature/EduardoVelasquez | dff478c0 | feat: update shared layout components and views | Updated layout components and views for shared context | 2026-05-14 |
+| AgroTrack-Project/web-Application | feature/EduardoVelasquez | e9b1038 | feat: add content on i18n for en and es | Added translation content for English and Spanish | 2026-05-14 |
+| AgroTrack-Project/web-Application | feature/EduardoVelasquez | 9f8a35d | feat: add identity domain entities and models | Added domain entities and models for identity bounded context | 2026-05-14 |
+| AgroTrack-Project/web-Application | feature/EduardoVelasquez | f54ac1c | feat: add identity store | Added Angular Signals store for identity bounded context | 2026-05-14 |
+| AgroTrack-Project/web-Application | feature/EduardoVelasquez | 4119432 | feat: add identity infrastructure | Added infrastructure layer for identity bounded context | 2026-05-14 |
+| AgroTrack-Project/web-Application | feature/EduardoVelasquez | 759d750 | feat: add presentation for profile and configuration | Added profile and configuration views for identity context | 2026-05-14 |
+| AgroTrack-Project/web-Application | feature/EduardoVelasquez | 745d089 | feat: update app routes | Updated app routing to include identity and profile routes | 2026-05-14 |
+| AgroTrack-Project/web-Application | develop | a934340 | Merge pull request #1 from AgroTrack-Project/feature/EduardoVelasquez | Merged identity and shared infrastructure into develop | 2026-05-14 |
+| AgroTrack-Project/web-Application | feature/EderQuispe | 45ad493 | feat(environments): update environment paths for farming endpoints | Updated environment variables for farming API endpoints | 2026-05-14 |
+| AgroTrack-Project/web-Application | feature/EderQuispe | 819064d | feat(farming): add plot and crop status enums | Added status enums for plot and crop domain entities | 2026-05-14 |
+| AgroTrack-Project/web-Application | feature/EderQuispe | 4b26908 | feat(farming): add plot entity with domain methods | Added plot entity class with domain methods | 2026-05-14 |
+| AgroTrack-Project/web-Application | feature/EderQuispe | 6d603ca | feat(farming): add crop entity with domain methods | Added crop entity class with domain methods | 2026-05-14 |
+| AgroTrack-Project/web-Application | feature/EderQuispe | 735b050 | feat(farming): add plot and crop resource interfaces | Added resource interfaces for plot and crop | 2026-05-14 |
+| AgroTrack-Project/web-Application | feature/EderQuispe | 8629dcb | feat(farming): add plot assembler for resource mapping | Added assembler class for plot resource mapping | 2026-05-14 |
+| AgroTrack-Project/web-Application | feature/EderQuispe | 439472d | feat(farming): add crop assembler for resource mapping | Added assembler class for crop resource mapping | 2026-05-14 |
+| AgroTrack-Project/web-Application | feature/EderQuispe | 61dafb4 | feat(farming): add plot API endpoint service | Added API service for plot CRUD operations | 2026-05-14 |
+| AgroTrack-Project/web-Application | feature/EderQuispe | 05f78ce | feat(farming): add crop API endpoint service | Added API service for crop CRUD operations | 2026-05-14 |
+| AgroTrack-Project/web-Application | feature/EderQuispe | d0ce7e7 | feat(farming): add farming API facade | Added facade service for farming bounded context | 2026-05-14 |
+| AgroTrack-Project/web-Application | feature/EderQuispe | 439e014 | feat(farming): add farming store with Angular signals | Added Angular Signals store for farming state management | 2026-05-14 |
+| AgroTrack-Project/web-Application | feature/EderQuispe | b3f996b | feat(farming): add plots view structure and logic | Added plots list view with structure and business logic | 2026-05-14 |
+| AgroTrack-Project/web-Application | feature/EderQuispe | 70f3a8f | feat(farming): add plots view styles with summary cards | Added styles and summary cards for plots list view | 2026-05-14 |
+| AgroTrack-Project/web-Application | feature/EderQuispe | c9899b3 | feat(farming): add plot detail view with crop tabs and form | Added plot detail view with crop management tabs | 2026-05-14 |
+| AgroTrack-Project/web-Application | feature/EderQuispe | daf9932 | feat(farming): add plot detail view styles | Added styles for plot detail view | 2026-05-14 |
+| AgroTrack-Project/web-Application | develop | 20d66d1 | Merge pull request #2 from AgroTrack-Project/feature/EderQuispe | Merged farming bounded context into develop | 2026-05-14 |
+| AgroTrack-Project/web-Application | feature/EderQuispe | a8f66e7 | Implement soil monitoring and plot form screens | Implemented soil monitoring screens and plot form views | 2026-05-15 |
+| AgroTrack-Project/web-Application | feature/EderQuispe | 2d8be85 | Add soil monitoring and plot form screens | Added additional soil monitoring and plot form screens | 2026-05-15 |
+| AgroTrack-Project/web-Application | feature/EderQuispe | ddb40a7 | Add irrigation | Added irrigation recommendation views and logic | 2026-05-15 |
+| AgroTrack-Project/web-Application | feature/EderQuispe | aa2b335 | fix(farming): move plot ID to first position in form and detail view | Fixed plot ID position in form and detail view | 2026-05-15 |
+| AgroTrack-Project/web-Application | feature/EderQuispe | f4edd10 | feat(farming): add harvest and edit actions to crop cards | Added harvest and edit action buttons to crop cards | 2026-05-15 |
+| AgroTrack-Project/web-Application | feature/EderQuispe | a50b4bb | feat(farming): add harvest history section in history tab | Added harvest history section in farming history tab | 2026-05-15 |
+| AgroTrack-Project/web-Application | feature/EderQuispe | 5431ea9 | feat(farming): extend i18n to all farming module content | Extended i18n translations to all farming module content | 2026-05-15 |
+| AgroTrack-Project/web-Application | feature/EderQuispe | 7272a36 | fix(farming): fix harvest button width and add i18n label | Fixed harvest button width and added i18n label | 2026-05-15 |
+| AgroTrack-Project/web-Application | feature/EderQuispe | 4c1bbd5 | fix(farming): replace harvest icon with text label Cosechar | Replaced harvest icon with text label for better UX | 2026-05-15 |
+| AgroTrack-Project/web-Application | feature/Pablo-Martinez | 98df9a9d | Finish soil monitoring BC | Completed soil monitoring bounded context implementation | 2026-05-15 |
+| AgroTrack-Project/web-Application | develop | b3e819e | Merge pull request #4 from AgroTrack-Project/feature/Pablo-Martinez | Merged farming and soil monitoring BCs into develop | 2026-05-15 |
+| AgroTrack-Project/web-Application | feature/EduardoVelasquez | c46fcf7 | feat: add view change | Added view change functionality for identity context | 2026-05-15 |
+| AgroTrack-Project/web-Application | feature/EduardoVelasquez | 840c738 | feat: add content on i18n for translate | Added i18n translation content for identity views | 2026-05-15 |
+| AgroTrack-Project/web-Application | develop | 4236ed3 | Merge pull request #3 from AgroTrack-Project/feature/EduardoVelasquez | Merged identity updates into develop | 2026-05-15 |
+| AgroTrack-Project/web-Application | feature/miler-rodriguez | a265e4e | feat: add weather card component for displaying weather data | Added weather card component for climate data display | 2026-05-15 |
+| AgroTrack-Project/web-Application | feature/miler-rodriguez | 945383f | feat: add unit tests for alerts page component | Added unit tests for alerts page component | 2026-05-15 |
+| AgroTrack-Project/web-Application | feature/miler-rodriguez | 4a9b8cc | feat: create alerts page component with weather card integration | Created alerts page with weather card integration | 2026-05-15 |
+| AgroTrack-Project/web-Application | feature/miler-rodriguez | ef10148 | feat: add alerts page route to application routing | Added alerts page route to app routing configuration | 2026-05-15 |
+| AgroTrack-Project/web-Application | feature/miler-rodriguez | 8c951ce | feat: add climate entity class to represent climate data | Added climate entity class for climate data representation | 2026-05-15 |
+| AgroTrack-Project/web-Application | feature/miler-rodriguez | 3fca1d6 | feat: add climate api endpoint class for fetching weather data by city | Added API endpoint class for fetching weather data | 2026-05-15 |
+| AgroTrack-Project/web-Application | feature/miler-rodriguez | f9a2d63 | feat: add climate assembler class for transforming climate api responses into entities | Added assembler for climate API response transformation | 2026-05-15 |
+| AgroTrack-Project/web-Application | feature/miler-rodriguez | cdfb56d | feat: add climate response interface for structured climate data | Added response interface for structured climate data | 2026-05-15 |
+| AgroTrack-Project/web-Application | feature/miler-rodriguez | 64b3dbd | feat: add climate risk analyzer class for calculating weather-related risks | Added climate risk analyzer for weather risk calculation | 2026-05-15 |
+| AgroTrack-Project/web-Application | feature/miler-rodriguez | 7346b40 | feat: add css styles for weather alerts display | Added CSS styles for weather alerts display | 2026-05-15 |
+| AgroTrack-Project/web-Application | feature/miler-rodriguez | 353943c | feat: add weather alerts display component | Added weather alerts display component | 2026-05-15 |
+| AgroTrack-Project/web-Application | feature/miler-rodriguez | 272fbe8 | feat(home): redesign dashboard with plots summary | Redesigned home dashboard with plots summary section | 2026-05-15 |
+| AgroTrack-Project/web-Application | feature/miler-rodriguez | 14cb892 | feat: add unit tests for weather card component | Added unit tests for weather card component | 2026-05-15 |
+| AgroTrack-Project/web-Application | feature/miler-rodriguez | 1b0b503 | feat: add alert generator for climate risk notifications | Added alert generator for climate risk notifications | 2026-05-15 |
+| AgroTrack-Project/web-Application | feature/miler-rodriguez | c73e476 | feat: update environment import for alert preference API endpoint | Updated environment import for alert preference endpoint | 2026-05-15 |
+| AgroTrack-Project/web-Application | feature/miler-rodriguez | 20c9c90 | feat: implement AlertsStore for managing climate alerts and weather data | Implemented AlertsStore with Angular Signals | 2026-05-15 |
+| AgroTrack-Project/web-Application | feature/miler-rodriguez | 21f2fb3 | feat: add alerts api service for fetching weather data by city | Added API service for fetching weather data by city | 2026-05-15 |
+| AgroTrack-Project/web-Application | feature/miler-rodriguez | 52b7fda | feat: add alert notification entity for managing alert notifications | Added alert notification entity class | 2026-05-15 |
+| AgroTrack-Project/web-Application | feature/miler-rodriguez | 36b28b3 | feat: add styles for alerts page | Added CSS styles for alerts page | 2026-05-15 |
+| AgroTrack-Project/web-Application | feature/miler-rodriguez | 80d3cd3 | feat: add weather card component to alerts page | Added weather card component integration to alerts page | 2026-05-15 |
+| AgroTrack-Project/web-Application | develop | 5282603 | Merge pull request #5 from AgroTrack-Project/feature/miler-rodriguez | Merged climate alerts bounded context into develop | 2026-05-15 |
+| AgroTrack-Project/web-Application | feature/JoaquinAlfaro | e36b401 | feat: update logout method to redirect to landing page | Updated logout to redirect to landing page | 2026-05-15 |
+| AgroTrack-Project/web-Application | feature/JoaquinAlfaro | 74af4bc | feat: implement entry animation for app layout and clean up imports | Implemented entry animation and cleaned up imports | 2026-05-15 |
+| AgroTrack-Project/web-Application | feature/JoaquinAlfaro | 263796b | feat: add support ticket functionality with CRUD operations | Added support ticket functionality with CRUD operations | 2026-05-15 |
+| AgroTrack-Project/web-Application | develop | c803787 | Merge pull request #6 from AgroTrack-Project/feature/EderQuispe | Merged remaining farming and soil monitoring updates into develop | 2026-05-15 |
+| AgroTrack-Project/web-Application | develop | 7af97b6 | feat: add content on alerts | Added content and translations for alerts section | 2026-05-15 |
+| AgroTrack-Project/web-Application | develop | b0aece6 | feat: add content on shared | Added content for shared bounded context | 2026-05-15 |
+| AgroTrack-Project/web-Application | develop | 2768532 | feat: add content on weather-card | Added content for weather card component | 2026-05-15 |
+| AgroTrack-Project/web-Application | develop | ef344e6 | feat: add content on presentation | Added presentation layer content | 2026-05-15 |
+| AgroTrack-Project/web-Application | develop | 6365150 | feat: add some content on alerts | Added additional content for alerts section | 2026-05-15 |
 
 #### 5.2.2.5.Execution Evidence for Sprint Review. 
 
-Al finalizar el Sprint 2, se realizó el despliegue de la primera versión funcional de la aplicación web frontend de AgroTrack en Vercel, quedando disponible para acceso público. La plataforma permite interactuar con los módulos de autenticación, administración de activos, monitoreo operativo y generación de reportes de cumplimiento. A continuación, se muestran las principales interfaces desarrolladas durante este sprint.
+Durante el Sprint 2 se implementó y desplegó la primera versión funcional del 
+Frontend Web Application de AgroTrack. La aplicación cubre los bounded contexts 
+de farming (gestión de parcelas y cultivos), soil monitoring (registro y seguimiento 
+del estado del suelo), climate alerts (alertas climáticas basadas en datos de 
+OpenWeatherMap) e identity (perfil de usuario y configuración de cuenta). A 
+continuación se presentan las principales vistas implementadas durante este sprint, 
+junto con el video de navegación correspondiente.
 
-#### Home Page
+**Home Page**
+
 ![home](report/assets/home.png)
 
-#### Plots Page
+**Plots Page**
+
 ![plots](report/assets/plots.png)
 
-#### Alert Page
+**Alert Page**
+
 ![alerts](report/assets/alerts.png)
 
-#### Configuration Page
+**Configuration Page**
+
 ![config](report/assets/config.png)
 
-#### Profile Page
+**Profile Page**
+
 ![profile](report/assets/profile.png)
 
-#### Configuration Profile Page
+**Configuration Profile Page**
+
 ![config-profile](report/assets/config-profile.png)
+
+
+**Screenshot del video**
+
+![video de presentación](report/assets/evidencia_sprint_review.png)
+
+URL del video: [AgroTrack - Frontend Navigation Sprint 2](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120011_upc_edu_pe/IQAICJzo_YiLQ7CqTCNRwBTEAXCtfrOV6VxiAqzsegC73xo?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=fk0ICb)
+
 
 #### 5.2.2.6. Services Documentation Evidence for Sprint Review
 
-Durante el Sprint 2 no se desplegaron Web Services propios (RESTful API), dado que el alcance del sprint estuvo centrado en la implementación del frontend de la Web Application. Para soportar el funcionamiento de la aplicación en producción, el equipo configuró un servidor MockAPI hospedado que actúa como API provisional, permitiendo que el frontend consuma datos estructurados mediante endpoints REST simulados.
+Durante el Sprint 2, el equipo no desplegó un RESTful API propio dado que el alcance
+estuvo centrado en la implementación del Frontend Web Application. Para soportar el
+funcionamiento de la aplicación, se configuró MockAPI como servidor provisional,
+permitiendo que el frontend consuma datos estructurados mediante endpoints REST
+simulados. A continuación se documentan todos los endpoints configurados en MockAPI
+que el frontend consume durante este sprint.
 
-A continuación se documentan los principales endpoints del servidor MockAPI que el frontend consume durante este sprint:
+**Figura**
+
+![MockAPI Endpoints](report/assets/mockapi-endpoints.png)
+
+*Panel de MockAPI con los recursos configurados para AgroTrack*
+
+URL base: `https://6a02c43e0d92f63dd25406d7.mockapi.io/api/v1`
 
 ---
 
-**Gestión de Usuarios y Planes**
+**Users**
 
 | Endpoint | Verbo HTTP | Sintaxis de llamada | Parámetros | Descripción | Ejemplo de Response |
 |---|---|---|---|---|---|
-| `/users` | GET | `GET /users` | Sin parámetros. | Retorna la lista de todos los usuarios registrados en la plataforma con su plan asignado y datos de perfil. | `{ "id": "1", "name": "Luis Quispe", "email": "luis@agrotrack.com", "planId": "2" }` |
-| `/users/:id` | GET | `GET /users/{id}` | `id` (path, requerido): ID del usuario. | Retorna el detalle completo de un usuario específico, incluyendo su plan activo y datos de cuenta. | `{ "id": "1", "name": "Luis Quispe", "planId": "2", "createdAt": "2026-01-10" }` |
-| `/users` | POST | `POST /users` | Body JSON requerido: `name`, `email`, `planId`. | Registra un nuevo usuario en la plataforma y retorna el objeto creado con su ID asignado. | `{ "id": "5", "name": "Ana Torres", "email": "ana@mail.com", "planId": "1" }` |
-| `/plans` | GET | `GET /plans` | Sin parámetros. | Retorna los planes de suscripción definidos en el sistema con nombre, límite de parcelas y precio. | `{ "id": "2", "name": "Pro", "plotLimit": 10, "price": 49.9 }` |
-| `/plans/:id` | GET | `GET /plans/{id}` | `id` (path, requerido): ID del plan. | Retorna el detalle de un plan específico, incluyendo sus características y límites operativos. | `{ "id": "1", "name": "Básico", "plotLimit": 3, "price": 0 }` |
+| `/users` | GET | `GET /users` | Sin parámetros | Retorna la lista de todos los usuarios registrados | `{ "id": "1", "name": "Luis Quispe", "email": "luis@agrotrack.com", "planId": "2" }` |
+| `/users/:id` | GET | `GET /users/{id}` | `id` (path, requerido): ID del usuario | Retorna el detalle de un usuario específico | `{ "id": "1", "name": "Luis Quispe", "planId": "2", "createdAt": "2026-01-10" }` |
+| `/users` | POST | `POST /users` | Body JSON: `name`, `email`, `planId` | Registra un nuevo usuario y retorna el objeto creado | `{ "id": "5", "name": "Ana Torres", "email": "ana@mail.com", "planId": "1" }` |
+| `/users/:id` | PUT | `PUT /users/{id}` | `id` (path, requerido): ID del usuario. Body JSON: campos a actualizar | Actualiza los datos de un usuario existente | `{ "id": "1", "name": "Luis Quispe", "planId": "3" }` |
 
----
-
-**Configuración y Soporte**
+**Plans**
 
 | Endpoint | Verbo HTTP | Sintaxis de llamada | Parámetros | Descripción | Ejemplo de Response |
 |---|---|---|---|---|---|
-| `/alert_preferences` | GET | `GET /alert_preferences?userId={id}` | `userId` (query, recomendado): ID del usuario. | Retorna las preferencias de alertas climáticas configuradas por el usuario (canales de notificación, umbrales). | `{ "id": "1", "userId": "1", "email": true, "sms": false, "threshold": "high" }` |
-| `/alert_preferences/:id` | PUT | `PUT /alert_preferences/{id}` | `id` (path, requerido). Body JSON: campos a actualizar (`email`, `sms`, `threshold`). | Actualiza las preferencias de notificación del usuario. Retorna el objeto actualizado. | `{ "id": "1", "userId": "1", "email": true, "sms": true }` |
-| `/support_tickets` | GET | `GET /support_tickets?userId={id}` | `userId` (query, recomendado): ID del usuario. | Retorna los tickets de soporte enviados por el usuario, con estado y fecha de creación. | `{ "id": "10", "userId": "1", "subject": "Error al registrar parcela", "status": "open", "createdAt": "2026-04-20" }` |
-| `/support_tickets` | POST | `POST /support_tickets` | Body JSON requerido: `userId`, `subject`, `description`. | Crea un nuevo ticket de soporte y lo asocia al usuario. Retorna el objeto creado con ID asignado. | `{ "id": "11", "userId": "1", "subject": "Consulta sobre plan", "status": "open" }` |
+| `/plans` | GET | `GET /plans` | Sin parámetros | Retorna los planes de suscripción disponibles | `{ "id": "2", "name": "Pro", "plotLimit": 10, "price": 85 }` |
+| `/plans/:id` | GET | `GET /plans/{id}` | `id` (path, requerido): ID del plan | Retorna el detalle de un plan específico | `{ "id": "1", "name": "Basic", "plotLimit": 3, "price": 39 }` |
 
----
-
-**Gestión de Parcelas y Cultivos**
+**Alert Preferences**
 
 | Endpoint | Verbo HTTP | Sintaxis de llamada | Parámetros | Descripción | Ejemplo de Response |
 |---|---|---|---|---|---|
-| `/plots` | GET | `GET /plots?userId={id}` | `userId` (query, recomendado): ID del usuario para filtrar parcelas. | Retorna la lista de parcelas del usuario con nombre, ubicación, tamaño en hectáreas y estado. | `{ "id": "101", "name": "Parcela Norte", "location": "Ica", "size_hectares": 5, "status": "active", "user_id": "1" }` |
-| `/plots/:id` | GET | `GET /plots/{id}` | `id` (path, requerido): ID de la parcela. | Retorna el detalle completo de una parcela específica, incluyendo fecha de creación. | `{ "id": "101", "name": "Parcela Norte", "location": "Ica", "size_hectares": 5, "status": "active" }` |
-| `/plots` | POST | `POST /plots` | Body JSON requerido: `id`, `name`, `location`, `size_hectares`, `status`, `user_id`, `created_at`. | Registra una nueva parcela asociada al usuario. Retorna el objeto creado con su ID asignado. | `{ "id": "105", "name": "Parcela Sur", "location": "Arequipa", "size_hectares": 3, "status": "active" }` |
-| `/plots/:id` | PUT | `PUT /plots/{id}` | `id` (path, requerido). Body JSON: campos a actualizar (`name`, `location`, `status`). | Actualiza los datos o estado de una parcela existente. Retorna el objeto actualizado completo. | `{ "id": "101", "name": "Parcela Norte Actualizada", "status": "inactive" }` |
-| `/plots/:id` | DELETE | `DELETE /plots/{id}` | `id` (path, requerido): ID de la parcela a eliminar. | Elimina una parcela del sistema. Retorna el objeto eliminado como confirmación. | `{ "id": "101", "name": "Parcela Norte" }` |
-| `/crops` | GET | `GET /crops?plotId={id}` | `plotId` (query, recomendado): ID de la parcela para filtrar cultivos. | Retorna la lista de cultivos registrados en una parcela con tipo, fechas y estado. | `{ "id": "201", "type": "Uva", "sowing_date": "2026-01-15", "harvest_date": "2026-06-20", "status": "growing", "plot_id": "101" }` |
-| `/crops/:id` | GET | `GET /crops/{id}` | `id` (path, requerido): ID del cultivo. | Retorna el detalle completo de un cultivo específico vinculado a su parcela. | `{ "id": "201", "type": "Uva", "sowing_date": "2026-01-15", "status": "growing" }` |
-| `/crops` | POST | `POST /crops` | Body JSON requerido: `id`, `type`, `sowing_date`, `harvest_date`, `status`, `plot_id`. | Registra un nuevo cultivo y lo vincula a la parcela indicada. Retorna el objeto creado. | `{ "id": "208", "type": "Espárrago", "sowing_date": "2026-03-01", "status": "growing", "plot_id": "101" }` |
-| `/crops/:id` | PUT | `PUT /crops/{id}` | `id` (path, requerido). Body JSON: campos a actualizar (`type`, `status`, `harvest_date`). | Actualiza los datos de un cultivo existente. Retorna el objeto actualizado completo. | `{ "id": "201", "type": "Uva", "status": "harvested", "harvest_date": "2026-06-18" }` |
-| `/crops/:id` | DELETE | `DELETE /crops/{id}` | `id` (path, requerido): ID del cultivo a eliminar. | Elimina un cultivo del sistema. Retorna el objeto eliminado como confirmación. | `{ "id": "201", "type": "Uva", "plot_id": "101" }` |
+| `/alert_preferences` | GET | `GET /alert_preferences` | Sin parámetros | Retorna las preferencias de alertas configuradas | `{ "id": "1", "userId": "1", "frost": true, "drought": false, "heavyRain": true }` |
+| `/alert_preferences/:id` | PUT | `PUT /alert_preferences/{id}` | `id` (path, requerido): ID de preferencia. Body JSON: campos a actualizar | Actualiza las preferencias de alertas de un usuario | `{ "id": "1", "userId": "1", "frost": false, "drought": true }` |
 
----
-
-**Monitoreo del Suelo e Irrigación**
+**Support Tickets**
 
 | Endpoint | Verbo HTTP | Sintaxis de llamada | Parámetros | Descripción | Ejemplo de Response |
 |---|---|---|---|---|---|
-| `/soil_records` | GET | `GET /soil_records?plotId={id}` | `plotId` (query, recomendado): ID de la parcela. Sin parámetro retorna todos los registros. | Retorna los registros de humedad y temperatura del suelo de una parcela, ordenados por fecha descendente. | `{ "id": "301", "plotId": "101", "humidity": 62, "temperature": 18.5, "recordedAt": "2026-05-10T08:00:00" }` |
-| `/soil_records` | POST | `POST /soil_records` | Body JSON requerido: `plotId`, `humidity`, `temperature`, `recordedAt`. | Registra una nueva medición del estado del suelo de una parcela. Retorna el objeto creado. | `{ "id": "310", "plotId": "101", "humidity": 55, "temperature": 20.1, "recordedAt": "2026-05-14T09:30:00" }` |
-| `/irrigation_recommendations` | GET | `GET /irrigation_recommendations?plotId={id}` | `plotId` (query, recomendado): ID de la parcela. | Retorna las recomendaciones de riego generadas para la parcela, con cantidad sugerida y justificación. | `{ "id": "401", "plotId": "101", "recommendedLiters": 200, "reason": "Humedad por debajo del 40%", "date": "2026-05-10" }` |
-| `/irrigation_schedules` | GET | `GET /irrigation_schedules?plotId={id}` | `plotId` (query, recomendado): ID de la parcela. | Retorna los programas de riego planificados para la parcela con fecha, hora y estado de ejecución. | `{ "id": "501", "plotId": "101", "scheduledAt": "2026-05-15T06:00:00", "liters": 180, "status": "pending" }` |
-| `/irrigation_schedules` | POST | `POST /irrigation_schedules` | Body JSON requerido: `plotId`, `scheduledAt`, `liters`. | Crea un nuevo programa de riego para la parcela indicada. Retorna el objeto creado con ID asignado. | `{ "id": "510", "plotId": "101", "scheduledAt": "2026-05-16T06:00:00", "liters": 200, "status": "pending" }` |
-| `/irrigation_schedules/:id` | PUT | `PUT /irrigation_schedules/{id}` | `id` (path, requerido). Body JSON: campos a actualizar (`status`, `liters`). | Actualiza el estado o los parámetros de un programa de riego existente. | `{ "id": "501", "plotId": "101", "status": "completed" }` |
+| `/support_tickets` | GET | `GET /support_tickets` | Sin parámetros | Retorna todos los tickets de soporte registrados | `{ "id": "1", "userId": "1", "title": "Error en parcelas", "status": "open" }` |
+| `/support_tickets` | POST | `POST /support_tickets` | Body JSON: `userId`, `title`, `description` | Crea un nuevo ticket de soporte | `{ "id": "7", "userId": "2", "title": "Problema con riego", "status": "open" }` |
+| `/support_tickets/:id` | PUT | `PUT /support_tickets/{id}` | `id` (path, requerido). Body JSON: campos a actualizar | Actualiza un ticket de soporte existente | `{ "id": "1", "status": "closed" }` |
+| `/support_tickets/:id` | DELETE | `DELETE /support_tickets/{id}` | `id` (path, requerido): ID del ticket | Elimina un ticket de soporte | `{ "id": "1", "deleted": true }` |
 
----
-
-**Alertas Climáticas y Reportes**
+**Plots**
 
 | Endpoint | Verbo HTTP | Sintaxis de llamada | Parámetros | Descripción | Ejemplo de Response |
 |---|---|---|---|---|---|
-| `/climate_alerts` | GET | `GET /climate_alerts?userId={id}` | `userId` (query, recomendado): ID del usuario. | Retorna las alertas climáticas activas y pasadas del usuario (heladas, sequías, lluvias extremas) con severidad y fecha. | `{ "id": "601", "userId": "1", "type": "frost", "severity": "high", "message": "Helada esperada esta noche en Ica", "issuedAt": "2026-05-13T18:00:00" }` |
-| `/yield_summaries` | GET | `GET /yield_summaries?userId={id}` | `userId` (query, recomendado): ID del usuario. | Retorna los resúmenes de rendimiento de producción por parcela y temporada para el dashboard del empresario agrícola. | `{ "id": "701", "userId": "1", "plotId": "101", "crop": "Uva", "yieldKg": 4200, "season": "2026-Q1" }` |
-| `/loss_summaries` | GET | `GET /loss_summaries?userId={id}` | `userId` (query, recomendado): ID del usuario. | Retorna los resúmenes de pérdidas registradas por parcela y temporada, incluyendo causa y porcentaje de pérdida. | `{ "id": "801", "userId": "1", "plotId": "101", "cause": "Helada", "lossPercentage": 12, "season": "2026-Q1" }` |
-| `/water_consumptions` | GET | `GET /water_consumptions?userId={id}` | `userId` (query, recomendado): ID del usuario. | Retorna el historial de consumo de agua por parcela y temporada para análisis de eficiencia hídrica. | `{ "id": "901", "userId": "1", "plotId": "101", "liters": 12400, "season": "2026-Q1", "month": "Enero" }` |
+| `/plots` | GET | `GET /plots` | Sin parámetros | Retorna todas las parcelas registradas | `{ "id": "1", "userId": "1", "name": "Parcela Norte", "location": "Arequipa", "size": 5.0 }` |
+| `/plots/:id` | GET | `GET /plots/{id}` | `id` (path, requerido): ID de la parcela | Retorna el detalle de una parcela específica | `{ "id": "1", "name": "Parcela Norte", "soilType": "arcilloso" }` |
+| `/plots` | POST | `POST /plots` | Body JSON: `userId`, `name`, `location`, `size`, `soilType` | Registra una nueva parcela | `{ "id": "10", "name": "Parcela Sur", "location": "Lima", "size": 3.0 }` |
+| `/plots/:id` | PUT | `PUT /plots/{id}` | `id` (path, requerido). Body JSON: campos a actualizar | Actualiza los datos de una parcela | `{ "id": "1", "name": "Parcela Norte Actualizada" }` |
+| `/plots/:id` | DELETE | `DELETE /plots/{id}` | `id` (path, requerido): ID de la parcela | Elimina una parcela registrada | `{ "id": "1", "deleted": true }` |
+
+**Crops**
+
+| Endpoint | Verbo HTTP | Sintaxis de llamada | Parámetros | Descripción | Ejemplo de Response |
+|---|---|---|---|---|---|
+| `/crops` | GET | `GET /crops` | Sin parámetros | Retorna todos los cultivos registrados | `{ "id": "1", "plotId": "1", "type": "Papa", "sowingDate": "2026-03-01", "status": "active" }` |
+| `/crops/:id` | GET | `GET /crops/{id}` | `id` (path, requerido): ID del cultivo | Retorna el detalle de un cultivo específico | `{ "id": "1", "plotId": "1", "type": "Maíz", "status": "active" }` |
+| `/crops` | POST | `POST /crops` | Body JSON: `plotId`, `type`, `sowingDate` | Registra un nuevo cultivo en una parcela | `{ "id": "9", "plotId": "2", "type": "Quinua", "sowingDate": "2026-04-10" }` |
+| `/crops/:id` | PUT | `PUT /crops/{id}` | `id` (path, requerido). Body JSON: campos a actualizar | Actualiza los datos de un cultivo | `{ "id": "1", "status": "harvested", "harvestDate": "2026-05-20" }` |
+| `/crops/:id` | DELETE | `DELETE /crops/{id}` | `id` (path, requerido): ID del cultivo | Elimina un cultivo registrado | `{ "id": "1", "deleted": true }` |
+
+**Soil Records**
+
+| Endpoint | Verbo HTTP | Sintaxis de llamada | Parámetros | Descripción | Ejemplo de Response |
+|---|---|---|---|---|---|
+| `/soil_records` | GET | `GET /soil_records` | Sin parámetros | Retorna todos los registros de suelo | `{ "id": "1", "plotId": "1", "humidity": 65, "temperature": 18.5, "recordedAt": "2026-05-10" }` |
+| `/soil_records` | POST | `POST /soil_records` | Body JSON: `plotId`, `humidity`, `temperature` | Registra nuevos datos del suelo de una parcela | `{ "id": "8", "plotId": "1", "humidity": 72, "temperature": 20.0 }` |
+| `/soil_records/:id` | DELETE | `DELETE /soil_records/{id}` | `id` (path, requerido): ID del registro | Elimina un registro de suelo | `{ "id": "1", "deleted": true }` |
+
+**Irrigation Recommendations**
+
+| Endpoint | Verbo HTTP | Sintaxis de llamada | Parámetros | Descripción | Ejemplo de Response |
+|---|---|---|---|---|---|
+| `/irrigation_recommendations` | GET | `GET /irrigation_recommendations` | Sin parámetros | Retorna todas las recomendaciones de riego generadas | `{ "id": "1", "plotId": "1", "recommendation": "Regar hoy", "urgency": "high", "accepted": null }` |
+| `/irrigation_recommendations` | POST | `POST /irrigation_recommendations` | Body JSON: `plotId`, `recommendation`, `urgency` | Crea una nueva recomendación de riego | `{ "id": "6", "plotId": "2", "recommendation": "No regar", "urgency": "low" }` |
+| `/irrigation_recommendations/:id` | PUT | `PUT /irrigation_recommendations/{id}` | `id` (path, requerido). Body JSON: `accepted` (boolean) | Registra si el agricultor aceptó o rechazó la recomendación | `{ "id": "1", "accepted": true }` |
+
+**Irrigation Schedules**
+
+| Endpoint | Verbo HTTP | Sintaxis de llamada | Parámetros | Descripción | Ejemplo de Response |
+|---|---|---|---|---|---|
+| `/irrigation_schedules` | GET | `GET /irrigation_schedules` | Sin parámetros | Retorna el cronograma de riegos sugeridos | `{ "id": "1", "plotId": "1", "scheduledDate": "2026-05-20", "scheduledTime": "07:00" }` |
+| `/irrigation_schedules` | POST | `POST /irrigation_schedules` | Body JSON: `plotId`, `scheduledDate`, `scheduledTime` | Registra un nuevo horario de riego sugerido | `{ "id": "5", "plotId": "3", "scheduledDate": "2026-05-22", "scheduledTime": "06:30" }` |
+
+**Climate Alerts**
+
+| Endpoint | Verbo HTTP | Sintaxis de llamada | Parámetros | Descripción | Ejemplo de Response |
+|---|---|---|---|---|---|
+| `/climate_alerts` | GET | `GET /climate_alerts` | Sin parámetros | Retorna todas las alertas climáticas registradas | `{ "id": "1", "plotId": "1", "type": "FROST", "description": "Riesgo de helada", "date": "2026-05-15" }` |
+| `/climate_alerts` | POST | `POST /climate_alerts` | Body JSON: `plotId`, `type`, `description` | Crea una nueva alerta climática para una parcela | `{ "id": "5", "plotId": "2", "type": "HEAVY_RAIN", "description": "Lluvias intensas previstas" }` |
+
+**Yield Summaries**
+
+| Endpoint | Verbo HTTP | Sintaxis de llamada | Parámetros | Descripción | Ejemplo de Response |
+|---|---|---|---|---|---|
+| `/yield_summaries` | GET | `GET /yield_summaries` | Sin parámetros | Retorna los resúmenes de rendimiento por parcela | `{ "id": "1", "plotId": "1", "season": "2026-1", "yieldKg": 1200, "lossPercent": 8 }` |
+| `/yield_summaries` | POST | `POST /yield_summaries` | Body JSON: `plotId`, `season`, `yieldKg` | Registra un nuevo resumen de rendimiento | `{ "id": "5", "plotId": "3", "season": "2026-1", "yieldKg": 900 }` |
+
+**Loss Summaries**
+
+| Endpoint | Verbo HTTP | Sintaxis de llamada | Parámetros | Descripción | Ejemplo de Response |
+|---|---|---|---|---|---|
+| `/loss_summaries` | GET | `GET /loss_summaries` | Sin parámetros | Retorna los resúmenes de pérdidas por parcela | `{ "id": "1", "plotId": "1", "season": "2026-1", "lossPercent": 12, "cause": "Helada" }` |
+| `/loss_summaries` | POST | `POST /loss_summaries` | Body JSON: `plotId`, `season`, `lossPercent`, `cause` | Registra un nuevo resumen de pérdidas | `{ "id": "5", "plotId": "2", "lossPercent": 5, "cause": "Sequía" }` |
+
+**Water Consumptions**
+
+| Endpoint | Verbo HTTP | Sintaxis de llamada | Parámetros | Descripción | Ejemplo de Response |
+|---|---|---|---|---|---|
+| `/water_consumptions` | GET | `GET /water_consumptions` | Sin parámetros | Retorna el consumo de agua registrado por temporada | `{ "id": "1", "plotId": "1", "season": "2026-1", "liters": 45000 }` |
+| `/water_consumptions` | POST | `POST /water_consumptions` | Body JSON: `plotId`, `season`, `liters` | Registra el consumo de agua de una temporada | `{ "id": "5", "plotId": "3", "season": "2026-1", "liters": 32000 }` |
 
 ---
 
-Commits relacionados con la configuración del servidor MockAPI y la integración del frontend:
+URL del repositorio Web Application: [AgroTrack-Project/web-Application](https://github.com/AgroTrack-Project/web-Application)
 
-| Commit ID | Descripción |
-|---|---|
-| `a3f2c91` | `feat(farming): implement plot and crop bounded context` |
-| `b7e4d02` | `feat(farming): configure MockAPI environment and api endpoints` |
-| `c1a8f53` | `feat(monitoring): implement soil records and irrigation services` |
-| `d5b3e74` | `feat(alerts): implement climate alerts and notification preferences` |
-| `e9c6a15` | `feat(analytics): implement yield, loss and water consumption summaries` |
+Commits relacionados con la configuración de endpoints en este Sprint: `45ad493`, `cc941b4`, `31ff5e4`
 
-La implementación formal del RESTful API con Spring Boot será abordada en el Sprint 3.
 
 #### 5.2.2.7. Software Deployment Evidence for Sprint Review
 
-Para llevar a cabo el deployment correspondiente a este sprint, se realizaron diversas actividades orientadas a publicar y poner en funcionamiento la primera versión del Frontend Web Application de AgroTrack. A continuación, se presenta un resumen del proceso ejecutado.
+Durante el Sprint 2 se realizaron las actividades necesarias para desplegar la primera versión funcional del Frontend Web Application de AgroTrack. A continuación se describeel proceso ejecutado y se presenta la evidencia correspondiente.
 
-La Web Application fue desplegada como un sitio web público, con el fin de que pueda ser accesible para cualquier usuario registrado en la plataforma. Como primer paso, se configuró el repositorio correspondiente en GitHub bajo la organización AgroTrack-Project, asegurando que la rama develop contuviera la versión estable del frontend desarrollado durante el sprint.
+Como primer paso, se consolidó el código de todas las ramas feature de los integrantesdel equipo hacia la rama develop mediante pull requests revisados por el Team Leader. Una vez estabilizado el código, se configuró el entorno de despliegue en Cloudflare Workers y se publicó la aplicación de forma pública.
 
-Posteriormente, se integraron todas las ramas de los integrantes del equipo hacia develop mediante pull requests revisados. Una vez consolidado el código, se procedió a configurar el entorno de despliegue y a publicar la aplicación en línea.
+Se verificó el correcto funcionamiento de las vistas implementadas desde cualquier
+dispositivo, comprobando que los módulos de gestión de parcelas, cultivos, monitoreo del suelo, alertas climáticas y perfil de usuario cargaran correctamente en producción.
 
-Finalmente, se verificó el correcto funcionamiento de las vistas implementadas y su disponibilidad en internet, comprobando que los módulos de autenticación, parcelas, cultivos, monitoreo del suelo y alertas climáticas cargaran correctamente desde cualquier dispositivo.
+**Repositorio Frontend Web Application:**
+[https://github.com/AgroTrack-Project/web-Application](https://github.com/AgroTrack-Project/web-Application)
+
+**URL de la Web Application desplegada:**
+[https://agro-track.andessmart.workers.dev/home](https://agro-track.andessmart.workers.dev/home)
+
+---
+
+<br>
 
 **Figura**
 *Evidencia de deployment 1*
@@ -3591,7 +3770,19 @@ Finalmente, se verificó el correcto funcionamiento de las vistas implementadas 
 
 *Nota.* Elaboración propia.
 
-5.2.2.8 Team Collaboration Insights during Sprint
+
+#### 5.2.2.8 Team Collaboration Insights during Sprint
+
+Durante el Sprint 2, el equipo desarrolló las actividades de implementación del
+Frontend Web Application de AgroTrack de forma colaborativa mediante el repositorio
+GitHub de la organización AgroTrack-Project. Cada integrante trabajó en su rama
+feature correspondiente y realizó pull requests hacia la rama develop, los cuales
+fueron revisados y aprobados por el Team Leader antes de ser integrados.
+
+A continuación se presentan los analíticos de colaboración del repositorio
+web-Application durante el periodo del sprint, evidenciando la participación
+de cada miembro del equipo.
+
 
 ![contribucion del equipo](report/assets/team-contribution-2.png)
 
