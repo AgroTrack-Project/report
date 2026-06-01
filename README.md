@@ -926,7 +926,7 @@ artistas como de sus posibles clientes.
 
 ![FOTOreport/assets/user_personaAgricultor.png)
 
-`<br>`{=html}
+<br>
 
 **User persona - Empresarios Agrícolas**
 
@@ -1809,20 +1809,20 @@ https://www.figma.com/design/tQSFHjZZpLcvBWkbzUfWLw/Untitled?node-id=0-1&p=f&t=r
 
 ### 4.3.2. Landing Page Mock-up
 
-`<br>`{=html}
+<br>
 
 **Desktop Web Browser**
 
 ![Mock Up 1](report/assets/mockup1.png) ![Mock Up 2](report/assets/mockup2.png)
 
-`<br>`{=html}
+<br>
 
 **Mobile Web Browser**
 
 ![Mock Up 1](report/assets/mockupMobile1.png) ![Mock Up
 2](assets/mockupMobile2.png) ![Mock Up 2](report/assets/mockupMobile3.png)
 
-`<br>`{=html}
+<br> 
 
 *Elaborado en:
 https://www.figma.com/design/tQSFHjZZpLcvBWkbzUfWLw/Untitled?node-id=0-1&p=f&t=rDZhOjwZFkCWZdXw-0*
@@ -3163,31 +3163,19 @@ git push origin develop
 GitHub Pages tomará los nuevos archivos y publicará la versión
 actualizada en aproximadamente 1 minuto.
 
-**Verificación post-despliegue**
-
+ **Verificación post-despliegue**
+ 
 Tras cada despliegue se recomienda verificar los siguientes puntos:
+ 
+| Verificación | Detalle |
+|---|---|
+| Carga de assets | Logo, imágenes de cultivo y fotos de testimonios visibles |
+| Navegación | Links del navbar redirigen a las secciones correctas (`#features`, `#plans`, `#audience`, `#demo`) |
+| Toggle de idioma | Cambia correctamente entre EN y ES en todos los textos con `data-i18n` |
+| Menú hamburguesa | Se abre y cierra correctamente en móvil; desaparece en desktop |
+| Formulario de demo | Los campos `fullName` y `email` tienen validación `required` activa |
+| Responsive | Sin scroll horizontal en ningún breakpoint |
 
-  -----------------------------------------------------------------------
-  Verificación                        Detalle
-  ----------------------------------- -----------------------------------
-  Carga de assets                     Logo, imágenes de cultivo y fotos
-                                      de testimonios visibles
-
-  Navegación                          Links del navbar redirigen a las
-                                      secciones correctas (`#features`,
-                                      `#plans`, `#audience`, `#demo`)
-
-  Toggle de idioma                    Cambia correctamente entre EN y ES
-                                      en todos los textos con `data-i18n`
-
-  Menú hamburguesa                    Se abre y cierra correctamente en
-                                      móvil; desaparece en desktop
-
-  Formulario de demo                  Los campos `fullName` y `email`
-                                      tienen validación `required` activa
-
-  Responsive                          Sin scroll horizontal en ningún
-                                      breakpoint
   -----------------------------------------------------------------------
 
 ### 5.2.1 Sprint 1
@@ -3199,56 +3187,26 @@ principales características a los agricultores y empresas agrícolas.
 
 #### 5.2.1.1 Sprint Planning 1
 
-Ahora, mostraremos nuestro sprint planning. En esta sección, vamos a
-explicar la reunión inicial del sprint realizado, detallando lo que se
-planeó, acordó y revisó en la reunión.
+Ahora, mostraremos nuestro sprint planning. En esta sección, vamos a explicar la
+reunión inicial del sprint realizado, detallando lo que se planeó, acordó y revisó en la reunión.
 
+| Sprint #                     | Sprint 1                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+|------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Sprint Planning Background   | En el sprint decidimos reunirnos para verificar el progreso de cada integrante y del proyecto desde el punto de vista grupal. Luego de ello buscamos mejoras y nuevas acciones.                                                                                                                                                                                                                                                          |
+| Date                         | 2025-04-18                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| Time                         | 21:05 PM                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Location                     | Google Meet Group Call                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Prepared By                  | Velasquez Laquihuanaco, Eduardo David                                                                                                                                                                                                                                                                                                                                                                                                    |
+| Attendees                    | Martínez Gaona, Pablo Afranio <br> Quispe Perez, Eder Edu <br> Rodriguez Rojas, Miler Alexander <br> Alfaro Mallma, Alberto Joaquin                                                                                                                                                                                                                                                                                                      |
+| Sprint Review Summary        | Revisamos nuestras metas del negocio, discutimos las user stories y dimos feedback. También revisamos riesgos futuros y el avance individual y grupal.                                                                                                                                                                                                                                                                                   |
+| Sprint Retrospective Summary | **Start:** Debemos comunicarnos más entre nosotros. <br> **Continue:** Hacer preguntas al Product Owner. <br> **Stop:** Dejar tareas para último momento. <br> **Continue:** Hacer preguntas al product owner hacer reuniones interdiarias para priorizar el avance                                                                                                                                                                      |
+| Sprint Goal & User Stories   |                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| Spring n Goal                | Our focus is on implementing the core functionalities of the landing page and user registration module. We believe this provides a clear access point and an organized onboarding experience for farmers and agricultural businesses. This will be validated when users are able to successfully enter the platform, complete the registration process, and navigate smoothly to their main dashboard to manage agricultural activities. |                                                                                                                                                                                                                                                                  |
+| Sprint n Velocity            | 4                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| Sum of Story Points          | 7                                                                                                                                                                                                                                                                                                                                                                                                                                        |       
   ----------------------------------------------------------------------------------
-  Sprint \#       Sprint 1
-  --------------- ------------------------------------------------------------------
-  Sprint Planning En el sprint decidimos reunirnos para verificar el progreso de
-  Background      cada integrante y del proyecto desde el punto de vista grupal.
-                  Luego de ello buscamos mejoras y nuevas acciones.
 
-  Date            2025-04-18
-
-  Time            21:05 PM
-
-  Location        Google Meet Group Call
-
-  Prepared By     Velasquez Laquihuanaco, Eduardo David
-
-  Attendees       Martínez Gaona, Pablo Afranio `<br>`{=html} Quispe Perez, Eder Edu
-                  `<br>`{=html} Rodriguez Rojas, Miler Alexander `<br>`{=html}
-                  Alfaro Mallma, Alberto Joaquin
-
-  Sprint Review   Revisamos nuestras metas del negocio, discutimos las user stories
-  Summary         y dimos feedback. También revisamos riesgos futuros y el avance
-                  individual y grupal.
-
-  Sprint          **Start:** Debemos comunicarnos más entre nosotros. `<br>`{=html}
-  Retrospective   **Continue:** Hacer preguntas al Product Owner. `<br>`{=html}
-  Summary         **Stop:** Dejar tareas para último momento. `<br>`{=html}
-                  **Continue:** Hacer preguntas al product owner hacer reuniones
-                  interdiarias para priorizar el avance
-
-  Sprint Goal &   
-  User Stories    
-
-  Spring n Goal   Our focus is on implementing the core functionalities of the
-                  landing page and user registration module. We believe this
-                  provides a clear access point and an organized onboarding
-                  experience for farmers and agricultural businesses. This will be
-                  validated when users are able to successfully enter the platform,
-                  complete the registration process, and navigate smoothly to their
-                  main dashboard to manage agricultural activities.
-
-  Sprint n        4
-  Velocity        
-
-  Sum of Story    7
-  Points          
-  ----------------------------------------------------------------------------------
+<br>
 
 #### 5.2.1.2 Aspect Leaders and Collaborators.
 
