@@ -3750,12 +3750,179 @@ A continuación se presentan los analíticos de colaboración del repositorio
 web-Application durante el periodo del sprint, evidenciando la participación
 de cada miembro del equipo.
 
-
 ![contribucion del equipo](report/assets/team-contribution-2.png)
 
 *Nota.* Elaboración propia.
 
+### 5.3.2. Registro de Entrevistas
 
+**Entrevista N° 1**
+
+| **Nombres y apellidos**   | **Edad**   | **Distrito**   |
+|---------------------------|------------|----------------|
+| XXXXXXXXX                 | 25 años    | Cusco          |
+
+| **Segmento** | **URL** | **Inicio** | **Duración** |
+|--------------|---|---|--------------|
+| XXXX         | [Ver entrevista]() | 00:00 | x:xx min      |
+
+![Entrevista-1](assets/entrevista-1-S3.png)
+
+**Resumen:**
+
+**Entrevista N° 2**
+
+| **Nombres y apellidos**   | **Edad**   | **Distrito**   |
+|---------------------------|------------|----------------|
+| XXXXXXXXX                 | 25 años    | Cusco          |
+
+| **Segmento** | **URL** | **Inicio** | **Duración** |
+|--------------|---|---|--------------|
+| XXXX         | [Ver entrevista]() | 00:00 | x:xx min      |
+
+![Entrevista-1](assets/entrevista-1-S3.png)
+
+**Resumen:**
+
+**Entrevista N° 3**
+
+| **Nombres y apellidos**   | **Edad**   | **Distrito**   |
+|---------------------------|------------|----------------|
+| XXXXXXXXX                 | 25 años    | Cusco          |
+
+| **Segmento** | **URL** | **Inicio** | **Duración** |
+|--------------|---|---|--------------|
+| XXXX         | [Ver entrevista]() | 00:00 | x:xx min      |
+
+![Entrevista-1](assets/entrevista-1-S3.png)
+
+**Resumen:**
+
+**Entrevista N° 4**
+
+| **Nombres y apellidos**   | **Edad**   | **Distrito**   |
+|---------------------------|------------|----------------|
+| XXXXXXXXX                 | 25 años    | Cusco          |
+
+| **Segmento** | **URL** | **Inicio** | **Duración** |
+|--------------|---|---|--------------|
+| XXXX         | [Ver entrevista]() | 00:00 | x:xx min      |
+
+![Entrevista-1](assets/entrevista-1-S3.png)
+
+**Resumen:**
+
+### 5.3.3. Evaluaciones según heurísticas
+
+### UX Heuristics & Principles Evaluation
+
+### Usability – Inclusive Design – Information Architecture
+
+**CARRERA:** Ingeniería de Software
+
+**CURSO:** Desarrollo de Aplicaciones Open Source
+
+**SECCIÓN:** 
+
+**PROFESORES:** Hugo Mori
+
+**AUDITOR:** Nombre del Grupo que ejecuta la Sesión de evaluación
+
+**CLIENTE(S):** Nombre de las personas que participan en la sesión
+
+---
+
+**SITE APP A EVALUAR:** 
+AgroTrack
+
+**TAREAS A EVALUAR:**
+
+---
+
+**ESCALA DE SEVERIDAD:**
+Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
+
+| Nivel | Descripción                                                                                                                                                                                     |
+| :---: |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **1** | Problema superficial: puede ser fácilmente superado por el usuario o ocurre con muy poca frecuencia. No necesita ser arreglado a no ser que exista disponibilidad de tiempo.                    |
+| **2** | Problema menor: puede ocurrir un poco más frecuentemente o es un poco más difícil de superar para el usuario. Se le debería asignar una prioridad baja resolverlo de cara al siguiente release. |
+| **3** | Problema mayor: ocurre frecuentemente o los usuarios no son capaces de resolverlos. Es importante que sean corregidos y se les debe asignar una prioridad alta.                                 |
+| **4** | Problema muy grave: un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento.                               |
+
+---
+
+**TABLA RESUMEN:**
+
+|   #    | Problema                                                                                                         | Escala de severidad | Heurística/Principio violada(o)                                         |
+|:------:|:-----------------------------------------------------------------------------------------------------------------|:-------------------:|:------------------------------------------------------------------------|
+| **1**  | El formulario de creación de tours no incluye un campo para registrar contactos de emergencia.                   |          3          | Usability: Correspondencia entre el sistema y el mundo real             |
+| **2**  | No existe un sistema de mensajería integrado entre la agencia, los guías y los turistas dentro de la plataforma. |          3          | Usability: Libertad y control del usuario                               |
+| **3**  | Dificultad para ubicar la opción de "Crear Tour"                                                                 |          3          | Usability - Reconocimiento en lugar de recuerdo                         |
+| **4**  | Acceso confuso al panel de monitoreo de tours.                                                                   |          3          | Flexibilidad y eficiencia de uso.                                       |
+| **5**  | Barrera idiomática inicial sin detección automática.                                                             |          2          | Usability - Relación entre el sistema y el mundo real.                  |
+| **6**  | Falta de indicadores persistentes sobre las rutas descargadas (Modo Offline)                                     |          2          | Usability - Visibilidad del estado del sistema / Prevención de errores. |
+
+---
+
+**DESCRIPCIÓN DE PROBLEMAS:**
+
+---
+
+**PROBLEMA #1:**
+
+- **Severidad:**
+- **Heurística violada:**
+- **Problema:**
+
+- **Recomendación:**
+
+---
+
+**PROBLEMA #2:**
+
+- **Severidad:**
+- **Heurística violada:**
+- **Problema:**
+
+- **Recomendación:**
+
+---
+
+**PROBLEMA #3:**
+
+- **Severidad:**
+- **Heurística violada:**
+- **Problema:**
+
+- **Recomendación:**
+
+---
+
+**PROBLEMA #4:**
+
+- **Severidad:**
+- **Heurística violada:**
+- **Problema:**
+
+- **Recomendación:**
+
+---
+
+## 5.4. Video About-the-Product
+
+La presente sección tiene como propósito introducir y detallar el contenido del **Video About-the-Product de AgroTrack**. Este recurso audiovisual ha sido desarrollado como una herramienta de comunicación estratégica orientada a dos audiencias clave.
+
+Por un lado, está diseñado para los visitantes de la **Landing Page**, brindándoles una visión clara, visual y dinámica sobre el propósito de la plataforma, el problema que busca resolver y las principales características que diferencian a AgroTrack como una solución tecnológica enfocada en la gestión y monitoreo agrícola.
+
+Por otro lado, sirve como una guía introductoria para los futuros usuarios de la aplicación, mostrando de manera práctica cómo interactuar con el sistema y ejecutar las tareas principales relacionadas con el monitoreo de condiciones del suelo, gestión de información agrícola, recepción de alertas y visualización de datos relevantes mediante el dashboard.
+
+De esta manera, el video permite comunicar el valor de la solución y facilitar la comprensión de los principales procesos que AgroTrack busca optimizar dentro del contexto agrícola.
+
+| **URL**          | **Inicio** | **Duración** |
+|------------------|------------|--------------|
+| [Ver video]()    | 00:00      | 00:57 min    |
+
+![Video About The Product](assets/images/product.png)
 
 # Conclusiones
 
