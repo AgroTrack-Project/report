@@ -54,26 +54,15 @@ https://github.com/AgroTrack-Project/report
 <br>
 
 ![Foto de la claboracion](report/assets/contributors.png)
+ 
 
-  -----------------------------------------------------------------------
-  Integrante                  Tareas Designadas
-  --------------------------- -------------------------------------------
-  Alberto Joaquin Alfaro      Desarrollo y redacción del Capítulo I, y
-  Mallma                      apoyo en la elaboración de la Landing Page
-
-  Pablo Afranio Martinez      Desarrollo y redacción del Capítulo II y
-  Gaona                       apoyo en la elaboración de la Landing Page
-
-  Eder Edu Quispe Perez       Desarrollo y redacción del Capítulo III y
-                              apoyo en la elaboración de la Landing Page
-
-  Miler Alexander Rodriguez   Desarrollo y redacción del Capítulo IV y
-  Rojas                       apoyo en la elaboración de la Landing Page
-
-  Eduardo David Velasquez     Desarrollo y redacción del Capítulo V,
-  Laquihuanaco                consolidación del informe y apoyo en la
-                              elaboración de la Landing Page
-  -----------------------------------------------------------------------
+| Integrante | Tareas Designadas |
+|------------|-------------------|
+| Alberto Joaquin Alfaro Mallma | Desarrollo y redacción del Capítulo I, y apoyo en la elaboración de la Landing Page |
+| Pablo Afranio Martinez Gaona | Desarrollo y redacción del Capítulo II y apoyo en la elaboración de la Landing Page |
+| Eder Edu Quispe Perez | Desarrollo y redacción del Capítulo III y apoyo en la elaboración de la Landing Page |
+| Miler Alexander Rodriguez Rojas | Desarrollo y redacción del Capítulo IV y apoyo en la elaboración de la Landing Page |
+| Eduardo David Velasquez Laquihuanaco | Desarrollo y redacción del Capítulo V, consolidación del informe y apoyo en la elaboración de la Landing Page |
 
 <br>
 <br>
@@ -194,6 +183,7 @@ El curso contribuye al cumplimiento del Student Outcome ABET - EAC - Student Out
 | Comunica oralmente con efectividad a diferentes rangos de audiencia. | <br>**Alberto Joaquin Alfaro Mallma** <br> **AV1:** Realizó la entrevista N°6 al empresario agrícola Cristofer Ordalla (Piura), adaptando el lenguaje técnico a un perfil no especializado en tecnología para obtener información sobre la gestión de sus parcelas y sus expectativas frente a una solución digital. <br><br> **TB1:** Expuso ante el equipo las decisiones de implementación del bounded context Support & Dashboard en la Web Application, explicando oralmente cómo se estructuraron los componentes Angular para la visualización del panel de control y el módulo de soporte al usuario. <br><br> **AV2:** Explicó la implementación backend de los Bounded Contexts Support y Dashboard, presentando los servicios desarrollados para la gestión de tickets de soporte y la consulta de métricas relacionadas con rendimiento, pérdidas y consumo de agua. <br><br> **Pablo Afranio Martinez Gaona** <br> **AV1:** Participó en la sesión colaborativa de Big Picture Event Storming, comunicando oralmente al equipo los eventos, comandos y actores del dominio agrícola identificados, facilitando la comprensión compartida del sistema entre miembros con distintos niveles de conocimiento del negocio. <br><br> **TB1:** Presentó al equipo el bounded context Soil Monitoring implementado en la Web Application, describiendo oralmente el flujo de visualización de datos de monitoreo de suelos y justificando las decisiones de diseño de componentes frente a los demás integrantes. <br><br> **AV2:** Explicó la implementación backend del Bounded Context Soil Monitoring, detallando el registro de lecturas de humedad y temperatura, la gestión de recomendaciones de riego, las validaciones del dominio y la integración preparada con Farming para eliminar los datos relacionados con una parcela. <br><br> **Eder Edu Quispe Perez** <br> **AV1:** Realizó las entrevistas N°2 y N°3 a las agricultoras Lucía Alarcón (Amazonas) y Luz Mamani (Arequipa), comunicando el propósito del proyecto de forma clara y accesible a usuarias con poca experiencia tecnológica, logrando que expresaran sus necesidades y frustraciones con confianza. <br><br> **TB1:** Sustentó ante el equipo las decisiones de implementación de los bounded contexts Identity y Farming en la Web Application, explicando oralmente cómo se estructuraron las vistas de autenticación y gestión de parcelas y cultivos en Angular para satisfacer las necesidades de los segmentos objetivo. <br><br> **AV2:** Explicó el funcionamiento del backend del Bounded Context Farming, incluyendo la gestión de parcelas y cultivos, sus principales reglas de negocio y la relación de este contexto con otros módulos del sistema. <br><br> **Miler Alexander Rodriguez Rojas** <br> **AV1:** Realizó las entrevistas N°1 y N°4 al agricultor Walter Medina (Chachapoyas) y al empresario agrícola Renzo Quispe (Lima), ajustando el tono y el nivel de detalle de las preguntas según el perfil de cada entrevistado para facilitar respuestas claras y comparables. <br><br> **TB1:** Expuso ante el equipo el bounded context Climate Alerts implementado en la Web Application, comunicando oralmente el flujo de visualización y gestión de alertas climáticas en Angular y coordinando con los responsables de Soil Monitoring y Farming la coherencia visual y funcional entre módulos. <br><br> **AV2:** Presentó la implementación backend del Bounded Context Climate Alerts, explicando cómo se gestionan las alertas climáticas y cómo estas pueden ser consultadas por la aplicación web.<br><br> **Eduardo David Velasquez Laquihuanaco** <br> **AV1:** Expuso ante el equipo los resultados del análisis de competidores (CropX, Trimble Ag, Agroptima), sintetizando verbalmente las diferencias estratégicas relevantes para orientar las decisiones de diseño del producto hacia el segmento peruano desatendido. <br><br> **TB1:** Comunicó oralmente al equipo el diseño e implementación del bounded context Identity en la Web Application, explicando las decisiones sobre las vistas de registro e inicio de sesión en Angular y articulando cómo este módulo actúa como punto de entrada transversal para los demás bounded contexts del sistema. <br><br> **AV2:** Explicó el desarrollo backend del Bounded Context Identity, incluyendo la gestión de usuarios, planes de suscripción y preferencias de alertas mediante endpoints REST. | El equipo demostró capacidad de comunicación oral efectiva al conducir seis entrevistas con agricultores y empresarios agrícolas de distintas regiones del Perú (Amazonas, Arequipa, Lima, Piura), adaptando el vocabulario y el nivel de detalle técnico según el perfil de cada entrevistado. En el TB1, cada integrante lideró la implementación de un bounded context en la Web Application y comunicó oralmente sus decisiones de diseño e implementación al resto del equipo, fortaleciendo la comprensión compartida de la arquitectura de la solución. En el AV2 el equipo comunicó de manera organizada los avances realizados en los distintos Bounded Contexts del backend, presentando las funcionalidades, endpoints y principales decisiones técnicas de cada implementación.|
 | Comunica por escrito con efectividad a diferentes rangos de audiencia. | <br>**Alberto Joaquin Alfaro Mallma** <br> **AV1:** Redactó las Style Guidelines del producto (tipografía, paleta de colores, espaciado, tono de voz), comunicando por escrito los criterios visuales y editoriales de AgroTrack de forma que sean comprensibles tanto para el equipo de desarrollo como para evaluadores externos. <br><br> **TB1:** Documentó por escrito la implementación del bounded context Support & Dashboard en la Web Application, redactando en el informe del Sprint 2 la descripción de los componentes Angular desarrollados y las vistas de panel de control y soporte, de forma comprensible para evaluadores técnicos y no técnicos.<br><br> **AV2:** Implementó y documentó los endpoints correspondientes a Support y Dashboard, registrando mediante commits el desarrollo de la gestión de tickets y de las métricas utilizadas por el dashboard. <br><br> **Pablo Afranio Martinez Gaona** <br> **AV1:** Redactó el análisis FODA de AgroTrack y las estrategias y tácticas frente a competidores, estructurando la información de forma clara para una audiencia de negocio que requiere argumentación estratégica y no solo descripción técnica del producto. <br><br> **TB1:** Documentó el bounded context Soil Monitoring en el informe del Sprint 2, describiendo por escrito los componentes Angular implementados para la visualización de datos de humedad y nutrientes del suelo, asegurando que la documentación sea interpretable por desarrolladores y evaluadores externos.<br><br> **AV2:** Implementó y documentó las Technical Stories del Bounded Context Soil Monitoring, correspondientes a los endpoints de lecturas de suelo y recomendaciones de riego. Asimismo, registró los avances mediante commits y documentó las reglas de negocio, validaciones, persistencia e integración con el BC Farming. <br><br> **Eder Edu Quispe Perez** <br> **AV1:** Desarrolló la Landing Page de AgroTrack con soporte bilingüe (EN/ES) mediante el sistema i18n implementado en JavaScript, garantizando que la propuesta de valor del producto se comunique por escrito de forma efectiva tanto a usuarios hispanohablantes como angloparlantes. <br><br> **TB1:** Redactó en el informe del Sprint 2 la documentación de los bounded contexts Identity y Farming implementados en la Web Application, detallando los componentes Angular de autenticación y gestión de parcelas y cultivos de forma clara para audiencias técnicas y evaluadores del curso.<br><br> **AV2:** Implementó y documentó los servicios REST del Bounded Context Farming para la gestión de parcelas y cultivos, incluyendo las operaciones necesarias para crear, consultar, actualizar y eliminar estos recursos. <br><br> **Miler Alexander Rodriguez Rojas** <br> **AV1:** Redactó las secciones de Needfinding (User Personas, User Task Matrix, User Journey Mapping y Empathy Mapping), traduciendo los hallazgos cualitativos de las entrevistas en documentos estructurados comprensibles para audiencias de diseño y de negocio. <br><br> **TB1:** Documentó el bounded context Climate Alerts en el informe del Sprint 2, redactando por escrito la descripción de los componentes Angular desarrollados para la visualización y gestión de alertas climáticas, garantizando que la especificación sea comprensible para desarrolladores y evaluadores con distintos niveles de familiaridad con el dominio agrícola.<br><br> **AV2:** Implementó y documentó los endpoints del Bounded Context Climate Alerts, dejando evidencia escrita de las funcionalidades desarrolladas para gestionar y consultar las alertas climáticas. <br><br> **Eduardo David Velasquez Laquihuanaco** <br> **AV1:** Redactó el Ubiquitous Language y contribuyó a la especificación de User Stories y Technical Stories, asegurando que los términos del dominio agrícola (Plot, Crop, Soil Moisture, Weather Alert) estén definidos con precisión para audiencias técnicas y no técnicas por igual. <br><br> **TB1:** Documentó por escrito el bounded context Identity en el informe del Sprint 2, describiendo los componentes Angular de registro, inicio de sesión y gestión de perfiles implementados en la Web Application, comunicando las decisiones de implementación de forma clara para audiencias técnicas y evaluadores del curso. <br><br> **AV2:** Implementó y documentó los endpoints del Bounded Context Identity para usuarios, planes de suscripción y preferencias de alertas, incluyendo sus criterios de aceptación y contratos REST.  | El equipo evidenció comunicación escrita efectiva a múltiples audiencias a lo largo del informe: los capítulos de introducción y problemática están redactados en lenguaje accesible orientado al lector no técnico, mientras que las secciones de User Stories, Technical Stories y especificaciones de API están dirigidas a una audiencia técnica especializada. La Landing Page, desarrollada en HTML/CSS/JS con soporte bilingüe (EN/ES), demuestra la capacidad del equipo de comunicar la propuesta de valor del producto de forma escrita clara y persuasiva a dos segmentos diferenciados de usuarios. En el TB1, cada integrante documentó por escrito su bounded context en el informe del Sprint 2, describiendo los componentes Angular desarrollados en la Web Application de forma comprensible para distintas audiencias. En el AV2, La documentación elaborada por los integrantes permitió dejar evidencia clara de las funcionalidades implementadas en cada Bounded Context. El uso de Technical Stories, criterios de aceptación, commits, documentación REST y evidencias de Swagger facilitó la revisión del trabajo, la integración de los módulos y la comprensión del backend por parte del equipo y de otros interesados en el proyecto.|
  
+<br>
 
 # Capítulo I: Introducción
 
@@ -934,7 +924,7 @@ artistas como de sus posibles clientes.
 
 **User persona - Agricultores**
 
-![FOTOreport/assets/user_personaAgricultor.png)
+![FOTO](report/assets/user_personaAgricultor.png)
 
 <br>
 
@@ -998,7 +988,7 @@ de los usuarios finales.
 **Empathy Mapping - Empresario Agricola**
 
 ![Empathy map del
-empresario](assets/empathy_Mapping_EmpresarioAgricola.png)
+empresario](report/assets/empathy_Mapping_EmpresarioAgricola.png)
 
 ### 2.4. Big Picture Event Storming
 
@@ -1862,7 +1852,7 @@ https://www.figma.com/design/tQSFHjZZpLcvBWkbzUfWLw/Untitled?node-id=0-1&p=f&t=r
 **Mobile Web Browser**
 
 ![Mock Up 1](report/assets/mockupMobile1.png) ![Mock Up
-2](assets/mockupMobile2.png) ![Mock Up 2](report/assets/mockupMobile3.png)
+2](report/assets/mockupMobile2.png) ![Mock Up 2](report/assets/mockupMobile3.png)
 
 <br> 
 
@@ -1872,10 +1862,10 @@ https://www.figma.com/design/tQSFHjZZpLcvBWkbzUfWLw/Untitled?node-id=0-1&p=f&t=r
 ### 4.4.1. Web Applications Wireframes
 
 ![Wireframe 1](report/assets/wireframe-maqueta.png) ![Wireframe
-2](assets/wireframe-maqueta2.png) ![Wireframe
-3](assets/wireframe-maqueta3.png) ![Wireframe
-4](assets/wireframe-maqueta4.png) ![Wireframe
-5](assets/wireframe-maqueta5.png)
+2](report/assets/wireframe-maqueta2.png) ![Wireframe
+3](report/assets/wireframe-maqueta3.png) ![Wireframe
+4](report/assets/wireframe-maqueta4.png) ![Wireframe
+5](report/assets/wireframe-maqueta5.png)
 
 ### 4.4.2. Web Applications Wireflow Diagrams
 
@@ -1890,7 +1880,7 @@ de la aplicación y cómo interactuarán con ella.
 ### 4.4.3. Web Applications Mock-ups
 
 ![Mock-up 1](report/assets/web-mockups.png) ![Mock-up
-2](assets/web-mockups2.png) ![Mock-up 3](report/assets/web-mockups3.png)
+2](report/assets/web-mockups2.png) ![Mock-up 3](report/assets/web-mockups3.png)
 ![Mock-up 4](report/assets/web-mockups4.png)
 
 ### 4.4.4. Web Applications User Flow Diagrams
@@ -1902,7 +1892,7 @@ completar una tarea específica, lo que nos ayuda a identificar posibles
 puntos de fricción y a optimizar la experiencia del usuario.
 
 ![User Flow Diagram 1](report/assets/userflow.png) ![User Flow Diagram
-2](assets/userflow2.png) ![User Flow Diagram 3](report/assets/userflow3.png)
+2](report/assets/userflow2.png) ![User Flow Diagram 3](report/assets/userflow3.png)
 
 ### 4.5. Web Applications Prototyping
 
@@ -1962,7 +1952,7 @@ https://miro.com/app/board/uXjVHcOGric=/?share_link_id=857544303236
 
 ### 4.6.3. Software Architecture Container Diagrams.
 
-![ContainerDiagram-AgroTrack](areport/ssets/ContainerDiagram-AgroTrack.png)
+![ContainerDiagram-AgroTrack](report/assets/ContainerDiagram-AgroTrack.png)
 
 ### 4.6.4. Software Architecture Components Diagrams.
 
