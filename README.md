@@ -3758,13 +3758,13 @@ de cada miembro del equipo.
 
 **Entrevista N° 1**
 
-| **Nombres y apellidos**   | **Edad**   | **Distrito**   |
-|---------------------------|------------|----------------|
-| XXXXXXXXX                 | 25 años    | Cusco          |
+| **Nombres y apellidos**      | **Edad** | **Distrito** |
+|------------------------------|----------|--------------|
+| Matias Carrillo Acho         | 20 años  | Lima         |
 
-| **Segmento** | **URL** | **Inicio** | **Duración** |
-|--------------|---|---|--------------|
-| XXXX         | [Ver entrevista]() | 00:00 | x:xx min      |
+| **Segmento**          | **URL**            | **Inicio** | **Duración** |
+|-----------------------|--------------------|------------|--------------|
+| Empresario Agricola   | [Ver entrevista]() | 00:00      | x:xx min     |
 
 ![Entrevista-1](assets/entrevista-1-S3.png)
 
@@ -3812,6 +3812,34 @@ de cada miembro del equipo.
 
 **Resumen:**
 
+**Entrevista N° 5**
+
+| **Nombres y apellidos**   | **Edad**   | **Distrito**   |
+|---------------------------|------------|----------------|
+| XXXXXXXXX                 | 25 años    | Cusco          |
+
+| **Segmento** | **URL** | **Inicio** | **Duración** |
+|--------------|---|---|--------------|
+| XXXX         | [Ver entrevista]() | 00:00 | x:xx min      |
+
+![Entrevista-1](assets/entrevista-1-S3.png)
+
+**Resumen:**
+
+**Entrevista N° 6**
+
+| **Nombres y apellidos**   | **Edad**   | **Distrito**   |
+|---------------------------|------------|----------------|
+| XXXXXXXXX                 | 25 años    | Cusco          |
+
+| **Segmento** | **URL** | **Inicio** | **Duración** |
+|--------------|---|---|--------------|
+| XXXX         | [Ver entrevista]() | 00:00 | x:xx min      |
+
+![Entrevista-1](assets/entrevista-1-S3.png)
+
+**Resumen:**
+
 ### 5.3.3. Evaluaciones según heurísticas
 
 ### UX Heuristics & Principles Evaluation
@@ -3822,11 +3850,11 @@ de cada miembro del equipo.
 
 **CURSO:** Desarrollo de Aplicaciones Open Source
 
-**SECCIÓN:** 
+**SECCIÓN:** 11959
 
 **PROFESORES:** Hugo Mori
 
-**AUDITOR:** Nombre del Grupo que ejecuta la Sesión de evaluación
+**AUDITOR:** AURORA
 
 **CLIENTE(S):** Nombre de las personas que participan en la sesión
 
@@ -3836,6 +3864,11 @@ de cada miembro del equipo.
 AgroTrack
 
 **TAREAS A EVALUAR:**
+
+- Registrar y administrar parcelas agrícolas.
+- Consultar alertas climáticas según ubicación del cultivo.
+- Revisar información del perfil y plan del usuario.
+- Navegar entre las diferentes secciones de la plataforma.
 
 ---
 
@@ -3853,14 +3886,15 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
 
 **TABLA RESUMEN:**
 
-|   #    | Problema                                                                                                         | Escala de severidad | Heurística/Principio violada(o)                                         |
-|:------:|:-----------------------------------------------------------------------------------------------------------------|:-------------------:|:------------------------------------------------------------------------|
-| **1**  | El formulario de creación de tours no incluye un campo para registrar contactos de emergencia.                   |          3          | Usability: Correspondencia entre el sistema y el mundo real             |
-| **2**  | No existe un sistema de mensajería integrado entre la agencia, los guías y los turistas dentro de la plataforma. |          3          | Usability: Libertad y control del usuario                               |
-| **3**  | Dificultad para ubicar la opción de "Crear Tour"                                                                 |          3          | Usability - Reconocimiento en lugar de recuerdo                         |
-| **4**  | Acceso confuso al panel de monitoreo de tours.                                                                   |          3          | Flexibilidad y eficiencia de uso.                                       |
-| **5**  | Barrera idiomática inicial sin detección automática.                                                             |          2          | Usability - Relación entre el sistema y el mundo real.                  |
-| **6**  | Falta de indicadores persistentes sobre las rutas descargadas (Modo Offline)                                     |          2          | Usability - Visibilidad del estado del sistema / Prevención de errores. |
+|   #   | Problema                                                                                                                                                    | Escala de severidad | Heurística/Principio violada(o)                                       |
+|:-----:|:------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------:|:----------------------------------------------------------------------|
+| **1** | Falta de información contextual al momento de crear o editar una parcela agrícola. El usuario no recibe suficiente orientación sobre los datos requeridos.  |          3          | Usability: Visibilidad del estado del sistema / Ayuda y documentación |
+| **2** | Las alertas climáticas muestran información de riesgo, pero no incluyen recomendaciones claras de acciones que debería realizar el agricultor.              |          3          | Usability: Correspondencia entre el sistema y el mundo real           |
+| **3** | La navegación lateral contiene varias opciones similares y puede generar dificultad para usuarios nuevos al identificar dónde administrar sus cultivos.     |          2          | Information Architecture: Organización y claridad de navegación       |
+| **4** | Los botones de edición y eliminación de parcelas utilizan únicamente iconos sin etiquetas descriptivas, lo que puede generar confusión en algunos usuarios. |          2          | Inclusive Design: Reconocimiento antes que recuerdo                   |
+| **5** | No existe suficiente diferenciación visual entre estados de las parcelas (activas, con riesgo climático o pendientes de configuración).                     |          3          | Usability: Visibilidad del estado del sistema                         |
+| **6** | La información mostrada en el perfil del usuario no explica claramente las diferencias entre los planes disponibles ni los beneficios de cada uno.          |          2          | Usability: Ayuda y documentación                                      |
+| **7** | La plataforma no presenta mensajes personalizados o recomendaciones según el tipo de cultivo registrado y ubicación del usuario.                            |          2          | Inclusive Design: Flexibilidad y eficiencia de uso                    |
 
 ---
 
@@ -3870,42 +3904,118 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
 
 **PROBLEMA #1:**
 
-- **Severidad:**
-- **Heurística violada:**
-- **Problema:**
+- **Severidad:** 3
+- **Heurística violada:** Usability: Visibilidad del estado del sistema / Ayuda y documentación.
 
-- **Recomendación:**
+- **Problema:** Al momento de administrar parcelas agrícolas, el usuario puede no comprender completamente qué información debe ingresar o cuál es la finalidad de cada campo solicitado.
+
+![Problema 1](report/assets/problema-1.png)
+
+- **Recomendación:** Agregar textos de ayuda, ejemplos de datos esperados y mensajes informativos dentro de los formularios de creación y edición de parcelas.
+
 
 ---
 
 **PROBLEMA #2:**
 
-- **Severidad:**
-- **Heurística violada:**
-- **Problema:**
+- **Severidad:** 3
 
-- **Recomendación:**
+- **Heurística violada:**  
+  Usability: Correspondencia entre el sistema y el mundo real.
+
+- **Problema:**  
+  Las alertas climáticas permiten identificar riesgos como lluvias intensas, pero no proporcionan recomendaciones prácticas para que el agricultor pueda tomar decisiones.
+
+![Problema 2](report/assets/problema-2.png)
+
+- **Recomendación:**  
+  Incorporar sugerencias agrícolas asociadas a cada alerta, como protección del cultivo, revisión del sistema de riego o prevención ante eventos climáticos.
+
 
 ---
 
 **PROBLEMA #3:**
 
-- **Severidad:**
-- **Heurística violada:**
-- **Problema:**
+- **Severidad:** 2
 
-- **Recomendación:**
+- **Heurística violada:**  
+  Information Architecture: Organización y claridad de navegación.
+
+- **Problema:**  
+  La estructura del menú lateral puede resultar poco intuitiva para usuarios nuevos debido a la cantidad de opciones disponibles.
+
+![Problema 3](report/assets/problema-3.png)
+
+- **Recomendación:**  
+  Agrupar opciones relacionadas y utilizar nombres más descriptivos para cada sección.
 
 ---
 
 **PROBLEMA #4:**
 
-- **Severidad:**
-- **Heurística violada:**
-- **Problema:**
+- **Severidad:** 2
 
-- **Recomendación:**
+- **Heurística violada:**  
+  Inclusive Design: Reconocimiento antes que recuerdo.
 
+- **Problema:**  
+  Los botones de editar y eliminar parcelas están representados únicamente mediante iconos, lo que puede dificultar su comprensión para ciertos usuarios.
+
+![Problema 4](report/assets/problema-4.png)
+
+- **Recomendación:**  
+  Agregar etiquetas de texto o tooltips descriptivos al pasar el cursor sobre cada acción.
+
+---
+
+**PROBLEMA #5:**
+
+- **Severidad:** 3
+
+- **Heurística violada:**  
+  Usability: Visibilidad del estado del sistema.
+
+- **Problema:**  
+  Las parcelas muestran un estado general como "Active", pero no existe una representación visual clara sobre posibles riesgos asociados al cultivo.
+
+- **Recomendación:**  
+  Agregar indicadores visuales adicionales como niveles de riesgo climático, estados de cultivo o alertas asociadas.
+
+![Problema 5](report/assets/problema-5.png)
+
+---
+
+**PROBLEMA #6:**
+
+- **Severidad:** 2
+
+- **Heurística violada:**  
+  Usability: Ayuda y documentación.
+
+- **Problema:**  
+  La sección de perfil muestra diferentes planes disponibles, pero la información puede no ser suficiente para que el usuario comprenda qué beneficios obtiene al cambiar de plan.
+
+![Problema 6](report/assets/problema-6.png)
+
+- **Recomendación:**  
+  Añadir una comparación detallada entre planes y explicar las funcionalidades adicionales disponibles.
+
+---
+
+**PROBLEMA #7:**
+
+- **Severidad:** 2
+
+- **Heurística violada:**  
+  Inclusive Design: Flexibilidad y eficiencia de uso.
+
+- **Problema:**  
+  La plataforma presenta información general, pero no adapta completamente la experiencia según características del usuario como ubicación o cultivos registrados.
+
+![Problema 7](report/assets/problema-7.png)
+
+- **Recomendación:**  
+  Implementar recomendaciones personalizadas basadas en ubicación, tipo de cultivo y condiciones climáticas actuales.
 ---
 
 ## 5.4. Video About-the-Product
@@ -3922,7 +4032,7 @@ De esta manera, el video permite comunicar el valor de la solución y facilitar 
 |------------------|------------|--------------|
 | [Ver video]()    | 00:00      | 00:57 min    |
 
-![Video About The Product](assets/images/product.png)
+![Video About The Product](assets/images/about-the-product.png)
 
 # Conclusiones
 
@@ -3954,6 +4064,11 @@ decisiones, optimizar recursos y hacer más eficiente el trabajo en el
 campo. Sin embargo, su verdadero valor dependerá de seguir validándolo
 con usuarios reales y de ir incorporando mejoras progresivas, como la
 integración de sensores y datos en tiempo real.
+
+Asimismo, el desarrollo de la arquitectura tecnológica de AgroTrack permitió establecer una base escalable para futuras mejoras del sistema. La implementación de los bounded contexts de Soil Monitoring, Alerts, Farming, Identity y Dashboard bajo una arquitectura basada en Domain-Driven Design (DDD) utilizando Java y Spring Boot facilita la evolución de la plataforma, permitiendo incorporar nuevas funcionalidades sin afectar los componentes existentes.
+
+Finalmente, el proceso de desarrollo permitió reforzar la importancia de combinar una correcta comprensión del problema con una implementación tecnológica alineada a las necesidades del usuario. La aplicación de metodologías como Lean UX, la validación constante y el trabajo colaborativo fueron elementos clave para construir una solución orientada a generar valor real, estableciendo una base sólida para futuras versiones de AgroTrack con mayor automatización, integración de sensores y análisis avanzado de información agrícola.
+
 
 # Bibliografía
 
