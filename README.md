@@ -3754,6 +3754,30 @@ de cada miembro del equipo.
 
 *Nota.* Elaboración propia.
 
+### 5.2.3. Sprint 3
+
+#### 5.2.3.1. Sprint Planning 3.
+
+#### 5.2.3.2. Aspect Leaders and Collaborators.
+
+#### 5.2.3.3. Sprint Backlog 3.
+
+#### 5.2.3.4. Development Evidence for Sprint Review.
+
+#### 5.2.3.5. Execution Evidence for Sprint Review.
+
+#### 5.2.3.6. Services Documentation Evidence for Sprint Review.
+
+#### 5.2.3.7. Software Deployment Evidence for Sprint Review.
+
+#### 5.2.3.8. Team Collaboration Insights during Sprint.
+Durante el Sprint 3, el equipo concentró sus actividades de implementación en el desarrollo de los Web Services de AgroTrack. El trabajo se distribuyó entre los diferentes Bounded Contexts del sistema, permitiendo que cada integrante implementara los endpoints, reglas de negocio, servicios de aplicación y componentes de persistencia correspondientes a su responsabilidad.
+
+A continuación se presentan los analíticos de colaboración del repositorio web-services durante el periodo del sprint, evidenciando la participación de cada miembro del equipo.
+
+![contribucion del equipo](report/assets/Sprint_3_Insight.png)
+
+
 ### 5.3.2. Registro de Entrevistas
 
 **Entrevista N° 1**
