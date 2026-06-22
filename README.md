@@ -40,6 +40,7 @@ Universidad Peruana de Ciencias Aplicadas
 |---------|-------|-------|-----------------------------|
 | AV1 | 26/04/2026 | Alberto Joaquin Alfaro Mallma, Pablo Afranio Martínez Gaona, Eder Edu Quispe Perez, Miler Alexander Rodriguez Rojas, Eduardo David Velasquez Laquihuanaco | Para esta primera entrega, elaboramos los cinco capítulos iniciales del informe y desarrollamos la versión inicial del landing page de AgroTrack. |
 | TB1 | 09/05/2026 | Alberto Joaquin Alfaro Mallma, Pablo Afranio Martínez Gaona, Eder Edu Quispe Perez, Miler Alexander Rodriguez Rojas, Eduardo David Velasquez Laquihuanaco | Para esta segunda entrega, se incorporó la sección 5.2.2 correspondiente al Sprint 2, incluyendo Sprint Planning, Aspect Leaders and Collaborators, Sprint Backlog, Development Evidence, Execution Evidence, Services Documentation Evidence, Software Deployment Evidence y Team Collaboration Insights. Asimismo, se desplegó una nueva versión del Landing Page y la primera versión del Frontend Web Application. Se corrigieron y mejoraron los Mock-ups y artefactos de entregas previas en base a la retroalimentación recibida. |
+| AV2 | 20/06/2026 | Alberto Joaquin Alfaro Mallma, Pablo Afranio Martínez Gaona, Eder Edu Quispe Perez, Miler Alexander Rodriguez Rojas, Eduardo David Velasquez Laquihuanaco | Para esta tercera entrega, se incorporó la sección 5.2.3 correspondiente al Sprint 3, incluyendo Sprint Planning, Aspect Leaders and Collaborators, Sprint Backlog, Development Evidence, Execution Evidence, Services Documentation Evidence, Software Deployment Evidence y Team Collaboration Insights. Se implementó la primera versión del Web Service (RESTful API) de AgroTrack con Spring Boot bajo arquitectura DDD, cubriendo los bounded contexts de Identity, Farming, Soil Monitoring, Alerts y Support & Dashboard. El backend fue desplegado en Render con base de datos MySQL en Aiven. |
 
 <br>
 <br>
@@ -168,6 +169,15 @@ https://github.com/AgroTrack-Project/report
     - [5.2.2.6. Services Documentation Evidence for Sprint Review](#5226-services-documentation-evidence-for-sprint-review)
     - [5.2.2.7. Software Deployment Evidence for Sprint Review](#5227-software-deployment-evidence-for-sprint-review)
     - [5.2.2.8. Team Collaboration Insights during Sprint](#5228-team-collaboration-insights-during-sprint)
+  - [5.2.3. Sprint 3](#523-sprint-3)
+    - [5.2.3.1. Sprint Planning 3](#5231-sprint-planning-3)
+    - [5.2.3.2. Aspect Leaders and Collaborators](#5232-aspect-leaders-and-collaborators)
+    - [5.2.3.3. Sprint Backlog 3](#5233-sprint-backlog-3)
+    - [5.2.3.4. Development Evidence for Sprint Review](#5234-development-evidence-for-sprint-review)
+    - [5.2.3.5. Execution Evidence for Sprint Review](#5235-execution-evidence-for-sprint-review)
+    - [5.2.3.6. Services Documentation Evidence for Sprint Review](#5236-services-documentation-evidence-for-sprint-review)
+    - [5.2.3.7. Software Deployment Evidence for Sprint Review](#5237-software-deployment-evidence-for-sprint-review)
+    - [5.2.3.8. Team Collaboration Insights during Sprint](#5238-team-collaboration-insights-during-sprint)
 
 
 
@@ -181,8 +191,8 @@ El curso contribuye al cumplimiento del Student Outcome ABET - EAC - Student Out
 
 | Criterio específico | Acciones realizadas | Conclusiones |
 |---------------------|---------------------|--------------|
-| Comunica oralmente con efectividad a diferentes rangos de audiencia. | <br>**Alberto Joaquin Alfaro Mallma** <br> **AV1:** Realizó la entrevista N°6 al empresario agrícola Cristofer Ordalla (Piura), adaptando el lenguaje técnico a un perfil no especializado en tecnología para obtener información sobre la gestión de sus parcelas y sus expectativas frente a una solución digital. <br><br> **TB1:** Expuso ante el equipo las decisiones de implementación del bounded context Support & Dashboard en la Web Application, explicando oralmente cómo se estructuraron los componentes Angular para la visualización del panel de control y el módulo de soporte al usuario. <br><br> **Pablo Afranio Martinez Gaona** <br> **AV1:** Participó en la sesión colaborativa de Big Picture Event Storming, comunicando oralmente al equipo los eventos, comandos y actores del dominio agrícola identificados, facilitando la comprensión compartida del sistema entre miembros con distintos niveles de conocimiento del negocio. <br><br> **TB1:** Presentó al equipo el bounded context Soil Monitoring implementado en la Web Application, describiendo oralmente el flujo de visualización de datos de monitoreo de suelos y justificando las decisiones de diseño de componentes frente a los demás integrantes. <br><br> **Eder Edu Quispe Perez** <br> **AV1:** Realizó las entrevistas N°2 y N°3 a las agricultoras Lucía Alarcón (Amazonas) y Luz Mamani (Arequipa), comunicando el propósito del proyecto de forma clara y accesible a usuarias con poca experiencia tecnológica, logrando que expresaran sus necesidades y frustraciones con confianza. <br><br> **TB1:** Sustentó ante el equipo las decisiones de implementación de los bounded contexts Identity y Farming en la Web Application, explicando oralmente cómo se estructuraron las vistas de autenticación y gestión de parcelas y cultivos en Angular para satisfacer las necesidades de los segmentos objetivo. <br><br> **Miler Alexander Rodriguez Rojas** <br> **AV1:** Realizó las entrevistas N°1 y N°4 al agricultor Walter Medina (Chachapoyas) y al empresario agrícola Renzo Quispe (Lima), ajustando el tono y el nivel de detalle de las preguntas según el perfil de cada entrevistado para facilitar respuestas claras y comparables. <br><br> **TB1:** Expuso ante el equipo el bounded context Climate Alerts implementado en la Web Application, comunicando oralmente el flujo de visualización y gestión de alertas climáticas en Angular y coordinando con los responsables de Soil Monitoring y Farming la coherencia visual y funcional entre módulos. <br><br> **Eduardo David Velasquez Laquihuanaco** <br> **AV1:** Expuso ante el equipo los resultados del análisis de competidores (CropX, Trimble Ag, Agroptima), sintetizando verbalmente las diferencias estratégicas relevantes para orientar las decisiones de diseño del producto hacia el segmento peruano desatendido. <br><br> **TB1:** Comunicó oralmente al equipo el diseño e implementación del bounded context Identity en la Web Application, explicando las decisiones sobre las vistas de registro e inicio de sesión en Angular y articulando cómo este módulo actúa como punto de entrada transversal para los demás bounded contexts del sistema. <br><br> | El equipo demostró capacidad de comunicación oral efectiva al conducir seis entrevistas con agricultores y empresarios agrícolas de distintas regiones del Perú (Amazonas, Arequipa, Lima, Piura), adaptando el vocabulario y el nivel de detalle técnico según el perfil de cada entrevistado. En el TB1, cada integrante lideró la implementación de un bounded context en la Web Application y comunicó oralmente sus decisiones de diseño e implementación al resto del equipo, fortaleciendo la comprensión compartida de la arquitectura de la solución. |
-| Comunica por escrito con efectividad a diferentes rangos de audiencia. | <br>**Alberto Joaquin Alfaro Mallma** <br> **AV1:** Redactó las Style Guidelines del producto (tipografía, paleta de colores, espaciado, tono de voz), comunicando por escrito los criterios visuales y editoriales de AgroTrack de forma que sean comprensibles tanto para el equipo de desarrollo como para evaluadores externos. <br><br> **TB1:** Documentó por escrito la implementación del bounded context Support & Dashboard en la Web Application, redactando en el informe del Sprint 2 la descripción de los componentes Angular desarrollados y las vistas de panel de control y soporte, de forma comprensible para evaluadores técnicos y no técnicos. <br><br> **Pablo Afranio Martinez Gaona** <br> **AV1:** Redactó el análisis FODA de AgroTrack y las estrategias y tácticas frente a competidores, estructurando la información de forma clara para una audiencia de negocio que requiere argumentación estratégica y no solo descripción técnica del producto. <br><br> **TB1:** Documentó el bounded context Soil Monitoring en el informe del Sprint 2, describiendo por escrito los componentes Angular implementados para la visualización de datos de humedad y nutrientes del suelo, asegurando que la documentación sea interpretable por desarrolladores y evaluadores externos. <br><br> **Eder Edu Quispe Perez** <br> **AV1:** Desarrolló la Landing Page de AgroTrack con soporte bilingüe (EN/ES) mediante el sistema i18n implementado en JavaScript, garantizando que la propuesta de valor del producto se comunique por escrito de forma efectiva tanto a usuarios hispanohablantes como angloparlantes. <br><br> **TB1:** Redactó en el informe del Sprint 2 la documentación de los bounded contexts Identity y Farming implementados en la Web Application, detallando los componentes Angular de autenticación y gestión de parcelas y cultivos de forma clara para audiencias técnicas y evaluadores del curso. <br><br> **Miler Alexander Rodriguez Rojas** <br> **AV1:** Redactó las secciones de Needfinding (User Personas, User Task Matrix, User Journey Mapping y Empathy Mapping), traduciendo los hallazgos cualitativos de las entrevistas en documentos estructurados comprensibles para audiencias de diseño y de negocio. <br><br> **TB1:** Documentó el bounded context Climate Alerts en el informe del Sprint 2, redactando por escrito la descripción de los componentes Angular desarrollados para la visualización y gestión de alertas climáticas, garantizando que la especificación sea comprensible para desarrolladores y evaluadores con distintos niveles de familiaridad con el dominio agrícola. <br><br> **Eduardo David Velasquez Laquihuanaco** <br> **AV1:** Redactó el Ubiquitous Language y contribuyó a la especificación de User Stories y Technical Stories, asegurando que los términos del dominio agrícola (Plot, Crop, Soil Moisture, Weather Alert) estén definidos con precisión para audiencias técnicas y no técnicas por igual. <br><br> **TB1:** Documentó por escrito el bounded context Identity en el informe del Sprint 2, describiendo los componentes Angular de registro, inicio de sesión y gestión de perfiles implementados en la Web Application, comunicando las decisiones de implementación de forma clara para audiencias técnicas y evaluadores del curso. <br><br> | El equipo evidenció comunicación escrita efectiva a múltiples audiencias a lo largo del informe: los capítulos de introducción y problemática están redactados en lenguaje accesible orientado al lector no técnico, mientras que las secciones de User Stories, Technical Stories y especificaciones de API están dirigidas a una audiencia técnica especializada. La Landing Page, desarrollada en HTML/CSS/JS con soporte bilingüe (EN/ES), demuestra la capacidad del equipo de comunicar la propuesta de valor del producto de forma escrita clara y persuasiva a dos segmentos diferenciados de usuarios. En el TB1, cada integrante documentó por escrito su bounded context en el informe del Sprint 2, describiendo los componentes Angular desarrollados en la Web Application de forma comprensible para distintas audiencias. |
+| Comunica oralmente con efectividad a diferentes rangos de audiencia. | <br>**Alberto Joaquin Alfaro Mallma** <br> **AV1:** Realizó la entrevista N°6 al empresario agrícola Cristofer Ordalla (Piura), adaptando el lenguaje técnico a un perfil no especializado en tecnología para obtener información sobre la gestión de sus parcelas y sus expectativas frente a una solución digital. <br><br> **TB1:** Expuso ante el equipo las decisiones de implementación del bounded context Support & Dashboard en la Web Application, explicando oralmente cómo se estructuraron los componentes Angular para la visualización del panel de control y el módulo de soporte al usuario. <br><br> **AV2:** Explicó la implementación backend de los Bounded Contexts Support y Dashboard, presentando los servicios desarrollados para la gestión de tickets de soporte y la consulta de métricas relacionadas con rendimiento, pérdidas y consumo de agua. <br><br> **Pablo Afranio Martinez Gaona** <br> **AV1:** Participó en la sesión colaborativa de Big Picture Event Storming, comunicando oralmente al equipo los eventos, comandos y actores del dominio agrícola identificados, facilitando la comprensión compartida del sistema entre miembros con distintos niveles de conocimiento del negocio. <br><br> **TB1:** Presentó al equipo el bounded context Soil Monitoring implementado en la Web Application, describiendo oralmente el flujo de visualización de datos de monitoreo de suelos y justificando las decisiones de diseño de componentes frente a los demás integrantes. <br><br> **AV2:** Explicó la implementación backend del Bounded Context Soil Monitoring, detallando el registro de lecturas de humedad y temperatura, la gestión de recomendaciones de riego, las validaciones del dominio y la integración preparada con Farming para eliminar los datos relacionados con una parcela. <br><br> **Eder Edu Quispe Perez** <br> **AV1:** Realizó las entrevistas N°2 y N°3 a las agricultoras Lucía Alarcón (Amazonas) y Luz Mamani (Arequipa), comunicando el propósito del proyecto de forma clara y accesible a usuarias con poca experiencia tecnológica, logrando que expresaran sus necesidades y frustraciones con confianza. <br><br> **TB1:** Sustentó ante el equipo las decisiones de implementación de los bounded contexts Identity y Farming en la Web Application, explicando oralmente cómo se estructuraron las vistas de autenticación y gestión de parcelas y cultivos en Angular para satisfacer las necesidades de los segmentos objetivo. <br><br> **AV2:** Explicó el funcionamiento del backend del Bounded Context Farming, incluyendo la gestión de parcelas y cultivos, sus principales reglas de negocio y la relación de este contexto con otros módulos del sistema. <br><br> **Miler Alexander Rodriguez Rojas** <br> **AV1:** Realizó las entrevistas N°1 y N°4 al agricultor Walter Medina (Chachapoyas) y al empresario agrícola Renzo Quispe (Lima), ajustando el tono y el nivel de detalle de las preguntas según el perfil de cada entrevistado para facilitar respuestas claras y comparables. <br><br> **TB1:** Expuso ante el equipo el bounded context Climate Alerts implementado en la Web Application, comunicando oralmente el flujo de visualización y gestión de alertas climáticas en Angular y coordinando con los responsables de Soil Monitoring y Farming la coherencia visual y funcional entre módulos. <br><br> **AV2:** Presentó la implementación backend del Bounded Context Climate Alerts, explicando cómo se gestionan las alertas climáticas y cómo estas pueden ser consultadas por la aplicación web.<br><br> **Eduardo David Velasquez Laquihuanaco** <br> **AV1:** Expuso ante el equipo los resultados del análisis de competidores (CropX, Trimble Ag, Agroptima), sintetizando verbalmente las diferencias estratégicas relevantes para orientar las decisiones de diseño del producto hacia el segmento peruano desatendido. <br><br> **TB1:** Comunicó oralmente al equipo el diseño e implementación del bounded context Identity en la Web Application, explicando las decisiones sobre las vistas de registro e inicio de sesión en Angular y articulando cómo este módulo actúa como punto de entrada transversal para los demás bounded contexts del sistema. <br><br> **AV2:** Explicó el desarrollo backend del Bounded Context Identity, incluyendo la gestión de usuarios, planes de suscripción y preferencias de alertas mediante endpoints REST. | El equipo demostró capacidad de comunicación oral efectiva al conducir seis entrevistas con agricultores y empresarios agrícolas de distintas regiones del Perú (Amazonas, Arequipa, Lima, Piura), adaptando el vocabulario y el nivel de detalle técnico según el perfil de cada entrevistado. En el TB1, cada integrante lideró la implementación de un bounded context en la Web Application y comunicó oralmente sus decisiones de diseño e implementación al resto del equipo, fortaleciendo la comprensión compartida de la arquitectura de la solución. En el AV2 el equipo comunicó de manera organizada los avances realizados en los distintos Bounded Contexts del backend, presentando las funcionalidades, endpoints y principales decisiones técnicas de cada implementación.|
+| Comunica por escrito con efectividad a diferentes rangos de audiencia. | <br>**Alberto Joaquin Alfaro Mallma** <br> **AV1:** Redactó las Style Guidelines del producto (tipografía, paleta de colores, espaciado, tono de voz), comunicando por escrito los criterios visuales y editoriales de AgroTrack de forma que sean comprensibles tanto para el equipo de desarrollo como para evaluadores externos. <br><br> **TB1:** Documentó por escrito la implementación del bounded context Support & Dashboard en la Web Application, redactando en el informe del Sprint 2 la descripción de los componentes Angular desarrollados y las vistas de panel de control y soporte, de forma comprensible para evaluadores técnicos y no técnicos.<br><br> **AV2:** Implementó y documentó los endpoints correspondientes a Support y Dashboard, registrando mediante commits el desarrollo de la gestión de tickets y de las métricas utilizadas por el dashboard. <br><br> **Pablo Afranio Martinez Gaona** <br> **AV1:** Redactó el análisis FODA de AgroTrack y las estrategias y tácticas frente a competidores, estructurando la información de forma clara para una audiencia de negocio que requiere argumentación estratégica y no solo descripción técnica del producto. <br><br> **TB1:** Documentó el bounded context Soil Monitoring en el informe del Sprint 2, describiendo por escrito los componentes Angular implementados para la visualización de datos de humedad y nutrientes del suelo, asegurando que la documentación sea interpretable por desarrolladores y evaluadores externos.<br><br> **AV2:** Implementó y documentó las Technical Stories del Bounded Context Soil Monitoring, correspondientes a los endpoints de lecturas de suelo y recomendaciones de riego. Asimismo, registró los avances mediante commits y documentó las reglas de negocio, validaciones, persistencia e integración con el BC Farming. <br><br> **Eder Edu Quispe Perez** <br> **AV1:** Desarrolló la Landing Page de AgroTrack con soporte bilingüe (EN/ES) mediante el sistema i18n implementado en JavaScript, garantizando que la propuesta de valor del producto se comunique por escrito de forma efectiva tanto a usuarios hispanohablantes como angloparlantes. <br><br> **TB1:** Redactó en el informe del Sprint 2 la documentación de los bounded contexts Identity y Farming implementados en la Web Application, detallando los componentes Angular de autenticación y gestión de parcelas y cultivos de forma clara para audiencias técnicas y evaluadores del curso.<br><br> **AV2:** Implementó y documentó los servicios REST del Bounded Context Farming para la gestión de parcelas y cultivos, incluyendo las operaciones necesarias para crear, consultar, actualizar y eliminar estos recursos. <br><br> **Miler Alexander Rodriguez Rojas** <br> **AV1:** Redactó las secciones de Needfinding (User Personas, User Task Matrix, User Journey Mapping y Empathy Mapping), traduciendo los hallazgos cualitativos de las entrevistas en documentos estructurados comprensibles para audiencias de diseño y de negocio. <br><br> **TB1:** Documentó el bounded context Climate Alerts en el informe del Sprint 2, redactando por escrito la descripción de los componentes Angular desarrollados para la visualización y gestión de alertas climáticas, garantizando que la especificación sea comprensible para desarrolladores y evaluadores con distintos niveles de familiaridad con el dominio agrícola.<br><br> **AV2:** Implementó y documentó los endpoints del Bounded Context Climate Alerts, dejando evidencia escrita de las funcionalidades desarrolladas para gestionar y consultar las alertas climáticas. <br><br> **Eduardo David Velasquez Laquihuanaco** <br> **AV1:** Redactó el Ubiquitous Language y contribuyó a la especificación de User Stories y Technical Stories, asegurando que los términos del dominio agrícola (Plot, Crop, Soil Moisture, Weather Alert) estén definidos con precisión para audiencias técnicas y no técnicas por igual. <br><br> **TB1:** Documentó por escrito el bounded context Identity en el informe del Sprint 2, describiendo los componentes Angular de registro, inicio de sesión y gestión de perfiles implementados en la Web Application, comunicando las decisiones de implementación de forma clara para audiencias técnicas y evaluadores del curso. <br><br> **AV2:** Implementó y documentó los endpoints del Bounded Context Identity para usuarios, planes de suscripción y preferencias de alertas, incluyendo sus criterios de aceptación y contratos REST.  | El equipo evidenció comunicación escrita efectiva a múltiples audiencias a lo largo del informe: los capítulos de introducción y problemática están redactados en lenguaje accesible orientado al lector no técnico, mientras que las secciones de User Stories, Technical Stories y especificaciones de API están dirigidas a una audiencia técnica especializada. La Landing Page, desarrollada en HTML/CSS/JS con soporte bilingüe (EN/ES), demuestra la capacidad del equipo de comunicar la propuesta de valor del producto de forma escrita clara y persuasiva a dos segmentos diferenciados de usuarios. En el TB1, cada integrante documentó por escrito su bounded context en el informe del Sprint 2, describiendo los componentes Angular desarrollados en la Web Application de forma comprensible para distintas audiencias. En el AV2, La documentación elaborada por los integrantes permitió dejar evidencia clara de las funcionalidades implementadas en cada Bounded Context. El uso de Technical Stories, criterios de aceptación, commits, documentación REST y evidencias de Swagger facilitó la revisión del trabajo, la integración de los módulos y la comprensión del backend por parte del equipo y de otros interesados en el proyecto.|
  
 
 # Capítulo I: Introducción
@@ -1058,12 +1068,12 @@ miembros del equipo y los stakeholders.
 | EP06 | Recomendaciones de Riego |
 | EP07 | Alertas Climáticas |
 | EP08 | Dashboard y Reportes |
-| EP09 | RESTful API - Autenticación |
-| EP10 | RESTful API - Parcelas |
-| EP11 | RESTful API - Cultivos |
-| EP12 | RESTful API - Suelo |
-| EP13 | RESTful API - Alertas Climáticas |
-| EP14 | RESTful API - Recomendaciones de Riego |
+| EP09 | RESTful API - Identity | 
+| EP10 | RESTful API - Soil Monitoring |
+| EP11 | RESTful API - Farming |
+| EP12 | RESTful API - Alerts |
+| EP13 | RESTful API - Support & Dashboard |
+
 
 <br>
 <br>
@@ -1112,21 +1122,37 @@ miembros del equipo y los stakeholders.
 | EP08 / US40 | Ver porcentaje de pérdidas estimadas por parcela | Como empresario agrícola, quiero ver el porcentaje de pérdidas estimadas por parcela, para identificar dónde estoy perdiendo más y tomar acciones correctivas. | **Escenario 1: Empresario visualiza las pérdidas estimadas** <br> **Given** el empresario tiene registros de producción en sus parcelas, <br> **When** accede a la sección de pérdidas, <br> **Then** se muestra el porcentaje de pérdidas estimado por parcela junto con las causas registradas. | EP08 |
 | EP08 / US41 | Ver consumo de agua registrado por temporada | Como empresario agrícola, quiero ver cuánta agua se ha consumido por temporada en cada parcela, para evaluar la eficiencia del riego y reducir costos operativos. | **Escenario 1: Empresario revisa el consumo de agua** <br> **Given** el empresario tiene registros de riego en sus parcelas, <br> **When** accede a la sección de consumo de agua, <br> **Then** se muestra el consumo total de agua por parcela agrupado por temporada. | EP08 |
 | EP08 / US42 | Exportar reporte de producción en formato PDF o Excel | Como empresario agrícola, quiero exportar un reporte de producción de mis parcelas, para compartirlo con mi equipo o analizarlo fuera de la plataforma. | **Escenario 1: Exportación en PDF exitosa** <br> **Given** el empresario accede a la sección de reportes y selecciona el formato PDF, <br> **When** presiona el botón de exportar, <br> **Then** se descarga un archivo PDF con el resumen de producción de sus parcelas. <br><br> **Escenario 2: Exportación en Excel exitosa** <br> **Given** el empresario accede a la sección de reportes y selecciona el formato Excel, <br> **When** presiona el botón de exportar, <br> **Then** se descarga un archivo Excel con los datos de producción organizados por parcela y temporada. <br><br> **Escenario 3: Sin datos para exportar** <br> **Given** el empresario no tiene registros de producción, <br> **When** intenta exportar el reporte, <br> **Then** se muestra un mensaje indicando que no hay datos disponibles para generar el reporte. | EP08 |
-| EP10 / TS01 | Endpoint de registro de usuario | Como developer, quiero un endpoint POST para registrar usuarios, para que el frontend pueda crear nuevas cuentas desde el formulario de registro. | **Escenario 1: Registro exitoso** <br> **Given** el developer envía una solicitud POST con datos válidos de usuario, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 201 y el objeto del usuario creado sin incluir la contraseña. <br><br> **Escenario 2: Correo ya registrado** <br> **Given** el developer envía una solicitud POST con un correo ya existente, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 400 y un mensaje indicando que el correo ya está en uso. <br><br> **Escenario 3: Campos obligatorios faltantes** <br> **Given** el developer envía una solicitud POST con campos requeridos vacíos, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 400 y un mensaje indicando los campos faltantes. | EP10 |
-| EP10 / TS02 | Endpoint de inicio de sesión | Como developer, quiero un endpoint POST para autenticar usuarios, para que el frontend pueda iniciar sesión y recibir un token de acceso. | **Escenario 1: Login exitoso** <br> **Given** el developer envía credenciales válidas, <br> **When** el servidor las valida, <br> **Then** responde con status 200 y un token JWT junto con los datos básicos del usuario. <br><br> **Escenario 2: Credenciales incorrectas** <br> **Given** el developer envía credenciales inválidas, <br> **When** el servidor las valida, <br> **Then** responde con status 401 y un mensaje indicando que las credenciales son incorrectas. | EP10 |
-| EP11 / TS03 | Endpoint para crear una parcela | Como developer, quiero un endpoint POST para registrar parcelas, para que el frontend pueda guardar nuevas parcelas vinculadas a un usuario. | **Escenario 1: Parcela creada exitosamente** <br> **Given** el developer envía una solicitud POST con datos válidos de parcela, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 201 y el objeto de la parcela creada con su ID generado. <br><br> **Escenario 2: Datos incompletos** <br> **Given** el developer envía una solicitud POST sin el campo nombre, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 400 y un mensaje indicando los campos requeridos. | EP11 |
-| EP11 / TS04 | Endpoint para obtener parcelas de un usuario | Como developer, quiero un endpoint GET para obtener todas las parcelas de un usuario, para que el frontend pueda mostrar el listado de parcelas en el dashboard. | **Escenario 1: Usuario tiene parcelas registradas** <br> **Given** el developer envía una solicitud GET con un userId válido, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 200 y un array con todas las parcelas del usuario. <br><br> **Escenario 2: Usuario sin parcelas** <br> **Given** el developer envía una solicitud GET con un userId que no tiene parcelas, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 200 y un array vacío. <br><br> **Escenario 3: userId no existe** <br> **Given** el developer envía una solicitud GET con un userId inexistente, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 404 y un mensaje indicando que el usuario no fue encontrado. | EP11 |
-| EP11 / TS05 | Endpoint para actualizar una parcela | Como developer, quiero un endpoint PUT para actualizar los datos de una parcela, para que el frontend pueda guardar los cambios realizados por el usuario. | **Escenario 1: Actualización exitosa** <br> **Given** el developer envía una solicitud PUT con un ID de parcela válido y datos correctos, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 200 y el objeto de la parcela con los datos actualizados. <br><br> **Escenario 2: Parcela no encontrada** <br> **Given** el developer envía una solicitud PUT con un ID de parcela que no existe, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 404 y un mensaje indicando que la parcela no fue encontrada. | EP11 |
-| EP11 / TS06 | Endpoint para eliminar una parcela | Como developer, quiero un endpoint DELETE para eliminar una parcela, para que el frontend pueda removerla cuando el usuario lo solicite. | **Escenario 1: Eliminación exitosa** <br> **Given** el developer envía una solicitud DELETE con un ID de parcela válido, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 200 y un mensaje confirmando que la parcela fue eliminada. <br><br> **Escenario 2: Parcela no encontrada** <br> **Given** el developer envía una solicitud DELETE con un ID inexistente, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 404 y un mensaje indicando que la parcela no fue encontrada. | EP11 |
-| EP12 / TS07 | Endpoint para crear un cultivo | Como developer, quiero un endpoint POST para registrar cultivos en una parcela, para que el frontend pueda guardar la información de siembra del agricultor. | **Escenario 1: Cultivo creado exitosamente** <br> **Given** el developer envía una solicitud POST con datos válidos de cultivo, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 201 y el objeto del cultivo creado con su ID. <br><br> **Escenario 2: plotId no existe** <br> **Given** el developer envía una solicitud POST con un plotId inexistente, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 404 y un mensaje indicando que la parcela asociada no existe. | EP12 |
-| EP12 / TS08 | Endpoint para obtener cultivos de una parcela | Como developer, quiero un endpoint GET para obtener todos los cultivos de una parcela, para que el frontend pueda mostrarlos en el detalle de la parcela. | **Escenario 1: Parcela tiene cultivos registrados** <br> **Given** el developer envía una solicitud GET con un plotId válido, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 200 y un array con todos los cultivos de esa parcela. <br><br> **Escenario 2: Parcela sin cultivos** <br> **Given** el developer envía una solicitud GET con un plotId sin cultivos asociados, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 200 y un array vacío. | EP12 |
-| EP12 / TS09 | Endpoint para actualizar el estado de un cultivo | Como developer, quiero un endpoint PATCH para actualizar el estado de un cultivo, para que el frontend pueda marcarlo como finalizado cuando el agricultor coseche. | **Escenario 1: Estado actualizado exitosamente** <br> **Given** el developer envía una solicitud PATCH con un ID de cultivo válido y un estado permitido, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 200 y el objeto del cultivo con el estado actualizado. <br><br>  | EP12 |
-| EP13 / TS10 | Endpoint para registrar datos del suelo | Como developer, quiero un endpoint POST para registrar datos de humedad y temperatura del suelo, para que el frontend pueda guardar los registros manuales del agricultor. | **Escenario 1: Registro guardado exitosamente** <br> **Given** el developer envía una solicitud POST con valores válidos de humedad y temperatura, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 201 y el objeto del registro con su ID y timestamp. <br><br> **Escenario 2: Humedad fuera de rango** <br> **Given** el developer envía un valor de humedad menor a 0 o mayor a 100, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 400 y un mensaje indicando que el valor de humedad debe estar entre 0 y 100. | EP13 |
-| EP13 / TS11 | Endpoint para obtener historial de datos del suelo | Como developer, quiero un endpoint GET para obtener el historial de registros del suelo de una parcela, para que el frontend pueda mostrarlo al agricultor. | **Escenario 1: Historial obtenido exitosamente** <br> **Given** el developer envía una solicitud GET con un plotId válido, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 200 y un array con los registros ordenados del más reciente al más antiguo. <br><br> **Escenario 2: Sin registros de suelo** <br> **Given** el developer envía una solicitud GET con un plotId sin registros, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 200 y un array vacío. | EP13 |
-| EP14 / TS12 | Endpoint para obtener alertas climáticas de una parcela | Como developer, quiero un endpoint GET para obtener las alertas climáticas activas de una parcela, para que el frontend pueda mostrarlas en el dashboard del agricultor. | **Escenario 1: Alertas encontradas** <br> **Given** el developer envía una solicitud GET con un plotId que tiene alertas activas, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 200 y un array con las alertas activas indicando tipo, descripción y fecha. <br><br> **Escenario 2: Sin alertas activas** <br> **Given** el developer envía una solicitud GET con un plotId sin alertas, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 200 y un array vacío. | EP14 |
-| EP14 / TS13 | Endpoint para crear una alerta climática | Como developer, quiero un endpoint POST para registrar una alerta climática en una parcela, para que el sistema pueda generarlas automáticamente al procesar datos del clima. | **Escenario 1: Alerta creada exitosamente** <br> **Given** el developer envía una solicitud POST con un tipo de alerta válido y un plotId existente, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 201 y el objeto de la alerta creada. <br><br> | EP14 |
-| EP15 / TS14 | Endpoint para obtener recomendación de riego | Como developer, quiero un endpoint GET que retorne una recomendación de riego basada en el último registro del suelo de una parcela, para que el frontend pueda mostrarla al agricultor. | **Escenario 1: Recomendación por humedad baja** <br> **Given** el developer envía una solicitud GET y el último registro de humedad de la parcela es menor al 40%, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 200 y un objeto indicando que se recomienda regar junto con el nivel de urgencia. <br><br> **Escenario 2: Sin necesidad de riego** <br> **Given** el developer envía una solicitud GET y el último registro de humedad está entre 40% y 70%, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 200 y un objeto indicando que no es necesario regar actualmente. <br><br> **Escenario 3: Sin datos de suelo disponibles** <br> **Given** el developer envía una solicitud GET y la parcela no tiene registros de suelo, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 404 y un mensaje indicando que no hay datos del suelo para generar una recomendación. | EP15 |
-| EP15 / TS15 | Endpoint para registrar respuesta a una recomendación | Como developer, quiero un endpoint POST para registrar si el agricultor aceptó o rechazó una recomendación de riego, para que el historial quede guardado en el sistema. | **Escenario 1: Respuesta registrada exitosamente** <br> **Given** el developer envía una solicitud POST con un ID de recomendación válido y un valor booleano de aceptación, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 201 y el objeto de la respuesta registrada. <br><br> **Escenario 2: Recomendación no encontrada** <br> **Given** el developer envía una solicitud POST con un ID de recomendación inexistente, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 404 y un mensaje indicando que la recomendación no fue encontrada. | EP15 |
+| EP09 / TS01 | Endpoint para registrar un usuario | Como developer, quiero un endpoint POST /users para registrar un nuevo usuario, para que el frontend pueda crear cuentas desde el formulario de registro. | **Escenario 1: Registro exitoso** <br> **Given** el developer envía una solicitud POST con datos válidos, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 201 y el objeto del usuario creado, además de crear automáticamente una AlertPreference para ese usuario. <br><br> **Escenario 2: Correo ya registrado** <br> **Given** el developer envía una solicitud POST con un correo ya existente, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 409 indicando conflicto de correo duplicado. <br><br> **Escenario 3: Campos obligatorios faltantes** <br> **Given** el developer envía una solicitud POST con campos requeridos vacíos, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 400 y un mensaje indicando los campos faltantes. | EP09 |
+| EP09 / TS02 | Endpoint para obtener un usuario por ID | Como developer, quiero un endpoint GET /users/{id} para obtener los datos de un usuario específico, para que el frontend pueda cargar el perfil del usuario autenticado. | **Escenario 1: Usuario encontrado** <br> **Given** el developer envía una solicitud GET con un ID de usuario válido, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 200 y los datos del usuario. <br><br> **Escenario 2: Usuario no encontrado** <br> **Given** el developer envía una solicitud GET con un ID inexistente, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 404. | EP09 |
+| EP09 / TS03 | Endpoint para actualizar un usuario | Como developer, quiero un endpoint PUT /users/{id} para actualizar los datos de un usuario, para que el frontend pueda permitir al usuario editar su perfil. | **Escenario 1: Actualización exitosa** <br> **Given** el developer envía una solicitud PUT con datos válidos y un ID existente, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 200 y el objeto actualizado con el campo updated_at renovado. <br><br> **Escenario 2: Usuario no encontrado** <br> **Given** el developer envía una solicitud PUT con un ID inexistente, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 404. | EP09 |
+| EP09 / TS04 | Endpoint para listar planes de suscripción | Como developer, quiero un endpoint GET /plans para obtener todos los planes disponibles, para que el frontend pueda mostrar las opciones de suscripción al usuario. | **Escenario 1: Listado exitoso** <br> **Given** el developer envía una solicitud GET a /plans, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 200 y un array con los 3 planes (BASIC, PRO, ENTERPRISE) con sus características (precio, máximo de parcelas, funcionalidades habilitadas). | EP09 |
+| EP09 / TS05 | Endpoint para obtener preferencias de alertas | Como developer, quiero un endpoint GET /alert_preferences con filtro opcional por user_id, para que el frontend pueda cargar las preferencias de alerta del usuario activo. | **Escenario 1: Filtrado por user_id** <br> **Given** el developer envía una solicitud GET con el parámetro user_id, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 200 y la preferencia de alerta correspondiente al usuario. <br><br> **Escenario 2: Sin filtro** <br> **Given** el developer envía una solicitud GET sin parámetros, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 200 y todas las preferencias de alerta registradas. | EP09 |
+| EP09 / TS06 | Endpoint para actualizar preferencias de alertas | Como developer, quiero un endpoint PUT /alert_preferences/{id} para actualizar los toggles de alerta de un usuario, para que el frontend pueda guardar las preferencias de notificación configuradas por el usuario. | **Escenario 1: Actualización exitosa** <br> **Given** el developer envía una solicitud PUT con los valores de los toggles y un ID existente, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 200 y el objeto de preferencias actualizado. <br><br> **Escenario 2: Preferencia no encontrada** <br> **Given** el developer envía una solicitud PUT con un ID inexistente, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 404. | EP09 |
+| EP10 / TS07 | Endpoint para registrar una lectura de suelo | Como developer, quiero un endpoint POST /soil_records para registrar la humedad y temperatura de una parcela, para que el frontend pueda almacenar las mediciones realizadas desde la pestaña Soil. | **Escenario 1: Registro exitoso** <br> **Given** el developer envía una solicitud POST con un plot_id, humedad y temperatura válidos, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 201 y el objeto de la lectura de suelo creada, incluyendo su identificador y fecha de registro. <br><br> **Escenario 2: Campos obligatorios faltantes** <br> **Given** el developer envía una solicitud POST sin plot_id, humedad o temperatura, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 400 y un mensaje indicando los datos inválidos o faltantes. <br><br> **Escenario 3: Humedad fuera del rango permitido** <br> **Given** el developer envía una humedad menor que 0 o mayor que 100, <br> **When** el servidor valida la solicitud, <br> **Then** responde con status 400 indicando que la humedad debe encontrarse entre 0 y 100. | EP10 |
+| EP10 / TS08 | Endpoint para listar lecturas de suelo | Como developer, quiero un endpoint GET /soil_records con filtro opcional por plot_id, para que el frontend pueda cargar el historial de lecturas de la parcela seleccionada. | **Escenario 1: Filtrado por parcela** <br> **Given** el developer envía una solicitud GET con el parámetro plot_id, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 200 y las lecturas correspondientes a esa parcela, ordenadas desde la más reciente. <br><br> **Escenario 2: Consulta sin filtro** <br> **Given** el developer envía una solicitud GET sin parámetros, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 200 y todas las lecturas de suelo registradas. <br><br> **Escenario 3: Parcela sin lecturas** <br> **Given** el developer consulta un plot_id que no tiene lecturas registradas, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 200 y un arreglo vacío. | EP10 |
+| EP10 / TS09 | Endpoint para eliminar una lectura de suelo | Como developer, quiero un endpoint DELETE /soil_records/{id} para eliminar una lectura de suelo, para que el sistema pueda retirar registros que ya no deben mantenerse. | **Escenario 1: Eliminación exitosa** <br> **Given** el developer envía una solicitud DELETE con el ID de una lectura existente, <br> **When** el servidor procesa la solicitud, <br> **Then** elimina la lectura y responde con status 200 y un mensaje de confirmación. <br><br> **Escenario 2: Lectura no encontrada** <br> **Given** el developer envía una solicitud DELETE con un ID inexistente, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 404 indicando que la lectura de suelo no fue encontrada. | EP10 |
+| EP10 / TS10 | Endpoint para registrar una recomendación de riego | Como developer, quiero un endpoint POST /irrigation_recommendations para registrar una recomendación asociada a una parcela y una lectura de suelo, para que el frontend pueda guardar las decisiones de riego del usuario. | **Escenario 1: Registro exitoso** <br> **Given** el developer envía una solicitud POST con plot_id, soil_record_id, mensaje, urgencia y estado válidos, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 201 y el objeto de la recomendación de riego creada. <br><br> **Escenario 2: Lectura de suelo inexistente** <br> **Given** el developer envía una solicitud POST con un soil_record_id que no existe, <br> **When** el servidor valida la solicitud, <br> **Then** responde con status 400 indicando que la lectura de suelo no existe. <br><br> **Escenario 3: Estado o urgencia inválidos** <br> **Given** el developer envía un estado o nivel de urgencia que no pertenece a los valores permitidos, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 400 indicando que los datos enviados son inválidos. | EP10 |
+| EP10 / TS11 | Endpoint para listar recomendaciones de riego | Como developer, quiero un endpoint GET /irrigation_recommendations con filtro opcional por plot_id, para que el frontend pueda cargar el historial de recomendaciones y decisiones de riego de una parcela. | **Escenario 1: Filtrado por parcela** <br> **Given** el developer envía una solicitud GET con el parámetro plot_id, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 200 y las recomendaciones asociadas a esa parcela, ordenadas desde la más reciente. <br><br> **Escenario 2: Consulta sin filtro** <br> **Given** el developer envía una solicitud GET sin parámetros, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 200 y todas las recomendaciones de riego registradas. <br><br> **Escenario 3: Parcela sin recomendaciones** <br> **Given** el developer consulta un plot_id que no tiene recomendaciones registradas, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 200 y un arreglo vacío. | EP10 |
+| EP10 / TS12 | Endpoint para actualizar una recomendación de riego | Como developer, quiero un endpoint PUT /irrigation_recommendations/{id} para actualizar el estado de una recomendación, para que el frontend pueda registrar si el usuario confirmó o rechazó la asesoría de riego. | **Escenario 1: Confirmación exitosa** <br> **Given** el developer envía una solicitud PUT con un ID existente y el estado CONFIRMED, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 200 y la recomendación actualizada, incluyendo la fecha de respuesta. <br><br> **Escenario 2: Rechazo exitoso** <br> **Given** el developer envía una solicitud PUT con un ID existente y el estado REJECTED, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 200 y la recomendación actualizada, incluyendo la fecha de respuesta. <br><br> **Escenario 3: Recomendación no encontrada** <br> **Given** el developer envía una solicitud PUT con un ID inexistente, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 404 indicando que la recomendación no fue encontrada. <br><br> **Escenario 4: Estado inválido** <br> **Given** el developer envía una solicitud PUT con un estado no permitido, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 400 indicando que el estado enviado es inválido. | EP10 |
+| EP10 / TS13 | Endpoint para eliminar una recomendación de riego | Como developer, quiero un endpoint DELETE /irrigation_recommendations/{id} para eliminar una recomendación de riego, para que el sistema pueda retirar registros que ya no deben conservarse. | **Escenario 1: Eliminación exitosa** <br> **Given** el developer envía una solicitud DELETE con el ID de una recomendación existente, <br> **When** el servidor procesa la solicitud, <br> **Then** elimina la recomendación y responde con status 200 y un mensaje de confirmación. <br><br> **Escenario 2: Recomendación no encontrada** <br> **Given** el developer envía una solicitud DELETE con un ID inexistente, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 404 indicando que la recomendación de riego no fue encontrada. | EP10 |
+| EP11 / TS14 | Endpoint para listar parcelas | Como developer, quiero un endpoint GET /plots con filtro opcional por userId, para que el frontend pueda cargar todas las parcelas registradas y filtrarlas por usuario. | **Escenario 1: Listado exitoso sin filtro** <br> **Given** el developer envía una solicitud GET a /plots sin parámetros, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 200 y un array con todas las parcelas registradas. <br><br> **Escenario 2: Filtrado por userId** <br> **Given** el developer envía una solicitud GET con el parámetro userId, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 200 y solo las parcelas del usuario indicado. <br><br> **Escenario 3: Sin parcelas registradas** <br> **Given** no existen parcelas en el sistema, <br> **When** el developer envía la solicitud, <br> **Then** responde con status 200 y un arreglo vacío. | EP11 |
+| EP11 / TS15 | Endpoint para registrar una parcela | Como developer, quiero un endpoint POST /plots para registrar una nueva parcela, para que el frontend pueda crear parcelas desde el formulario de gestión del usuario. | **Escenario 1: Registro exitoso** <br> **Given** el developer envía una solicitud POST con userId, name, location y sizeHectares válidos, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 201 y el objeto de la parcela creada con estado ACTIVE. <br><br> **Escenario 2: Campos obligatorios faltantes** <br> **Given** el developer envía una solicitud POST sin algún campo requerido, <br> **When** el servidor valida la solicitud, <br> **Then** responde con status 400 indicando los campos faltantes o inválidos. | EP11 |
+| EP11 / TS16 | Endpoint para actualizar una parcela | Como developer, quiero un endpoint PUT /plots/{id} para actualizar los datos de una parcela, para que el frontend pueda guardar cambios en el nombre, ubicación o tamaño de la parcela. | **Escenario 1: Actualización exitosa** <br> **Given** el developer envía una solicitud PUT con datos válidos y un ID de parcela existente, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 200 y el objeto de la parcela actualizado. <br><br> **Escenario 2: Parcela no encontrada** <br> **Given** el developer envía una solicitud PUT con un ID inexistente, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 404. | EP11 |
+| EP11 / TS17 | Endpoint para desactivar una parcela | Como developer, quiero un endpoint DELETE /plots/{id} para desactivar una parcela, para que el frontend pueda retirar parcelas del listado activo del usuario cambiando su estado a DELETED. | **Escenario 1: Desactivación exitosa** <br> **Given** el developer envía una solicitud DELETE con un ID de parcela existente, <br> **When** el servidor procesa la solicitud, <br> **Then** cambia el estado de la parcela a DELETED y responde con status 204. <br><br> **Escenario 2: Parcela no encontrada** <br> **Given** el developer envía una solicitud DELETE con un ID inexistente, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 404. | EP11 |
+| EP11 / TS18 | Endpoint para listar cultivos | Como developer, quiero un endpoint GET /crops con filtro opcional por plotId, para que el frontend pueda cargar todos los cultivos registrados y filtrarlos por parcela en memoria. | **Escenario 1: Listado exitoso sin filtro** <br> **Given** el developer envía una solicitud GET a /crops sin parámetros, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 200 y un array con todos los cultivos registrados. <br><br> **Escenario 2: Filtrado por plotId** <br> **Given** el developer envía una solicitud GET con el parámetro plotId, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 200 y solo los cultivos de la parcela indicada. <br><br> **Escenario 3: Sin cultivos registrados** <br> **Given** no existen cultivos en el sistema, <br> **When** el developer envía la solicitud, <br> **Then** responde con status 200 y un arreglo vacío. | EP11 |
+| EP11 / TS19 | Endpoint para registrar un cultivo | Como developer, quiero un endpoint POST /crops para registrar un cultivo en una parcela, para que el frontend pueda asociar un nuevo cultivo a la parcela seleccionada por el usuario. | **Escenario 1: Registro exitoso** <br> **Given** el developer envía una solicitud POST con plotId, type y sowingDate válidos, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 201 y el objeto del cultivo creado con estado ACTIVE. <br><br> **Escenario 2: Campos obligatorios faltantes** <br> **Given** el developer envía una solicitud POST sin algún campo requerido, <br> **When** el servidor valida la solicitud, <br> **Then** responde con status 400 indicando los campos faltantes o inválidos. | EP11 |
+| EP11 / TS20 | Endpoint para actualizar un cultivo | Como developer, quiero un endpoint PUT /crops/{id} para actualizar los datos de un cultivo, para que el frontend pueda guardar cambios en el tipo, estado o fechas del cultivo registrado. | **Escenario 1: Actualización exitosa** <br> **Given** el developer envía una solicitud PUT con datos válidos y un ID de cultivo existente, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 200 y el objeto del cultivo actualizado. <br><br> **Escenario 2: Cultivo no encontrado** <br> **Given** el developer envía una solicitud PUT con un ID inexistente, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 404. | EP11 |
+| EP11 / TS21 | Endpoint para eliminar un cultivo | Como developer, quiero un endpoint DELETE /crops/{id} para eliminar un cultivo, para que el sistema pueda retirar cultivos del listado de la parcela cuando el usuario los elimine. | **Escenario 1: Eliminación exitosa** <br> **Given** el developer envía una solicitud DELETE con el ID de un cultivo existente, <br> **When** el servidor procesa la solicitud, <br> **Then** elimina el cultivo y responde con status 204. <br><br> **Escenario 2: Cultivo no encontrado** <br> **Given** el developer envía una solicitud DELETE con un ID inexistente, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 404. | EP11 |
+| EP12 / TS22 | Endpoint para obtener alertas climáticas por ciudad | Como developer, quiero un endpoint GET /alerts?city={city} que consulte la API de OpenWeather y devuelva alertas climáticas generadas, para que el frontend pueda mostrar al usuario los riesgos climáticos actuales sin exponer la API key en el cliente. | **Escenario 1: Ciudad con alertas** <br> **Given** el developer envía una solicitud GET con un nombre de ciudad válido, <br> **When** el servidor consulta OpenWeather y detecta condiciones de riesgo, <br> **Then** responde con status 200 y un array de alertas con título, descripción, urgencia y timestamp de generación. <br><br> **Escenario 2: Ciudad sin alertas activas** <br> **Given** el developer envía una solicitud GET con una ciudad con condiciones climáticas normales, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 200 y un arreglo vacío. <br><br> **Escenario 3: Ciudad no encontrada** <br> **Given** el developer envía una solicitud GET con un nombre de ciudad que no existe en OpenWeather, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 404 indicando que la ciudad no fue encontrada. <br><br> **Escenario 4: Parámetro city faltante** <br> **Given** el developer envía una solicitud GET sin el parámetro city, <br> **When** el servidor valida la solicitud, <br> **Then** responde con status 400 indicando que el nombre de la ciudad es requerido. | EP12 |
+| EP13 / TS23 | Endpoint para listar resúmenes de rendimiento | Como developer, quiero un endpoint GET `/yield_summaries` para obtener todos los resúmenes de rendimiento agrícola filtrando opcionalmente por `user_id`, para que el frontend pueda mostrar las métricas de rendimiento por hectárea y temporada en el dashboard. | **Escenario 1: Listado exitoso**<br>**Given** el developer envía una solicitud GET a `/yield_summaries` con un `user_id` existente,<br>**When** el servidor procesa la solicitud,<br>**Then** responde con status 200 y un array de resúmenes de rendimiento (`id`, `plot_id`, `yield_per_hectare`, `season`, `calculated_at`) asociados a ese usuario.<br><br>**Escenario 2: Usuario sin resúmenes**<br>**Given** el developer envía una solicitud GET a `/yield_summaries` con un `user_id` que no tiene registros,<br>**When** el servidor procesa la solicitud,<br>**Then** responde con status 200 y un array vacío. | EP13 |
+| EP13 / TS24 | Endpoint para obtener resumen de rendimiento por ID | Como developer, quiero un endpoint GET `/yield_summaries/{id}` para recuperar un resumen de rendimiento específico por su identificador, para que el frontend pueda mostrar el detalle completo de una métrica individual. | **Escenario 1: Consulta exitosa**<br>**Given** el developer envía una solicitud GET a `/yield_summaries/{id}` con un ID existente,<br>**When** el servidor procesa la solicitud,<br>**Then** responde con status 200 y el objeto completo (`plot_id`, `yield_per_hectare`, `season`, `calculated_at`).<br><br>**Escenario 2: Resumen no encontrado**<br>**Given** el developer envía una solicitud GET a `/yield_summaries/{id}` con un ID inexistente,<br>**When** el servidor procesa la solicitud,<br>**Then** responde con status 404. | EP13 |
+| EP13 / TS25 | Endpoint para listar resúmenes de pérdidas | Como developer, quiero un endpoint GET `/loss_summaries` para obtener todos los resúmenes de pérdidas agrícolas filtrando opcionalmente por `user_id`, para que el frontend pueda mostrar el porcentaje de pérdida y su causa por temporada en el dashboard. | **Escenario 1: Listado exitoso**<br>**Given** el developer envía una solicitud GET a `/loss_summaries` con un `user_id` existente,<br>**When** el servidor procesa la solicitud,<br>**Then** responde con status 200 y un array de resúmenes de pérdidas (`id`, `plot_id`, `loss_percentage`, `cause`, `season`, `calculated_at`).<br><br>**Escenario 2: Usuario sin resúmenes**<br>**Given** el developer envía una solicitud GET a `/loss_summaries` con un `user_id` que no tiene registros,<br>**When** el servidor procesa la solicitud,<br>**Then** responde con status 200 y un array vacío. | EP13 |
+| EP13 / TS26 | Endpoint para obtener resumen de pérdidas por ID | Como developer, quiero un endpoint GET `/loss_summaries/{id}` para recuperar un resumen de pérdidas específico por su identificador, para que el frontend pueda mostrar el detalle de una métrica de pérdida individual. | **Escenario 1: Consulta exitosa**<br>**Given** el developer envía una solicitud GET a `/loss_summaries/{id}` con un ID existente,<br>**When** el servidor procesa la solicitud,<br>**Then** responde con status 200 y el objeto completo (`loss_percentage`, `cause`, `season`, `calculated_at`).<br><br>**Escenario 2: Resumen no encontrado**<br>**Given** el developer envía una solicitud GET a `/loss_summaries/{id}` con un ID inexistente,<br>**When** el servidor procesa la solicitud,<br>**Then** responde con status 404. | EP13 |
+| EP13 / TS27 | Endpoint para listar consumos de agua | Como developer, quiero un endpoint GET `/water_consumptions` para obtener todos los registros de consumo de agua filtrando opcionalmente por `user_id`, para que el frontend pueda mostrar el total de litros consumidos por parcela y temporada en el dashboard. | **Escenario 1: Listado exitoso**<br>**Given** el developer envía una solicitud GET a `/water_consumptions` con un `user_id` existente,<br>**When** el servidor procesa la solicitud,<br>**Then** responde con status 200 y un array de consumos de agua (`id`, `plot_id`, `total_liters`, `season`, `calculated_at`).<br><br>**Escenario 2: Usuario sin registros**<br>**Given** el developer envía una solicitud GET a `/water_consumptions` con un `user_id` que no tiene registros,<br>**When** el servidor procesa la solicitud,<br>**Then** responde con status 200 y un array vacío. | EP13 |
+| EP13 / TS28 | Endpoint para obtener consumo de agua por ID | Como developer, quiero un endpoint GET `/water_consumptions/{id}` para recuperar un registro de consumo de agua específico por su identificador, para que el frontend pueda mostrar el detalle de un consumo individual. | **Escenario 1: Consulta exitosa**<br>**Given** el developer envía una solicitud GET a `/water_consumptions/{id}` con un ID existente,<br>**When** el servidor procesa la solicitud,<br>**Then** responde con status 200 y el objeto completo (`plot_id`, `total_liters`, `season`, `calculated_at`).<br><br>**Escenario 2: Registro no encontrado**<br>**Given** el developer envía una solicitud GET a `/water_consumptions/{id}` con un ID inexistente,<br>**When** el servidor procesa la solicitud,<br>**Then** responde con status 404. | EP13 |
+| EP13 / TS29 | Endpoint para listar tickets de soporte | Como developer, quiero un endpoint GET `/support_tickets` para obtener todos los tickets de soporte filtrando opcionalmente por `user_id`, para que el frontend pueda mostrar el historial completo de solicitudes de soporte del agricultor con su estado actual. | **Escenario 1: Listado exitoso**<br>**Given** el developer envía una solicitud GET a `/support_tickets` con un `user_id` existente,<br>**When** el servidor procesa la solicitud,<br>**Then** responde con status 200 y un array de tickets (`id`, `user_id`, `subject`, `message`, `status`, `created_at`, `responded_at`).<br><br>**Escenario 2: Usuario sin tickets**<br>**Given** el developer envía una solicitud GET a `/support_tickets` con un `user_id` que no tiene tickets registrados,<br>**When** el servidor procesa la solicitud,<br>**Then** responde con status 200 y un array vacío. | EP13 |
+| EP13 / TS30 | Endpoint para obtener ticket de soporte por ID | Como developer, quiero un endpoint GET `/support_tickets/{id}` para recuperar un ticket de soporte específico por su identificador, para que el frontend pueda mostrar el detalle completo de un ticket. | **Escenario 1: Consulta exitosa**<br>**Given** el developer envía una solicitud GET a `/support_tickets/{id}` con un ID existente,<br>**When** el servidor procesa la solicitud,<br>**Then** responde con status 200 y el objeto completo (`subject`, `message`, `status`, `created_at`, `responded_at`).<br><br>**Escenario 2: Ticket no encontrado**<br>**Given** el developer envía una solicitud GET a `/support_tickets/{id}` con un ID inexistente,<br>**When** el servidor procesa la solicitud,<br>**Then** responde con status 404. | EP13 |
+| EP13 / TS31 | Endpoint para crear un ticket de soporte | Como developer, quiero un endpoint POST `/support_tickets` con body `{ user_id, subject, message }` para registrar un nuevo ticket de soporte con estado inicial OPEN, para que el frontend pueda permitir al usuario enviar una solicitud de ayuda al equipo de soporte. | **Escenario 1: Creación exitosa**<br>**Given** el developer envía una solicitud POST a `/support_tickets` con `user_id`, `subject` y `message` válidos,<br>**When** el servidor procesa la solicitud,<br>**Then** responde con status 201 y el ticket creado con `status: OPEN` y `created_at` poblado.<br><br>**Escenario 2: Datos inválidos**<br>**Given** el developer envía una solicitud POST a `/support_tickets` sin `subject` o `message`,<br>**When** el servidor procesa la solicitud,<br>**Then** responde con status 400 indicando los campos requeridos faltantes. | EP13 |
 
 
 ### 3.2. Impact Mapping
@@ -1195,21 +1221,37 @@ Este artefacto estratégico permite al equipo de Andes Smart asegurar que cada f
 
 | # Orden | Technical Story Id | Título | Descripción | Story Points (1 / 2 / 3 / 5 / 8) |
 |--------|--------------------|--------|-------------|----------------------------------|
-| **1**| **TS01** | Endpoint de registro de usuario | Como developer, quiero un endpoint POST para registrar usuarios, para que el frontend pueda crear nuevas cuentas desde el formulario de registro. | **3** |
-| **2**| **TS02** | Endpoint de inicio de sesión | Como developer, quiero un endpoint POST para autenticar usuarios, para que el frontend pueda iniciar sesión y recibir un token de acceso. | **3** |
-| **3**| **TS03** | Endpoint para crear una parcela | Como developer, quiero un endpoint POST para registrar parcelas, para que el frontend pueda guardar nuevas parcelas vinculadas a un usuario. | **3** |
-| **4**| **TS04** | Endpoint para obtener parcelas de un usuario | Como developer, quiero un endpoint GET para obtener todas las parcelas de un usuario, para que el frontend pueda mostrar el listado de parcelas en el dashboard. | **2** |
-| **5**| **TS05** | Endpoint para actualizar una parcela | Como developer, quiero un endpoint PUT para actualizar los datos de una parcela, para que el frontend pueda guardar los cambios realizados por el usuario. | **3** |
-| **6**| **TS06** | Endpoint para eliminar una parcela | Como developer, quiero un endpoint DELETE para eliminar una parcela, para que el frontend pueda removerla cuando el usuario lo solicite. | **2** |
-| **7**| **TS07** | Endpoint para crear un cultivo | Como developer, quiero un endpoint POST para registrar cultivos en una parcela, para que el frontend pueda guardar la información de siembra del agricultor. | **3** |
-| **8**| **TS08** | Endpoint para obtener cultivos de una parcela | Como developer, quiero un endpoint GET para obtener todos los cultivos de una parcela, para que el frontend pueda mostrarlos en el detalle de la parcela. | **2** |
-| **9**| **TS09** | Endpoint para actualizar el estado de un cultivo | Como developer, quiero un endpoint PATCH para actualizar el estado de un cultivo, para que el frontend pueda marcarlo como finalizado cuando el agricultor coseche. | **2** |
-| **10** | **TS10** | Endpoint para registrar datos del suelo | Como developer, quiero un endpoint POST para registrar datos de humedad y temperatura del suelo, para que el frontend pueda guardar los registros manuales del agricultor. | **3** |
-| **11** | **TS11** | Endpoint para obtener historial de datos del suelo | Como developer, quiero un endpoint GET para obtener el historial de registros del suelo de una parcela, para que el frontend pueda mostrarlo al agricultor. | **2** |
-| **12** | **TS12** | Endpoint para obtener alertas climáticas de una parcela | Como developer, quiero un endpoint GET para obtener las alertas climáticas activas de una parcela, para que el frontend pueda mostrarlas en el dashboard del agricultor. | **3** |
-| **13** | **TS13** | Endpoint para crear una alerta climática | Como developer, quiero un endpoint POST para registrar una alerta climática en una parcela, para que el sistema pueda generarlas automáticamente al procesar datos del clima. | **3** |
-| **14** | **TS14** | Endpoint para obtener recomendación de riego | Como developer, quiero un endpoint GET que retorne una recomendación de riego basada en el último registro del suelo de una parcela, para que el frontend pueda mostrarla al agricultor. | **5** |
-| **15** | **TS15** | Endpoint para registrar respuesta a una recomendación | Como developer, quiero un endpoint POST para registrar si el agricultor aceptó o rechazó una recomendación de riego, para que el historial quede guardado en el sistema. | **3** |
+| **1** | **TS01** | Endpoint para registrar un usuario | Como developer, quiero un endpoint POST /users para registrar un nuevo usuario, para que el frontend pueda crear cuentas desde el formulario de registro. | **3** |
+| **2** | **TS02** | Endpoint para obtener un usuario por ID | Como developer, quiero un endpoint GET /users/{id} para obtener los datos de un usuario específico, para que el frontend pueda cargar el perfil del usuario autenticado. | **2** |
+| **3** | **TS03** | Endpoint para actualizar un usuario | Como developer, quiero un endpoint PUT /users/{id} para actualizar los datos de un usuario, para que el frontend pueda permitir al usuario editar su perfil. | **2** |
+| **4** | **TS04** | Endpoint para listar planes de suscripción | Como developer, quiero un endpoint GET /plans para obtener todos los planes disponibles, para que el frontend pueda mostrar las opciones de suscripción al usuario. | **1** |
+| **5** | **TS05** | Endpoint para obtener preferencias de alertas | Como developer, quiero un endpoint GET /alert_preferences con filtro opcional por user_id, para que el frontend pueda cargar las preferencias de alerta del usuario activo. | **2** |
+| **6** | **TS06** | Endpoint para actualizar preferencias de alertas | Como developer, quiero un endpoint PUT /alert_preferences/{id} para actualizar los toggles de alerta de un usuario, para que el frontend pueda guardar las preferencias de notificación configuradas por el usuario. | **2** |
+| **7** | **TS07** | Endpoint para registrar una lectura de suelo | Como developer, quiero un endpoint POST /soil_records para registrar la humedad y temperatura de una parcela, para que el frontend pueda almacenar las mediciones realizadas desde la pestaña Soil. | **3** |
+| **8** | **TS08** | Endpoint para listar lecturas de suelo | Como developer, quiero un endpoint GET /soil_records con filtro opcional por plot_id, para que el frontend pueda cargar el historial de lecturas de la parcela seleccionada. | **2** |
+| **9** | **TS09** | Endpoint para eliminar una lectura de suelo | Como developer, quiero un endpoint DELETE /soil_records/{id} para eliminar una lectura de suelo, para que el sistema pueda retirar registros que ya no deben mantenerse. | **1** |
+| **10** | **TS10** | Endpoint para registrar una recomendación de riego | Como developer, quiero un endpoint POST /irrigation_recommendations para registrar una recomendación asociada a una parcela y una lectura de suelo, para que el frontend pueda guardar las decisiones de riego del usuario. | **3** |
+| **11** | **TS11** | Endpoint para listar recomendaciones de riego | Como developer, quiero un endpoint GET /irrigation_recommendations con filtro opcional por plot_id, para que el frontend pueda cargar el historial de recomendaciones y decisiones de riego de una parcela. | **2** |
+| **12** | **TS12** | Endpoint para actualizar una recomendación de riego | Como developer, quiero un endpoint PUT /irrigation_recommendations/{id} para actualizar su estado, para que el frontend pueda registrar si el usuario confirmó o rechazó la asesoría. | **2** |
+| **13** | **TS13** | Endpoint para eliminar una recomendación de riego |Como developer, quiero un endpoint DELETE /irrigation_recommendations/{id} para eliminar una recomendación de riego, para que el sistema pueda retirar registros que ya no deben conservarse.  | **1** |
+| **14** | **TS14** | Endpoint para listar parcelas | Como developer, quiero un endpoint GET /plots con filtro opcional por userId, para que el frontend pueda cargar todas las parcelas registradas y filtrarlas por usuario. | **2** |
+| **15** | **TS15** | Endpoint para registrar una parcela | Como developer, quiero un endpoint POST /plots para registrar una nueva parcela, para que el frontend pueda crear parcelas desde el formulario de gestión del usuario. | **3** |
+| **16** | **TS16** | Endpoint para actualizar una parcela | Como developer, quiero un endpoint PUT /plots/{id} para actualizar los datos de una parcela, para que el frontend pueda guardar cambios en el nombre, ubicación o tamaño de la parcela. | **2** |
+| **17** | **TS17** | Endpoint para desactivar una parcela | Como developer, quiero un endpoint DELETE /plots/{id} para desactivar una parcela, para que el frontend pueda retirar parcelas del listado activo del usuario cambiando su estado a DELETED. | **1** |
+| **18** | **TS18** | Endpoint para listar cultivos | Como developer, quiero un endpoint GET /crops con filtro opcional por plotId, para que el frontend pueda cargar todos los cultivos registrados y filtrarlos por parcela en memoria. | **2** |
+| **19** | **TS19** | Endpoint para registrar un cultivo | Como developer, quiero un endpoint POST /crops para registrar un cultivo en una parcela, para que el frontend pueda asociar un nuevo cultivo a la parcela seleccionada por el usuario. | **3** |
+| **20** | **TS20** | Endpoint para actualizar un cultivo | Como developer, quiero un endpoint PUT /crops/{id} para actualizar los datos de un cultivo, para que el frontend pueda guardar cambios en el tipo, estado o fechas del cultivo registrado. | **2** |
+| **21** | **TS21** | Endpoint para eliminar un cultivo | Como developer, quiero un endpoint DELETE /crops/{id} para eliminar un cultivo, para que el sistema pueda retirar cultivos del listado de la parcela cuando el usuario los elimine. | **1** |
+| **22** | **TS22** | Endpoint para obtener alertas climáticas por ciudad | Como developer, quiero un endpoint GET /alerts?city={city} que consulte OpenWeather y devuelva alertas generadas, para que el frontend muestre riesgos climáticos sin exponer la API key. | **3** |
+| **23** | **TS23** | Endpoint para listar resúmenes de rendimiento | Como developer, quiero un endpoint GET `/yield_summaries?user_id={userId}` para obtener todos los resúmenes de rendimiento agrícola filtrando opcionalmente por usuario, para que el frontend pueda mostrar las métricas de rendimiento por hectárea y temporada en el dashboard. | **3** |
+| **24** | **TS24** | Endpoint para obtener resumen de rendimiento por ID | Como developer, quiero un endpoint GET `/yield_summaries/{id}` para recuperar un resumen de rendimiento específico por su identificador, para que el frontend pueda mostrar el detalle completo de una métrica de rendimiento individual. | **2** |
+| **25** | **TS25** | Endpoint para listar resúmenes de pérdidas | Como developer, quiero un endpoint GET `/loss_summaries?user_id={userId}` para obtener todos los resúmenes de pérdidas agrícolas filtrando opcionalmente por usuario, para que el frontend pueda mostrar el porcentaje de pérdida y su causa por temporada en el dashboard. | **3** |
+| **26** | **TS26** | Endpoint para obtener resumen de pérdidas por ID | Como developer, quiero un endpoint GET `/loss_summaries/{id}` para recuperar un resumen de pérdidas específico por su identificador, para que el frontend pueda mostrar el detalle de una métrica de pérdida individual. | **2** |
+| **27** | **TS27** | Endpoint para listar consumos de agua | Como developer, quiero un endpoint GET `/water_consumptions?user_id={userId}` para obtener todos los registros de consumo de agua filtrando opcionalmente por usuario, para que el frontend pueda mostrar el total de litros consumidos por parcela y temporada en el dashboard. | **3** |
+| **28** | **TS28** | Endpoint para obtener consumo de agua por ID | Como developer, quiero un endpoint GET `/water_consumptions/{id}` para recuperar un registro de consumo de agua específico por su identificador, para que el frontend pueda mostrar el detalle de un consumo individual. | **2** |
+| **29** | **TS29** | Endpoint para listar tickets de soporte | Como developer, quiero un endpoint GET `/support_tickets?user_id={userId}` para obtener todos los tickets de soporte filtrando opcionalmente por usuario, para que el frontend pueda mostrar el historial completo de solicitudes de soporte del agricultor con su estado actual. | **2** |
+| **30** | **TS30** | Endpoint para obtener ticket de soporte por ID | Como developer, quiero un endpoint GET `/support_tickets/{id}` para recuperar un ticket de soporte específico por su identificador, para que el frontend pueda mostrar el detalle completo de un ticket. | **2** |
+| **31** | **TS31** | Endpoint para crear un ticket de soporte | Como developer, quiero un endpoint POST `/support_tickets` con body `{ user_id, subject, message }` para registrar un nuevo ticket de soporte con estado inicial OPEN, para que el frontend pueda permitir al usuario enviar una solicitud de ayuda al equipo de soporte. | **3** |
 
 
 <br>
@@ -3683,7 +3725,7 @@ dispositivo, comprobando que los módulos de gestión de parcelas, cultivos, mon
 [https://github.com/AgroTrack-Project/web-Application](https://github.com/AgroTrack-Project/web-Application)
 
 **URL de la Web Application desplegada:**
-[https://agro-track.andessmart.workers.dev/home](https://agro-track.andessmart.workers.dev/home)
+[https://agro-track.vitaltrek.workers.dev/home](https://agro-track.vitaltrek.workers.dev/home)
 
 ---
 
@@ -3737,12 +3779,641 @@ A continuación se presentan los analíticos de colaboración del repositorio
 web-Application durante el periodo del sprint, evidenciando la participación
 de cada miembro del equipo.
 
-
 ![contribucion del equipo](report/assets/team-contribution-2.png)
 
 *Nota.* Elaboración propia.
 
+### 5.2.3. Sprint 3
 
+El tercer sprint se centrará en el desarrollo del RESTful API (Web Services) de AgroTrack, distribuyendo la implementación de los bounded contexts entre los miembros del equipo. El objetivo es construir y desplegar la primera versión del backend bajo una arquitectura orientada a dominio (DDD), permitiendo que el Frontend Web Application consuma datos reales a través de endpoints REST documentados con OpenAPI.
+
+#### 5.2.3.1. Sprint Planning 3
+
+Se presenta a continuación el resumen del Sprint Planning Meeting para el Sprint 3.
+
+| Campo | Detalle |
+|-------|---------|
+| **Sprint #** | Sprint 3 |
+| **Sprint Planning Background** | |
+| **Date** | 20/06/26 |
+| **Time** | 7:00 PM |
+| **Location** | Virtual – Discord (canal General) |
+| **Prepared By** | Velasquez Laquihuanaco, Eduardo David |
+| **Attendees (to planning meeting)** | Alfaro Mallma, Alberto Joaquin / Martínez Gaona, Pablo Afranio / Quispe Perez, Eder Edu / Rodriguez Rojas, Miler Alexander / Velasquez Laquihuanaco, Eduardo David |
+| **Sprint 2 – Review Summary** | Durante el Sprint 2 se desarrolló e implementó la primera versión funcional del Frontend Web Application de AgroTrack, cubriendo los bounded contexts de identity (perfil y configuración), farming (parcelas y cultivos), soil monitoring (datos del suelo), climate alerts (alertas climáticas) y dashboard (panel de control). La aplicación fue desplegada exitosamente mediante Cloudflare Workers y consumió datos a través de MockAPI como servidor provisional. |
+| **Sprint 2 – Retrospective Summary** | El equipo identificó como oportunidad de mejora la definición anticipada de los contratos de la API antes de iniciar la implementación del frontend, a fin de evitar inconsistencias entre los datos simulados (MockAPI) y los reales. En términos generales, la dinámica de trabajo fue adecuada para el alcance del Sprint. |
+| **Sprint Goal & User Stories** | |
+| **Sprint 3 Goal** | Nuestro enfoque está en implementar la API RESTful para AgroTrack. Creemos que ofrece una capa de backend fiable y persistente que permite al frontend interactuar con datos reales en todos los contextos limitados. Esto se confirmará cuando todos los endpoints de contexto limitado asignados estén operativos, documentados con OpenAPI a través de Swagger y consumidos con éxito por la aplicación web frontend. |
+| **Sprint 3 Velocity** | 7 |
+| **Sum of Story Points** | 7 |
+
+
+#### 5.2.3.2. Aspect Leaders and Collaborators.
+
+En el Sprint 3, los principales aspectos considerados corresponden a los bounded contexts implementados en el RESTful API (Web Services) de AgroTrack. Cada bounded context representa un dominio funcional independiente del backend, desarrollado por un integrante líder bajo la arquitectura Domain-Driven Design (DDD). Los aspectos del Sprint son: **Identity** (gestión de usuarios, planes y preferencias de alertas), **Farming** (gestión de parcelas y cultivos), **Soil Monitoring** (monitoreo de datos del suelo), **Alerts** (alertas climáticas) y **Support & Dashboard** (tickets de soporte y panel de control).
+
+| Team Member (Last Name, First Name) | GitHub Username | Identity BC | Farming BC | Soil Monitoring BC | Alerts BC | Support & Dashboard BC |
+|---|---|---|---|---|---|---|
+| Alfaro Mallma, Alberto Joaquin | elprrr | C | C | C | C | L |
+| Martínez Gaona, Pablo Afranio | de123kl | C | C | L | C | C |
+| Quispe Perez, Eder Edu | DuDu-tech | C | L | C | C | C |
+| Rodriguez Rojas, Miler Alexander | milerrodr | C | C | C | L | C |
+| Velasquez Laquihuanaco, Eduardo David | Edu-VLL | L | C | C | C | C |
+
+
+
+#### 5.2.3.3. Sprint Backlog 3.
+
+El objetivo principal del Sprint 3 fue implementar el RESTful API (Web Services) de AgroTrack, distribuyendo el desarrollo de los bounded contexts entre los integrantes del equipo bajo una arquitectura Domain-Driven Design (DDD). A continuación se presenta el tablero del sprint y la descomposición de Technical Stories en Work-Items/Tasks.
+
+**Figura**
+
+![Sprint Backlog 3](./report/assets/trelloSprin3.png) 
+
+*Sprint 3 de AgroTrack*
+
+*Nota.* Elaboración propia. Obtenido de Trello 
+
+**Link del trello:** https://trello.com/invite/b/6a386dfb1297005b1b046b88/ATTIf29aeadd54f0dac60d77b9b1cc2cf2ce5B4F6107/agrotrack-sprint-3
+
+| User Story Id | User Story | Work-Item / Task Id | Work-Item / Task Title | Work-Item / Task Description | Estimation (Hours) | Assigned To | Status |
+|---|---|---|---|---|---|---|---|
+| TS01 | Endpoint para registrar un usuario | T-001 | Implementar capa de dominio del BC Identity | Crear los agregados User, Plan y AlertPreference con sus value objects (UserType, PlanType), comandos (CreateUserCommand, UpdateUserCommand, UpdateAlertPreferenceCommand) y queries (GetUserByIdQuery, ListPlansQuery, ListAlertPreferencesQuery). | 4 | Velasquez Laquihuanaco, Eduardo David | Done |
+| | | T-002 | Implementar capa de aplicación del BC Identity | Implementar UserCommandServiceImpl (con auto-creación de AlertPreference al registrar usuario), AlertPreferenceCommandServiceImpl, PlanQueryServiceImpl y AlertPreferenceQueryServiceImpl con la lógica de negocio correspondiente. | 4 | Velasquez Laquihuanaco, Eduardo David | Done |
+| | | T-003 | Implementar capa de infraestructura del BC Identity | Crear entidades de persistencia (UserPersistenceEntity, PlanPersistenceEntity, AlertPreferencePersistenceEntity), repositorios JPA, assemblers de conversión y adaptadores de repositorio. | 4 | Velasquez Laquihuanaco, Eduardo David | Done |
+| | | T-004 | Implementar endpoint POST /users | Crear UsersController con endpoint POST /users que retorna 201 al crear el usuario y genera automáticamente su AlertPreference. Incluir validaciones de campos obligatorios y manejo de correo duplicado (409). | 2 | Velasquez Laquihuanaco, Eduardo David | Done |
+| TS02 | Endpoint para obtener un usuario por ID | T-005 | Implementar endpoint GET /users/{id} | Agregar endpoint GET /users/{id} en UsersController que retorna 200 con los datos del usuario o 404 si el ID no existe. | 1 | Velasquez Laquihuanaco, Eduardo David | Done |
+| TS03 | Endpoint para actualizar un usuario | T-006 | Implementar endpoint PUT /users/{id} | Agregar endpoint PUT /users/{id} en UsersController que actualiza nombre, email, password, planType y companyName, renovando el campo updated_at. Retorna 200 o 404. | 2 | Velasquez Laquihuanaco, Eduardo David | Done |
+| TS04 | Endpoint para listar planes de suscripción | T-007 | Implementar PlansController con endpoint GET /plans | Crear PlansController con endpoint GET /plans que retorna el array de los 3 planes disponibles (BASIC, PRO, ENTERPRISE) con sus características. | 2 | Velasquez Laquihuanaco, Eduardo David | Done |
+| | | T-008 | Implementar IdentityDataSeeder para poblar planes | Crear seeder ApplicationRunner que inicializa los planes BASIC, PRO y ENTERPRISE con sus características al arrancar la aplicación, si no existen aún. | 2 | Velasquez Laquihuanaco, Eduardo David | Done |
+| TS05 | Endpoint para obtener preferencias de alertas | T-009 | Implementar AlertPreferencesController con endpoint GET /alert_preferences | Crear endpoint GET /alert_preferences con parámetro opcional ?user_id para filtrar por usuario o retornar todas las preferencias registradas. | 2 | Velasquez Laquihuanaco, Eduardo David | Done |
+| TS06 | Endpoint para actualizar preferencias de alertas | T-010 | Implementar endpoint PUT /alert_preferences/{id} | Agregar endpoint PUT /alert_preferences/{id} que actualiza los toggles frostEnabled, droughtEnabled y heavyRainEnabled. Retorna 200 o 404. | 2 | Velasquez Laquihuanaco, Eduardo David | Done |
+| TS07 | Endpoint para registrar una lectura de suelo | T-011 | Implementar capa de dominio del BC Soil Monitoring | Crear los agregados SoilRecord e IrrigationRecommendation con sus value objects (Humidity, Temperature, PlotId, SoilRecordId, IrrigationUrgency, IrrigationRecommendationStatus), comandos y queries correspondientes. | 4 | Martínez Gaona, Pablo Afranio | Done |
+| | | T-012 | Implementar capa de aplicación del BC Soil Monitoring | Implementar SoilRecordCommandServiceImpl, SoilRecordQueryServiceImpl, IrrigationRecommendationCommandServiceImpl e IrrigationRecommendationQueryServiceImpl con la lógica de negocio y validaciones. | 4 | Martínez Gaona, Pablo Afranio | Done |
+| | | T-013 | Implementar capa de infraestructura del BC Soil Monitoring | Crear entidades de persistencia (SoilRecordPersistenceEntity, IrrigationRecommendationPersistenceEntity), repositorios JPA, assemblers de conversión y StubPlotReferenceAdapter. | 4 | Martínez Gaona, Pablo Afranio | Done |
+| | | T-014 | Implementar endpoint POST /soil_records | Crear SoilRecordsController con endpoint POST /soil_records que valida humedad (0–100) y temperatura, y retorna 201 con la lectura creada o 400 si los datos son inválidos. | 2 | Martínez Gaona, Pablo Afranio | Done |
+| TS08 | Endpoint para listar lecturas de suelo | T-015 | Implementar endpoint GET /soil_records | Agregar endpoint GET /soil_records con filtro opcional por plot_id que retorna 200 con la lista de lecturas ordenadas por fecha descendente. | 2 | Martínez Gaona, Pablo Afranio | Done |
+| TS09 | Endpoint para eliminar una lectura de suelo | T-016 | Implementar endpoint DELETE /soil_records/{id} | Agregar endpoint DELETE /soil_records/{id} que elimina la lectura de suelo indicada. Retorna 200 o 404 si el ID no existe. | 1 | Martínez Gaona, Pablo Afranio | Done |
+| TS10 | Endpoint para registrar una recomendación de riego | T-017 | Implementar endpoint POST /irrigation_recommendations | Crear IrrigationRecommendationsController con endpoint POST /irrigation_recommendations que valida plot_id, soil_record_id existente, urgency (LOW/MEDIUM/HIGH) y status (PENDING/CONFIRMED/REJECTED). Retorna 201 o 400. | 3 | Martínez Gaona, Pablo Afranio | Done |
+| TS11 | Endpoint para listar recomendaciones de riego | T-018 | Implementar endpoint GET /irrigation_recommendations | Agregar endpoint GET /irrigation_recommendations con filtro opcional por plot_id que retorna 200 con la lista de recomendaciones. | 2 | Martínez Gaona, Pablo Afranio | Done |
+| TS12 | Endpoint para actualizar una recomendación de riego | T-019 | Implementar endpoint PUT /irrigation_recommendations/{id} | Agregar endpoint PUT /irrigation_recommendations/{id} que actualiza el estado (CONFIRMED/REJECTED) y el campo responded_at. Retorna 200 o 404. | 2 | Martínez Gaona, Pablo Afranio | Done |
+| TS13 | Endpoint para eliminar una recomendación de riego | T-020 | Implementar endpoint DELETE /irrigation_recommendations/{id} | Agregar endpoint DELETE /irrigation_recommendations/{id} que elimina la recomendación. Retorna 200 o 404 si el ID no existe. | 1 | Martínez Gaona, Pablo Afranio | Done |
+| TS14 | Endpoint para listar parcelas | T-021 | Implementar capa de dominio del BC Farming – Plots | Crear el agregado Plot con su value object PlotStatus y comandos (CreatePlotCommand, UpdatePlotCommand, DeactivatePlotCommand) y queries (GetPlotByIdQuery, ListPlotsQuery). | 3 | Quispe Perez, Eder Edu | Done |
+| | | T-022 | Implementar capa de aplicación del BC Farming – Plots | Implementar PlotCommandServiceImpl con lógica de creación, actualización y desactivación de parcelas, y PlotQueryServiceImpl para listado con filtro opcional por userId. | 3 | Quispe Perez, Eder Edu | Done |
+| | | T-023 | Implementar capa de infraestructura del BC Farming – Plots | Crear PlotPersistenceEntity, PlotPersistenceRepository JPA, PlotRepositoryImpl y PlotPersistenceAssembler para la persistencia de parcelas. | 3 | Quispe Perez, Eder Edu | Done |
+| | | T-024 | Implementar endpoint GET /plots | Crear PlotsController con endpoint GET /plots que retorna la lista de parcelas con filtro opcional por userId. Retorna 200. | 2 | Quispe Perez, Eder Edu | Done |
+| TS15 | Endpoint para registrar una parcela | T-025 | Implementar endpoint POST /plots | Agregar endpoint POST /plots en PlotsController que crea una parcela nueva con estado ACTIVE. Retorna 201 o 400 si faltan campos obligatorios. | 2 | Quispe Perez, Eder Edu | Done |
+| TS16 | Endpoint para actualizar una parcela | T-026 | Implementar endpoint PUT /plots/{id} | Agregar endpoint PUT /plots/{id} que actualiza nombre, ubicación y tamaño de la parcela. Retorna 200 o 404 si el ID no existe. | 2 | Quispe Perez, Eder Edu | Done |
+| TS17 | Endpoint para desactivar una parcela | T-027 | Implementar endpoint DELETE /plots/{id} | Agregar endpoint DELETE /plots/{id} que cambia el estado de la parcela a DELETED (soft delete). Retorna 204 o 404 si el ID no existe. | 1 | Quispe Perez, Eder Edu | Done |
+| TS18 | Endpoint para listar cultivos | T-028 | Implementar capa de dominio del BC Farming – Crops | Crear el agregado Crop con su value object CropStatus y comandos (CreateCropCommand, UpdateCropCommand, DeleteCropCommand) y queries (GetCropByIdQuery, ListCropsQuery). | 3 | Quispe Perez, Eder Edu | Done |
+| | | T-029 | Implementar capas de aplicación e infraestructura del BC Farming – Crops | Implementar CropCommandServiceImpl, CropQueryServiceImpl, CropPersistenceEntity, CropPersistenceRepository JPA, CropRepositoryImpl y CropPersistenceAssembler. | 4 | Quispe Perez, Eder Edu | Done |
+| | | T-030 | Implementar endpoint GET /crops | Crear CropsController con endpoint GET /crops que retorna la lista de cultivos con filtro opcional por plotId. Retorna 200. | 2 | Quispe Perez, Eder Edu | Done |
+| TS19 | Endpoint para registrar un cultivo | T-031 | Implementar endpoint POST /crops | Agregar endpoint POST /crops en CropsController que registra un cultivo en una parcela con estado ACTIVE. Retorna 201 o 400 si faltan campos. | 2 | Quispe Perez, Eder Edu | Done |
+| TS20 | Endpoint para actualizar un cultivo | T-032 | Implementar endpoint PUT /crops/{id} | Agregar endpoint PUT /crops/{id} que actualiza el tipo, estado o fechas del cultivo registrado. Retorna 200 o 404 si el ID no existe. | 2 | Quispe Perez, Eder Edu | Done |
+| TS21 | Endpoint para eliminar un cultivo | T-033 | Implementar endpoint DELETE /crops/{id} | Agregar endpoint DELETE /crops/{id} que elimina el cultivo de la base de datos. Retorna 204 o 404 si el ID no existe. | 1 | Quispe Perez, Eder Edu | Done |
+| TS22 | Endpoint para obtener alertas climáticas por ciudad | T-034 | Implementar endpoint GET /alerts | Crear AlertsController con endpoint GET /alerts?city={city} que consulta OpenWeather y retorna alertas climáticas generadas. Retorna 200, 400 si falta city, o 404 si la ciudad no existe. | 3 | Rodriguez Rojas, Miler Alexander | Done |
+| TS23 | Endpoint para listar resúmenes de rendimiento | T-035 | Implementar endpoint GET /yield_summaries | Crear YieldSummariesController con endpoint GET /yield_summaries con filtro opcional por user_id. Retorna 200 y array de resúmenes o vacío si no hay registros. | 3 | Alfaro Mallma, Alberto Joaquin | Done |
+| TS24 | Endpoint para obtener resumen de rendimiento por ID | T-036 | Implementar endpoint GET /yield_summaries/{id} | Agregar endpoint GET /yield_summaries/{id} que retorna el resumen con plot_id, yield_per_hectare, season y calculated_at. Retorna 200 o 404 si no existe. | 2 | Alfaro Mallma, Alberto Joaquin | Done |
+| TS25 | Endpoint para listar resúmenes de pérdidas | T-037 | Implementar endpoint GET /loss_summaries | Crear LossSummariesController con endpoint GET /loss_summaries con filtro opcional por user_id. Retorna 200 y array de resúmenes de pérdidas o vacío si no hay registros. | 3 | Alfaro Mallma, Alberto Joaquin | Done |
+| TS26 | Endpoint para obtener resumen de pérdidas por ID | T-038 | Implementar endpoint GET /loss_summaries/{id} | Agregar endpoint GET /loss_summaries/{id} que retorna el resumen con loss_percentage, cause, season y calculated_at. Retorna 200 o 404 si no existe. | 2 | Alfaro Mallma, Alberto Joaquin | Done |
+| TS27 | Endpoint para listar consumos de agua | T-039 | Implementar endpoint GET /water_consumptions | Crear WaterConsumptionsController con endpoint GET /water_consumptions con filtro opcional por user_id. Retorna 200 y array de consumos o vacío si no hay registros. | 3 | Alfaro Mallma, Alberto Joaquin | Done |
+| TS28 | Endpoint para obtener consumo de agua por ID | T-040 | Implementar endpoint GET /water_consumptions/{id} | Agregar endpoint GET /water_consumptions/{id} que retorna el consumo con plot_id, total_liters, season y calculated_at. Retorna 200 o 404 si no existe. | 2 | Alfaro Mallma, Alberto Joaquin | Done |
+| TS29 | Endpoint para listar tickets de soporte | T-041 | Implementar endpoint GET /support_tickets | Crear SupportTicketsController con endpoint GET /support_tickets con filtro opcional por user_id. Retorna 200 y array de tickets con subject, message, status, created_at y responded_at. | 2 | Alfaro Mallma, Alberto Joaquin | Done |
+| TS30 | Endpoint para obtener ticket de soporte por ID | T-042 | Implementar endpoint GET /support_tickets/{id} | Agregar endpoint GET /support_tickets/{id} que retorna el ticket completo. Retorna 200 o 404 si no existe. | 2 | Alfaro Mallma, Alberto Joaquin | Done |
+| TS31 | Endpoint para crear un ticket de soporte | T-043 | Implementar endpoint POST /support_tickets | Agregar endpoint POST /support_tickets con body { user_id, subject, message } que crea el ticket con status OPEN. Retorna 201 o 400 si faltan campos requeridos. | 3 | Alfaro Mallma, Alberto Joaquin | Done |
+
+
+---
+
+#### 5.2.3.4. Development Evidence for Sprint Review.
+
+En el Sprint 3, el equipo de Andes Smart implementó los Web Services del sistema AgroTrack como una RESTful API desarrollada con Spring Boot y Java 26, aplicando una arquitectura Domain-Driven Design (DDD) en cuatro capas: domain, application, infrastructure e interfaces. Se implementaron cinco Bounded Contexts: Identity, Soil Monitoring, Farming, Alerts, Support y Dashboard. El trabajo se organizó mediante GitFlow, con feature branches individuales por integrante y Pull Requests hacia la rama `develop`. A continuación se presentan los commits más relevantes del repositorio de Web Services.
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on |
+|---|---|---|---|---|---|
+| AgroTrack-Project/web-services | develop | 40067 | `feat: add initial Spring Boot project structure for Agrotrack backend` | Estructura base del proyecto Spring Boot con paquetes DDD, dependencias Maven y configuración inicial | 2026-05-20 |
+| AgroTrack-Project/web-services | feature/JoaquinAlfaro | be94e | `chore(config): set context-path, naming strategy, integration profiles and H2 for tests` | Configuración del context-path /api/v1, estrategia de naming snake_case pluralizado, perfiles dev/test y H2 para pruebas | 2026-05-21 |
+| AgroTrack-Project/web-services | feature/JoaquinAlfaro | 9adca | `feat(support): implement domain layer with value objects, commands, queries, aggregate and domain events` | Aggregate SupportTicket con value objects TicketStatus, commands CreateTicket y CloseTicket, domain events y queries | 2026-05-22 |
+| AgroTrack-Project/web-services | feature/JoaquinAlfaro | 16b5f | `feat(support): implement application layer with command/query services and ports` | Servicios de aplicación SupportCommandService y SupportQueryService con puertos de repositorio | 2026-05-23 |
+| AgroTrack-Project/web-services | feature/JoaquinAlfaro | 1f8a4 | `feat(support): implement infrastructure layer with persistence entities, repositories, assemblers and data seeder` | Entidades JPA, repositorios Spring Data, assemblers de persistencia y DataSeeder con datos de muestra | 2026-05-24 |
+| AgroTrack-Project/web-services | feature/JoaquinAlfaro | 30594 | `feat(support): implement REST interface layer with resources, assemblers and controller` | SupportTicketsController con endpoints GET /support_tickets, GET /{id} y POST, recursos REST y assemblers | 2026-05-24 |
+| AgroTrack-Project/web-services | feature/JoaquinAlfaro | 994f0 | `feat(dashboard): implement domain layer with value objects, aggregates and queries for yield, loss and water summaries` | Domain model del BC Dashboard con aggregates YieldSummary, LossSummary y WaterConsumption y sus queries | 2026-05-26 |
+| AgroTrack-Project/web-services | feature/JoaquinAlfaro | 67178 | `feat(dashboard): implement application layer with query services, ports and MockAPI farming integration` | Query services del dashboard con integración al BC Farming mediante PlotOwnershipQueryPort | 2026-05-27 |
+| AgroTrack-Project/web-services | feature/JoaquinAlfaro | e613a | `feat(dashboard): implement infrastructure layer with persistence entities, repositories, assemblers and data seeder` | Capa de persistencia JPA para los tres recursos del dashboard con DataSeeder para datos de demostración | 2026-05-28 |
+| AgroTrack-Project/web-services | feature/JoaquinAlfaro | 46585 | `feat(dashboard): implement REST interface layer with resources, assemblers and controllers` | Tres controladores REST para YieldSummaries, LossSummaries y WaterConsumptions con endpoints GET | 2026-05-29 |
+| AgroTrack-Project/web-services | develop | 8f78f | `Merge pull request #1 from AgroTrack-Project/feature/JoaquinAlfaro` | Integración del BC Support & Dashboard a la rama develop mediante Pull Request #1 | 2026-06-01 |
+| AgroTrack-Project/web-services | feature/eduardo-velasquez | 14c72 | `feat: add identity bounded context REST API` | Implementación completa del BC Identity con Users, Plans y AlertPreferences en las cuatro capas DDD | 2026-06-02 |
+| AgroTrack-Project/web-services | develop | 51a2f | `Merge pull request #2 from AgroTrack-Project/feature/eduardo-velasquez` | Integración del BC Identity a la rama develop mediante Pull Request #2 | 2026-06-04 |
+| AgroTrack-Project/web-services | feature/Pablo-Martinez | 2d6f2 | `Implement soil monitoring BC` | Implementación del BC Soil Monitoring con SoilRecords e IrrigationRecommendations en las cuatro capas DDD | 2026-06-05 |
+| AgroTrack-Project/web-services | develop | 8b1b2 | `Merge pull request #3 from AgroTrack-Project/feature/Pablo-Martinez` | Integración inicial del BC Soil Monitoring a la rama develop mediante Pull Request #3 | 2026-06-06 |
+| AgroTrack-Project/web-services | feature/Pablo-Martinez | 5cfa9 | `refactor: move soil monitoring enums to value objects` | Refactorización de SoilStatus e IrrigationStatus hacia el paquete value objects del dominio | 2026-06-07 |
+| AgroTrack-Project/web-services | develop | 77b71 | `Merge pull request #4 from AgroTrack-Project/feature/Pablo-Martinez` | Integración de la refactorización del BC Soil Monitoring a la rama develop mediante Pull Request #4 | 2026-06-08 |
+| AgroTrack-Project/web-services | feature/eder-quispe | f0b51 | `feat(farming): add PlotStatus and CropStatus value objects` | Value objects PlotStatus (ACTIVE, INACTIVE, DELETED) y CropStatus (GROWING, HARVESTED) para el dominio de Farming | 2026-06-09 |
+| AgroTrack-Project/web-services | feature/eder-quispe | 05756 | `feat(farming): add Plot aggregate with create, update and deactivate behavior` | Aggregate Plot con comportamientos de creación, actualización y desactivación, junto con sus comandos de dominio | 2026-06-09 |
+| AgroTrack-Project/web-services | feature/eder-quispe | a1a65 | `feat(farming): add Crop aggregate with create, update and markAsHarvested behavior` | Aggregate Crop con comportamientos de creación, actualización y marcado como cosechado | 2026-06-09 |
+| AgroTrack-Project/web-services | feature/eder-quispe | 68234 | `feat(farming): add Plot and Crop repository ports` | Puertos de repositorio PlotRepository y CropRepository para desacoplar dominio de infraestructura | 2026-06-10 |
+| AgroTrack-Project/web-services | feature/eder-quispe | cff93 | `feat(farming): add Plot and Crop JPA persistence entities and repositories` | Entidades JPA PlotEntity y CropEntity con sus repositorios Spring Data JPA | 2026-06-10 |
+| AgroTrack-Project/web-services | feature/eder-quispe | fceb5 | `feat(farming): add Plot and Crop persistence assemblers and repository adapters` | Assemblers de persistencia y adapters de repositorio que implementan los puertos del dominio | 2026-06-11 |
+| AgroTrack-Project/web-services | feature/eder-quispe | 55445 | `feat(farming): add Plot and Crop command and query services` | Servicios de aplicación PlotCommandService, PlotQueryService, CropCommandService y CropQueryService | 2026-06-11 |
+| AgroTrack-Project/web-services | feature/eder-quispe | 89eec | `feat(farming): add Plot and Crop REST controllers` | PlotsController y CropsController con endpoints CRUD completos y transformación mediante assemblers REST | 2026-06-12 |
+| AgroTrack-Project/web-services | feature/eder-quispe | aaf99 | `fix(farming): migrate Plot and Crop IDs from Long to UUID string` | Migración de IDs numéricos Long a UUID string en aggregates para compatibilidad con frontend Angular | 2026-06-13 |
+| AgroTrack-Project/web-services | feature/eder-quispe | 5b995 | `fix(farming): update Plot and Crop persistence layer to use UUID string IDs` | Actualización de entidades JPA para almacenar UUID como VARCHAR en la base de datos MySQL | 2026-06-14 |
+| AgroTrack-Project/web-services | feature/eder-quispe | 79f31 | `fix(farming): replace soft delete with hard delete on DELETE /plots/{id}` | Cambio de eliminación lógica a eliminación física en el endpoint DELETE /plots/{id} requerido por el frontend | 2026-06-15 |
+| AgroTrack-Project/web-services | feature/eder-quispe | 3b9f5 | `refactor(farming): remove getById and harvest endpoints not used by frontend` | Eliminación de endpoints GET /plots/{id}, GET /crops/{id} y PATCH /crops/{id}/harvest no consumidos por el frontend | 2026-06-16 |
+| AgroTrack-Project/web-services | feature/Pablo-Martinez | df18e | `refactor: remove unused get-by-id endpoints in soil-monitoring BC` | Eliminación de endpoints GET /{id} en soil monitoring no utilizados por el frontend para mantener la API limpia | 2026-06-16 |
+| AgroTrack-Project/web-services | develop | 56471 | `Merge pull request #5 from AgroTrack-Project/feature/Pablo-Martinez` | Integración de la refactorización final del BC Soil Monitoring a la rama develop mediante Pull Request #5 | 2026-06-16 |
+| AgroTrack-Project/web-services | develop | 46bb2 | `Merge pull request #6 from AgroTrack-Project/feature/eder-quispe` | Integración completa del BC Farming a la rama develop mediante Pull Request #6 | 2026-06-17 |
+| AgroTrack-Project/web-services | develop | 4d8b6 | `feat: Add BC Alerts` | Implementación del BC Alerts con integración a OpenWeather API para consulta de condiciones climáticas por ciudad y generación de alertas | 2026-06-20 |
+
+
+
+#### 5.2.3.5. Execution Evidence for Sprint Review. 
+
+Durante el Sprint 3, el equipo de Andes Smart completó la implementación de los Web Services del sistema AgroTrack. Se desarrollaron cinco Bounded Contexts (Identity, Soil Monitoring, Farming, Alerts y Support & Dashboard) como una RESTful API desplegada en Render, documentada mediante OpenAPI/Swagger y consumida exitosamente por la Web Application. A continuación se presentan las capturas de las principales vistas del funcionamiento del sistema.
+
+**Swagger UI - Documentación de endpoints desplegados**
+
+![swagger 1](report/assets/swagger1.png) 
+![swagger 2](report/assets/swagger2.png) 
+![swagger 3](report/assets/swagger3.png) 
+![swagger 4](report/assets/swagger4.png)  
+
+**Video de demostración**
+
+A continuación se presenta el video de demostración del Sprint 3, donde se muestra el funcionamiento de los Web Services d
+ocumentados en Swagger y los endpoints implementados por el equipo.
+
+![swagger 2](report/assets/swagger2.png) 
+
+**Link del video:** [Ver video de demostración - Sprint 3](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323350_upc_edu_pe/IQANSlaoHDAvRrqH_iFNWhu7AaJ-uZhcqpvZBazMZA5JOiE?e=HwAWli&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+
+
+<br>
+
+#### 5.2.3.6. Services Documentation Evidence for Sprint Review.
+
+Durante el Sprint 3, el equipo documentó los Web Services de AgroTrack mediante **OpenAPI  / Swagger UI**. La documentación se generó automáticamente a partir de las anotaciones de los controladores REST.
+
+A continuación se presenta la tabla con todos los endpoints documentados, junto con la sintaxis de llamada, parámetros, descripción de operación y códigos de respuesta:
+
+| Endpoint | Verbo HTTP | Sintaxis de llamada | Parámetros | Descripción | Response |
+|:---|:---:|:---|:---|:---|:---:|
+| Users | GET | `GET /api/v1/users/{id}` | `id` (path, UUID): identificador del usuario | Obtiene un usuario por su ID único | 200, 404 |
+| Users | POST | `POST /api/v1/users` | Body: `name`, `email`, `password`, `user_type`, `plan_type`, `company_name`(opcional) | Registra un nuevo usuario en el sistema | 201, 409 |
+| Users | PUT | `PUT /api/v1/users/{id}` | `id` (path, UUID); Body: campos actualizables del usuario | Actualiza los datos de un usuario existente | 200, 404 |
+| Plans | GET | `GET /api/v1/plans` | — | Retorna el catálogo completo de planes disponibles (BASIC, PRO, ENTERPRISE) | 200 |
+| Alert Preferences | GET | `GET /api/v1/alert_preferences` | `user_id` (query, opcional): filtra por usuario | Lista las preferencias de alertas climáticas; sin parámetro retorna todas | 200 |
+| Alert Preferences | PUT | `PUT /api/v1/alert_preferences/{id}` | `id` (path, UUID); Body: `frost_enabled`, `drought_enabled`, `heavy_rain_enabled` | Actualiza las preferencias de alertas de un usuario | 200, 404 |
+| Plots | GET | `GET /api/v1/plots` | `userId` (query, opcional): filtra parcelas por propietario | Lista todas las parcelas; con `userId` retorna solo las del usuario indicado | 200 |
+| Plots | POST | `POST /api/v1/plots` | Body: `name`, `location`, `size_hectares`, `status`, `user_id` | Crea una nueva parcela asociada a un usuario | 201, 400 |
+| Plots | PUT | `PUT /api/v1/plots/{id}` | `id` (path, UUID); Body: campos actualizables de la parcela | Actualiza los datos de una parcela existente | 200, 404 |
+| Plots | DELETE | `DELETE /api/v1/plots/{id}` | `id` (path, UUID) | Elimina permanentemente una parcela y sus datos asociados | 204 |
+| Crops | GET | `GET /api/v1/crops` | `plotId` (query, opcional): filtra cultivos por parcela | Lista todos los cultivos; con `plotId` retorna solo los de esa parcela | 200 |
+| Crops | POST | `POST /api/v1/crops` | Body: `type`, `sowing_date`, `harvest_date`, `status`, `plot_id` | Registra un nuevo cultivo en una parcela | 201, 400 |
+| Crops | PUT | `PUT /api/v1/crops/{id}` | `id` (path, UUID); Body: campos actualizables del cultivo | Actualiza los datos de un cultivo existente | 200, 404 |
+| Crops | DELETE | `DELETE /api/v1/crops/{id}` | `id` (path, UUID) | Elimina permanentemente un cultivo | 204 |
+| Soil Records | GET | `GET /api/v1/soil_records` | `plot_id` (query, opcional): filtra registros por parcela | Lista registros del sensor de suelo; con `plot_id` filtra por parcela | 200 |
+| Soil Records | POST | `POST /api/v1/soil_records` | Body: `plot_id`, `humidity`, `temperature`, `recorded_at` | Registra una nueva lectura de humedad y temperatura del suelo | 201, 400 |
+| Soil Records | DELETE | `DELETE /api/v1/soil_records/{id}` | `id` (path, UUID) | Elimina un registro de suelo; retorna mensaje de confirmación | 200 |
+| Irrigation Recommendations | GET | `GET /api/v1/irrigation_recommendations` | `plot_id` (query, opcional): filtra por parcela | Lista recomendaciones de riego; con `plot_id` filtra por parcela | 200 |
+| Irrigation Recommendations | POST | `POST /api/v1/irrigation_recommendations` | Body: `plot_id`, `soil_record_id`, `message`, `urgency`, `status` | Crea una nueva recomendación de riego generada por el sistema | 201, 400 |
+| Irrigation Recommendations | PUT | `PUT /api/v1/irrigation_recommendations/{id}` | `id` (path, UUID); Body: `status`, `responded_at` | Actualiza el estado de una recomendación (aceptada/rechazada) | 200, 404 |
+| Irrigation Recommendations | DELETE | `DELETE /api/v1/irrigation_recommendations/{id}` | `id` (path, UUID) | Elimina una recomendación de riego; retorna mensaje de confirmación | 200 |
+| Support Tickets | GET | `GET /api/v1/support_tickets` | `user_id` (query, opcional): filtra tickets por usuario | Lista tickets de soporte; con `user_id` retorna solo los del usuario | 200 |
+| Support Tickets | GET | `GET /api/v1/support_tickets/{id}` | `id` (path, UUID) | Obtiene el detalle de un ticket de soporte específico | 200, 404 |
+| Support Tickets | POST | `POST /api/v1/support_tickets` | Body: `user_id`, `subject`, `message` | Crea un nuevo ticket de soporte enviado por el usuario | 201, 400 |
+| Support Tickets | PUT | `PUT /api/v1/support_tickets/{id}` | `id` (path, UUID); Body: `status` | Cierra o actualiza el estado de un ticket de soporte | 200 |
+| Alerts | GET | `GET /api/v1/alerts` | `city` (query, **requerido**): nombre de la ciudad | Consulta alertas climáticas activas para la ciudad indicada vía OpenWeather API | 200, 400, 404 |
+| Yield Summaries | GET | `GET /api/v1/yield_summaries` | `user_id` (query, opcional): filtra por usuario | Lista resúmenes de rendimiento por hectárea; con `user_id` filtra por propietario | 200 |
+| Yield Summaries | GET | `GET /api/v1/yield_summaries/{id}` | `id` (path, UUID) | Obtiene el detalle de un resumen de rendimiento específico | 200, 404 |
+| Loss Summaries | GET | `GET /api/v1/loss_summaries` | `user_id` (query, opcional): filtra por usuario | Lista resúmenes de pérdidas agrícolas; con `user_id` filtra por propietario | 200 |
+| Loss Summaries | GET | `GET /api/v1/loss_summaries/{id}` | `id` (path, UUID) | Obtiene el detalle de un resumen de pérdidas específico | 200, 404 |
+| Water Consumptions | GET | `GET /api/v1/water_consumptions` | `user_id` (query, opcional): filtra por usuario | Lista registros de consumo de agua por temporada; con `user_id` filtra por propietario | 200 |
+| Water Consumptions | GET | `GET /api/v1/water_consumptions/{id}` | `id` (path, UUID) | Obtiene el detalle de un registro de consumo de agua específico | 200, 404 |
+
+### Documentación en Swagger UI
+
+Se incluyen a continuación capturas de la documentación interactiva accesible en Swagger:
+
+
+**Captura 1: Ejecución interactiva de un endpoint de prueba**
+
+![Swagger UI - Endpoint POST](./report/assets/postUsers.png) 
+
+
+**Captura 2: Detalle de un endpoint con ejemplo de GET /users/{id}**
+
+![Swagger UI - Endpoint GET](./report/assets/getUsers.png) 
+
+ 
+
+### Referencias de Implementación
+
+**Repositorio de Web Services:** https://github.com/AgroTrack-Project/web-services
+
+**URL de la Documentación Swagger:** https://agotrack.onrender.com/api/v1/swagger-ui/index.html#/
+
+---
+
+<br> 
+
+#### 5.2.3.7. Software Deployment Evidence for Sprint Review.
+
+Durante el Sprint 3, el equipo realizó el despliegue del **Web Service de AgroTrack** en entorno de producción. Se utilizaron dos plataformas en la nube: **Aiven** para alojar la base de datos MySQL y **Render** para el backend.  
+ 
+
+---
+
+<br>
+
+**Fase 1: Configuración de la base de datos en Aiven (MySQL)**
+
+Acceso a la plataforma Aiven (aiven.io), proveedor de infraestructura de datos en la nube seleccionado por el equipo para gestionar la base de datos MySQL del backend.
+
+![BACKEND-1: Página principal de Aiven](report/assets/BACKEND-1.png)
+
+<br>
+
+Dashboard de servicios de Aiven. Se verificó que el servicio MySQL `mysql-58d1d5c` se encontraba activo (status: Running) en DigitalOcean, región California, bajo el plan Free-1-1gb (1 CPU / 1 GB RAM / 1 GB storage).
+
+![BACKEND-2: Servicio MySQL activo en el dashboard de Aiven](report/assets/BACKEND-2.png)
+
+<br>
+
+Vista de la sección Services de Aiven con la opción de crear un nuevo servicio disponible.
+
+![BACKEND-3: Sección Services de Aiven con botón Create service](report/assets/BACKEND-3.png)
+
+<br>
+
+
+Selección del tipo de servicio a crear. Se eligió **MySQL** como motor de base de datos relacional para el backend de AgroTrack.
+
+![BACKEND-4: Selección del tipo de servicio MySQL en Aiven](report/assets/BACKEND-4.png)
+
+<br>
+
+
+Configuración del plan de servicio. Se seleccionó el tier **Free** ($0/mes), región **North America**, plan **Free-1-1gb** (1 VM, 1 CPU, 1 GB RAM, 1 GB storage).
+
+![BACKEND-5: Configuración del plan Free en Aiven](report/assets/BACKEND-5.png)
+
+<br>
+
+
+Servicio MySQL desplegado y activo. Se obtuvo la información de conexión: host `mysql-58d1d5c-joaquinaso5612-e97f.a.aivencloud.com`, puerto `27774`, usuario `avnadmin`, SSL mode: `REQUIRED`. Estas credenciales se configuraron como variables de entorno en el backend.
+
+![BACKEND-6: Información de conexión del servicio MySQL en Aiven](report/assets/BACKEND-6.png)
+
+---
+
+<br>
+
+
+<br>
+
+
+**Fase 2: Despliegue del API REST en Render**
+
+Acceso a la plataforma Render (render.com), seleccionada como plataforma de hosting para el backend Spring Boot por su integración con GitHub y soporte para contenedores Docker.
+
+![BACKEND-7: Página principal de Render](report/assets/BACKEND-7.png)
+
+<br>
+
+
+Dashboard de Render mostrando el servicio **AGOTRACK** desplegado correctamente (status: Deployed, runtime: Docker, región: Ohio).
+
+![BACKEND-8: Servicio AGOTRACK desplegado en el dashboard de Render](report/assets/BACKEND-8.png)
+
+<br>
+
+
+Vista general de proyectos en Render. El proyecto "My project" muestra el estado "All services are up and running", confirmando que todos los servicios están operativos.
+
+![BACKEND-9: Vista general de proyectos en Render con servicios activos](report/assets/BACKEND-9.png)
+
+<br>
+
+
+Creación de un nuevo Web Service desde el menú "+ New" de Render, seleccionando la opción **Web Service**.
+
+![BACKEND-10: Menú de creación de nuevo Web Service en Render](report/assets/BACKEND-10.png)
+
+<br>
+
+
+Selección del repositorio de código fuente mediante el Git Provider de Render. Se vinculó el repositorio **BACKEND-AGROTRACK** de la organización en GitHub.
+
+![BACKEND-11: Selección del repositorio BACKEND-AGROTRACK en Render](report/assets/BACKEND-11.png)
+
+<br>
+
+
+Configuración del Web Service: nombre del servicio, lenguaje/runtime, branch de despliegue (`main`) y región de hosting (**Ohio, US East**).
+
+![BACKEND-12: Configuración del Web Service en Render](report/assets/BACKEND-12.png)
+
+<br>
+
+
+Selección del plan de instancia. Se eligió el plan **Free** (512 MB RAM, 0.1 CPU, $0/mes) para el entorno de demostración del proyecto.
+
+![BACKEND-13: Selección del plan Free en Render](report/assets/BACKEND-13.png)
+
+<br>
+
+
+Configuración de las variables de entorno del servicio. Se registraron las variables `DB_URL`, `DB_USERNAME`, `DB_PASSWORD` (con las credenciales de Aiven) y `OPENWEATHER_API_KEY` (para el bounded context Alerts). Finalmente se ejecutó el despliegue con el botón **Deploy Web Service**.
+
+![BACKEND-14: Configuración de variables de entorno y despliegue en Render](report/assets/BACKEND-14.png)
+
+<br>
+
+
+Servicio desplegado y en estado **Live** en Render. El backend quedó disponible públicamente y con auto-deploy habilitado desde el branch `main`.
+
+![BACKEND-15: Servicio backend Live en Render](report/assets/BACKEND-15.png)
+
+<br>
+ 
+
+#### 5.2.3.8. Team Collaboration Insights during Sprint.
+
+Durante el Sprint 3, el equipo concentró sus actividades de implementación en el desarrollo de los Web Services de AgroTrack. El trabajo se distribuyó entre los diferentes Bounded Contexts del sistema, permitiendo que cada integrante implementara los endpoints, reglas de negocio, servicios de aplicación y componentes de persistencia correspondientes a su responsabilidad.
+
+A continuación se presentan los analíticos de colaboración del repositorio web-services durante el periodo del sprint, evidenciando la participación de cada miembro del equipo.
+
+![contribucion del equipo](report/assets/Sprint_3_Insight.png)
+
+
+### 5.3.2. Registro de Entrevistas
+
+**Entrevista N° 1**
+
+| **Nombres y apellidos**      | **Edad** | **Distrito** |
+|------------------------------|----------|--------------|
+| Matias Carrillo Acho         | 20 años  | Lima         |
+
+| **Segmento**          | **URL**            | **Inicio** | **Duración** |
+|-----------------------|--------------------|------------|--------------|
+| Empresario Agricola   | [Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a827_upc_edu_pe/IQAAri3xk_xURropEvsluVzmAXj4s7kSXhMjvGD23jlLV3I?e=ua1W4A&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) | 00:00      | 6:45 min     |
+
+![Entrevista-1](report/assets/entrevista-1-s3.png)
+
+**Resumen:** En el video se presenta una prueba de usabilidad de la plataforma AgroTrack realizada con Matías Carrillo, empresario del sector agrícola. Durante la sesión, el usuario interactúa con la landing page y el dashboard de la aplicación, evaluando la facilidad de uso, claridad de la información, visualización de parcelas, métricas de rendimiento, consumo de agua y exportación de reportes. Finalmente, brinda retroalimentación positiva sobre la utilidad de la plataforma y propone mejoras como agregar más gráficos y métricas para una mejor visualización de la información agrícola.
+
+**Entrevista N° 2**
+
+| **Nombres y apellidos**   | **Edad**   | **Distrito**   |
+|---------------------------|------------|----------------|
+| Valeri Rojas                 | 22 años    | Los Olivos          |
+
+| **Segmento** | **URL** | **Inicio** | **Duración** |
+|--------------|---|---|--------------|
+| Empresaria Agricola  | [Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202324623_upc_edu_pe/IQAsdhz3gAqtRqfZKulI0qiAAb1ilpwoVd6NDvYrs-_WKio?e=xPs1e0&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) | 00:00 | 7:26 min  |
+
+![Entrevista-2](report/assets/Segmento-Valeri.png)
+
+**Resumen:** Valeri Rojas, de 22 años de Los Olivos, quien trabaja en la empresa agrícola Agroverde del Norte, fue entrevistada sobre la plataforma AgroTrack. Durante la prueba de usabilidad, navegó por la landing page y el panel de control, identificando rápidamente que la plataforma permite monitorear gestiones de riego basadas en datos. Valeri aprecio que el panel de control presenta un resumen organizado del estado de todas las parcelas sin necesidad de entrar a cada una, que los indicadores facilitan la comparación de rendimiento entre parcelas, y que la información sobre pérdidas estimadas y consumo de agua proporciona una buena base para identificar problemas y tomar decisiones de mejora. Tambien elogió la simplicidad del proceso de exportación de reportes en PDF y la navegación intuitiva de la plataforma. Sin embargo, sugirió agregar proyecciones de rendimiento futuro y análisis de costos por parcela para campañas futuras. En conclusión, recomendaría AgroTrack a otros empresarios del sector agrícola porque centraliza la información importante sobre las parcelas y facilita el monitoreo de indicadores clave que ayudan a la toma de decisiones.
+
+**Entrevista N° 3**
+
+| **Nombres y apellidos**   | **Edad**   | **Distrito**   |
+|---------------------------|------------|----------------|
+| Lucia Alarcon             | 23 años    | Comas         |
+
+| **Segmento** | **URL** | **Inicio** | **Duración** |
+|--------------|---|---|--------------|
+| Agricultora   | [Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202324623_upc_edu_pe/IQBE_PFpJHzZSY8DPfCCjxgUAYq_Li89X4uKG9cjUehaKr0?e=8mXpdF&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) | 00:00 | 8:35 min      |
+
+![Entrevista-3](report/assets/Segmento-Lucia.png)
+
+**Resumen:** Lucía Larcón, de 23 años del Distrito de Commerce, agricultora entrevistada sobre AgroTrack, comprendió desde el inicio que la plataforma sirve para monitorear cultivos y el estado del suelo, además de recibir avisos sobre cambios climáticos, destacando que la información estaba clara y las funciones se mostraban de forma sencilla. Durante la prueba navegó por el panel principal, registró y editó parcelas, ingresó datos de humedad y temperatura del suelo, gestionó cultivos hasta cosecharlos, y revisó las recomendaciones de riego, señalando que todo el proceso fue bastante sencillo y los campos eran claros. Valoró positivamente las recomendaciones de riego por considerarlas lógicas para evitar desperdiciar agua, y las alertas climáticas por permitirle planificar actividades y proteger sus cultivos con anticipación. Mencionó que las opciones de configuración de alertas no eran difíciles de encontrar, aunque al inicio le tomó unos segundos ubicarlas y sugirió que podrían estar más visibles. Como mejoras propuso opciones más grandes y accesibles desde el celular para registrar datos rápidamente, gráficos más visuales sobre la evolución de la humedad del suelo, y destacó que actualmente lleva sus anotaciones en un cuaderno o de memoria, por lo que tener toda la información organizada en una sola plataforma le ayudaría a tomar decisiones más rápidas.
+
+**Entrevista N° 4**
+
+| **Nombres y apellidos**   | **Edad**   | **Distrito**   |
+|---------------------------|------------|----------------|
+| Christopher Mejia         | 28 años    | Los Olivos     |
+
+| **Segmento** | **URL** | **Inicio** | **Duración** |
+|--------------|---|---|--------------|
+| Empresario Agricola   | [Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202324623_upc_edu_pe/IQB0QuCKjIVyTJUrsuQBrtjnAQwPmiZGOUkIMTinESxiDiU?e=42L1Vu&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) | 00:00 | 9:58 min      |
+
+![Entrevista-4](report/assets/Segmento-Cristopher.png)
+
+**Resumen:** Christopher Mejía, de 28 años, dueño de Inca Agroindustries & SACS, exploró AgroTrack identificando rápidamente que es una plataforma amigable y directa con los datos mostrados, útil para la gestión agrícola del día a día. Durante la prueba navegó por el dashboard donde revisó el rendimiento de parcelas, resumen de pérdidas y consumo de agua, intentó exportar reportes en PDF y Excel aunque no logró completar la descarga, utilizó el módulo de soporte para reportar el problema mediante un ticket, y exploró las funcionalidades de parcelas, cultivos, estado del suelo, recomendaciones de riego e historial de cosechas. Valoró positivamente que el panel de control está bien ordenado y claro, que la información de rendimiento por parcela ayuda a identificar dónde se produce más y dónde se pierde, y que las alertas climáticas en tiempo real son muy útiles para su operación. Sin embargo, señaló que no encontró métricas financieras suficientes para tomar decisiones de inversión, y como principal mejora solicitó incorporar un indicador de cuánto dinero producen sus parcelas por hectárea en efectivo. A pesar de los problemas con la exportación de reportes, consideró que la navegación general es sencilla y afirmó que recomendaría AgroTrack a otros empresarios del sector siempre que se mantengan las alertas en tiempo real.
+
+**Entrevista N° 5**
+
+| **Nombres y apellidos**   | **Edad**   | **Distrito**   |
+|---------------------------|------------|----------------|
+| Jorge Ramírez             | 37 años    | Cañete         |
+
+| **Segmento** | **URL** | **Inicio** | **Duración** |
+|--------------|---|---|--------------|
+| Agricultor   | [Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a267_upc_edu_pe/IQCn1iiiJRjvTKpLXB4BILBdATYBcfP8wG8cSEe3SHraYPo?e=voT80Y&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) | 00:00 | 14:38 min |
+
+![Entrevista-5](report/assets/Segmento-Jorge.png)
+
+**Resumen:** Jorge Ramírez, de 37 años, agricultor con varias hectáreas de parcelas propias, exploró AgroTrack desde la Landing Page identificando rápidamente que se trata de una plataforma para monitorear cultivos y el estado del suelo, destacando que la web transmite la sensación de mostrar datos en tiempo real. Durante la prueba registró una parcela nueva (ubicación, tamaño y cultivo), navegó la sección de estado del suelo, y revisó el módulo de alertas climáticas y la recomendación de riego asociada a su cultivo. Valoró positivamente que la información se mostrara de forma clara desde la Landing Page sin necesitar ayuda externa, que el registro de parcela y de datos del suelo fue sencillo de completar, y que las alertas climáticas le resultan útiles para tomar decisiones a tiempo sobre sus cultivos. Sin embargo, señaló que la recomendación de riego ("bajo") le pareció poco descriptiva y necesitaría más detalle o contexto para confiar en ella, que no encontró un acceso directo a la sección de cultivos sin pasar primero por "editar" en la parcela, y que tuvo dudas sobre cómo recibiría las alertas en la práctica (sugirió notificaciones por celular o WhatsApp en lugar de depender de acceso constante a una computadora). Como mejora adicional, propuso resaltar visualmente la información más importante con colores y agregar pequeñas descripciones o tooltips para usuarios nuevos. A pesar de estas observaciones, consideró que la navegación general es intuitiva, que usaría AgroTrack en su día a día para reemplazar su seguimiento actual de cultivos, y que la plataforma tiene utilidad real para agricultores como él.
+
+**Entrevista N° 6**
+
+| **Nombres y apellidos**   | **Edad**   | **Distrito**   |
+|---------------------------|------------|----------------|
+| Johan Contreras           | 25 años    | San Miguel     |
+
+| **Segmento** | **URL** | **Inicio** | **Duración** |
+|--------------|---|---|--------------|
+| Empresario Agricola   | [Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202324623_upc_edu_pe/IQC_3fMojx7QRpXxX_AI_lCEAVlwmCBCt3_sEttPiNL0n2Q?e=iuZLHA&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) | 00:00 | 7:55 min   |
+
+![Entrevista-6](report/assets/Segmento-Johan.png)
+
+**Resumen:** Se entrevistó a Johan Contreras, empresario agrícola de 25 años del distrito de San Miguel, a quien se le presentó la plataforma AgroTrack y sus principales funcionalidades. En términos generales, Johan tuvo una experiencia positiva: identificó rápidamente el valor de la plataforma desde el landing page, valoró que el dashboard concentrara toda la información en un solo lugar y destacó especialmente la vista de rendimiento por parcela como una mejora respecto a sus métodos actuales con papel y Excel. Sin embargo, señaló que los datos de pérdidas y consumo de agua aún le parecen insuficientes para tomar decisiones concretas, ya que necesitaría mayor detalle por fecha y por parcela específica; además, sugirió incorporar métricas de costos operativos como mano de obra e insumos, y alertas automáticas ante caídas de rendimiento. La navegación le resultó sencilla e intuitiva, aunque tuvo una pequeña dificultad inicial para encontrar el historial, y la exportación de reportes funcionó bien, aunque propuso añadir la opción de filtrar por rango de fechas. Finalmente, Johan indicó que sí recomendaría AgroTrack a otros empresarios del sector, reconociendo que la plataforma tiene una base sólida y bien orientada al campo, aunque aún le falta madurar en algunas funcionalidades
+
+### 5.3.3. Evaluaciones según heurísticas.
+
+#### UX Heuristics & Principles Evaluation
+
+#### Usability – Inclusive Design – Information Architecture
+
+**CARRERA:** Ingeniería de Software
+
+**CURSO:** Desarrollo de Aplicaciones Open Source
+
+**SECCIÓN:** 11959
+
+**PROFESORES:** Hugo Mori
+
+**AUDITOR:** AURORA
+
+**CLIENTE(S):** 
+
+- Carrillo Acho, Matias
+- Rojas, Valeri
+- Alarcon, Lucia
+- Mejia, Christopher
+- Ramirez, Jorge
+---
+
+**SITE APP A EVALUAR:** 
+AgroTrack
+
+**TAREAS A EVALUAR:**
+
+- Registrar y administrar parcelas agrícolas.
+- Consultar alertas climáticas según ubicación del cultivo.
+- Revisar información del perfil y plan del usuario.
+- Navegar entre las diferentes secciones de la plataforma.
+
+---
+
+**ESCALA DE SEVERIDAD:**
+Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
+
+| Nivel | Descripción                                                                                                                                                                                     |
+| :---: |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **1** | Problema superficial: puede ser fácilmente superado por el usuario o ocurre con muy poca frecuencia. No necesita ser arreglado a no ser que exista disponibilidad de tiempo.                    |
+| **2** | Problema menor: puede ocurrir un poco más frecuentemente o es un poco más difícil de superar para el usuario. Se le debería asignar una prioridad baja resolverlo de cara al siguiente release. |
+| **3** | Problema mayor: ocurre frecuentemente o los usuarios no son capaces de resolverlos. Es importante que sean corregidos y se les debe asignar una prioridad alta.                                 |
+| **4** | Problema muy grave: un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento.                               |
+
+---
+
+**TABLA RESUMEN:**
+
+|   #   | Problema                                                                                                                                                    | Escala de severidad | Heurística/Principio violada(o)                                       |
+|:-----:|:------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------:|:----------------------------------------------------------------------|
+| **1** | Falta de información contextual al momento de crear o editar una parcela agrícola. El usuario no recibe suficiente orientación sobre los datos requeridos.  |          3          | Usability: Visibilidad del estado del sistema / Ayuda y documentación |
+| **2** | Las alertas climáticas muestran información de riesgo, pero no incluyen recomendaciones claras de acciones que debería realizar el agricultor.              |          3          | Usability: Correspondencia entre el sistema y el mundo real           |
+| **3** | La navegación lateral contiene varias opciones similares y puede generar dificultad para usuarios nuevos al identificar dónde administrar sus cultivos.     |          2          | Information Architecture: Organización y claridad de navegación       |
+| **4** | Los botones de edición y eliminación de parcelas utilizan únicamente iconos sin etiquetas descriptivas, lo que puede generar confusión en algunos usuarios. |          2          | Inclusive Design: Reconocimiento antes que recuerdo                   |
+| **5** | No existe suficiente diferenciación visual entre estados de las parcelas (activas, con riesgo climático o pendientes de configuración).                     |          3          | Usability: Visibilidad del estado del sistema                         |
+| **6** | La información mostrada en el perfil del usuario no explica claramente las diferencias entre los planes disponibles ni los beneficios de cada uno.          |          2          | Usability: Ayuda y documentación                                      |
+| **7** | La plataforma no presenta mensajes personalizados o recomendaciones según el tipo de cultivo registrado y ubicación del usuario.                            |          2          | Inclusive Design: Flexibilidad y eficiencia de uso                    |
+
+---
+
+**DESCRIPCIÓN DE PROBLEMAS:**
+
+---
+
+**PROBLEMA #1:**
+
+- **Severidad:** 3
+- **Heurística violada:** Usability: Visibilidad del estado del sistema / Ayuda y documentación.
+
+- **Problema:** Al momento de administrar parcelas agrícolas, el usuario puede no comprender completamente qué información debe ingresar o cuál es la finalidad de cada campo solicitado.
+
+![Problema 1](report/assets/problema-1.png)
+
+- **Recomendación:** Agregar textos de ayuda, ejemplos de datos esperados y mensajes informativos dentro de los formularios de creación y edición de parcelas.
+
+
+---
+
+**PROBLEMA #2:**
+
+- **Severidad:** 3
+
+- **Heurística violada:** Usability: Correspondencia entre el sistema y el mundo real.
+
+- **Problema:** Las alertas climáticas permiten identificar riesgos como lluvias intensas, pero no proporcionan recomendaciones prácticas para que el agricultor pueda tomar decisiones.
+
+![Problema 2](report/assets/problema-2.png)
+
+- **Recomendación:** Incorporar sugerencias agrícolas asociadas a cada alerta, como protección del cultivo, revisión del sistema de riego o prevención ante eventos climáticos.
+
+
+---
+
+**PROBLEMA #3:**
+
+- **Severidad:** 2
+
+- **Heurística violada:** Information Architecture: Organización y claridad de navegación.
+
+- **Problema:** La estructura del menú lateral puede resultar poco intuitiva para usuarios nuevos debido a la cantidad de opciones disponibles.
+
+![Problema 3](report/assets/problema-3.png)
+
+- **Recomendación:** Agrupar opciones relacionadas y utilizar nombres más descriptivos para cada sección.
+
+---
+
+**PROBLEMA #4:**
+
+- **Severidad:** 2
+
+- **Heurística violada:** Inclusive Design: Reconocimiento antes que recuerdo.
+
+- **Problema:** Los botones de editar y eliminar parcelas están representados únicamente mediante iconos, lo que puede dificultar su comprensión para ciertos usuarios.
+
+![Problema 4](report/assets/problema-4.png)
+
+- **Recomendación:** Agregar etiquetas de texto o tooltips descriptivos al pasar el cursor sobre cada acción.
+
+---
+
+**PROBLEMA #5:**
+
+- **Severidad:** 3
+
+- **Heurística violada:** Usability: Visibilidad del estado del sistema.
+
+- **Problema:** Las parcelas muestran un estado general como "Active", pero no existe una representación visual clara sobre posibles riesgos asociados al cultivo.
+
+- **Recomendación:** Agregar indicadores visuales adicionales como niveles de riesgo climático, estados de cultivo o alertas asociadas.
+
+![Problema 5](report/assets/problema-5.png)
+
+---
+
+**PROBLEMA #6:**
+
+- **Severidad:** 2
+
+- **Heurística violada:** Usability: Ayuda y documentación.
+
+- **Problema:** La sección de perfil muestra diferentes planes disponibles, pero la información puede no ser suficiente para que el usuario comprenda qué beneficios obtiene al cambiar de plan.
+
+![Problema 6](report/assets/problema-6.png)
+
+- **Recomendación:** Añadir una comparación detallada entre planes y explicar las funcionalidades adicionales disponibles.
+
+---
+
+**PROBLEMA #7:**
+
+- **Severidad:** 2
+
+- **Heurística violada:** Inclusive Design: Flexibilidad y eficiencia de uso.
+
+- **Problema:** La plataforma presenta información general, pero no adapta completamente la experiencia según características del usuario como ubicación o cultivos registrados.
+
+![Problema 7](report/assets/problema-7.png)
+
+- **Recomendación:** Implementar recomendaciones personalizadas basadas en ubicación, tipo de cultivo y condiciones climáticas actuales.
+
+---
+
+## 5.4. Video About-the-Product
+
+La presente sección tiene como propósito introducir y detallar el contenido del **Video About-the-Product de AgroTrack**. Este recurso audiovisual ha sido desarrollado como una herramienta de comunicación estratégica orientada a dos audiencias clave.
+
+Por un lado, está diseñado para los visitantes de la **Landing Page**, brindándoles una visión clara, visual y dinámica sobre el propósito de la plataforma, el problema que busca resolver y las principales características que diferencian a AgroTrack como una solución tecnológica enfocada en la gestión y monitoreo agrícola.
+
+Por otro lado, sirve como una guía introductoria para los futuros usuarios de la aplicación, mostrando de manera práctica cómo interactuar con el sistema y ejecutar las tareas principales relacionadas con el monitoreo de condiciones del suelo, gestión de información agrícola, recepción de alertas y visualización de datos relevantes mediante el dashboard.
+
+De esta manera, el video permite comunicar el valor de la solución y facilitar la comprensión de los principales procesos que AgroTrack busca optimizar dentro del contexto agrícola.
+
+| **URL**          | **Inicio** | **Duración** |
+|------------------|------------|--------------|
+| [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a827_upc_edu_pe/IQCkTU4cm894R6fEo-t8pc4-AVTzMh-HlJTa9Be-ru6pf6E?e=My3Hvs&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)    | 00:00      | 00:57 min    |
+
+![Video About The Product](report/assets/about-the-product.png)
 
 # Conclusiones
 
@@ -3774,6 +4445,28 @@ decisiones, optimizar recursos y hacer más eficiente el trabajo en el
 campo. Sin embargo, su verdadero valor dependerá de seguir validándolo
 con usuarios reales y de ir incorporando mejoras progresivas, como la
 integración de sensores y datos en tiempo real.
+
+Asimismo, el desarrollo de la arquitectura tecnológica de AgroTrack permitió establecer una base escalable para futuras mejoras del sistema. La implementación de los bounded contexts de Soil Monitoring, Alerts, Farming, Identity y Dashboard bajo una arquitectura basada en Domain-Driven Design (DDD) utilizando Java y Spring Boot facilita la evolución de la plataforma, permitiendo incorporar nuevas funcionalidades sin afectar los componentes existentes.
+
+Finalmente, el proceso de desarrollo permitió reforzar la importancia de combinar una correcta comprensión del problema con una implementación tecnológica alineada a las necesidades del usuario. La aplicación de metodologías como Lean UX, la validación constante y el trabajo colaborativo fueron elementos clave para construir una solución orientada a generar valor real, estableciendo una base sólida para futuras versiones de AgroTrack con mayor automatización, integración de sensores y análisis avanzado de información agrícola.
+
+---
+
+# Video About-the-Team
+
+En esta sección, el equipo presenta el Video About-the-Team, un recurso audiovisual diseñado para dar a conocer a los miembros fundadores de la startup **Andes Smart**, responsable del desarrollo de **AgroTrack**. El objetivo del video es generar confianza tanto a nivel técnico como profesional, mostrando a las personas detrás de la solución y destacando sus contribuciones dentro del proyecto.
+
+Durante el video, cada integrante presenta su rol dentro del equipo, las responsabilidades asumidas durante el desarrollo y los aportes realizados en áreas como análisis, diseño, implementación, documentación y validación con usuarios. Asimismo, se muestra la forma en que el equipo trabajó de manera colaborativa para superar desafíos y alcanzar los objetivos planteados en cada sprint.
+
+Finalmente, el material transmite la visión compartida de Andes Smart: impulsar la transformación digital del sector agrícola mediante AgroTrack, una plataforma inteligente que ayuda a pequeños y medianos agricultores a optimizar la gestión de sus cultivos, mejorar la toma de decisiones y aumentar la productividad de manera sostenible.
+
+| **URL**        | **Inicio** | **Duración** |
+|----------------|------------|--------------|
+| [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a827_upc_edu_pe/IQAnzAghm3OvSbTwzSgvdHzSAdNmZKDTy05qS8Njy7f2gEw?e=aYAcrB&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)  | 00:00      | 06:22 min    |
+
+![Video About The Team](report/assets/about-the-team.png)
+
+---
 
 # Bibliografía
 
@@ -3820,3 +4513,45 @@ https://agriculture.trimble.com
 
         W3Schools. (s.f.). HTML style guide and coding conventions.
 https://www.w3schools.com/html/html5_syntax.asp
+
+
+# Anexos
+
+
+### Repositorios de Código Fuente
+
+| Recurso | Enlace |
+|---------|--------|
+| Organización GitHub – AgroTrack Project | [github.com/AgroTrack-Project](https://github.com/AgroTrack-Project) |
+| Repositorio – Informe del Proyecto | [AgroTrack-Project/report](https://github.com/AgroTrack-Project/report) |
+| Repositorio – Landing Page | [AgroTrack-Project/Landing-Page](https://github.com/AgroTrack-Project/Landing-Page) |
+| Repositorio – Frontend Web Application | [AgroTrack-Project/web-Application](https://github.com/AgroTrack-Project/web-Application) |
+| Repositorio – Backend Web Services | [AgroTrack-Project/web-services](https://github.com/AgroTrack-Project/web-services) |
+
+### Productos Desplegados
+
+| Producto | URL |
+|---------|-----|
+| Landing Page | [Landing Page](https://agrotrack-project.github.io/Landing-Page/) |
+| Frontend Web Application (Cloudflare Workers) | [Web Application](https://agro-track.vitaltrek.workers.dev/home) | 
+| Documentación interactiva API – Swagger UI | [Backend](https://agotrack.onrender.com/api/v1/swagger-ui/index.html#/) |
+
+### Gestión del Proyecto – Tableros Trello
+
+| Sprint | Enlace |
+|--------|--------|
+| Sprint 1 – Landing Page | [Ver tablero Sprint 1](https://trello.com/invite/b/69ec6b9c1f448409979be07f/ATTI57cb684f86da5dce34b16c20796587777599AEFD/agrotrack-sprint-backlog-1) |
+| Sprint 2 – Frontend Web Application | [Ver tablero Sprint 2](https://trello.com/invite/b/6a082c484e76c24a6bf159db/ATTIeacb888e3799fbf438b8caf8a0d78ced55CA92BA/agrotrack-sprint-backlog-2) |
+| Sprint 3 – Backend Web Services | [Ver tablero Sprint 3](https://trello.com/invite/b/6a386dfb1297005b1b046b88/ATTIf29aeadd54f0dac60d77b9b1cc2cf2ce5B4F6107/agrotrack-sprint-3) |
+
+### Videos del Proyecto
+
+| Descripción | Enlace |
+|-------------|--------|
+| Video de demostración – Sprint 1 (Landing Page) | [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a827_upc_edu_pe/IQCHKXSXfiGjTKYe4gDB3oUZAWgYlplm50CGrMfFiBHi4aI?e=fnoiA6&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
+| Video de demostración – Sprint 2 (Web Application) | [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120011_upc_edu_pe/IQAICJzo_YiLQ7CqTCNRwBTEAXCtfrOV6VxiAqzsegC73xo?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=fk0ICb) |
+| Video de demostración – Sprint 3 (Web Services API) | [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323350_upc_edu_pe/IQANSlaoHDAvRrqH_iFNWhu7AaJ-uZhcqpvZBazMZA5JOiE?e=HwAWli&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
+| Video – Flujo del Prototipo (Prototype Walkthrough) | [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a267_upc_edu_pe/IQBGdqAI0J_NR7IAsWPnBl3TAe0ieQNo8cg4MmurJ2Owfuc?e=2yMdi8&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
+| Video About-the-Product | [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a827_upc_edu_pe/IQCkTU4cm894R6fEo-t8pc4-AVTzMh-HlJTa9Be-ru6pf6E?e=My3Hvs&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
+
+
