@@ -168,6 +168,15 @@ https://github.com/AgroTrack-Project/report
     - [5.2.2.6. Services Documentation Evidence for Sprint Review](#5226-services-documentation-evidence-for-sprint-review)
     - [5.2.2.7. Software Deployment Evidence for Sprint Review](#5227-software-deployment-evidence-for-sprint-review)
     - [5.2.2.8. Team Collaboration Insights during Sprint](#5228-team-collaboration-insights-during-sprint)
+  - [5.2.3. Sprint 3](#523-sprint-3)
+    - [5.2.3.1. Sprint Planning 3](#5231-sprint-planning-3)
+    - [5.2.3.2. Aspect Leaders and Collaborators](#5232-aspect-leaders-and-collaborators)
+    - [5.2.3.3. Sprint Backlog 3](#5233-sprint-backlog-3)
+    - [5.2.3.4. Development Evidence for Sprint Review](#5234-development-evidence-for-sprint-review)
+    - [5.2.3.5. Execution Evidence for Sprint Review](#5235-execution-evidence-for-sprint-review)
+    - [5.2.3.6. Services Documentation Evidence for Sprint Review](#5236-services-documentation-evidence-for-sprint-review)
+    - [5.2.3.7. Software Deployment Evidence for Sprint Review](#5237-software-deployment-evidence-for-sprint-review)
+    - [5.2.3.8. Team Collaboration Insights during Sprint](#5238-team-collaboration-insights-during-sprint)
 
 
 
@@ -3719,7 +3728,7 @@ dispositivo, comprobando que los módulos de gestión de parcelas, cultivos, mon
 [https://github.com/AgroTrack-Project/web-Application](https://github.com/AgroTrack-Project/web-Application)
 
 **URL de la Web Application desplegada:**
-[https://agro-track.andessmart.workers.dev/home](https://agro-track.andessmart.workers.dev/home)
+[https://agro-track.vitaltrek.workers.dev/home](https://agro-track.vitaltrek.workers.dev/home)
 
 ---
 
@@ -3944,12 +3953,9 @@ ocumentados en Swagger y los endpoints implementados por el equipo.
 
 <br>
 
-## 5.2.3.6. Services Documentation Evidence for Sprint Review.
+#### 5.2.3.6. Services Documentation Evidence for Sprint Review.
 
-Durante el Sprint 3, el equipo documentó los Web Services de AgroTrack mediante **OpenAPI  / Swagger UI**. La documentación se generó automáticamente a partir de las anotaciones de los controladores REST y cubre los 32 endpoints distribuidos en 10 bounded contexts.
- 
-
-**Commit relacionado a la documentación desplegada:** `4d8b6` (feat: Add BC Alerts — último merge funcional al develop con todos los BCs integrados, 2026-06-20)
+Durante el Sprint 3, el equipo documentó los Web Services de AgroTrack mediante **OpenAPI  / Swagger UI**. La documentación se generó automáticamente a partir de las anotaciones de los controladores REST.
 
 A continuación se presenta la tabla con todos los endpoints documentados, junto con la sintaxis de llamada, parámetros, descripción de operación y códigos de respuesta:
 
@@ -4510,3 +4516,45 @@ https://agriculture.trimble.com
 
         W3Schools. (s.f.). HTML style guide and coding conventions.
 https://www.w3schools.com/html/html5_syntax.asp
+
+
+# Anexos
+
+
+### Repositorios de Código Fuente
+
+| Recurso | Enlace |
+|---------|--------|
+| Organización GitHub – AgroTrack Project | [github.com/AgroTrack-Project](https://github.com/AgroTrack-Project) |
+| Repositorio – Informe del Proyecto | [AgroTrack-Project/report](https://github.com/AgroTrack-Project/report) |
+| Repositorio – Landing Page | [AgroTrack-Project/Landing-Page](https://github.com/AgroTrack-Project/Landing-Page) |
+| Repositorio – Frontend Web Application | [AgroTrack-Project/web-Application](https://github.com/AgroTrack-Project/web-Application) |
+| Repositorio – Backend Web Services | [AgroTrack-Project/web-services](https://github.com/AgroTrack-Project/web-services) |
+
+### Productos Desplegados
+
+| Producto | URL |
+|---------|-----|
+| Landing Page | [Landing Page](https://agrotrack-project.github.io/Landing-Page/) |
+| Frontend Web Application (Cloudflare Workers) | [Web Application](https://agro-track.vitaltrek.workers.dev/home) | 
+| Documentación interactiva API – Swagger UI | [Backend](https://agotrack.onrender.com/api/v1/swagger-ui/index.html#/) |
+
+### Gestión del Proyecto – Tableros Trello
+
+| Sprint | Enlace |
+|--------|--------|
+| Sprint 1 – Landing Page | [Ver tablero Sprint 1](https://trello.com/invite/b/69ec6b9c1f448409979be07f/ATTI57cb684f86da5dce34b16c20796587777599AEFD/agrotrack-sprint-backlog-1) |
+| Sprint 2 – Frontend Web Application | [Ver tablero Sprint 2](https://trello.com/invite/b/6a082c484e76c24a6bf159db/ATTIeacb888e3799fbf438b8caf8a0d78ced55CA92BA/agrotrack-sprint-backlog-2) |
+| Sprint 3 – Backend Web Services | [Ver tablero Sprint 3](https://trello.com/invite/b/6a386dfb1297005b1b046b88/ATTIf29aeadd54f0dac60d77b9b1cc2cf2ce5B4F6107/agrotrack-sprint-3) |
+
+### Videos del Proyecto
+
+| Descripción | Enlace |
+|-------------|--------|
+| Video de demostración – Sprint 1 (Landing Page) | [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a827_upc_edu_pe/IQCHKXSXfiGjTKYe4gDB3oUZAWgYlplm50CGrMfFiBHi4aI?e=fnoiA6&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
+| Video de demostración – Sprint 2 (Web Application) | [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120011_upc_edu_pe/IQAICJzo_YiLQ7CqTCNRwBTEAXCtfrOV6VxiAqzsegC73xo?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=fk0ICb) |
+| Video de demostración – Sprint 3 (Web Services API) | [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323350_upc_edu_pe/IQANSlaoHDAvRrqH_iFNWhu7AaJ-uZhcqpvZBazMZA5JOiE?e=HwAWli&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
+| Video – Flujo del Prototipo (Prototype Walkthrough) | [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a267_upc_edu_pe/IQBGdqAI0J_NR7IAsWPnBl3TAe0ieQNo8cg4MmurJ2Owfuc?e=2yMdi8&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
+| Video About-the-Product | [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a827_upc_edu_pe/IQCkTU4cm894R6fEo-t8pc4-AVTzMh-HlJTa9Be-ru6pf6E?e=My3Hvs&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
+
+
