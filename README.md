@@ -3850,25 +3850,11 @@ A continuación se presentan los analíticos de colaboración del repositorio we
 
 **Resumen:** Jorge Ramírez, de 37 años, agricultor con varias hectáreas de parcelas propias, exploró AgroTrack desde la Landing Page identificando rápidamente que se trata de una plataforma para monitorear cultivos y el estado del suelo, destacando que la web transmite la sensación de mostrar datos en tiempo real. Durante la prueba registró una parcela nueva (ubicación, tamaño y cultivo), navegó la sección de estado del suelo, y revisó el módulo de alertas climáticas y la recomendación de riego asociada a su cultivo. Valoró positivamente que la información se mostrara de forma clara desde la Landing Page sin necesitar ayuda externa, que el registro de parcela y de datos del suelo fue sencillo de completar, y que las alertas climáticas le resultan útiles para tomar decisiones a tiempo sobre sus cultivos. Sin embargo, señaló que la recomendación de riego ("bajo") le pareció poco descriptiva y necesitaría más detalle o contexto para confiar en ella, que no encontró un acceso directo a la sección de cultivos sin pasar primero por "editar" en la parcela, y que tuvo dudas sobre cómo recibiría las alertas en la práctica (sugirió notificaciones por celular o WhatsApp en lugar de depender de acceso constante a una computadora). Como mejora adicional, propuso resaltar visualmente la información más importante con colores y agregar pequeñas descripciones o tooltips para usuarios nuevos. A pesar de estas observaciones, consideró que la navegación general es intuitiva, que usaría AgroTrack en su día a día para reemplazar su seguimiento actual de cultivos, y que la plataforma tiene utilidad real para agricultores como él.
 
-**Entrevista N° 6**
-
-| **Nombres y apellidos**   | **Edad**   | **Distrito**   |
-|---------------------------|------------|----------------|
-| XXXXXXXXX                 | 25 años    | Cusco          |
-
-| **Segmento** | **URL** | **Inicio** | **Duración** |
-|--------------|---|---|--------------|
-| XXXX         | [Ver entrevista]() | 00:00 | x:xx min      |
-
-![Entrevista-6](assets/entrevista-1-S3.png)
-
-**Resumen:**
-
 ### 5.3.3. Evaluaciones según heurísticas
 
-### UX Heuristics & Principles Evaluation
+#### UX Heuristics & Principles Evaluation
 
-### Usability – Inclusive Design – Information Architecture
+#### Usability – Inclusive Design – Information Architecture
 
 **CARRERA:** Ingeniería de Software
 
@@ -3880,8 +3866,13 @@ A continuación se presentan los analíticos de colaboración del repositorio we
 
 **AUDITOR:** AURORA
 
-**CLIENTE(S):** Nombre de las personas que participan en la sesión
+**CLIENTE(S):** 
 
+- Carrillo Acho, Matias
+- Rojas, Valeri
+- Alarcon, Lucia
+- Mejia, Christopher
+- Ramirez, Jorge
 ---
 
 **SITE APP A EVALUAR:** 
@@ -3944,16 +3935,13 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
 
 - **Severidad:** 3
 
-- **Heurística violada:**  
-  Usability: Correspondencia entre el sistema y el mundo real.
+- **Heurística violada:** Usability: Correspondencia entre el sistema y el mundo real.
 
-- **Problema:**  
-  Las alertas climáticas permiten identificar riesgos como lluvias intensas, pero no proporcionan recomendaciones prácticas para que el agricultor pueda tomar decisiones.
+- **Problema:** Las alertas climáticas permiten identificar riesgos como lluvias intensas, pero no proporcionan recomendaciones prácticas para que el agricultor pueda tomar decisiones.
 
 ![Problema 2](report/assets/problema-2.png)
 
-- **Recomendación:**  
-  Incorporar sugerencias agrícolas asociadas a cada alerta, como protección del cultivo, revisión del sistema de riego o prevención ante eventos climáticos.
+- **Recomendación:** Incorporar sugerencias agrícolas asociadas a cada alerta, como protección del cultivo, revisión del sistema de riego o prevención ante eventos climáticos.
 
 
 ---
@@ -3962,16 +3950,13 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
 
 - **Severidad:** 2
 
-- **Heurística violada:**  
-  Information Architecture: Organización y claridad de navegación.
+- **Heurística violada:** Information Architecture: Organización y claridad de navegación.
 
-- **Problema:**  
-  La estructura del menú lateral puede resultar poco intuitiva para usuarios nuevos debido a la cantidad de opciones disponibles.
+- **Problema:** La estructura del menú lateral puede resultar poco intuitiva para usuarios nuevos debido a la cantidad de opciones disponibles.
 
 ![Problema 3](report/assets/problema-3.png)
 
-- **Recomendación:**  
-  Agrupar opciones relacionadas y utilizar nombres más descriptivos para cada sección.
+- **Recomendación:** Agrupar opciones relacionadas y utilizar nombres más descriptivos para cada sección.
 
 ---
 
@@ -3979,16 +3964,13 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
 
 - **Severidad:** 2
 
-- **Heurística violada:**  
-  Inclusive Design: Reconocimiento antes que recuerdo.
+- **Heurística violada:** Inclusive Design: Reconocimiento antes que recuerdo.
 
-- **Problema:**  
-  Los botones de editar y eliminar parcelas están representados únicamente mediante iconos, lo que puede dificultar su comprensión para ciertos usuarios.
+- **Problema:** Los botones de editar y eliminar parcelas están representados únicamente mediante iconos, lo que puede dificultar su comprensión para ciertos usuarios.
 
 ![Problema 4](report/assets/problema-4.png)
 
-- **Recomendación:**  
-  Agregar etiquetas de texto o tooltips descriptivos al pasar el cursor sobre cada acción.
+- **Recomendación:** Agregar etiquetas de texto o tooltips descriptivos al pasar el cursor sobre cada acción.
 
 ---
 
@@ -3996,14 +3978,11 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
 
 - **Severidad:** 3
 
-- **Heurística violada:**  
-  Usability: Visibilidad del estado del sistema.
+- **Heurística violada:** Usability: Visibilidad del estado del sistema.
 
-- **Problema:**  
-  Las parcelas muestran un estado general como "Active", pero no existe una representación visual clara sobre posibles riesgos asociados al cultivo.
+- **Problema:** Las parcelas muestran un estado general como "Active", pero no existe una representación visual clara sobre posibles riesgos asociados al cultivo.
 
-- **Recomendación:**  
-  Agregar indicadores visuales adicionales como niveles de riesgo climático, estados de cultivo o alertas asociadas.
+- **Recomendación:** Agregar indicadores visuales adicionales como niveles de riesgo climático, estados de cultivo o alertas asociadas.
 
 ![Problema 5](report/assets/problema-5.png)
 
@@ -4013,16 +3992,13 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
 
 - **Severidad:** 2
 
-- **Heurística violada:**  
-  Usability: Ayuda y documentación.
+- **Heurística violada:** Usability: Ayuda y documentación.
 
-- **Problema:**  
-  La sección de perfil muestra diferentes planes disponibles, pero la información puede no ser suficiente para que el usuario comprenda qué beneficios obtiene al cambiar de plan.
+- **Problema:** La sección de perfil muestra diferentes planes disponibles, pero la información puede no ser suficiente para que el usuario comprenda qué beneficios obtiene al cambiar de plan.
 
 ![Problema 6](report/assets/problema-6.png)
 
-- **Recomendación:**  
-  Añadir una comparación detallada entre planes y explicar las funcionalidades adicionales disponibles.
+- **Recomendación:** Añadir una comparación detallada entre planes y explicar las funcionalidades adicionales disponibles.
 
 ---
 
@@ -4030,16 +4006,14 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
 
 - **Severidad:** 2
 
-- **Heurística violada:**  
-  Inclusive Design: Flexibilidad y eficiencia de uso.
+- **Heurística violada:** Inclusive Design: Flexibilidad y eficiencia de uso.
 
-- **Problema:**  
-  La plataforma presenta información general, pero no adapta completamente la experiencia según características del usuario como ubicación o cultivos registrados.
+- **Problema:** La plataforma presenta información general, pero no adapta completamente la experiencia según características del usuario como ubicación o cultivos registrados.
 
 ![Problema 7](report/assets/problema-7.png)
 
-- **Recomendación:**  
-  Implementar recomendaciones personalizadas basadas en ubicación, tipo de cultivo y condiciones climáticas actuales.
+- **Recomendación:** Implementar recomendaciones personalizadas basadas en ubicación, tipo de cultivo y condiciones climáticas actuales.
+
 ---
 
 ## 5.4. Video About-the-Product
@@ -4054,9 +4028,9 @@ De esta manera, el video permite comunicar el valor de la solución y facilitar 
 
 | **URL**          | **Inicio** | **Duración** |
 |------------------|------------|--------------|
-| [Ver video]()    | 00:00      | 00:57 min    |
+| [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a827_upc_edu_pe/IQCkTU4cm894R6fEo-t8pc4-AVTzMh-HlJTa9Be-ru6pf6E?e=My3Hvs&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)    | 00:00      | 00:57 min    |
 
-![Video About The Product](assets/images/about-the-product.png)
+![Video About The Product](report/assets/about-the-product.png)
 
 # Conclusiones
 
