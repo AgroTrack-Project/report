@@ -924,7 +924,7 @@ artistas como de sus posibles clientes.
 
 **User persona - Agricultores**
 
-![FOTOreport/assets/user_personaAgricultor.png)
+![FOTO](report/assets/user_personaAgricultor.png)
 
 <br>
 
@@ -988,7 +988,7 @@ de los usuarios finales.
 **Empathy Mapping - Empresario Agricola**
 
 ![Empathy map del
-empresario](assets/empathy_Mapping_EmpresarioAgricola.png)
+empresario](report/assets/empathy_Mapping_EmpresarioAgricola.png)
 
 ### 2.4. Big Picture Event Storming
 
@@ -1852,7 +1852,7 @@ https://www.figma.com/design/tQSFHjZZpLcvBWkbzUfWLw/Untitled?node-id=0-1&p=f&t=r
 **Mobile Web Browser**
 
 ![Mock Up 1](report/assets/mockupMobile1.png) ![Mock Up
-2](assets/mockupMobile2.png) ![Mock Up 2](report/assets/mockupMobile3.png)
+2](report/assets/mockupMobile2.png) ![Mock Up 2](report/assets/mockupMobile3.png)
 
 <br> 
 
@@ -1862,10 +1862,10 @@ https://www.figma.com/design/tQSFHjZZpLcvBWkbzUfWLw/Untitled?node-id=0-1&p=f&t=r
 ### 4.4.1. Web Applications Wireframes
 
 ![Wireframe 1](report/assets/wireframe-maqueta.png) ![Wireframe
-2](assets/wireframe-maqueta2.png) ![Wireframe
-3](assets/wireframe-maqueta3.png) ![Wireframe
-4](assets/wireframe-maqueta4.png) ![Wireframe
-5](assets/wireframe-maqueta5.png)
+2](report/assets/wireframe-maqueta2.png) ![Wireframe
+3](report/assets/wireframe-maqueta3.png) ![Wireframe
+4](report/assets/wireframe-maqueta4.png) ![Wireframe
+5](report/assets/wireframe-maqueta5.png)
 
 ### 4.4.2. Web Applications Wireflow Diagrams
 
@@ -1880,7 +1880,7 @@ de la aplicación y cómo interactuarán con ella.
 ### 4.4.3. Web Applications Mock-ups
 
 ![Mock-up 1](report/assets/web-mockups.png) ![Mock-up
-2](assets/web-mockups2.png) ![Mock-up 3](report/assets/web-mockups3.png)
+2](report/assets/web-mockups2.png) ![Mock-up 3](report/assets/web-mockups3.png)
 ![Mock-up 4](report/assets/web-mockups4.png)
 
 ### 4.4.4. Web Applications User Flow Diagrams
@@ -1892,7 +1892,7 @@ completar una tarea específica, lo que nos ayuda a identificar posibles
 puntos de fricción y a optimizar la experiencia del usuario.
 
 ![User Flow Diagram 1](report/assets/userflow.png) ![User Flow Diagram
-2](assets/userflow2.png) ![User Flow Diagram 3](report/assets/userflow3.png)
+2](report/assets/userflow2.png) ![User Flow Diagram 3](report/assets/userflow3.png)
 
 ### 4.5. Web Applications Prototyping
 
@@ -1952,7 +1952,7 @@ https://miro.com/app/board/uXjVHcOGric=/?share_link_id=857544303236
 
 ### 4.6.3. Software Architecture Container Diagrams.
 
-![ContainerDiagram-AgroTrack](areport/ssets/ContainerDiagram-AgroTrack.png)
+![ContainerDiagram-AgroTrack](report/assets/ContainerDiagram-AgroTrack.png)
 
 ### 4.6.4. Software Architecture Components Diagrams.
 
