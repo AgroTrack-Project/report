@@ -4067,6 +4067,23 @@ Asimismo, el desarrollo de la arquitectura tecnológica de AgroTrack permitió e
 
 Finalmente, el proceso de desarrollo permitió reforzar la importancia de combinar una correcta comprensión del problema con una implementación tecnológica alineada a las necesidades del usuario. La aplicación de metodologías como Lean UX, la validación constante y el trabajo colaborativo fueron elementos clave para construir una solución orientada a generar valor real, estableciendo una base sólida para futuras versiones de AgroTrack con mayor automatización, integración de sensores y análisis avanzado de información agrícola.
 
+---
+
+# Video About-the-Team
+
+En esta sección, el equipo presenta el Video About-the-Team, un recurso audiovisual diseñado para dar a conocer a los miembros fundadores de la startup **Andes Smart**, responsable del desarrollo de **AgroTrack**. El objetivo del video es generar confianza tanto a nivel técnico como profesional, mostrando a las personas detrás de la solución y destacando sus contribuciones dentro del proyecto.
+
+Durante el video, cada integrante presenta su rol dentro del equipo, las responsabilidades asumidas durante el desarrollo y los aportes realizados en áreas como análisis, diseño, implementación, documentación y validación con usuarios. Asimismo, se muestra la forma en que el equipo trabajó de manera colaborativa para superar desafíos y alcanzar los objetivos planteados en cada sprint.
+
+Finalmente, el material transmite la visión compartida de Andes Smart: impulsar la transformación digital del sector agrícola mediante AgroTrack, una plataforma inteligente que ayuda a pequeños y medianos agricultores a optimizar la gestión de sus cultivos, mejorar la toma de decisiones y aumentar la productividad de manera sostenible.
+
+| **URL**        | **Inicio** | **Duración** |
+|----------------|------------|--------------|
+| [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a827_upc_edu_pe/IQAnzAghm3OvSbTwzSgvdHzSAdNmZKDTy05qS8Njy7f2gEw?e=aYAcrB&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)  | 00:00      | 06:22 min    |
+
+![Video About The Team](report/assets/about-the-team.png)
+
+---
 
 # Bibliografía
 
