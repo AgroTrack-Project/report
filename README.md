@@ -3773,7 +3773,6 @@ A continuación se presentan los analíticos de colaboración del repositorio
 web-Application durante el periodo del sprint, evidenciando la participación
 de cada miembro del equipo.
 
-
 ![contribucion del equipo](report/assets/team-contribution-2.png)
 
 *Nota.* Elaboración propia.
@@ -4143,82 +4142,7 @@ A continuación se presentan los analíticos de colaboración del repositorio we
 ![contribucion del equipo](report/assets/Sprint_3_Insight.png)
 
 
-## 5.3. Validation Interviews.
-
-En esta sección el equipo registra y explica las actividades de entrevistas de validación realizadas durante el Sprint 3. El objetivo es verificar que los productos digitales de AgroTrack Landing Page y Frontend Web Application satisfacen las necesidades reales de los segmentos objetivo identificados: agricultores y empresarios agrícolas. Para ello, se realizaron sesiones en las que representantes de cada segmento interactuaron directamente con los productos, siguiendo los user flows principales definidos para la validación.
-
-### 5.3.1. Diseño de Entrevistas.
-
-El diseño de las sesiones de validación contempla dos segmentos objetivo: **Agricultor** y **Empresario Agrícola**. Para cada segmento se especifican los productos a evaluar, los user flows que forman parte de la sesión y las tareas que el entrevistado deberá realizar.
-
-Cada sesión de validación tendrá una duración aproximada de 15 a 30 minutos y seguirá la siguiente estructura:
-
-1. Presentación breve del evaluador y del propósito de la sesión 
-2. Exploración de ll Landing Page
-3. Presentación de la web application
-4. Cierre con preguntas abiertas sobre la experiencia general
-
----
-
-**Segmento 1: Agricultor**
-
-*Productos a evaluar:* Landing Page + Frontend Web Application (vistas de parcelas, cultivos, monitoreo del suelo, alertas climáticas y configuración de cuenta).
- 
- *User flows incluidos en la validación:*
-
-| # | User Flow | Tarea a realizar por el entrevistado |
-|---|-----------|--------------------------------------|
-| 1 | Exploración del Landing Page | Navegar libremente por el Landing Page e identificar: qué problema resuelve AgroTrack, a quiénes va dirigido y cuáles son sus funcionalidades principales. |
-| 2 | Registro de usuario | Completar el formulario de registro con sus datos y seleccionar el plan Basic. Verificar que la cuenta queda creada correctamente. |
-| 3 | Registro de una parcela | Desde el panel principal, registrar una parcela con nombre, ubicación y tamaño. Verificar que aparece en el listado. |
-| 4 | Registro de datos del suelo | Ingresar manualmente un valor de humedad y temperatura para la parcela registrada. Verificar el estado del suelo mostrado. |
-| 5 | Ver recomendación de riego | A partir de los datos ingresados, revisar la recomendación de riego generada y confirmarla o rechazarla. |
-| 6 | Ver alertas climáticas | Acceder a la sección de alertas y revisar las alertas activas para su zona. |
-| 7 | Configurar preferencias de alertas | Desactivar uno de los tipos de alerta (helada, sequía o lluvia intensa) desde la sección de configuración y verificar que el cambio se guarda. |
-
-*Preguntas de cierre para el segmento Agricultor:*
-1. ¿Pudo entender fácilmente qué ofrece AgroTrack desde el Landing Page, sin necesidad de ayuda externa?
-2. ¿Logró completar el registro de su parcela y el ingreso de datos del suelo sin confundirse en algún paso?
-3. ¿La recomendación de riego que le mostró la plataforma tiene sentido para su tipo de cultivo y la situación que ingresó?
-4. ¿Las alertas climáticas que vio le serían útiles para tomar decisiones a tiempo sobre sus cultivos?
-5. ¿Le resultó claro cómo activar o desactivar los tipos de alertas que desea recibir?
-6. ¿Hubo alguna sección o funcionalidad que le pareció difícil de encontrar o de entender a primera vista?
-7. ¿Qué cambiaría del diseño o del flujo de la aplicación para que se adapte mejor a su forma de trabajaren el campo?
-8. ¿Usaría AgroTrack en su día a día para reemplazar la forma en que actualmente lleva el seguimiento de sus cultivos?
-
----
-
-**Segmento 2: Empresario Agrícola**
-
-*Productos a evaluar:* Landing Page + Frontend Web Application (vistas de dashboard, rendimiento, pérdidas, consumo de agua y exportación de reportes).
-
-*User flows incluidos en la validación:*
-
-| # | User Flow | Tarea a realizar por el entrevistado |
-|---|-----------|--------------------------------------|
-| 1 | Exploración del Landing Page | Navegar por el Landing Page e identificar qué beneficios ofrece AgroTrack para la gestión de múltiples parcelas. |
-| 2 | Explorar el dashboard general | Acceder al panel de control y revisar el resumen del estado de todas las parcelas registradas. |
-| 3 | Ver rendimiento por parcela | Navegar a la sección de rendimiento e identificar cuál parcela presenta mayor y menor productividad. |
-| 4 | Ver pérdidas estimadas | Revisar el porcentaje de pérdidas por parcela e identificar las causas registradas. |
-| 5 | Ver consumo de agua | Acceder a la sección de consumo de agua y revisar el consumo por temporada en cada parcela. |
-| 6 | Exportar reporte de producción | Exportar el reporte de producción en formato PDF y verificar que el archivo se descarga correctamente. |
-
-<br>
-<br>
-
-*Preguntas de cierre para el segmento Empresario Agrícola:*
-1. ¿Pudo identificar rápidamente en el Landing Page por qué AgroTrack es útil para la gestión de su operación agrícola?
-2. ¿El panel de control le dio una visión clara del estado de todas sus parcelas sin tener que navegar por múltiples secciones?
-3. ¿La información de rendimiento por parcela le ayuda a identificar dónde está produciendo más y dónde está perdiendo?
-4. ¿Los datos de pérdidas estimadas y consumo de agua que vio son suficientes para tomar decisiones de inversión o corrección?
-5. ¿Pudo exportar el reporte de producción sin dificultad y el resultado fue lo que esperaba?
-6. ¿Hay alguna métrica o funcionalidad que necesita para gestionar su negocio agrícola y que no encontró en la plataforma?
-7. ¿Qué tan fácil le resultó navegar entre las distintas secciones del dashboard sin perderse?
-8. ¿Recomendaría AgroTrack a otros empresarios del sector agrícola? ¿Por qué sí o por qué no?
-
----
-
-### 5.3.2. Registro de Entrevistas.
+### 5.3.2. Registro de Entrevistas
 
 **Entrevista N° 1**
 
@@ -4457,7 +4381,7 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
 
 ---
 
-## 5.4. Video About-the-Product.
+## 5.4. Video About-the-Product
 
 La presente sección tiene como propósito introducir y detallar el contenido del **Video About-the-Product de AgroTrack**. Este recurso audiovisual ha sido desarrollado como una herramienta de comunicación estratégica orientada a dos audiencias clave.
 
@@ -4472,8 +4396,6 @@ De esta manera, el video permite comunicar el valor de la solución y facilitar 
 | [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a827_upc_edu_pe/IQCkTU4cm894R6fEo-t8pc4-AVTzMh-HlJTa9Be-ru6pf6E?e=My3Hvs&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)    | 00:00      | 00:57 min    |
 
 ![Video About The Product](report/assets/about-the-product.png)
-
-
 
 # Conclusiones
 
@@ -4505,6 +4427,28 @@ decisiones, optimizar recursos y hacer más eficiente el trabajo en el
 campo. Sin embargo, su verdadero valor dependerá de seguir validándolo
 con usuarios reales y de ir incorporando mejoras progresivas, como la
 integración de sensores y datos en tiempo real.
+
+Asimismo, el desarrollo de la arquitectura tecnológica de AgroTrack permitió establecer una base escalable para futuras mejoras del sistema. La implementación de los bounded contexts de Soil Monitoring, Alerts, Farming, Identity y Dashboard bajo una arquitectura basada en Domain-Driven Design (DDD) utilizando Java y Spring Boot facilita la evolución de la plataforma, permitiendo incorporar nuevas funcionalidades sin afectar los componentes existentes.
+
+Finalmente, el proceso de desarrollo permitió reforzar la importancia de combinar una correcta comprensión del problema con una implementación tecnológica alineada a las necesidades del usuario. La aplicación de metodologías como Lean UX, la validación constante y el trabajo colaborativo fueron elementos clave para construir una solución orientada a generar valor real, estableciendo una base sólida para futuras versiones de AgroTrack con mayor automatización, integración de sensores y análisis avanzado de información agrícola.
+
+---
+
+# Video About-the-Team
+
+En esta sección, el equipo presenta el Video About-the-Team, un recurso audiovisual diseñado para dar a conocer a los miembros fundadores de la startup **Andes Smart**, responsable del desarrollo de **AgroTrack**. El objetivo del video es generar confianza tanto a nivel técnico como profesional, mostrando a las personas detrás de la solución y destacando sus contribuciones dentro del proyecto.
+
+Durante el video, cada integrante presenta su rol dentro del equipo, las responsabilidades asumidas durante el desarrollo y los aportes realizados en áreas como análisis, diseño, implementación, documentación y validación con usuarios. Asimismo, se muestra la forma en que el equipo trabajó de manera colaborativa para superar desafíos y alcanzar los objetivos planteados en cada sprint.
+
+Finalmente, el material transmite la visión compartida de Andes Smart: impulsar la transformación digital del sector agrícola mediante AgroTrack, una plataforma inteligente que ayuda a pequeños y medianos agricultores a optimizar la gestión de sus cultivos, mejorar la toma de decisiones y aumentar la productividad de manera sostenible.
+
+| **URL**        | **Inicio** | **Duración** |
+|----------------|------------|--------------|
+| [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a827_upc_edu_pe/IQAnzAghm3OvSbTwzSgvdHzSAdNmZKDTy05qS8Njy7f2gEw?e=aYAcrB&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)  | 00:00      | 06:22 min    |
+
+![Video About The Team](report/assets/about-the-team.png)
+
+---
 
 # Bibliografía
 
