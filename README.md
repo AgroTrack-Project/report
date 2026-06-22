@@ -3822,11 +3822,13 @@ El objetivo principal del Sprint 3 fue implementar el RESTful API (Web Services)
 
 **Figura**
 
-![Sprint Backlog 3](asd) (FALTA)
+![Sprint Backlog 3](./report/assets/trelloSprin3.png) 
 
 *Sprint 3 de AgroTrack*
 
-*Nota.* Elaboración propia. Obtenido de Trello (FALTA)
+*Nota.* Elaboración propia. Obtenido de Trello 
+
+**Link del trello:** https://trello.com/invite/b/6a386dfb1297005b1b046b88/ATTIf29aeadd54f0dac60d77b9b1cc2cf2ce5B4F6107/agrotrack-sprint-3
 
 | User Story Id | User Story | Work-Item / Task Id | Work-Item / Task Title | Work-Item / Task Description | Estimation (Hours) | Assigned To | Status |
 |---|---|---|---|---|---|---|---|
