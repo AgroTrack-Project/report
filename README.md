@@ -3764,11 +3764,11 @@ de cada miembro del equipo.
 
 | **Segmento**          | **URL**            | **Inicio** | **Duración** |
 |-----------------------|--------------------|------------|--------------|
-| Empresario Agricola   | [Ver entrevista]() | 00:00      | x:xx min     |
+| Empresario Agricola   | [Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a827_upc_edu_pe/IQAAri3xk_xURropEvsluVzmAXj4s7kSXhMjvGD23jlLV3I?e=ua1W4A&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) | 00:00      | 6:45 min     |
 
-![Entrevista-1](assets/entrevista-1-S3.png)
+![Entrevista-1](report/assets/entrevista-1-s3.png)
 
-**Resumen:**
+**Resumen:** En el video se presenta una prueba de usabilidad de la plataforma AgroTrack realizada con Matías Carrillo, empresario del sector agrícola. Durante la sesión, el usuario interactúa con la landing page y el dashboard de la aplicación, evaluando la facilidad de uso, claridad de la información, visualización de parcelas, métricas de rendimiento, consumo de agua y exportación de reportes. Finalmente, brinda retroalimentación positiva sobre la utilidad de la plataforma y propone mejoras como agregar más gráficos y métricas para una mejor visualización de la información agrícola.
 
 **Entrevista N° 2**
 
