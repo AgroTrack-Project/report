@@ -4214,6 +4214,19 @@ A continuación se presentan los analíticos de colaboración del repositorio we
 
 **Resumen:** Jorge Ramírez, de 37 años, agricultor con varias hectáreas de parcelas propias, exploró AgroTrack desde la Landing Page identificando rápidamente que se trata de una plataforma para monitorear cultivos y el estado del suelo, destacando que la web transmite la sensación de mostrar datos en tiempo real. Durante la prueba registró una parcela nueva (ubicación, tamaño y cultivo), navegó la sección de estado del suelo, y revisó el módulo de alertas climáticas y la recomendación de riego asociada a su cultivo. Valoró positivamente que la información se mostrara de forma clara desde la Landing Page sin necesitar ayuda externa, que el registro de parcela y de datos del suelo fue sencillo de completar, y que las alertas climáticas le resultan útiles para tomar decisiones a tiempo sobre sus cultivos. Sin embargo, señaló que la recomendación de riego ("bajo") le pareció poco descriptiva y necesitaría más detalle o contexto para confiar en ella, que no encontró un acceso directo a la sección de cultivos sin pasar primero por "editar" en la parcela, y que tuvo dudas sobre cómo recibiría las alertas en la práctica (sugirió notificaciones por celular o WhatsApp en lugar de depender de acceso constante a una computadora). Como mejora adicional, propuso resaltar visualmente la información más importante con colores y agregar pequeñas descripciones o tooltips para usuarios nuevos. A pesar de estas observaciones, consideró que la navegación general es intuitiva, que usaría AgroTrack en su día a día para reemplazar su seguimiento actual de cultivos, y que la plataforma tiene utilidad real para agricultores como él.
 
+**Entrevista N° 6**
+
+| **Nombres y apellidos**   | **Edad**   | **Distrito**   |
+|---------------------------|------------|----------------|
+| Johan Contreras           | 25 años    | San Miguel     |
+
+| **Segmento** | **URL** | **Inicio** | **Duración** |
+|--------------|---|---|--------------|
+| Empresario Agricola   | [Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202324623_upc_edu_pe/IQC_3fMojx7QRpXxX_AI_lCEAVlwmCBCt3_sEttPiNL0n2Q?e=iuZLHA&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) | 00:00 | 7:55 min   |
+
+![Entrevista-6](report/assets/Segmento-Johan.png)
+
+**Resumen:** Se entrevistó a Johan Contreras, empresario agrícola de 25 años del distrito de San Miguel, a quien se le presentó la plataforma AgroTrack y sus principales funcionalidades. En términos generales, Johan tuvo una experiencia positiva: identificó rápidamente el valor de la plataforma desde el landing page, valoró que el dashboard concentrara toda la información en un solo lugar y destacó especialmente la vista de rendimiento por parcela como una mejora respecto a sus métodos actuales con papel y Excel. Sin embargo, señaló que los datos de pérdidas y consumo de agua aún le parecen insuficientes para tomar decisiones concretas, ya que necesitaría mayor detalle por fecha y por parcela específica; además, sugirió incorporar métricas de costos operativos como mano de obra e insumos, y alertas automáticas ante caídas de rendimiento. La navegación le resultó sencilla e intuitiva, aunque tuvo una pequeña dificultad inicial para encontrar el historial, y la exportación de reportes funcionó bien, aunque propuso añadir la opción de filtrar por rango de fechas. Finalmente, Johan indicó que sí recomendaría AgroTrack a otros empresarios del sector, reconociendo que la plataforma tiene una base sólida y bien orientada al campo, aunque aún le falta madurar en algunas funcionalidades
 
 ### 5.3.3. Evaluaciones según heurísticas.
 
