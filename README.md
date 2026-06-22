@@ -3798,43 +3798,43 @@ A continuación se presentan los analíticos de colaboración del repositorio we
 
 | **Nombres y apellidos**   | **Edad**   | **Distrito**   |
 |---------------------------|------------|----------------|
-| XXXXXXXXX                 | 25 años    | Cusco          |
+| Valeri Rojas                 | 22 años    | Los Olivos          |
 
 | **Segmento** | **URL** | **Inicio** | **Duración** |
 |--------------|---|---|--------------|
-| XXXX         | [Ver entrevista]() | 00:00 | x:xx min      |
+| Empresaria Agricola  | [Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202324623_upc_edu_pe/IQAsdhz3gAqtRqfZKulI0qiAAb1ilpwoVd6NDvYrs-_WKio?e=xPs1e0&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) | 00:00 | 7:26 min  |
 
-![Entrevista-1](assets/entrevista-1-S3.png)
+![Entrevista-2](report/assets/Segmento-Valeri.png)
 
-**Resumen:**
+**Resumen:** Valeri Rojas, de 22 años de Los Olivos, quien trabaja en la empresa agrícola Agroverde del Norte, fue entrevistada sobre la plataforma AgroTrack. Durante la prueba de usabilidad, navegó por la landing page y el panel de control, identificando rápidamente que la plataforma permite monitorear gestiones de riego basadas en datos. Valeri aprecio que el panel de control presenta un resumen organizado del estado de todas las parcelas sin necesidad de entrar a cada una, que los indicadores facilitan la comparación de rendimiento entre parcelas, y que la información sobre pérdidas estimadas y consumo de agua proporciona una buena base para identificar problemas y tomar decisiones de mejora. Tambien elogió la simplicidad del proceso de exportación de reportes en PDF y la navegación intuitiva de la plataforma. Sin embargo, sugirió agregar proyecciones de rendimiento futuro y análisis de costos por parcela para campañas futuras. En conclusión, recomendaría AgroTrack a otros empresarios del sector agrícola porque centraliza la información importante sobre las parcelas y facilita el monitoreo de indicadores clave que ayudan a la toma de decisiones.
 
 **Entrevista N° 3**
 
 | **Nombres y apellidos**   | **Edad**   | **Distrito**   |
 |---------------------------|------------|----------------|
-| XXXXXXXXX                 | 25 años    | Cusco          |
+| Lucia Alarcon             | 23 años    | Comas         |
 
 | **Segmento** | **URL** | **Inicio** | **Duración** |
 |--------------|---|---|--------------|
-| XXXX         | [Ver entrevista]() | 00:00 | x:xx min      |
+| Agricultora   | [Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202324623_upc_edu_pe/IQBE_PFpJHzZSY8DPfCCjxgUAYq_Li89X4uKG9cjUehaKr0?e=8mXpdF&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) | 00:00 | 8:35 min      |
 
-![Entrevista-1](assets/entrevista-1-S3.png)
+![Entrevista-3](report/assets/Segmento-Lucia.png)
 
-**Resumen:**
+**Resumen:** Lucía Larcón, de 23 años del Distrito de Commerce, agricultora entrevistada sobre AgroTrack, comprendió desde el inicio que la plataforma sirve para monitorear cultivos y el estado del suelo, además de recibir avisos sobre cambios climáticos, destacando que la información estaba clara y las funciones se mostraban de forma sencilla. Durante la prueba navegó por el panel principal, registró y editó parcelas, ingresó datos de humedad y temperatura del suelo, gestionó cultivos hasta cosecharlos, y revisó las recomendaciones de riego, señalando que todo el proceso fue bastante sencillo y los campos eran claros. Valoró positivamente las recomendaciones de riego por considerarlas lógicas para evitar desperdiciar agua, y las alertas climáticas por permitirle planificar actividades y proteger sus cultivos con anticipación. Mencionó que las opciones de configuración de alertas no eran difíciles de encontrar, aunque al inicio le tomó unos segundos ubicarlas y sugirió que podrían estar más visibles. Como mejoras propuso opciones más grandes y accesibles desde el celular para registrar datos rápidamente, gráficos más visuales sobre la evolución de la humedad del suelo, y destacó que actualmente lleva sus anotaciones en un cuaderno o de memoria, por lo que tener toda la información organizada en una sola plataforma le ayudaría a tomar decisiones más rápidas.
 
 **Entrevista N° 4**
 
 | **Nombres y apellidos**   | **Edad**   | **Distrito**   |
 |---------------------------|------------|----------------|
-| XXXXXXXXX                 | 25 años    | Cusco          |
+| Christopher Mejia         | 28 años    | Los Olivos     |
 
 | **Segmento** | **URL** | **Inicio** | **Duración** |
 |--------------|---|---|--------------|
-| XXXX         | [Ver entrevista]() | 00:00 | x:xx min      |
+| Empresario Agricola   | [Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202324623_upc_edu_pe/IQB0QuCKjIVyTJUrsuQBrtjnAQwPmiZGOUkIMTinESxiDiU?e=42L1Vu&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) | 00:00 | 9:58 min      |
 
-![Entrevista-1](assets/entrevista-1-S3.png)
+![Entrevista-4](report/assets/Segmento-Cristopher.png)
 
-**Resumen:**
+**Resumen:** Christopher Mejía, de 28 años, dueño de Inca Agroindustries & SACS, exploró AgroTrack identificando rápidamente que es una plataforma amigable y directa con los datos mostrados, útil para la gestión agrícola del día a día. Durante la prueba navegó por el dashboard donde revisó el rendimiento de parcelas, resumen de pérdidas y consumo de agua, intentó exportar reportes en PDF y Excel aunque no logró completar la descarga, utilizó el módulo de soporte para reportar el problema mediante un ticket, y exploró las funcionalidades de parcelas, cultivos, estado del suelo, recomendaciones de riego e historial de cosechas. Valoró positivamente que el panel de control está bien ordenado y claro, que la información de rendimiento por parcela ayuda a identificar dónde se produce más y dónde se pierde, y que las alertas climáticas en tiempo real son muy útiles para su operación. Sin embargo, señaló que no encontró métricas financieras suficientes para tomar decisiones de inversión, y como principal mejora solicitó incorporar un indicador de cuánto dinero producen sus parcelas por hectárea en efectivo. A pesar de los problemas con la exportación de reportes, consideró que la navegación general es sencilla y afirmó que recomendaría AgroTrack a otros empresarios del sector siempre que se mantengan las alertas en tiempo real.
 
 **Entrevista N° 5**
 
@@ -3846,7 +3846,7 @@ A continuación se presentan los analíticos de colaboración del repositorio we
 |--------------|---|---|--------------|
 | XXXX         | [Ver entrevista]() | 00:00 | x:xx min      |
 
-![Entrevista-1](assets/entrevista-1-S3.png)
+![Entrevista-5](assets/entrevista-1-S3.png)
 
 **Resumen:**
 
@@ -3860,7 +3860,7 @@ A continuación se presentan los analíticos de colaboración del repositorio we
 |--------------|---|---|--------------|
 | XXXX         | [Ver entrevista]() | 00:00 | x:xx min      |
 
-![Entrevista-1](assets/entrevista-1-S3.png)
+![Entrevista-6](assets/entrevista-1-S3.png)
 
 **Resumen:**
 
