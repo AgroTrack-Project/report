@@ -33,4 +33,4 @@ En el Sprint 4, el equipo mantiene la misma distribución de liderazgo por Bound
 | Alfaro Mallma, Alberto Joaquin | elprrr | C | C | C | C | L | 
 | Quispe Perez, Eder Edu | Eder_09 | C | L | L | C | C |
 | Rodriguez Rojas, Miler Alexander | Miler2003 | C | C | C | L | C |
-| Velasquez Laquihuanaco, Eduardo David | Edu-VLL | L | C | C | C | C |
+| Velasquez Laquihuanaco, Eduardo David | Edu-VLL | L | C | C | C | C | 
