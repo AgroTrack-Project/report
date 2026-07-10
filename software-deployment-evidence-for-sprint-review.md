@@ -132,12 +132,6 @@ Como parte del Sprint 4, se verificó y actualizó el despliegue de la Web Appli
 
 Se comprobó el correcto funcionamiento de las vistas actualizadas desde distintos dispositivos, validando que los módulos de gestión de parcelas, cultivos, monitoreo del suelo, alertas climáticas y perfil de usuario continuaran operando correctamente en producción tras la incorporación de los cambios del Sprint 4.
 
-**Repositorio Frontend Web Application:**
-[https://github.com/AgroTrack-Project/web-Application](https://github.com/AgroTrack-Project/web-Application)
-
-**URL de la Web Application desplegada:**
-[https://agro-track.andessmart.workers.dev/home](https://agro-track.andessmart.workers.dev/home)
-
 <br>
 
 **Figura**
@@ -159,10 +153,3 @@ Se comprobó el correcto funcionamiento de las vistas actualizadas desde distint
 *Evidencia de deployment 4*
 ![Web Application - Vista 4](report/assets/web-app-4.png)
 *Nota.* Elaboración propia.
-
-**Figura**
-*Evidencia de deployment 5*
-![Web Application - Vista 5](report/assets/web-app-5.png)
-*Nota.* Elaboración propia.
-
-<br>
