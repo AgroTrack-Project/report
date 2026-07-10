@@ -38,49 +38,13 @@ Los analíticos muestran la participación activa de todos los integrantes duran
 
 **Reflexiones del Equipo:**
 
-- **Velasquez Laquihuanaco, Eduardo David:**
-    - **Bounded Context:** Identity (IAM)
-    - **Estructura desarrollada:**
-        - `application`
-            - `acl`
-            - `commandservices`
-            - `queryservices`
-        - `interfaces`
-            - `acl`
-            - `rest`
+- **Velasquez Laquihuanaco, Eduardo David:** "En el Sprint 4 implementé la capa **Application** del Bounded Context de IAM, desarrollando los módulos `acl`, `commandservices` y `queryservices`, responsables de la lógica de aplicación, la ejecución de comandos y la atención de consultas. Trabajar en esta capa me permitió comprender la importancia de separar las operaciones de escritura y lectura, manteniendo una arquitectura limpia y escalable."
 
-  > "En el Sprint 4 implementé el Bounded Context de Identity en el Backend, encargado del registro y autenticación de agricultores y empresarios agrícolas, y desarrollé la sección Home de la cuarta versión de la Landing Page. Trabajar en la puerta de entrada de la plataforma, tanto a nivel de backend como de primera impresión visual, me hizo pensar mucho en la experiencia del usuario desde el primer contacto con AgroTrack."
+- **Alfaro Mallma, Alberto Joaquin:** "En el Sprint 4 participé en el desarrollo de la capa **Domain** del Bounded Context de IAM, implementando los paquetes `model` y `repositories`. Esta parte fue fundamental para definir las entidades principales del dominio y los contratos de persistencia, fortaleciendo la base sobre la que funciona el contexto."
 
-- **Alfaro Mallma, Alberto Joaquin:**
-    - **Bounded Context:** Dashboard / Support
-    - **Estructura desarrollada:**
-        - `infrastructure`
-            - `authorization/sfs`
-            - `hashing/bcrypt`
+- **Quispe Perez, Eder Edu:** "En el Sprint 4 desarrollé la capa **Infrastructure** del Bounded Context de IAM, implementando los módulos `authorization/sfs`, `hashing/bcrypt`, `persistence/jpa` y `tokens/jwt`. Esta experiencia me permitió integrar la autenticación, autorización, persistencia de datos y generación de tokens, comprendiendo cómo los servicios externos soportan el funcionamiento del sistema."
 
-  > "Continué la evolución del Bounded Context de Dashboard en el Frontend y sumé el desarrollo del módulo de Support, encargado de canalizar consultas y soporte prioritario para los planes que lo incluyen. Combinar analíticas con soporte al usuario me permitió entender mejor qué información necesitan realmente los agricultores y empresarios agrícolas al usar la plataforma."
-
-- **Quispe Perez, Eder Edu:**
-    - **Bounded Context:** Monitoring
-    - **Estructura desarrollada:**
-        - `domain`
-            - `model`
-            - `repositories`
-        - `infrastructure`
-            - `persistence/jpa`
-
-  > "Implementé el Bounded Context de Monitoring en el Backend de AgroTrack, encargado del seguimiento de las condiciones de las parcelas, y colaboré activamente en el desarrollo e integración de los demás Bounded Contexts. Trabajar de forma cruzada con los módulos de mis compañeros me ayudó a entender mejor cómo se conecta todo el ecosistema del backend agrícola."
-
-- **Rodriguez Rojas, Miler Alexander:**
-    - **Bounded Context:** Alerts
-    - **Estructura desarrollada:**
-        - `application`
-            - `internal`
-        - `infrastructure`
-            - `tokens/jwt`
-
-  > "Desarrollé el Bounded Context de Alerts, encargado de generar las alertas básicas y avanzadas según el plan contratado (Basic, Pro o Enterprise), y colaboré en la implementación conjunta de los distintos Bounded Contexts del Backend. Diseñar las reglas de alerta a partir de los datos de Monitoring me permitió ver con claridad cómo dos Bounded Contexts distintos deben comunicarse manteniendo bajo acoplamiento."
-
+- **Rodriguez Rojas, Miler Alexander:** "En el Sprint 4 implementé la capa **Interfaces** del Bounded Context de IAM, desarrollando los módulos `acl` y `rest`, encargados de exponer las funcionalidades del sistema y facilitar la comunicación con otros contextos y con el cliente. Esta parte me permitió entender la importancia de desacoplar la lógica de negocio de los mecanismos de acceso."
 **Lección Aprendida:**
 
 El equipo identifica las siguientes lecciones de este Sprint 4:
