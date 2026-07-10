@@ -21,12 +21,22 @@ En este Sprint, el equipo avanzó en la implementación de los principales produ
 
 | Integrante | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
 |---|---|---|---|---|---|---|
-| Alberto Joaquin Alfaro Mallma (elprrr) | AgroTrack-Project/web-application | | | | | |
-| Eder Edu Quispe Perez (DuDu-0912) | AgroTrack-Project/web-application | | | | | |
-| Miler Alexander Rodriguez Rojas (Miler2003) | AgroTrack-Project/web-application | | | | | |
-| Eduardo David Velasquez Laquihuanaco (Edu-VLL) | AgroTrack-Project/web-application | | | | | |
+| Alberto Joaquin Alfaro Mallma (elprrr) | AgroTrack-Project/web-application | main | e36b401 | feat: update logout method to redirect to landing page | | 16/05/2026 |
+| Alberto Joaquin Alfaro Mallma (elprrr) | AgroTrack-Project/web-application | main | 74af4bc | feat: implement entry animation for app layout and clean up imports | | 16/05/2026 |
+| Alberto Joaquin Alfaro Mallma (elprrr) | AgroTrack-Project/web-application | main | 263796b | feat: add support ticket functionality with CRUD operations | | 16/05/2026 |
+| Eder Edu Quispe Perez (DuDu-tech / Eder-09) | AgroTrack-Project/web-application | main | 3f18c9c | chore: remove .claude folder and add to gitignore | | 16/05/2026 |
+| Eder Edu Quispe Perez (DuDu-tech / Eder-09) | AgroTrack-Project/web-application | main | 0f45ce0 | Merge branch 'develop' | | 10/07/2026 |
+| Eder Edu Quispe Perez (DuDu-tech / Eder-09) | AgroTrack-Project/web-application | | | | | |
+| Miler Alexander Rodriguez Rojas (Miler2003) | AgroTrack-Project/web-application | develop | 4bda6b2 | merge branch 'feature/changes' into develop | | 10/07/2026 |
+| Miler Alexander Rodriguez Rojas (Miler2003) | AgroTrack-Project/web-application | develop | e42e728 | docs: update README for clarity and structure improvements | | 10/07/2026 |
+| Miler Alexander Rodriguez Rojas (Miler2003) | AgroTrack-Project/web-application | develop | 812c543 | docs: update README for clarity and structure improvements | | 10/07/2026 |
+| Eduardo David Velasquez Laquihuanaco (Edu-VLL) | AgroTrack-Project/web-application | main | 2423fa8 | docs: add translations for login, register, alerts and profile | | 09/07/2026 |
+| Eduardo David Velasquez Laquihuanaco (Edu-VLL) | AgroTrack-Project/web-application | main | 5f6e58e | chore: fix dev api base url and add missing auth endpoint path | | 09/07/2026 |
+| Eduardo David Velasquez Laquihuanaco (Edu-VLL) | AgroTrack-Project/web-application | main | bbf6c9c | fix: remove default 0 from numeric plot and soil-record inputs | | 09/07/2026 |
+
 
 **Web Services**
+
 
 | Integrante | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
 |---|---|---|---|---|---|---|
@@ -35,11 +45,4 @@ En este Sprint, el equipo avanzó en la implementación de los principales produ
 | Miler Alexander Rodriguez Rojas (Miler2003) | AgroTrack-Project/web-services | | | | | |
 | Eduardo David Velasquez Laquihuanaco (Edu-VLL) | AgroTrack-Project/web-services | | | | | |
 
-**Report**
 
-| Integrante | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
-|---|---|---|---|---|---|---|
-| Alberto Joaquin Alfaro Mallma (elprrr) | AgroTrack-Project/report | | | | | |
-| Eder Edu Quispe Perez (DuDu-0912) | AgroTrack-Project/report | | | | | |
-| Miler Alexander Rodriguez Rojas (Miler2003) | AgroTrack-Project/report | | | | | |
-| Eduardo David Velasquez Laquihuanaco (Edu-VLL) | AgroTrack-Project/report | | | | | |
