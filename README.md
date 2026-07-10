@@ -44,6 +44,142 @@ Universidad Peruana de Ciencias Aplicadas
 | TB2 | 10/07/2026 | Alberto Joaquin Alfaro Mallma, Eder Edu Quispe Perez, Miler Alexander Rodriguez Rojas, Eduardo David Velasquez Laquihuanaco | Para esta cuarta y última entrega, se incorporó la sección 5.2.4 correspondiente al Sprint 4, incluyendo Sprint Planning, Aspect Leaders and Collaborators, Sprint Backlog, Development Evidence, Execution Evidence y Services Documentation Evidence. Se implementó y desplegó el bounded context de Identity & Access Management, incorporando autenticación mediante sign-up/sign-in, gestión de roles y protección JWT sobre los endpoints de perfil de negocio, completando así los cinco bounded contexts planeados en el diseño original del backend. Se realizó el versionado semántico y la publicación de releases en GitHub para los repositorios de Landing Page, Web Application y Web Services. Finalmente, se redactó la sección de Conclusiones y Recomendaciones del informe, contrastando los Problem Statements, Assumptions e Hypothesis Statements planteados en el Lean UX Canvas con los resultados de las validaciones de usabilidad realizadas con usuarios reales durante el Sprint 3, y se elaboró la presentación de cierre resumiendo el trabajo de los cuatro sprints del proyecto. |
  
 
+
+<br>
+<br>
+
+# Project Report Collaboration Insights
+
+El Project Report del equipo se encuentra alojado en el repositorio de informes
+dentro de la organización de GitHub del equipo:
+
+- **Organización de GitHub:** https://github.com/AgroTrack-Project
+- **Repositorio del Project Report:** https://github.com/AgroTrack-Project/report.git
+
+El informe se elaboró de manera colaborativa utilizando Git y GitHub como
+plataforma de control de versiones. Cada integrante trabajó las secciones
+asignadas y registró sus aportes mediante commits al repositorio del informe,
+lo cual queda evidenciado en los analíticos de colaboración de GitHub y en el
+Registro de Versiones del Informe. A continuación, se describe el desarrollo
+de las actividades por cada entrega.
+
+![Foto de la colaboración](report/assets/contributors.png)
+
+
+---
+
+### Entrega AV1
+
+Durante la primera entrega, el equipo se organizó mediante reuniones de
+coordinación para distribuir los capítulos iniciales del informe. Las
+actividades se desarrollaron entre el 14 y el 24 de abril, y la distribución
+del trabajo fue la siguiente:
+
+| Integrante | Tareas Designadas |
+|------------|-------------------|
+| Miler Alexander Rodriguez Rojas | Elaboró la carátula, el registro de versiones, la tabla de Collaboration Insights, el Student Outcome, la descripción del startup, los perfiles de los integrantes, la sección de antecedentes y problemática, los wireframes y mock-ups de la Landing Page, y el Big Picture Event Storming |
+| Alberto Joaquin Alfaro Mallma | Desarrolló la sección de competidores, el análisis competitivo, las estrategias y tácticas frente a competidores, el diseño de entrevistas, las consideraciones metodológicas, el registro de las tres primeras entrevistas, el registro de la 4ta entrevista, y los Web Applications Wireframes, Mock-ups, User Flow Diagrams y Prototyping |
+| Eduardo David Velasquez Laquihuanaco | Elaboró los Lean UX Problem Statements, Assumptions, Hypothesis Statements y el Lean UX Canvas; los User Stories, el Impact Mapping y el Product Backlog; las secciones de Software Configuration Management, Source Code Management y los diagramas de arquitectura (Context, Components), Class Diagrams y Database Diagrams; además del Design-Level EventStorming |
+| Eder Edu Quispe Perez | Elaboró los User Persona, los Style Guidelines, el registro de la 5ta entrevista, el análisis de entrevistas, los User Task Matrix, el Labeling Systems, los SEO Tags and Meta Tags, los Searching Systems, los Navigation Systems, la introducción, las secciones de Source Code Style Guide & Coding Conventions, Software Deployment Configuration, Landing Page, Services & Applications Implementation y el Sprint 1; junto con los User Journey Mapping, los Empathy Mapping y el Ubiquitous Language |
+
+Los aportes de esta entrega corresponden a las versiones 0.1 a la 0.21 del
+Registro de Versiones del Informe.
+
+**Evidencias de colaboración — AV1:**
+
+*Analíticos de colaboración del repositorio:*
+
+![Foto de la AV1](report/assets/AV1-1.png)
+
+![Foto de la AV1](report/assets/AV1-2.png)
+
+![Foto de la AV1](report/assets/AV1-3.png)
+
+---
+
+### Entrega TB1
+
+Para la segunda entrega, el equipo se enfocó en corregir las observaciones
+recibidas en la entrega anterior y en completar las secciones de diseño y
+arquitectura de la solución. Las actividades se desarrollaron entre el 5 y
+el 25 de mayo, con la siguiente participación:
+
+| Integrante | Tareas Designadas |
+|------------|-------------------|
+| Eduardo David Velasquez Laquihuanaco | Corrigió el contenido del Capítulo 1, el Lean UX Process, los User Journey Mapping, los Empathy Maps, los Lean UX Problem Statements y los Assumptions; y añadió el Software Architecture Context Diagram, los Container Diagrams y los Components Diagrams |
+| Alberto Joaquin Alfaro Mallma | Corrigió los Segmentos Objetivo, el Startup Profile, la sección de Competidores, el Registro de Versiones, el Project Report Collaboration Insights, las entrevistas, el Big Picture Event Storming y el Ubiquitous Language; actualizó los User Stories y añadió el Web Applications Prototyping, el Sprint 2 y los Landing Page Wireframes y Mock-ups |
+| Miler Alexander Rodriguez Rojas | Corrigió el Solution Profile, la sección de Antecedentes y problemática, los User Stories, el Impact Mapping y el Product Backlog; actualizó los User Goals y el Software Configuration Management; además añadió la tabla de Software Configuration Management, el Source Code Management y el Software Deployment Configuration |
+| Eder Edu Quispe Perez | Participó en la actualización de las secciones de implementación y documentación de la Landing Page y servicios iniciadas en la entrega anterior, y añadió los Web Applications User Flow Diagrams |
+
+Los aportes de esta entrega corresponden a las versiones 0.22 a la 0.37 del
+Registro de Versiones del Informe.
+
+**Evidencias de colaboración — TB1:**
+
+*Analíticos de colaboración del repositorio:*
+
+![Foto de la colaboración](report/assets/TB1-COLABORATION.png)
+
+---
+
+### Entrega AV2
+
+En la entrega final, el equipo completó el Sprint 3, las entrevistas de
+validación, las evaluaciones heurísticas y las evidencias de despliegue,
+además de realizar una revisión integral del documento. Las actividades se
+desarrollaron entre el 26 de mayo y el 21 de junio, con la siguiente
+participación:
+
+| Integrante | Tareas Designadas |
+|------------|-------------------|
+| Eduardo David Velasquez Laquihuanaco | Corrigió los Sprint Backlog 1 y 2, el Development, Execution y Services Documentation Evidence for Sprint Review y el Design-Level EventStorming; actualizó las Technical Stories, la carátula, el video About The Team, los Sprint Planning y el Big Picture Event Storming; y añadió el Sprint 3, la 3ra entrevista de validación, los Validation Interviews y el Video About The Product |
+| Alberto Joaquin Alfaro Mallma | Actualizó la Configuración de Firebase y la Publicación de la aplicación, los links de las entrevistas 1 y 3, y el Design-Level Event Storming; y añadió las secciones de Software Deployment Evidence y Services Documentation Evidence for Sprint Review, así como la 2da entrevista de evaluación |
+| Eder Edu Quispe Perez | Añadió la 1ra entrevista de validación, las Evaluaciones según heurísticas y el video de demostración; actualizó el Sprint 3, el Execution Evidence for Sprint Review, el registro de la 2da entrevista y corrigió el 1er User Persona |
+| Miler Alexander Rodriguez Rojas | Añadió la 4ta entrevista de validación, los Team Collaboration Insights de los Sprints 1, 2 y 3, el Student Outcome; corrigió la tabla de contenidos, el Hypothesis Statement y el Registro de Versiones del Informe en varias iteraciones; y actualizó los Lean UX Hypothesis Statements, el Lean UX Canvas, los segmentos objetivo, las estrategias y tácticas frente a competidores, las entrevistas, el glosario, el Product Backlog, la sección de Information Architecture, los Organization Systems, los Labeling Systems, la Landing Page UI Design y la Bibliografía |
+
+Los aportes de esta entrega corresponden a las versiones 0.38 a la 0.59 del
+Registro de Versiones del Informe.
+
+**Evidencias de colaboración — AV2:**
+
+*Analíticos de colaboración del repositorio:*
+
+![Foto de la colaboración](report/assets/AV2-1.png)
+
+![Foto de la colaboración](report/assets/AV2-2.png)
+
+---
+
+### Entrega TB2
+
+Para esta entrega, el equipo desarrolló el Sprint 4, el cual se centró en la
+mejora integral del Project Report atendiendo las indicaciones y observaciones
+brindadas por el docente en las entregas anteriores. Las actividades se
+desarrollaron entre el 21 de junio y el 8 de julio, e incluyeron la corrección
+de secciones observadas, la actualización de evidencias y la consolidación del
+Registro de Versiones del Informe. La participación de los integrantes fue la
+siguiente:
+
+| Integrante | Tareas Designadas |
+|------------|-------------------|
+| Miler Alexander Rodriguez Rojas | Corrigió la tabla de contenidos, el Hypothesis Statement y la tabla del Registro de Versiones del Informe en sucesivas iteraciones; añadió los Team Collaboration Insights de los Sprints 1, 2 y 3 y el Student Outcome; y actualizó los Lean UX Hypothesis Statements, el Lean UX Canvas, la sección de segmentos objetivo, las estrategias y tácticas frente a competidores, las entrevistas, el glosario, el Product Backlog, la sección de Information Architecture, los Organization Systems, los Labeling Systems, la sección de Landing Page UI Design y la Bibliografía |
+| Alberto Joaquin Alfaro Mallma | Añadió el Software Deployment Evidence for Sprint Review y consolidó el Registro de Versiones del Informe añadiendo las versiones 0.1 a la 0.56; y actualizó los links de las entrevistas 1 y 3 |
+| Eder Edu Quispe Perez | Actualizó el registro de la 2da entrevista y el Design-Level Event Storming, y corrigió el 1er User Persona conforme a las observaciones recibidas |
+| Eduardo David Velasquez Laquihuanaco | Actualizó la carátula, el video About The Team, los Sprint Planning y el Big Picture Event Storming |
+
+Los aportes de esta entrega corresponden a las versiones 0.47 a la 0.59 del
+Registro de Versiones del Informe.
+
+**Evidencias de colaboración — TB2:**
+
+![Foto de la colaboración](report/assets/TB2.png)
+
+![Foto de la colaboración](report/assets/TB2.png)
+
+
+---
+
+
 <br>
 <br>
 
@@ -633,8 +769,7 @@ cosecha esperaría para considerar que esta plataforma es un éxito?
   -----------------------------------------------------------------------
 
   ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  **URL:** [Entrevista - 1er seg obj - Miler Rodriguez                                                                                                                                                                                                                                                                              **Inicio de la          **Duración:** 6:34 min
-  1.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a827_upc_edu_pe/IQA7Y8rY1pOWRIXG-iCyIG6oAZ2IIM0sMFGl20NuTco6qfI?e=YgDGTl&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)   entrevista:** 00:00     
+  **URL:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a827_upc_edu_pe/IQA7Y8rY1pOWRIXG-iCyIG6oAZ2IIM0sMFGl20NuTco6qfI?e=YgDGTl&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D   entrevista:** 00:00     
   --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ----------------------- -----------------------
 
   ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -667,8 +802,7 @@ más eficiente que sus métodos actuales.
   -----------------------------------------------------------------------
 
   --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  **URL:** [Entrevista - 1er seg obj - Eder                                                                                                                                                                                                                                                                                              **Inicio de la          **Duración:** 4:12
-  Quispe.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202324623_upc_edu_pe/IQDidGgCC_E9QIX1GOCVgAAOAVuK1pcpOl7TY5HJ6ZAcxlY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=MifF7G)   entrevista:** 00:00     
+  **URL:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202324623_upc_edu_pe/IQDidGgCC_E9QIX1GOCVgAAOAVuK1pcpOl7TY5HJ6ZAcxlY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=MifF7G   entrevista:** 00:00     
   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ----------------------- -----------------------
 
   --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -702,8 +836,7 @@ producción, reducir pérdidas y sea fácil de usar.
   -----------------------------------------------------------------------
 
   ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  **URL:** [Entrevista - 1er seg obj - Eder Quispe                                                                                                                                                                                                                                                                                  **Inicio de la          **Duración:** 2:57
-  1.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202324623_upc_edu_pe/IQD12rOS9xukQKDOJngTl7w0Aa2RYMlbZo7YzQXCsVdR7tw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=u8jJHb)   entrevista:** 00:00     
+  **URL:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202324623_upc_edu_pe/IQD12rOS9xukQKDOJngTl7w0Aa2RYMlbZo7YzQXCsVdR7tw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=u8jJHb   entrevista:** 00:00     
   --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ----------------------- -----------------------
 
   ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -739,8 +872,7 @@ no consuma mucho internet.
   -----------------------------------------------------------------------
 
   -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  **URL:** [Entrevista - 2do seg obj - Miler                                                                                                                                                                                                                                                                                                **Inicio de la          **Duración:** 4:16 min
-  Rodriguez.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a827_upc_edu_pe/IQBpPA9-AgKuTYSsa7rfQ_3NAWt06SZe20fFxPk2vz_tj6o?e=cWepbS&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)   entrevista:** 00:00     
+  **URL:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a827_upc_edu_pe/IQBpPA9-AgKuTYSsa7rfQ_3NAWt06SZe20fFxPk2vz_tj6o?e=cWepbS&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D   entrevista:** 00:00     
   ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ----------------------- -----------------------
 
   -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -774,8 +906,7 @@ considerar exitosa una solución tecnológica.
   -----------------------------------------------------------------------
 
   --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  **URL:** [Entrevista - 2do seg obj - Eder                                                                                                                                                                                                                                                                                              **Inicio de la          **Duración:** 3:58
-  Quispe.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202324623_upc_edu_pe/IQBALW19b-Z_SIeQbTrZUZ1fAUpuk-2I7KrrwWEJK9rsHi0?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=lvIQ03)   entrevista:** 00:00     
+  **URL:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202324623_upc_edu_pe/IQBALW19b-Z_SIeQbTrZUZ1fAUpuk-2I7KrrwWEJK9rsHi0?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=lvIQ03   entrevista:** 00:00     
   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ----------------------- -----------------------
 
   --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -811,8 +942,7 @@ y disminuya pérdidas en un 10%.
   -----------------------------------------------------------------------
 
   ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  **URL:** [Entrevista - 2do seg obj - Joaquin                                                                                                                                                                                                                                                                                       **Inicio de la          **Duración:** 7:44
-  Alfaro](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a267_upc_edu_pe/IQDZaXNASBtjSqMs6HKMKmKSAVUVdK2ce6BrVstfl1zh2gk?e=CN8ApV&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)   entrevista:** 00:00     
+  **URL:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a267_upc_edu_pe/IQDZaXNASBtjSqMs6HKMKmKSAVUVdK2ce6BrVstfl1zh2gk?e=CN8ApV&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D   entrevista:** 00:00     
   ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ----------------------- -----------------------
 
   ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1889,12 +2019,12 @@ puntos de fricción y a optimizar la experiencia del usuario.
 ### 4.5. Web Applications Prototyping
 
 Prototipo de la aplicación web AgroTrack en Figma:
-[Prototipo-AgroTrack](https://www.figma.com/design/tQSFHjZZpLcvBWkbzUfWLw/Untitled?node-id=0-1&p=f&t=VDnBfHM1uPU4jdXO-0)
+https://www.figma.com/design/tQSFHjZZpLcvBWkbzUfWLw/Untitled?node-id=0-1&p=f&t=VDnBfHM1uPU4jdXO-0
 
 ![FLUJO-PROTOTIPO](report/assets/FLUJO-PROTOTIPO.png)
 
 Video del flujo del prototipo:
-[FLUJO-PROTOTIPO-AGROTRACK.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a267_upc_edu_pe/IQBGdqAI0J_NR7IAsWPnBl3TAe0ieQNo8cg4MmurJ2Owfuc?e=2yMdi8&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a267_upc_edu_pe/IQBGdqAI0J_NR7IAsWPnBl3TAe0ieQNo8cg4MmurJ2Owfuc?e=2yMdi8&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
 
 ### 4.6. Domain-Driven Software Architecture.
 
@@ -3566,7 +3696,7 @@ junto con el video de navegación correspondiente.
 
 ![video de presentación](report/assets/evidencia_sprint_review.png)
 
-URL del video: [AgroTrack - Frontend Navigation Sprint 2](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120011_upc_edu_pe/IQAICJzo_YiLQ7CqTCNRwBTEAXCtfrOV6VxiAqzsegC73xo?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=fk0ICb)
+URL del video: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120011_upc_edu_pe/IQAICJzo_YiLQ7CqTCNRwBTEAXCtfrOV6VxiAqzsegC73xo?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=fk0ICb
 
 
 #### 5.2.2.6. Services Documentation Evidence for Sprint Review
@@ -3693,7 +3823,7 @@ URL base: `https://6a02c43e0d92f63dd25406d7.mockapi.io/api/v1`
 
 ---
 
-URL del repositorio Web Application: [AgroTrack-Project/web-Application](https://github.com/AgroTrack-Project/web-Application)
+URL del repositorio Web Application: https://github.com/AgroTrack-Project/web-Application
 
 Commits relacionados con la configuración de endpoints en este Sprint: `45ad493`, `cc941b4`, `31ff5e4`
 
@@ -3708,10 +3838,10 @@ Se verificó el correcto funcionamiento de las vistas implementadas desde cualqu
 dispositivo, comprobando que los módulos de gestión de parcelas, cultivos, monitoreo del suelo, alertas climáticas y perfil de usuario cargaran correctamente en producción.
 
 **Repositorio Frontend Web Application:**
-[https://github.com/AgroTrack-Project/web-Application](https://github.com/AgroTrack-Project/web-Application)
+https://github.com/AgroTrack-Project/web-Application
 
 **URL de la Web Application desplegada:**
-[https://agro-track.vitaltrek.workers.dev/home](https://agro-track.vitaltrek.workers.dev/home)
+https://agro-track.vitaltrek.workers.dev/home
 
 ---
 
@@ -3931,10 +4061,46 @@ ocumentados en Swagger y los endpoints implementados por el equipo.
 
 ![swagger 2](report/assets/swagger2.png) 
 
-**Link del video:** [Ver video de demostración - Sprint 3](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323350_upc_edu_pe/IQANSlaoHDAvRrqH_iFNWhu7AaJ-uZhcqpvZBazMZA5JOiE?e=HwAWli&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+**Link del video:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323350_upc_edu_pe/IQANSlaoHDAvRrqH_iFNWhu7AaJ-uZhcqpvZBazMZA5JOiE?e=HwAWli&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
 
 
 <br>
+#### 5.2.3.4 Development Evidence for Sprint Review.
+
+En este Sprint, el equipo avanzó en la implementación de los principales productos de la solución: Web Application, Web Services y la documentación del Report, cubriendo las funcionalidades priorizadas en el Sprint Backlog. A continuación se detallan los commits realizados por cada integrante en los repositorios correspondientes, evidenciando la colaboración del equipo durante el ciclo de desarrollo.
+
+**Web Application**
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+|---|---|---|---|---|---|
+| AgroTrack-Project/web-application | | | | | |
+| AgroTrack-Project/web-application | | | | | |
+| AgroTrack-Project/web-application | | | | | |
+
+**Web Services**
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+|---|---|---|---|---|---|
+| AgroTrack-Project/web-services | | | | | |
+| AgroTrack-Project/web-services | | | | | |
+| AgroTrack-Project/web-services | | | | | |
+
+**Report**
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+|---|---|---|---|---|---|
+| AgroTrack-Project/report | | | | | |
+| AgroTrack-Project/report | | | | | |
+| AgroTrack-Project/report | | | | | |
+
+**Commits por integrante:**
+
+| Integrante | GitHub Username |
+|---|---|
+| Alberto Joaquin Alfaro Mallma | elprrr |
+| Eder Edu Quispe Perez | DuDu-0912 |
+| Miler Alexander Rodriguez Rojas | Miler2003 |
+| Eduardo David Velasquez Laquihuanaco | Edu-VLL | |
 
 #### 5.2.3.6. Services Documentation Evidence for Sprint Review.
 
@@ -4577,7 +4743,7 @@ El equipo identifica las siguientes lecciones de este Sprint 4:
 
 | **Segmento**          | **URL**            | **Inicio** | **Duración** |
 |-----------------------|--------------------|------------|--------------|
-| Empresario Agricola   | [Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a827_upc_edu_pe/IQAAri3xk_xURropEvsluVzmAXj4s7kSXhMjvGD23jlLV3I?e=ua1W4A&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) | 00:00      | 6:45 min     |
+| Empresario Agricola   | https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a827_upc_edu_pe/IQAAri3xk_xURropEvsluVzmAXj4s7kSXhMjvGD23jlLV3I?e=ua1W4A&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D | 00:00      | 6:45 min     |
 
 ![Entrevista-1](report/assets/entrevista-1-s3.png)
 
@@ -4591,7 +4757,7 @@ El equipo identifica las siguientes lecciones de este Sprint 4:
 
 | **Segmento** | **URL** | **Inicio** | **Duración** |
 |--------------|---|---|--------------|
-| Empresaria Agricola  | [Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202324623_upc_edu_pe/IQAsdhz3gAqtRqfZKulI0qiAAb1ilpwoVd6NDvYrs-_WKio?e=xPs1e0&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) | 00:00 | 7:26 min  |
+| Empresaria Agricola  | https://upcedupe-my.sharepoint.com/:v:/g/personal/u202324623_upc_edu_pe/IQAsdhz3gAqtRqfZKulI0qiAAb1ilpwoVd6NDvYrs-_WKio?e=xPs1e0&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D | 00:00 | 7:26 min  |
 
 ![Entrevista-2](report/assets/Segmento-Valeri.png)
 
@@ -4605,7 +4771,7 @@ El equipo identifica las siguientes lecciones de este Sprint 4:
 
 | **Segmento** | **URL** | **Inicio** | **Duración** |
 |--------------|---|---|--------------|
-| Agricultora   | [Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202324623_upc_edu_pe/IQBE_PFpJHzZSY8DPfCCjxgUAYq_Li89X4uKG9cjUehaKr0?e=8mXpdF&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) | 00:00 | 8:35 min      |
+| Agricultora   | https://upcedupe-my.sharepoint.com/:v:/g/personal/u202324623_upc_edu_pe/IQBE_PFpJHzZSY8DPfCCjxgUAYq_Li89X4uKG9cjUehaKr0?e=8mXpdF&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D | 00:00 | 8:35 min      |
 
 ![Entrevista-3](report/assets/Segmento-Lucia.png)
 
@@ -4619,7 +4785,7 @@ El equipo identifica las siguientes lecciones de este Sprint 4:
 
 | **Segmento** | **URL** | **Inicio** | **Duración** |
 |--------------|---|---|--------------|
-| Empresario Agricola   | [Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202324623_upc_edu_pe/IQB0QuCKjIVyTJUrsuQBrtjnAQwPmiZGOUkIMTinESxiDiU?e=42L1Vu&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) | 00:00 | 9:58 min      |
+| Empresario Agricola   | https://upcedupe-my.sharepoint.com/:v:/g/personal/u202324623_upc_edu_pe/IQB0QuCKjIVyTJUrsuQBrtjnAQwPmiZGOUkIMTinESxiDiU?e=42L1Vu&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D | 00:00 | 9:58 min      |
 
 ![Entrevista-4](report/assets/Segmento-Cristopher.png)
 
@@ -4633,7 +4799,7 @@ El equipo identifica las siguientes lecciones de este Sprint 4:
 
 | **Segmento** | **URL** | **Inicio** | **Duración** |
 |--------------|---|---|--------------|
-| Agricultor   | [Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a267_upc_edu_pe/IQCn1iiiJRjvTKpLXB4BILBdATYBcfP8wG8cSEe3SHraYPo?e=voT80Y&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) | 00:00 | 14:38 min |
+| Agricultor   | https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a267_upc_edu_pe/IQCn1iiiJRjvTKpLXB4BILBdATYBcfP8wG8cSEe3SHraYPo?e=voT80Y&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D | 00:00 | 14:38 min |
 
 ![Entrevista-5](report/assets/Segmento-Jorge.png)
 
@@ -4647,7 +4813,7 @@ El equipo identifica las siguientes lecciones de este Sprint 4:
 
 | **Segmento** | **URL** | **Inicio** | **Duración** |
 |--------------|---|---|--------------|
-| Empresario Agricola   | [Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202324623_upc_edu_pe/IQC_3fMojx7QRpXxX_AI_lCEAVlwmCBCt3_sEttPiNL0n2Q?e=iuZLHA&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) | 00:00 | 7:55 min   |
+| Empresario Agricola   | https://upcedupe-my.sharepoint.com/:v:/g/personal/u202324623_upc_edu_pe/IQC_3fMojx7QRpXxX_AI_lCEAVlwmCBCt3_sEttPiNL0n2Q?e=iuZLHA&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D | 00:00 | 7:55 min   |
 
 ![Entrevista-6](report/assets/Segmento-Johan.png)
 
@@ -4831,7 +4997,7 @@ De esta manera, el video permite comunicar el valor de la solución y facilitar 
 
 | **URL**          | **Inicio** | **Duración** |
 |------------------|------------|--------------|
-| [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a827_upc_edu_pe/IQCkTU4cm894R6fEo-t8pc4-AVTzMh-HlJTa9Be-ru6pf6E?e=My3Hvs&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)    | 00:00      | 00:57 min    |
+| https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a827_upc_edu_pe/IQCkTU4cm894R6fEo-t8pc4-AVTzMh-HlJTa9Be-ru6pf6E?e=My3Hvs&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D    | 00:00      | 00:57 min    |
 
 ![Video About The Product](report/assets/about-the-product.png)
 
@@ -4896,7 +5062,7 @@ Finalmente, el material transmite la visión compartida de Andes Smart: impulsar
 
 | **URL**        | **Inicio** | **Duración** |
 |----------------|------------|--------------|
-| [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a827_upc_edu_pe/IQAnzAghm3OvSbTwzSgvdHzSAdNmZKDTy05qS8Njy7f2gEw?e=aYAcrB&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)  | 00:00      | 06:22 min    |
+| https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a827_upc_edu_pe/IQAnzAghm3OvSbTwzSgvdHzSAdNmZKDTy05qS8Njy7f2gEw?e=aYAcrB&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D  | 00:00      | 06:22 min    |
 
 ![Video About The Team](report/assets/about-the-team.png)
 
@@ -4956,36 +5122,36 @@ https://www.w3schools.com/html/html5_syntax.asp
 
 | Recurso | Enlace |
 |---------|--------|
-| Organización GitHub – AgroTrack Project | [github.com/AgroTrack-Project](https://github.com/AgroTrack-Project) |
-| Repositorio – Informe del Proyecto | [AgroTrack-Project/report](https://github.com/AgroTrack-Project/report) |
-| Repositorio – Landing Page | [AgroTrack-Project/Landing-Page](https://github.com/AgroTrack-Project/Landing-Page) |
-| Repositorio – Frontend Web Application | [AgroTrack-Project/web-Application](https://github.com/AgroTrack-Project/web-Application) |
-| Repositorio – Backend Web Services | [AgroTrack-Project/web-services](https://github.com/AgroTrack-Project/web-services) |
+| Organización GitHub – AgroTrack Project | https://github.com/AgroTrack-Project |
+| Repositorio – Informe del Proyecto | https://github.com/AgroTrack-Project/report |
+| Repositorio – Landing Page | https://github.com/AgroTrack-Project/Landing-Page |
+| Repositorio – Frontend Web Application | https://github.com/AgroTrack-Project/web-Application |
+| Repositorio – Backend Web Services | https://github.com/AgroTrack-Project/web-services |
 
 ### Productos Desplegados
 
 | Producto | URL |
 |---------|-----|
-| Landing Page | [Landing Page](https://agrotrack-project.github.io/Landing-Page/) |
-| Frontend Web Application (Cloudflare Workers) | [Web Application](https://agro-track.vitaltrek.workers.dev/home) | 
-| Documentación interactiva API – Swagger UI | [Backend](https://agotrack.onrender.com/api/v1/swagger-ui/index.html#/) |
+| Landing Page | https://agrotrack-project.github.io/Landing-Page/ |
+| Frontend Web Application (Cloudflare Workers) | https://agro-track.vitaltrek.workers.dev/home | 
+| Documentación interactiva API – Swagger UI | https://agotrack.onrender.com/api/v1/swagger-ui/index.html#/ |
 
 ### Gestión del Proyecto – Tableros Trello
 
 | Sprint | Enlace |
 |--------|--------|
-| Sprint 1 – Landing Page | [Ver tablero Sprint 1](https://trello.com/invite/b/69ec6b9c1f448409979be07f/ATTI57cb684f86da5dce34b16c20796587777599AEFD/agrotrack-sprint-backlog-1) |
-| Sprint 2 – Frontend Web Application | [Ver tablero Sprint 2](https://trello.com/invite/b/6a082c484e76c24a6bf159db/ATTIeacb888e3799fbf438b8caf8a0d78ced55CA92BA/agrotrack-sprint-backlog-2) |
-| Sprint 3 – Backend Web Services | [Ver tablero Sprint 3](https://trello.com/invite/b/6a386dfb1297005b1b046b88/ATTIf29aeadd54f0dac60d77b9b1cc2cf2ce5B4F6107/agrotrack-sprint-3) |
+| Sprint 1 – Landing Page | https://trello.com/invite/b/69ec6b9c1f448409979be07f/ATTI57cb684f86da5dce34b16c20796587777599AEFD/agrotrack-sprint-backlog-1 |
+| Sprint 2 – Frontend Web Application | https://trello.com/invite/b/6a082c484e76c24a6bf159db/ATTIeacb888e3799fbf438b8caf8a0d78ced55CA92BA/agrotrack-sprint-backlog-2 |
+| Sprint 3 – Backend Web Services | https://trello.com/invite/b/6a386dfb1297005b1b046b88/ATTIf29aeadd54f0dac60d77b9b1cc2cf2ce5B4F6107/agrotrack-sprint-3 |
 
 ### Videos del Proyecto
 
 | Descripción | Enlace |
 |-------------|--------|
-| Video de demostración – Sprint 1 (Landing Page) | [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a827_upc_edu_pe/IQCHKXSXfiGjTKYe4gDB3oUZAWgYlplm50CGrMfFiBHi4aI?e=fnoiA6&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
-| Video de demostración – Sprint 2 (Web Application) | [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120011_upc_edu_pe/IQAICJzo_YiLQ7CqTCNRwBTEAXCtfrOV6VxiAqzsegC73xo?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=fk0ICb) |
-| Video de demostración – Sprint 3 (Web Services API) | [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323350_upc_edu_pe/IQANSlaoHDAvRrqH_iFNWhu7AaJ-uZhcqpvZBazMZA5JOiE?e=HwAWli&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
-| Video – Flujo del Prototipo (Prototype Walkthrough) | [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a267_upc_edu_pe/IQBGdqAI0J_NR7IAsWPnBl3TAe0ieQNo8cg4MmurJ2Owfuc?e=2yMdi8&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
-| Video About-the-Product | [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a827_upc_edu_pe/IQCkTU4cm894R6fEo-t8pc4-AVTzMh-HlJTa9Be-ru6pf6E?e=My3Hvs&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
+| Video de demostración – Sprint 1 (Landing Page) | https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a827_upc_edu_pe/IQCHKXSXfiGjTKYe4gDB3oUZAWgYlplm50CGrMfFiBHi4aI?e=fnoiA6&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D |
+| Video de demostración – Sprint 2 (Web Application) | https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120011_upc_edu_pe/IQAICJzo_YiLQ7CqTCNRwBTEAXCtfrOV6VxiAqzsegC73xo?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=fk0ICb |
+| Video de demostración – Sprint 3 (Web Services API) | https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323350_upc_edu_pe/IQANSlaoHDAvRrqH_iFNWhu7AaJ-uZhcqpvZBazMZA5JOiE?e=HwAWli&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D |
+| Video – Flujo del Prototipo (Prototype Walkthrough) | https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a267_upc_edu_pe/IQBGdqAI0J_NR7IAsWPnBl3TAe0ieQNo8cg4MmurJ2Owfuc?e=2yMdi8&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D |
+| Video About-the-Product | https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a827_upc_edu_pe/IQCkTU4cm894R6fEo-t8pc4-AVTzMh-HlJTa9Be-ru6pf6E?e=My3Hvs&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D |
 
 
