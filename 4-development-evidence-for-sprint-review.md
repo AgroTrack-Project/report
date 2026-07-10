@@ -1,6 +1,6 @@
 #### 5.2.4.4. Development Evidence for Sprint Review
 
-En este Sprint, el equipo avanzó en la implementación de los principales productos de la solución: Landing Page, Web Services y la documentación del Report, cubriendo las funcionalidades priorizadas en el Sprint Backlog. A continuación se detallan los commits realizados por cada integrante en los repositorios correspondientes, evidenciando la colaboración del equipo durante el ciclo de desarrollo.
+En este Sprint, el equipo avanzó en la implementación de los principales productos de la solución: Landing Page, Web Application y Web Services, cubriendo las funcionalidades priorizadas en el Sprint Backlog. A continuación se detallan los commits realizados por cada integrante en los repositorios correspondientes, evidenciando la colaboración del equipo durante el ciclo de desarrollo.
 
 **Landing Page**
 
