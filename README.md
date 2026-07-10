@@ -45,14 +45,13 @@ Universidad Peruana de Ciencias Aplicadas
 <br>
 <br>
 
-
 # Project Report Collaboration Insights
 
 El Project Report del equipo se encuentra alojado en el repositorio de informes
 dentro de la organización de GitHub del equipo:
 
 - **Organización de GitHub:** https://github.com/AgroTrack-Project
-- **Repositorio del Project Report:** https://github.com/AgroTrack-Project/report
+- **Repositorio del Project Report:** https://github.com/AgroTrack-Project/report.git
 
 El informe se elaboró de manera colaborativa utilizando Git y GitHub como
 plataforma de control de versiones. Cada integrante trabajó las secciones
@@ -61,7 +60,8 @@ lo cual queda evidenciado en los analíticos de colaboración de GitHub y en el
 Registro de Versiones del Informe. A continuación, se describe el desarrollo
 de las actividades por cada entrega.
 
-![Foto de la claboracion](report/assets/contributors.png)
+![Foto de la colaboración](report/assets/contributors.png)
+
 
 ---
 
@@ -74,11 +74,10 @@ del trabajo fue la siguiente:
 
 | Integrante | Tareas Designadas |
 |------------|-------------------|
-| Alberto Joaquin Alfaro Mallma | Elaboró la carátula, el registro de versiones, la tabla de Collaboration Insights, el Student Outcome, la descripción del startup, los perfiles de los integrantes y la sección de antecedentes y problemática del Capítulo I |
-| Pablo Afranio Martinez Gaona | Desarrolló la identificación de competidores, el análisis competitivo, las estrategias y tácticas frente a competidores, el diseño de entrevistas y el registro de las tres primeras entrevistas del Capítulo II |
-| Eder Edu Quispe Perez | Elaboró los User Stories, el Impact Mapping y el Product Backlog del Capítulo III, además de participar en la maquetación inicial de la Landing Page |
-| Miler Alexander Rodriguez Rojas | Elaboró los Style Guidelines, la Information Architecture (Organization Systems, Labeling Systems, Navigation Systems) y el Landing Page UI Design del Capítulo IV |
-| Eduardo David Velasquez Laquihuanaco | Elaboró las secciones de Software Configuration Management, Source Code Management y Software Deployment Configuration del Capítulo V, y consolidó el despliegue inicial de la Landing Page |
+| Miler Alexander Rodriguez Rojas | Elaboró la carátula, el registro de versiones, la tabla de Collaboration Insights, el Student Outcome, la descripción del startup, los perfiles de los integrantes, la sección de antecedentes y problemática, los wireframes y mock-ups de la Landing Page, y el Big Picture Event Storming |
+| Alberto Joaquin Alfaro Mallma | Desarrolló la sección de competidores, el análisis competitivo, las estrategias y tácticas frente a competidores, el diseño de entrevistas, las consideraciones metodológicas, el registro de las tres primeras entrevistas, el registro de la 4ta entrevista, y los Web Applications Wireframes, Mock-ups, User Flow Diagrams y Prototyping |
+| Eduardo David Velasquez Laquihuanaco | Elaboró los Lean UX Problem Statements, Assumptions, Hypothesis Statements y el Lean UX Canvas; los User Stories, el Impact Mapping y el Product Backlog; las secciones de Software Configuration Management, Source Code Management y los diagramas de arquitectura (Context, Components), Class Diagrams y Database Diagrams; además del Design-Level EventStorming |
+| Eder Edu Quispe Perez | Elaboró los User Persona, los Style Guidelines, el registro de la 5ta entrevista, el análisis de entrevistas, los User Task Matrix, el Labeling Systems, los SEO Tags and Meta Tags, los Searching Systems, los Navigation Systems, la introducción, las secciones de Source Code Style Guide & Coding Conventions, Software Deployment Configuration, Landing Page, Services & Applications Implementation y el Sprint 1; junto con los User Journey Mapping, los Empathy Mapping y el Ubiquitous Language |
 
 Los aportes de esta entrega corresponden a las versiones 0.1 a la 0.21 del
 Registro de Versiones del Informe.
@@ -87,7 +86,11 @@ Registro de Versiones del Informe.
 
 *Analíticos de colaboración del repositorio:*
 
-![Foto de la colaboración](report/assets/insight-av1.png)
+![Foto de la AV1](report/assets/AV1-1.png)
+
+![Foto de la AV1](report/assets/AV1-2.png)
+
+![Foto de la AV1](report/assets/AV1-3.png)
 
 ---
 
@@ -100,11 +103,10 @@ el 25 de mayo, con la siguiente participación:
 
 | Integrante | Tareas Designadas |
 |------------|-------------------|
-| Alberto Joaquin Alfaro Mallma | Corrigió el Student Outcome y la descripción del startup; actualizó los perfiles de los integrantes y añadió el Lean UX Process (Problem Statements, Assumptions, Hypothesis Statements y Lean UX Canvas) al Capítulo I |
-| Pablo Afranio Martinez Gaona | Corrigió el análisis competitivo y las estrategias frente a competidores; actualizó el registro de entrevistas y añadió el análisis de entrevistas y los User Persona del Capítulo II |
-| Eder Edu Quispe Perez | Corrigió los User Stories y el Product Backlog; añadió los diagramas de arquitectura (Context, Container, Components) y los Class Diagrams del Capítulo III |
-| Miler Alexander Rodriguez Rojas | Corrigió el Landing Page UI Design; actualizó los Organization Systems y añadió los Web Applications Wireframes, Mock-ups y User Flow Diagrams del Capítulo IV |
-| Eduardo David Velasquez Laquihuanaco | Corrigió el Software Deployment Configuration; añadió el Sprint 1 (Sprint Planning, Sprint Backlog, Development y Execution Evidence) del Capítulo V y actualizó la primera versión desplegada de la Landing Page |
+| Eduardo David Velasquez Laquihuanaco | Corrigió el contenido del Capítulo 1, el Lean UX Process, los User Journey Mapping, los Empathy Maps, los Lean UX Problem Statements y los Assumptions; y añadió el Software Architecture Context Diagram, los Container Diagrams y los Components Diagrams |
+| Alberto Joaquin Alfaro Mallma | Corrigió los Segmentos Objetivo, el Startup Profile, la sección de Competidores, el Registro de Versiones, el Project Report Collaboration Insights, las entrevistas, el Big Picture Event Storming y el Ubiquitous Language; actualizó los User Stories y añadió el Web Applications Prototyping, el Sprint 2 y los Landing Page Wireframes y Mock-ups |
+| Miler Alexander Rodriguez Rojas | Corrigió el Solution Profile, la sección de Antecedentes y problemática, los User Stories, el Impact Mapping y el Product Backlog; actualizó los User Goals y el Software Configuration Management; además añadió la tabla de Software Configuration Management, el Source Code Management y el Software Deployment Configuration |
+| Eder Edu Quispe Perez | Participó en la actualización de las secciones de implementación y documentación de la Landing Page y servicios iniciadas en la entrega anterior, y añadió los Web Applications User Flow Diagrams |
 
 Los aportes de esta entrega corresponden a las versiones 0.22 a la 0.37 del
 Registro de Versiones del Informe.
@@ -113,7 +115,7 @@ Registro de Versiones del Informe.
 
 *Analíticos de colaboración del repositorio:*
 
-![Foto de la colaboración](report/assets/insight-tb1.png)
+![Foto de la colaboración](report/assets/TB1-COLABORATION.png)
 
 ---
 
@@ -127,11 +129,10 @@ participación:
 
 | Integrante | Tareas Designadas |
 |------------|-------------------|
-| Alberto Joaquin Alfaro Mallma | Actualizó el Lean UX Canvas y las Hypothesis Statements; corrigió la tabla de contenidos y añadió los Team Collaboration Insights de los Sprints 1 y 2 al Capítulo I |
-| Pablo Afranio Martinez Gaona | Añadió la 4ta entrevista de validación; actualizó los segmentos objetivo y el glosario de Ubiquitous Language del Capítulo II |
-| Eder Edu Quispe Perez | Añadió las Technical Stories y actualizó el Product Backlog con la priorización de los Sprints 2 y 3 en el Capítulo III |
-| Miler Alexander Rodriguez Rojas | Añadió los Database Diagrams y actualizó los Web Applications Prototyping del Capítulo IV |
-| Eduardo David Velasquez Laquihuanaco | Añadió el Sprint 3, las Validation Interviews (Registro de Entrevistas y Evaluaciones según heurísticas) y el Video About-the-Product del Capítulo V; actualizó el despliegue de la Web Application y del Web Service |
+| Eduardo David Velasquez Laquihuanaco | Corrigió los Sprint Backlog 1 y 2, el Development, Execution y Services Documentation Evidence for Sprint Review y el Design-Level EventStorming; actualizó las Technical Stories, la carátula, el video About The Team, los Sprint Planning y el Big Picture Event Storming; y añadió el Sprint 3, la 3ra entrevista de validación, los Validation Interviews y el Video About The Product |
+| Alberto Joaquin Alfaro Mallma | Actualizó la Configuración de Firebase y la Publicación de la aplicación, los links de las entrevistas 1 y 3, y el Design-Level Event Storming; y añadió las secciones de Software Deployment Evidence y Services Documentation Evidence for Sprint Review, así como la 2da entrevista de evaluación |
+| Eder Edu Quispe Perez | Añadió la 1ra entrevista de validación, las Evaluaciones según heurísticas y el video de demostración; actualizó el Sprint 3, el Execution Evidence for Sprint Review, el registro de la 2da entrevista y corrigió el 1er User Persona |
+| Miler Alexander Rodriguez Rojas | Añadió la 4ta entrevista de validación, los Team Collaboration Insights de los Sprints 1, 2 y 3, el Student Outcome; corrigió la tabla de contenidos, el Hypothesis Statement y el Registro de Versiones del Informe en varias iteraciones; y actualizó los Lean UX Hypothesis Statements, el Lean UX Canvas, los segmentos objetivo, las estrategias y tácticas frente a competidores, las entrevistas, el glosario, el Product Backlog, la sección de Information Architecture, los Organization Systems, los Labeling Systems, la Landing Page UI Design y la Bibliografía |
 
 Los aportes de esta entrega corresponden a las versiones 0.38 a la 0.59 del
 Registro de Versiones del Informe.
@@ -140,36 +141,41 @@ Registro de Versiones del Informe.
 
 *Analíticos de colaboración del repositorio:*
 
-![Foto de la colaboración](report/assets/insight-av2.png)
+![Foto de la colaboración](report/assets/AV2-1.png)
+
+![Foto de la colaboración](report/assets/AV2-2.png)
 
 ---
 
 ### Entrega TB2
 
 Para esta entrega, el equipo desarrolló el Sprint 4, el cual se centró en la
-mejora integral del Project Report atendiendo las indicaciones y
-observaciones brindadas por el docente en las entregas anteriores. Las
-actividades se desarrollaron entre el 21 de junio y el 8 de julio, e
-incluyeron la corrección de secciones observadas, la actualización de
-evidencias y la consolidación del Registro de Versiones del Informe. La
-participación de los integrantes fue la siguiente:
+mejora integral del Project Report atendiendo las indicaciones y observaciones
+brindadas por el docente en las entregas anteriores. Las actividades se
+desarrollaron entre el 21 de junio y el 8 de julio, e incluyeron la corrección
+de secciones observadas, la actualización de evidencias y la consolidación del
+Registro de Versiones del Informe. La participación de los integrantes fue la
+siguiente:
 
 | Integrante | Tareas Designadas |
 |------------|-------------------|
-| Alberto Joaquin Alfaro Mallma | Corrigió la tabla de contenidos y el Student Outcome conforme a las observaciones del docente; actualizó los Team Collaboration Insights del Sprint 3 en el Capítulo I |
-| Pablo Afranio Martinez Gaona | Corrigió el análisis de entrevistas y actualizó las fichas de User Persona conforme a las observaciones recibidas en el Capítulo II |
-| Eder Edu Quispe Perez | Corrigió la redacción de los Acceptance Criteria de los User Stories y actualizó el Product Backlog final del Capítulo III |
-| Miler Alexander Rodriguez Rojas | Corrigió los diagramas de Information Architecture y actualizó el Landing Page UI Design con el Design System final del Capítulo IV |
-| Eduardo David Velasquez Laquihuanaco | Añadió el Sprint 4, corrigió las evidencias de despliegue final y consolidó la versión final del informe, incluyendo el Registro de Versiones completo |
+| Miler Alexander Rodriguez Rojas | Corrigió la tabla de contenidos, el Hypothesis Statement y la tabla del Registro de Versiones del Informe en sucesivas iteraciones; añadió los Team Collaboration Insights de los Sprints 1, 2 y 3 y el Student Outcome; y actualizó los Lean UX Hypothesis Statements, el Lean UX Canvas, la sección de segmentos objetivo, las estrategias y tácticas frente a competidores, las entrevistas, el glosario, el Product Backlog, la sección de Information Architecture, los Organization Systems, los Labeling Systems, la sección de Landing Page UI Design y la Bibliografía |
+| Alberto Joaquin Alfaro Mallma | Añadió el Software Deployment Evidence for Sprint Review y consolidó el Registro de Versiones del Informe añadiendo las versiones 0.1 a la 0.56; y actualizó los links de las entrevistas 1 y 3 |
+| Eder Edu Quispe Perez | Actualizó el registro de la 2da entrevista y el Design-Level Event Storming, y corrigió el 1er User Persona conforme a las observaciones recibidas |
+| Eduardo David Velasquez Laquihuanaco | Actualizó la carátula, el video About The Team, los Sprint Planning y el Big Picture Event Storming |
 
 Los aportes de esta entrega corresponden a las versiones 0.47 a la 0.59 del
 Registro de Versiones del Informe.
 
 **Evidencias de colaboración — TB2:**
 
-*Analíticos de colaboración del repositorio:*
+![Foto de la colaboración](report/assets/TB2.png)
 
-![Foto de la colaboración](report/assets/insight-tb2.png)
+![Foto de la colaboración](report/assets/TB2.png)
+
+
+---
+
 
 <br>
 <br>
