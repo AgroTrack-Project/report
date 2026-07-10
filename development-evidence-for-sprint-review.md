@@ -26,7 +26,6 @@ En este Sprint, el equipo avanzó en la implementación de los principales produ
 | Alberto Joaquin Alfaro Mallma (elprrr) | AgroTrack-Project/web-application | main | 263796b | feat: add support ticket functionality with CRUD operations | | 16/05/2026 |
 | Eder Edu Quispe Perez (DuDu-tech / Eder-09) | AgroTrack-Project/web-application | main | 3f18c9c | chore: remove .claude folder and add to gitignore | | 16/05/2026 |
 | Eder Edu Quispe Perez (DuDu-tech / Eder-09) | AgroTrack-Project/web-application | main | 0f45ce0 | Merge branch 'develop' | | 10/07/2026 |
-| Eder Edu Quispe Perez (DuDu-tech / Eder-09) | AgroTrack-Project/web-application | | | | | |
 | Miler Alexander Rodriguez Rojas (Miler2003) | AgroTrack-Project/web-application | develop | 4bda6b2 | merge branch 'feature/changes' into develop | | 10/07/2026 |
 | Miler Alexander Rodriguez Rojas (Miler2003) | AgroTrack-Project/web-application | develop | e42e728 | docs: update README for clarity and structure improvements | | 10/07/2026 |
 | Miler Alexander Rodriguez Rojas (Miler2003) | AgroTrack-Project/web-application | develop | 812c543 | docs: update README for clarity and structure improvements | | 10/07/2026 |
@@ -37,12 +36,18 @@ En este Sprint, el equipo avanzó en la implementación de los principales produ
 
 **Web Services**
 
-
 | Integrante | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
 |---|---|---|---|---|---|---|
-| Alberto Joaquin Alfaro Mallma (elprrr) | AgroTrack-Project/web-services | | | | | |
-| Eder Edu Quispe Perez (DuDu-0912) | AgroTrack-Project/web-services | | | | | |
-| Miler Alexander Rodriguez Rojas (Miler2003) | AgroTrack-Project/web-services | | | | | |
-| Eduardo David Velasquez Laquihuanaco (Edu-VLL) | AgroTrack-Project/web-services | | | | | |
-
+| Alberto Joaquin Alfaro Mallma (elprrr) | AgroTrack-Project/web-services | main | 4658527 | feat(dashboard): implement REST interface layer with resources, assemblers and controllers | | 19/06/2026 |
+| Alberto Joaquin Alfaro Mallma (elprrr) | AgroTrack-Project/web-services | main | e613a62 | feat(dashboard): implement infrastructure layer with persistence entities, repositories, assemblers and data seeder | | 19/06/2026 |
+| Alberto Joaquin Alfaro Mallma (elprrr) | AgroTrack-Project/web-services | develop | ea29a76 | Merge branch 'develop' of https://github.com/AgroTrack-Project/web-services into develop | | 19/06/2026 |
+| Eder Edu Quispe Perez (DuDu-tech) | AgroTrack-Project/web-services | feature/changes | 2f105e8 | merge branch 'origin/feature/changes' into feature/changes | | 09/07/2026 |
+| Eder Edu Quispe Perez (DuDu-tech) | AgroTrack-Project/web-services | feature/changes | e23b1d7 | docs(farming): document REST transform assemblers | | 09/07/2026 |
+| Eder Edu Quispe Perez (DuDu-tech) | AgroTrack-Project/web-services | feature/changes | ed6dbac | docs(farming): document REST controllers and request/response resources | | 09/07/2026 |
+| Miler Alexander Rodriguez Rojas (Miler2003) | AgroTrack-Project/web-services | develop | 837e91d | docs: update README with project description, installation instructions, and deployment details | | 10/07/2026 |
+| Miler Alexander Rodriguez Rojas (Miler2003) | AgroTrack-Project/web-services | develop | 7eb3514 | docs: add description into readme.md | | 10/07/2026 |
+| Miler Alexander Rodriguez Rojas (Miler2003) | AgroTrack-Project/web-services | develop | 9b6197c | docs: add newline at the end of README.md for consistency | | 10/07/2026 |
+| Eduardo David Velasquez Laquihuanaco (Edu-VLL) | AgroTrack-Project/web-services | main | 134bb9a | feat: add JWT authentication module with sign-up and sign-in | | 09/07/2026 |
+| Eduardo David Velasquez Laquihuanaco (Edu-VLL) | AgroTrack-Project/web-services | main | 7491fd5 | feat: link business profiles to IAM accounts via iam_useR_id | | 09/07/2026 |
+| Eduardo David Velasquez Laquihuanaco (Edu-VLL) | AgroTrack-Project/web-services | main | 9412ced | fix: allow profile updates without resending the current password | | 09/07/2026 |
 
