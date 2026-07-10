@@ -4401,38 +4401,52 @@ De esta manera, el video permite comunicar el valor de la solución y facilitar 
 
 # Conclusiones
 
-El desarrollo de AgroTrack nos permitió entender con mayor claridad los
-principales problemas que enfrentan los pequeños agricultores y
-empresarios agrícolas en el Perú. Se evidenció que muchas de sus
-decisiones todavía se basan en la experiencia o la intuición,
-principalmente por la falta de herramientas digitales accesibles y de
-información confiable para la gestión de sus cultivos. Esto termina
-afectando directamente la productividad, el uso del agua y, en muchos
-casos, las pérdidas económicas.
+Este informe constituye el cierre del trabajo final de AgroTrack, cubriendo la totalidad de las cuatro iteraciones desarrolladas por el equipo: la investigación y el planteamiento del problema (Capítulo I), la construcción de la Landing Page (Sprint 1), la implementación del Frontend Web Application (Sprint 2), el despliegue del primer conjunto de bounded contexts del backend en Render (Sprint 3) y, finalmente, la consolidación del backend con el bounded context de **Identity & Access Management** (Sprint 4), que incorporó autenticación real (sign-up/sign-in), gestión de roles y protección JWT sobre los endpoints de perfil de negocio. A continuación se presentan las conclusiones del equipo respecto a los Problem Statements, Assumptions, Hypothesis Statements y criterios de éxito definidos durante el proceso de Lean UX, contrastados con los resultados obtenidos en las validaciones realizadas con usuarios reales durante el Sprint 3, e integrando el aporte del Sprint 4 al estado final del producto.
 
-Durante el trabajo, el análisis de entrevistas, la revisión de
-competidores y el uso de Lean UX nos ayudaron a confirmar que sí existe
-una necesidad real por soluciones tecnológicas más simples y adaptadas
-al contexto local. En ese sentido, AgroTrack surge como una alternativa
-pensada para ser fácil de usar, accesible y útil desde el primer
-momento, sin requerir conocimientos técnicos avanzados.
+**Problem Statement 1 (agricultores pequeños y decisiones de riego sin datos objetivos).** Las entrevistas de validación de usabilidad realizadas en el Sprint 3 (Lucía Alarcón y Jorge Ramírez) confirmaron que el problema identificado en el Capítulo I sigue siendo real y relevante: ambos usuarios señalaron que actualmente llevan el registro de sus cultivos en cuaderno o de memoria, y valoraron positivamente que la plataforma centralice el estado del suelo y las recomendaciones de riego en un solo lugar. Sin embargo, también se identificó que el mensaje de recomendación de riego (por ejemplo, "bajo") resultó **poco descriptivo** para el usuario, quien esperaba mayor contexto para confiar en la sugerencia. Esto valida parcialmente el problem statement: la necesidad existe, pero la solución actual todavía no comunica las recomendaciones con el nivel de claridad que un agricultor con poca experiencia tecnológica requiere.
 
-También fue importante el trabajo en equipo, ya que permitió organizar
-mejor las ideas y darle forma a una propuesta más clara, alineada tanto
-a lo que necesita el usuario como a los objetivos del proyecto. Esto
-hizo posible construir una base sólida para el producto, sustentada en
-información recogida directamente de los usuarios.
+**Problem Statement 2 (alertas climáticas anticipadas).** Este statement fue el que obtuvo mayor validación positiva. Lucía Alarcón y Jorge Ramírez destacaron que las alertas climáticas les permiten "planificar actividades y proteger sus cultivos con anticipación". No obstante, la evaluación heurística (Problema #2) evidenció que las alertas informan el riesgo pero no sugieren una acción concreta a tomar, lo que limita el impacto práctico de la funcionalidad frente a la hipótesis original.
 
-En general, se puede concluir que AgroTrack tiene potencial para generar
-un impacto positivo en el sector agrícola, ayudando a mejorar la toma de
-decisiones, optimizar recursos y hacer más eficiente el trabajo en el
-campo. Sin embargo, su verdadero valor dependerá de seguir validándolo
-con usuarios reales y de ir incorporando mejoras progresivas, como la
-integración de sensores y datos en tiempo real.
+**Problem Statement 3 (registro y seguimiento digital de cultivos).** Validado positivamente por los empresarios agrícolas entrevistados (Valeri Rojas, Christopher Mejía, Johan Contreras), quienes coincidieron en que el panel de control centraliza información que hoy gestionan de forma manual o en Excel. Christopher Mejía señaló explícitamente que el registro por parcela "ayuda a identificar dónde se produce más y dónde se pierde", validando el valor central de la propuesta.
 
-Asimismo, el desarrollo de la arquitectura tecnológica de AgroTrack permitió establecer una base escalable para futuras mejoras del sistema. La implementación de los bounded contexts de Soil Monitoring, Alerts, Farming, Identity y Dashboard bajo una arquitectura basada en Domain-Driven Design (DDD) utilizando Java y Spring Boot facilita la evolución de la plataforma, permitiendo incorporar nuevas funcionalidades sin afectar los componentes existentes.
+**Problem Statement 4 (visibilidad centralizada para empresarios agrícolas PYMEs).** Fue el statement con mejor recepción cuantitativa: los cuatro empresarios entrevistados (Matías Carrillo, Valeri Rojas, Christopher Mejía, Johan Contreras) coincidieron en que el dashboard resuelve un problema real de dispersión de información. Sin embargo, todos ellos —de manera consistente— señalaron la misma brecha: **la ausencia de métricas financieras** (costo por hectárea, rentabilidad, costos operativos) necesarias para la toma de decisiones de inversión. Esto indica que el problem statement fue validado en su dimensión operativa, pero no cubre aún completamente la dimensión financiera del segmento empresarial.
 
-Finalmente, el proceso de desarrollo permitió reforzar la importancia de combinar una correcta comprensión del problema con una implementación tecnológica alineada a las necesidades del usuario. La aplicación de metodologías como Lean UX, la validación constante y el trabajo colaborativo fueron elementos clave para construir una solución orientada a generar valor real, estableciendo una base sólida para futuras versiones de AgroTrack con mayor automatización, integración de sensores y análisis avanzado de información agrícola.
+De las ocho assumptions planteadas en el Lean UX Canvas, las validaciones de Sprint 3 permiten confirmar con evidencia directa:
+
+- Se confirma que los agricultores **tienen dificultades reales** para decidir cuándo regar sin datos del suelo (Assumption 1), y que datos de humedad ayudan a tomar mejores decisiones (Assumption 2).
+- Se confirma que los agricultores **valoran las alertas climáticas anticipadas** (Assumption 3), aunque con la salvedad de que valoran más la anticipación que la alerta en sí misma; sin una recomendación de acción, el valor percibido es menor al hipotetizado (Assumption 4, parcialmente refutada en su forma actual).
+- Se confirma la preferencia por **herramientas simples y visuales** (Assumption 5): todos los entrevistados de ambos segmentos describieron la navegación como "sencilla" o "intuitiva".
+- Se confirma que el registro digital **reemplaza favorablemente el papel o la memoria** (Assumption 6), validado explícitamente por Lucía Alarcón.
+- La disposición a usar la plataforma si perciben beneficio (Assumption 7) se sostiene, pero surge una nueva condición no anticipada originalmente: los empresarios agrícolas condicionan la adopción a la disponibilidad de métricas financieras, un matiz que no estaba explícito en la assumption original.
+
+Los Hypothesis Statements definidos en el Capítulo I establecían umbrales cuantitativos de éxito (60% de consulta de monitoreo antes de regar, 50% de acción preventiva ante alertas, reducción de consumo de agua tras 30 días, 40% de registro activo de cultivos en el primer mes). Es importante señalar que **estas métricas no han podido validarse cuantitativamente aún**, dado que las validaciones realizadas hasta el Sprint 3 corresponden a pruebas de usabilidad puntuales y no a un despliegue con uso continuado en campo durante los periodos de tiempo especificados en las hipótesis (2 semanas, 24 horas, 30 días, 1 mes). Las entrevistas de Sprint 3 ofrecen evidencia cualitativa favorable (los usuarios afirman que usarían la plataforma y que resuelve un problema real), pero el equipo reconoce que la validación cuantitativa de estas hipótesis queda pendiente como trabajo futuro, una vez la plataforma cuente con una base de usuarios activos y datos de uso reales.
+
+El Sprint 4 fue la última iteración del proyecto y cerró una brecha crítica que arrastraba el backend desde el Sprint 3: hasta ese momento, ningún endpoint de AgroTrack exigía autenticación real, por lo que cualquier cliente podía consultar o modificar el perfil de negocio de otro usuario sin restricción alguna. Con la implementación de las Technical Stories TS32 a TS37, el equipo introdujo el bounded context de **IAM** como una capa de seguridad transversal al resto del sistema:
+
+- **TS32 y TS33** (`POST /authentication/sign-up` y `POST /authentication/sign-in`) establecen el punto único de entrada para crear y validar credenciales, devolviendo de inmediato un token JWT y los roles derivados del plan contratado (`FARMER` para BASIC/PRO, `AGRICULTURAL_MANAGER` para ENTERPRISE).
+- **TS34** (`GET /roles`) expone el catálogo de roles sembrados en el sistema, permitiendo que el frontend valide o muestre roles sin necesidad de hardcodearlos.
+- **TS35 y TS36** separan explícitamente la credencial de acceso (IAM) del perfil de negocio (Users), corrigiendo un problema de diseño heredado del Sprint 3, donde `POST /users` mezclaba ambas responsabilidades y no permitía distinguir entre "crear una cuenta" y "completar un perfil".
+- **TS37** generaliza la protección JWT a todos los endpoints bajo `/users/**`, cerrando el vector de acceso no autorizado detectado como riesgo de diseño desde el sprint anterior.
+
+En conjunto, este bounded context no añade una funcionalidad visible para el usuario final de la misma manera que lo hacen las parcelas, los cultivos o las alertas climáticas, pero es la pieza que hace **viable** exponer AgroTrack a usuarios reales sin comprometer la confidencialidad de sus datos agrícolas y de negocio. Esto es especialmente relevante para el segmento de empresarios agrícolas (Problem Statement 4), cuya disposición a adoptar la plataforma depende en parte de la confianza en que su información de producción y rentabilidad no sea accesible por terceros — una condición que el equipo no había verbalizado explícitamente en los Problem Statements originales del Capítulo I, pero que emergió como un requisito implícito al llevar el producto de un prototipo validado por usabilidad a una arquitectura lista para producción real.
+
+# Recomendaciones
+
+Dado que el Sprint 4 marca el cierre del trabajo final del curso, las siguientes recomendaciones se plantean como el **Roadmap post-curso** de AgroTrack, es decir, los pasos que la startup Andes Smart debería priorizar si decide continuar evolucionando el producto más allá del alcance académico entregado:
+
+1. **Enriquecer las recomendaciones de riego y las alertas climáticas con mensajes accionables.** En lugar de mostrar únicamente un nivel ("bajo", "riesgo de helada"), incorporar una breve sugerencia de acción concreta (p. ej. "Riega hoy antes de las 10 a.m." o "Cubre los cultivos sensibles esta noche"). Esto responde directamente a los Problemas #1 y #2 identificados en la evaluación heurística.
+2. **Verificar de forma exhaustiva la integración end-to-end del módulo IAM entregado en el Sprint 4 con el Web Application**, confirmando que el flujo de sign-up/sign-in reemplace por completo cualquier lógica de autenticación remanente basada en MockAPI de sprints anteriores, y que el token JWT emitido se propague correctamente en todas las llamadas protegidas hacia `/users/**`.
+3. **Agregar tooltips y etiquetas de texto a los botones de acción** (editar, eliminar parcela) para resolver el Problema #4 de la evaluación heurística, mejorando la accesibilidad para usuarios con menor familiaridad tecnológica.
+
+4. **Incorporar métricas financieras básicas en el dashboard del empresario agrícola** (costo por hectárea, margen estimado, comparación entre parcelas), dado que fue la brecha señalada de forma consistente por los cuatro empresarios entrevistados. Esto requiere extender el bounded context de Dashboard con nuevos agregados de costos, y probablemente un nuevo Epic dedicado a "Gestión de Costos e Inversión".
+5. **Habilitar notificaciones fuera de la plataforma** (WhatsApp o SMS) para las alertas climáticas, tal como fue sugerido explícitamente por Jorge Ramírez, considerando que el segmento de agricultores pequeños no siempre tiene acceso constante a una computadora o a la aplicación.
+6. **Diseñar y ejecutar una validación cuantitativa de los Hypothesis Statements** una vez la plataforma tenga usuarios reales usándola de forma continua, para medir los umbrales originalmente planteados (60% de consulta antes de regar, 50% de acción preventiva, etc.) y así cerrar el ciclo de Lean UX con evidencia dura y no solo cualitativa.
+
+7. **Iniciar la integración de sensores IoT de humedad y temperatura**, tal como estaba previsto en la visión original de Andes Smart, para eliminar la dependencia del registro manual de datos del suelo y aumentar la precisión y frecuencia de las recomendaciones de riego.
+8. **Evaluar la migración hacia una aplicación móvil nativa o PWA**, dado que varios agricultores entrevistados mencionaron el celular como su dispositivo principal, y una experiencia optimizada para móvil facilitaría la adopción en zonas rurales con conectividad limitada.
+9. **Explorar alianzas institucionales** con el MIDAGRI y la ANA, como se planteó en el análisis competitivo (Capítulo II), para ganar acceso a una base de usuarios más amplia y reforzar la credibilidad de la plataforma ante agricultores tradicionalmente reacios a adoptar tecnología.
+
+Estas recomendaciones buscan asegurar que las siguientes iteraciones de AgroTrack no solo continúen expandiendo la cobertura funcional del backend y frontend, sino que respondan directamente a los vacíos identificados durante la validación con usuarios reales, consolidando el producto como una solución confiable y efectivamente adoptada por agricultores pequeños y empresarios agrícolas del Perú.
 
 ---
 
