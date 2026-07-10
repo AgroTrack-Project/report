@@ -4133,6 +4133,440 @@ A continuación se presentan los analíticos de colaboración del repositorio we
 ![contribucion del equipo](report/assets/Sprint_3_Insight.png)
 
 
+<br>
+
+
+### 5.2.4. Sprint 4
+
+El cuarto sprint se centrará en completar el módulo de IAM (Identity and Access Management) del RESTful API de AgroTrack, implementando el registro y autenticación real de cuentas (sign-up / sign-in), la emisión y validación de tokens JWT, y la protección de los endpoints de perfil de usuario. El objetivo es cerrar el ciclo de seguridad del backend antes de avanzar hacia la integración completa con el Frontend Web Application.
+
+#### 5.2.4.1. Sprint Planning 4
+
+Se presenta a continuación el resumen del Sprint Planning Meeting para el Sprint 4.
+
+| Campo | Detalle |
+|-------|---------|
+| **Sprint #** | Sprint 4 |
+| **Sprint Planning Background** | |
+| **Date** | 2026-07-02 |
+| **Time** | 10:00 PM |
+| **Location** | Virtual – Discord (canal General) |
+| **Prepared By** | Velasquez Laquihuanaco, Eduardo David |
+| **Attendees (to planning meeting)** | Alfaro Mallma, Alberto Joaquin / Quispe Perez, Eder Edu / Rodriguez Rojas, Miler Alexander / Velasquez Laquihuanaco, Eduardo David |
+| **Sprint 3 – Review Summary** | Durante el Sprint 3 se implementó y desplegó la primera versión del RESTful API (Web Services) de AgroTrack, cubriendo los bounded contexts de Identity, Soil Monitoring, Farming, Alerts y Support & Dashboard bajo una arquitectura Domain-Driven Design con Spring Boot. El backend fue desplegado en Render con base de datos MySQL en Aiven, y documentado mediante OpenAPI/Swagger. |
+| **Sprint 3 – Retrospective Summary** | El equipo identificó que el bounded context Identity implementado en el Sprint 3 cubría únicamente el CRUD de usuarios, planes y preferencias de alerta, pero no contaba con un mecanismo real de autenticación (login) ni con protección de endpoints mediante tokens. Se acordó dedicar el Sprint 4 a construir el módulo de IAM (registro, inicio de sesión y seguridad JWT) como base necesaria antes de conectar el Frontend Web Application al backend real. |
+| **Sprint Goal & User Stories** | |
+| **Sprint 4 Goal** | Our focus is on completing the IAM (Identity and Access Management) module of AgroTrack's RESTful API, including account sign-up, sign-in and JWT-based protection of profile endpoints. We believe it delivers secure and reliable authentication to farmers and agricultural managers accessing the platform. This will be confirmed when users can register and log in through /authentication/sign-up and /authentication/sign-in, receive a valid JWT token, and every request to /users/** is rejected unless that token is present and valid. |
+| **Sprint 4 Velocity** | 13 |
+| **Sum of Story Points** | 13 |
+
+<br>
+
+#### 5.2.4.2. Aspect Leaders and Collaborators
+
+En el Sprint 4, el equipo mantiene la misma distribución de liderazgo por Bounded Context definida en el Sprint 3, este sprint se concentra principalmente en el IAM.
+
+| Team Member (Last Name, First Name) | GitHub Username | Identity BC | Farming BC | Soil Monitoring BC | Alerts BC | Support & Dashboard BC |
+|---|---|---|---|---|---|---|
+| Alfaro Mallma, Alberto Joaquin | elprrr | C | C | C | C | L | 
+| Quispe Perez, Eder Edu | Eder_09 | C | L | L | C | C |
+| Rodriguez Rojas, Miler Alexander | Miler2003 | C | C | C | L | C |
+| Velasquez Laquihuanaco, Eduardo David | Edu-VLL | L | C | C | C | C | 
+
+
+
+<br>
+
+
+#### 5.2.4.3. Sprint Backlog 4
+
+El objetivo principal del Sprint 4 fue completar el módulo de IAM (Identity and Access Management) del RESTful API de AgroTrack, implementando el registro y autenticación de cuentas, la emisión de tokens JWT y la protección de los endpoints de perfil de usuario, distribuyendo el desarrollo entre los integrantes del equipo. A continuación se presenta el tablero del sprint y la descomposición de Technical Stories en Work-Items/Tasks.
+
+
+![Sprint Backlog 4](report/assets/trelloSprint4.png)
+
+*Sprint 4 de AgroTrack*
+
+*Nota.* Elaboración propia.
+
+**Link del trello:** https://trello.com/b/GAgdFmxb/agrotrack-sprint-4
+
+| User Story Id | User Story | Work-Item / Task Id | Work-Item / Task Title | Work-Item / Task Description | Estimation (Hours) | Assigned To | Status |
+|---|---|---|---|---|---|---|---|
+| TS32 | Endpoint para registrar credenciales de una cuenta (sign-up) | T-044 | Implementar capa de dominio del BC IAM | Crear el agregado IamUser con sus value objects (Email, HashedPassword, Role) y el comando SignUpCommand para el registro de credenciales. | 4 | Velasquez Laquihuanaco, Eduardo David | Done |
+| | | T-045 | Implementar capa de aplicación del BC IAM | Implementar SignUpCommandServiceImpl, incluyendo el hasheo de la contraseña con BCrypt y la asignación automática del rol según el plan (FARMER para BASIC/PRO, AGRICULTURAL_MANAGER para ENTERPRISE). | 4 | Velasquez Laquihuanaco, Eduardo David | Done |
+| | | T-046 | Implementar capa de infraestructura del BC IAM | Crear IamUserPersistenceEntity, RolePersistenceEntity, repositorios JPA y un RoleSeeder que registre ROLE_FARMER, ROLE_AGRICULTURAL_MANAGER y ROLE_ADMIN al arrancar la aplicación. | 4 | Velasquez Laquihuanaco, Eduardo David | Done |
+| | | T-047 | Implementar endpoint POST /authentication/sign-up | Crear AuthenticationController con el endpoint POST /authentication/sign-up, retornando el token JWT generado y manejando el conflicto 409 por email duplicado. | 3 | Velasquez Laquihuanaco, Eduardo David | Done |
+| TS33 | Endpoint para iniciar sesión (sign-in) | T-048 | Implementar SignInCommand y servicio de autenticación | Implementar SignInCommandServiceImpl, validando credenciales con BCrypt y generando el token JWT correspondiente. | 3 | Velasquez Laquihuanaco, Eduardo David | Done |
+| | | T-049 | Implementar endpoint POST /authentication/sign-in | Agregar el endpoint POST /authentication/sign-in en AuthenticationController, manejando el error 400 por password incorrecto y 404 por email no registrado. | 2 | Velasquez Laquihuanaco, Eduardo David | Done |
+| TS34 | Endpoint para listar los roles disponibles | T-050 | Implementar RolesController con endpoint GET /roles | Crear el endpoint GET /roles que retorna los roles IAM sembrados en el sistema (ROLE_FARMER, ROLE_AGRICULTURAL_MANAGER, ROLE_ADMIN). | 1 | Velasquez Laquihuanaco, Eduardo David | Done |
+| TS35 | Endpoint para completar el perfil de negocio de una cuenta registrada | T-051 | Vincular el agregado User del BC Identity con la credencial IAM | Actualizar el agregado User para referenciar el iam_user_id y derivar el user_type a partir del plan recibido. | 3 | Alfaro Mallma, Alberto Joaquin | Done |
+| | | T-052 | Implementar endpoint POST /users para completar el perfil de negocio | Crear el endpoint POST /users que recibe el iam_user_id junto con nombre, plan y empresa, y crea automáticamente la AlertPreference asociada al nuevo perfil. | 3 | Alfaro Mallma, Alberto Joaquin | Done |
+| | | T-053 | Manejar validaciones del endpoint POST /users | Implementar el manejo de errores 404 (iam_user_id inexistente) y 409 (perfil ya existente para esa credencial). | 2 | Alfaro Mallma, Alberto Joaquin | Done |
+| TS36 | Endpoint para obtener el perfil propio a partir de la sesión activa | T-054 | Implementar endpoint GET /users/by-iam-user/{iamUserId} | Crear el endpoint protegido que retorna el perfil completo del usuario a partir de su iamUserId. | 2 | Rodriguez Rojas, Miler Alexander | Done |
+| | | T-055 | Implementar validación de propiedad del perfil consultado | Validar que el iamUserId de la URL coincida con el del dueño del token, retornando 403 en caso contrario. | 2 | Rodriguez Rojas, Miler Alexander | Done |
+| TS37 | Protección de los endpoints de perfil con autenticación JWT | T-056 | Configurar Spring Security y el filtro de autenticación JWT | Implementar JwtAuthenticationFilter y la configuración de Spring Security para exigir un token JWT válido en todos los endpoints bajo /users/**. | 4 | Quispe Perez, Eder Edu | Done |
+| | | T-057 | Manejar errores de autenticación en endpoints protegidos | Configurar el manejo de errores 401 para solicitudes sin token o con token inválido/expirado. | 2 | Quispe Perez, Eder Edu | Done |
+
+
+
+<br>
+
+
+#### 5.2.4.4. Development Evidence for Sprint Review
+
+En este Sprint, el equipo avanzó en la implementación de los principales productos de la solución: Landing Page, Web Application y Web Services, cubriendo las funcionalidades priorizadas en el Sprint Backlog. A continuación se detallan los commits realizados por cada integrante en los repositorios correspondientes, evidenciando la colaboración del equipo durante el ciclo de desarrollo.
+
+**Landing Page**
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+|---|---|---|---|---|---|
+| AgroTrack-Project/Landing-Page (DuDu-0912) | develop | a4c9970 | Merge branch 'develop' | Integrates the latest changes from develop into the main working branch to keep the Landing Page in sync with recent updates. | 10/07/2026 |
+| AgroTrack-Project/Landing-Page (DuDu-0912) | develop | 3b9c7db | Merge branch 'develop' | Merges pending feature updates from develop to consolidate progress before the next review. | 09/07/2026 |
+| AgroTrack-Project/Landing-Page (Miler2003) | develop | b33f4a1 | merge branch 'feature/changes' into develop | Brings recent UI adjustments from the feature branch into develop for integration testing. | 09/07/2026 |
+| AgroTrack-Project/Landing-Page (Miler2003) | feature/changes | 5f05ae4 | feat: update README to clarify landing page link and remove license section | Rewrites the README to point clearly to the deployed Landing Page URL and removes an outdated license reference no longer applicable to the project. | 09/07/2026 |
+| AgroTrack-Project/Landing-Page (Miler2003) | feature/changes | 0c94e42 | merge branch 'feature/changes' into develop | Consolidates documentation fixes from the feature branch into develop. | 09/07/2026 |
+| AgroTrack-Project/Landing-Page (elprrr) | develop | 4402245 | Merge branch 'develop' of https://github.com/AgroTrack-Project/Landing-Page into develop | Syncs local changes with the remote develop branch to avoid divergence before pushing new features. | 09/07/2026 |
+| AgroTrack-Project/Landing-Page (elprrr) | develop | 661e613 | feat: Update authentication buttons and navigation with animation support | Adds smooth transition animations to the login/register buttons and navigation menu to improve visual feedback on user interaction. | 09/07/2026 |
+| AgroTrack-Project/Landing-Page (Edu-VLL) | main | f12e53e | Merge branch 'main' of https://github.com/AgroTrack-Project/Landing-Page | Pulls the latest changes published on main to keep the local branch up to date before deploying. | 22/06/2026 |
+| AgroTrack-Project/Landing-Page (Edu-VLL) | main | 017b9f2 | feat: update url | Updates the external panel URL referenced in the navigation links to point to the correct production endpoint. | 22/06/2026 |
+| AgroTrack-Project/Landing-Page (Edu-VLL) | main | 6d82380 | Update panel URL for navigation | Fixes the navigation link so users are redirected to the correct dashboard panel after login. | 22/06/2026 |
+
+**Web Application**
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+|---|---|---|---|---|---|
+| AgroTrack-Project/web-application (elprrr) | main | e36b401 | feat: update logout method to redirect to landing page | Modifies the logout flow so that, after clearing the session, the user is redirected to the public Landing Page instead of the login screen. | 16/05/2026 |
+| AgroTrack-Project/web-application (elprrr) | main | 74af4bc | feat: implement entry animation for app layout and clean up imports | Adds a fade-in animation on the main app layout when it loads, and removes unused imports left over from previous refactors. | 16/05/2026 |
+| AgroTrack-Project/web-application (elprrr) | main | 263796b | feat: add support ticket functionality with CRUD operations | Implements the full CRUD flow for support tickets, allowing users to create, view, update and close tickets from the application. | 16/05/2026 |
+| AgroTrack-Project/web-application (DuDu-tech / Eder-09) | main | 3f18c9c | chore: remove .claude folder and add to gitignore | Removes local AI-assistant configuration files from version control and updates .gitignore to prevent them from being tracked in the future. | 16/05/2026 |
+| AgroTrack-Project/web-application (DuDu-tech / Eder-09) | main | 0f45ce0 | Merge branch 'develop' | Merges the latest updates from develop into main to prepare for the upcoming release. | 10/07/2026 |
+| AgroTrack-Project/web-application (Miler2003) | develop | 4bda6b2 | merge branch 'feature/changes' into develop | Integrates documentation and structural changes made in the feature branch into the shared develop branch. | 10/07/2026 |
+| AgroTrack-Project/web-application (Miler2003) | develop | e42e728 | docs: update README for clarity and structure improvements | Reorganizes the README sections and improves wording for better readability by new contributors. | 10/07/2026 |
+| AgroTrack-Project/web-application (Miler2003) | develop | 812c543 | docs: update README for clarity and structure improvements | Further refines the README structure, adding missing setup steps and correcting formatting inconsistencies. | 10/07/2026 |
+| AgroTrack-Project/web-application (Edu-VLL) | main | 2423fa8 | docs: add translations for login, register, alerts and profile | Adds Spanish and English translation strings for the login, register, alerts and profile views to support internationalization. | 09/07/2026 |
+| AgroTrack-Project/web-application (Edu-VLL) | main | 5f6e58e | chore: fix dev api base url and add missing auth endpoint path | Corrects the development environment's API base URL and adds a missing path for the authentication endpoint that was causing failed requests. | 09/07/2026 |
+| AgroTrack-Project/web-application (Edu-VLL) | main | bbf6c9c | fix: remove default 0 from numeric plot and soil-record inputs | Removes the default value of 0 pre-filled in numeric plot and soil-record form fields, preventing users from submitting unintended zero values. | 09/07/2026 |
+
+**Web Services**
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+|---|---|---|---|---|---|
+| AgroTrack-Project/web-services (elprrr) | main | 4658527 | feat(dashboard): implement REST interface layer with resources, assemblers and controllers | Adds the REST interface layer for the dashboard bounded context, including resources, assemblers and controllers to expose dashboard data through the API. | 19/06/2026 |
+| AgroTrack-Project/web-services (elprrr) | main | e613a62 | feat(dashboard): implement infrastructure layer with persistence entities, repositories, assemblers and data seeder | Implements the infrastructure layer for the dashboard context, including persistence entities, repositories, assemblers and a data seeder for local testing. | 19/06/2026 |
+| AgroTrack-Project/web-services (elprrr) | develop | ea29a76 | Merge branch 'develop' of https://github.com/AgroTrack-Project/web-services into develop | Synchronizes local develop branch with the remote repository to incorporate teammates' latest commits. | 19/06/2026 |
+| AgroTrack-Project/web-services (DuDu-tech) | feature/changes | 2f105e8 | merge branch 'origin/feature/changes' into feature/changes | Pulls remote updates into the local feature branch to keep it aligned before continuing work. | 09/07/2026 |
+| AgroTrack-Project/web-services (DuDu-tech) | feature/changes | e23b1d7 | docs(farming): document REST transform assemblers | Adds brief class-level Javadoc to each resource-to-command/query mapper and notes that path-variable ids take precedence over any id present in the request body. | 09/07/2026 |
+| AgroTrack-Project/web-services (DuDu-tech) | feature/changes | ed6dbac | docs(farming): document REST controllers and request/response resources | Adds Javadoc documentation to the farming REST controllers and their associated request/response resource classes to clarify their responsibilities. | 09/07/2026 |
+| AgroTrack-Project/web-services (Miler2003) | develop | 837e91d | docs: update README with project description, installation instructions, and deployment details | Expands the README with a clearer project description, step-by-step installation instructions and deployment details for the backend service. | 10/07/2026 |
+| AgroTrack-Project/web-services (Miler2003) | develop | 7eb3514 | docs: add description into readme.md | Adds a short project description section at the top of the README for better first-time context. | 10/07/2026 |
+| AgroTrack-Project/web-services (Miler2003) | develop | 9b6197c | docs: add newline at the end of README.md for consistency | Adds a trailing newline at the end of the README file to follow standard formatting conventions. | 10/07/2026 |
+| AgroTrack-Project/web-services (Edu-VLL) | main | 134bb9a | feat: add JWT authentication module with sign-up and sign-in | Implements the JWT-based authentication module, including sign-up and sign-in endpoints, token generation and validation logic. | 09/07/2026 |
+| AgroTrack-Project/web-services (Edu-VLL) | main | 7491fd5 | feat: link business profiles to IAM accounts via iam_useR_id | Adds a relationship between business profiles and IAM accounts using the iam_user_id field, enabling profile lookup by authenticated identity. | 09/07/2026 |
+| AgroTrack-Project/web-services (Edu-VLL) | main | 9412ced | fix: allow profile updates without resending the current password | Fixes the profile update endpoint so users can update their information without being required to re-enter their current password. | 09/07/2026 |
+
+
+
+<br>
+
+
+#### 5.2.4.5. Execution Evidence for Sprint Review
+
+Durante el Sprint 4, el equipo de Andes Smart completó la implementación del Bounded Context de Identity (IAM) del sistema AgroTrack. Se desarrollaron los endpoints de autenticación (sign-up y sign-in) y de gestión de perfil de negocio, protegidos mediante JWT, como parte de la RESTful API desplegada en Render, documentada mediante OpenAPI/Swagger y consumida exitosamente por la Web Application. A continuación se presentan las capturas de las principales vistas del funcionamiento del sistema.
+ 
+**Swagger UI - Documentación de endpoints desplegados**
+ 
+![swagger 1](report/assets/swagger1-sprint4.png) 
+![swagger 2](report/assets/swagger2-sprint4.png) 
+![swagger 3](report/assets/swagger3-sprint4.png) 
+![swagger 4](report/assets/swagger4-sprint4.png)  
+![swagger 5](report/assets/swagger5-sprint4.png)  
+![swagger 6](report/assets/swagger6-sprint4.png)  
+
+**Video de demostración**
+ 
+A continuación se presenta el video de demostración del Sprint 4, donde se muestra el funcionamiento de los Web Services de autenticación e identidad documentados en Swagger y los endpoints implementados por el equipo.
+ 
+![swagger 2](report/assets/swagger1-sprint4.png) 
+ 
+**Link del video:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202324623_upc_edu_pe/IQBe2DaJnk2nRITEOF8NEWw1AUNSwXuPQMT2jwS22LQeqag?e=6vj60X&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+ 
+
+
+<br>
+
+
+#### 5.2.4.6. Services Documentation Evidence for Sprint Review
+
+Durante el Sprint 4, el equipo documentó los Web Services de autenticación e identidad (IAM) de AgroTrack mediante **OpenAPI / Swagger UI**. La documentación se generó automáticamente a partir de las anotaciones de los controladores REST.
+ 
+A continuación se presenta la tabla con todos los endpoints documentados, junto con la sintaxis de llamada, parámetros, descripción de operación y códigos de respuesta:
+ 
+| Endpoint | Verbo HTTP | Sintaxis de llamada | Parámetros | Descripción | Response |
+|:---|:---:|:---|:---|:---|:---:|
+| Authentication | POST | `POST /api/v1/authentication/sign-up` | Body: `email`, `password`, `plan` | Registra una nueva credencial de acceso y retorna el id, email, roles derivados del plan y un token JWT | 201, 400, 409 |
+| Authentication | POST | `POST /api/v1/authentication/sign-in` | Body: `email`, `password` | Autentica a un usuario existente y retorna el id, email, roles y token JWT | 200, 400, 404 |
+| Roles | GET | `GET /api/v1/roles` | — | Retorna el catálogo completo de roles IAM sembrados en el sistema (ROLE_FARMER, ROLE_AGRICULTURAL_MANAGER, ROLE_ADMIN) | 200 |
+| Users | POST | `POST /api/v1/users` | Header: `Authorization`; Body: `iam_user_id`, `name`, `plan`, `company` | Completa el perfil de negocio de una cuenta ya autenticada y crea automáticamente una AlertPreference | 201, 401, 404, 409 |
+| Users | GET | `GET /api/v1/users/by-iam-user/{iamUserId}` | `iamUserId` (path, UUID); Header: `Authorization` | Obtiene el perfil de negocio completo del usuario autenticado a partir de su iamUserId | 200, 401, 403 |
+| Users | ALL | `/api/v1/users/**` | Header: `Authorization` (JWT requerido) | Middleware de protección que exige un token JWT válido para acceder a cualquier endpoint de perfil de usuario | 401 |
+ 
+### Documentación en Swagger UI
+ 
+Se incluyen a continuación capturas de la documentación interactiva accesible en Swagger:
+ 
+ 
+**Captura 1: Ejecución interactiva del endpoint POST /authentication/sign-up**
+ 
+![Swagger UI - Endpoint POST sign-up](report/assets/endpoint-sign.png) 
+ 
+ 
+**Captura 2: Detalle del endpoint GET /users/by-iam-user/{iamUserId}**
+ 
+![Swagger UI - Endpoint GET users by iam user](report/assets/endpoint-user.png) 
+ 
+ 
+ 
+### Referencias de Implementación
+ 
+**Repositorio de Web Services:** https://github.com/AgroTrack-Project/web-services
+ 
+**URL de la Documentación Swagger:** https://agotrack.onrender.com/api/v1/swagger-ui/index.html#/
+ 
+--- 
+
+
+<br>
+
+
+#### 5.2.4.7. Software Deployment Evidence for Sprint Review.
+
+En el transcurso del Sprint 4, el equipo verificó, actualizó y validó el despliegue productivo de los tres productos que conforman la solución: el **Web Service de AgroTrack**, el **Landing Page** y la **Web Application**. Se confirmó la estabilidad de la infraestructura configurada en sprints previos y se aplicaron los ajustes necesarios derivados de las nuevas funcionalidades implementadas en este sprint. Se mantuvo el uso de **Aiven** para la base de datos MySQL, **Render** para el backend, **GitHub Pages** para el Landing Page y **Cloudflare Workers** para la Web Application.
+
+---
+
+<br>
+
+**Fase 1: Verificación y ajuste de la base de datos en Aiven (MySQL)**
+
+Ingreso al panel de administración de Aiven (aiven.io) para validar la continuidad operativa del servicio de base de datos utilizado por el backend durante este sprint.
+
+![BACKEND-1: Panel principal de Aiven en Sprint 4](report/assets/BACKEND-1.png)
+
+<br>
+
+Verificación del estado del servicio `mysql-58d1d5c` en el dashboard de Aiven, confirmando que continuaba con estado **Running** en la infraestructura de DigitalOcean, región California, bajo el plan **Free-1-1gb**, sin incidencias reportadas durante el periodo del sprint.
+
+![BACKEND-2: Estado activo y estable del servicio MySQL](report/assets/BACKEND-2.png)
+
+<br>
+
+Revisión del apartado Services de Aiven para descartar la necesidad de aprovisionar servicios adicionales, dado que el esquema existente soportaba adecuadamente las nuevas entidades incorporadas al modelo de datos.
+
+![BACKEND-3: Revisión de la sección Services sin necesidad de nuevos servicios](report/assets/BACKEND-3.png)
+
+<br>
+
+Confirmación del motor de base de datos en uso, **MySQL**, como sustento relacional para las nuevas tablas y relaciones incorporadas al esquema durante el Sprint 4.
+
+![BACKEND-4: Confirmación del motor MySQL vigente](report/assets/BACKEND-4.png)
+
+<br>
+
+Revisión del plan de servicio contratado, manteniéndose el tier **Free** ($0/mes), región **North America**, plan **Free-1-1gb**, validando que la capacidad de almacenamiento (1 GB) seguía siendo suficiente para el volumen de datos generado hasta la fecha.
+
+![BACKEND-5: Verificación del plan Free vigente en Aiven](report/assets/BACKEND-5.png)
+
+<br>
+
+Actualización de las credenciales de conexión utilizadas por el backend: host `mysql-58d1d5c-joaquinaso5612-e97f.a.aivencloud.com`, puerto `27774`, usuario `avnadmin`, modo SSL `REQUIRED`, reconfirmando su vigencia como variables de entorno en el servicio desplegado en Render.
+
+![BACKEND-6: Revalidación de credenciales de conexión MySQL](report/assets/BACKEND-6.png)
+
+---
+
+<br>
+
+**Fase 2: Actualización del despliegue del API REST en Render**
+
+Ingreso a la plataforma Render (render.com) para gestionar la nueva versión del backend correspondiente a los avances del Sprint 4.
+
+![BACKEND-7: Acceso al panel de Render en Sprint 4](report/assets/BACKEND-7.png)
+
+<br>
+
+Revisión del historial de despliegues del servicio **AGOTRACK**, confirmando que el runtime **Docker** en la región **Ohio** continuaba operativo tras la incorporación de los nuevos endpoints (status: Deployed).
+
+![BACKEND-8: Historial de despliegues del servicio AGOTRACK](report/assets/BACKEND-8.png)
+
+<br>
+
+Verificación del estado general del proyecto en Render, donde el panel "My project" reportaba "All services are up and running", validando la disponibilidad continua de todos los servicios asociados.
+
+![BACKEND-9: Estado general de servicios operativos en Render](report/assets/BACKEND-9.png)
+
+<br>
+
+Revisión de la configuración de disparadores de despliegue automático (auto-deploy) desde el branch `main`, confirmando que los últimos merges de features del Sprint 4 dispararon correctamente un nuevo build.
+
+![BACKEND-10: Verificación del disparador de auto-deploy tras nuevos merges](report/assets/BACKEND-10.png)
+
+<br>
+
+Inspección del repositorio vinculado **BACKEND-AGROTRACK**, confirmando que el commit más reciente correspondiente a las funcionalidades del Sprint 4 fue tomado correctamente por Render para el nuevo build.
+
+![BACKEND-11: Verificación del último commit tomado por Render](report/assets/BACKEND-11.png)
+
+<br>
+
+Revisión de la configuración del Web Service: runtime, branch de despliegue (`main`) y región de hosting (**Ohio, US East**), sin cambios respecto a la configuración base, dado que la infraestructura existente soportaba los nuevos requerimientos.
+
+![BACKEND-12: Configuración vigente del Web Service](report/assets/BACKEND-12.png)
+
+<br>
+
+Verificación del plan de instancia activo, manteniéndose el plan **Free** (512 MB RAM, 0.1 CPU, $0/mes), suficiente para las necesidades del entorno de demostración en esta etapa del proyecto.
+
+![BACKEND-13: Confirmación del plan Free activo en Render](report/assets/BACKEND-13.png)
+
+<br>
+
+Actualización de las variables de entorno del servicio para incorporar nuevos parámetros requeridos por las funcionalidades del Sprint 4, manteniendo `DB_URL`, `DB_USERNAME`, `DB_PASSWORD` y `OPENWEATHER_API_KEY`, y ejecutando un nuevo despliegue mediante **Manual Deploy**.
+
+![BACKEND-14: Actualización de variables de entorno y nuevo despliegue](report/assets/BACKEND-14.png)
+
+<br>
+
+Confirmación del nuevo build en estado **Live**, validando que el backend actualizado quedó disponible públicamente con las funcionalidades incorporadas en el Sprint 4 y el auto-deploy habilitado desde `main`.
+
+![BACKEND-15: Backend actualizado en estado Live tras el Sprint 4](report/assets/BACKEND-15.png)
+
+---
+
+<br>
+
+**Fase 3: Actualización del despliegue del Landing Page en GitHub Pages**
+
+Se verificó el repositorio **Landing-Page** dentro de la organización **AgroTrack-Project**, confirmando que la rama `develop` recibió pushes recientes con los últimos ajustes visuales y de contenido correspondientes al Sprint 4, y que la rama `main` mantenía integrados los cambios de las carpetas `assets`, `css` y `js`, junto con 44 commits acumulados, 4 tags y 2 releases publicados (siendo `release/v3.0.0` la versión vigente).
+
+![LANDING-1: Repositorio Landing-Page con la última versión integrada en main](report/assets/LANDING-1.png)
+
+<br>
+
+Ingreso a la sección **Actions** del repositorio para revisar la ejecución del workflow **pages-build-deployment**, encargado de automatizar la publicación del sitio estático. Se confirmó que las 6 ejecuciones registradas finalizaron de manera exitosa sobre el branch `main`, incluyendo las dos corridas más recientes generadas a raíz de los últimos cambios incorporados al Landing Page durante este sprint.
+
+![LANDING-2: Historial de ejecuciones exitosas del workflow pages-build-deployment](report/assets/LANDING-2.png)
+
+<br>
+
+Verificación del sitio publicado en producción mediante **GitHub Pages**, confirmando la correcta visualización de la sección hero ("Grow better with real data"), la propuesta de valor del producto, los botones de llamada a la acción (Get started now / Request demo) y la sección "The problem we solve", validando que el contenido, los estilos y las imágenes se cargaran correctamente en el entorno desplegado.
+
+![LANDING-3: Landing Page de AgroTrack desplegado y funcionando en producción](report/assets/LANDING-3.png)
+
+---
+
+<br>
+
+**Fase 4: Verificación del despliegue de la Web Application en Cloudflare Workers**
+
+Como parte del Sprint 4, se verificó y actualizó el despliegue de la Web Application de AgroTrack, previamente publicada en el Sprint 2 sobre la plataforma **Cloudflare Workers**. Se confirmó que las ramas feature de los integrantes del equipo con las nuevas funcionalidades del sprint fueron integradas a la rama `develop` mediante pull requests revisados por el Team Leader, y posteriormente fusionadas hacia `main` para disparar una nueva publicación del entorno de producción.
+
+Se comprobó el correcto funcionamiento de las vistas actualizadas desde distintos dispositivos, validando que los módulos de gestión de parcelas, cultivos, monitoreo del suelo, alertas climáticas y perfil de usuario continuaran operando correctamente en producción tras la incorporación de los cambios del Sprint 4.
+
+<br>
+
+**Figura**
+*Evidencia de deployment 1*
+![Web Application - Vista 1](report/assets/web-app-1.png)
+*Nota.* Elaboración propia.
+
+**Figura**
+*Evidencia de deployment 2*
+![Web Application - Vista 2](report/assets/web-app-2.png)
+*Nota.* Elaboración propia.
+
+**Figura**
+*Evidencia de deployment 3*
+![Web Application - Vista 3](report/assets/web-app-3.png)
+*Nota.* Elaboración propia.
+
+**Figura**
+*Evidencia de deployment 4*
+![Web Application - Vista 4](report/assets/web-app-4.png)
+*Nota.* Elaboración propia.
+
+ 
+<br>
+
+
+### 5.2.4.8. Team Collaboration Insights during Sprint.
+
+En esta sección el equipo explica cómo se han desarrollado las actividades de implementación y se presenta los analíticos de colaboración y commits en GitHub, realizados por los miembros del equipo durante el Sprint 4.
+
+**Distribución de Trabajo:**
+
+Durante el Sprint 4, el equipo consolidó el desarrollo del proyecto atendiendo tres frentes en paralelo: completar la cuarta versión de la Landing Page, continuar la evolución de la Web Application hacia la versión v3.0.0 e iniciar el desarrollo de la versión v2.0.0 del Backend de AgroTrack Platform. A diferencia del Sprint anterior, donde cada integrante desarrolló un único Bounded Context de manera independiente, en este Sprint se adoptó una estrategia de colaboración cruzada, en la que todos los integrantes participaron activamente en el desarrollo de cada uno de los Bounded Contexts del Backend, compartiendo conocimientos y resolviendo problemas técnicos de manera conjunta.
+
+El equipo mantuvo un enfoque de trabajo colaborativo mediante reuniones de seguimiento, revisiones de código y la integración continua en GitHub, lo que permitió coordinar eficientemente las tareas desarrolladas por cada integrante y garantizar la correcta integración de todos los componentes implementados durante el Sprint.
+
+**Métricas de Colaboración:**
+
+<div align="center">    
+  <p>
+    <b>Contributors de la Landing Page v4.0.0</b>
+  </p>
+  <img src="report/assets/contributors-sprint-4-landing-page.png" alt="Contributors landing page v4.0.0" width="600">
+  <p><i><b>Fuente</b>: GitHub Insights del repositorio agrotrack/landing-page.</i></p>
+</div>
+
+<div align="center">
+  <p>
+    <b>Contributors de la Web Application v3.0.0</b>
+  </p>
+  <img src="report/assets/contributors-sprint-4-web-application.png" alt="Contributors web application v3.0.0" width="600">
+  <p><i><b>Fuente</b>: GitHub Insights del repositorio agrotrack/web-application.</i></p>
+</div>
+
+<div align="center">
+  <p>
+    <b>Contributors del Backend (AgroTrack Platform v2.0.0)</b>
+  </p>
+  <img src="report/assets/contributors-sprint-4-web-platform.png" alt="Contributors agrotrack platform v2.0.0" width="600">
+  <p><i><b>Fuente</b>: GitHub Insights del repositorio agrotrack/web-services.</i></p>
+</div>
+
+Los analíticos muestran la participación activa de todos los integrantes durante el Sprint, evidenciando un incremento en las contribuciones como resultado del desarrollo simultáneo de la Landing Page, la Web Application y el Backend.
+
+**Reflexiones del Equipo:**
+
+- **Velasquez Laquihuanaco, Eduardo David:** "En el Sprint 4 implementé la capa **Application** del Bounded Context de IAM, desarrollando los módulos `acl`, `commandservices` y `queryservices`, responsables de la lógica de aplicación, la ejecución de comandos y la atención de consultas. Trabajar en esta capa me permitió comprender la importancia de separar las operaciones de escritura y lectura, manteniendo una arquitectura limpia y escalable."
+
+- **Alfaro Mallma, Alberto Joaquin:** "En el Sprint 4 participé en el desarrollo de la capa **Domain** del Bounded Context de IAM, implementando los paquetes `model` y `repositories`. Esta parte fue fundamental para definir las entidades principales del dominio y los contratos de persistencia, fortaleciendo la base sobre la que funciona el contexto."
+
+- **Quispe Perez, Eder Edu:** "En el Sprint 4 desarrollé la capa **Infrastructure** del Bounded Context de IAM, implementando los módulos `authorization/sfs`, `hashing/bcrypt`, `persistence/jpa` y `tokens/jwt`. Esta experiencia me permitió integrar la autenticación, autorización, persistencia de datos y generación de tokens, comprendiendo cómo los servicios externos soportan el funcionamiento del sistema."
+
+- **Rodriguez Rojas, Miler Alexander:** "En el Sprint 4 implementé la capa **Interfaces** del Bounded Context de IAM, desarrollando los módulos `acl` y `rest`, encargados de exponer las funcionalidades del sistema y facilitar la comunicación con otros contextos y con el cliente. Esta parte me permitió entender la importancia de desacoplar la lógica de negocio de los mecanismos de acceso."
+**Lección Aprendida:**
+
+El equipo identifica las siguientes lecciones de este Sprint 4:
+
+1. **La colaboración cruzada en el desarrollo del Backend aceleró la implementación de los Bounded Contexts:** Trabajar todos sobre los mismos módulos permitió compartir conocimientos, resolver bloqueos técnicos más rápido y mantener consistencia entre Frontend y Backend.
+
+2. **Atender tres productos en paralelo (Landing Page, Web Application y Backend) exige una coordinación de prioridades más estricta:** Fue necesario planificar con cuidado el tiempo de cada integrante para no descuidar ninguno de los tres frentes de trabajo del Sprint.
+
+3. **Separar Monitoring y Alerts en dos Bounded Contexts distintos permitió un diseño más claro de responsabilidades:** Monitoring se enfoca en capturar y almacenar el estado de las parcelas, mientras que Alerts consume esa información para generar notificaciones según el plan del usuario, evitando mezclar ambas responsabilidades en un solo módulo.
+
+4. **Integrar el módulo de Support al Bounded Context de Dashboard permitió centralizar la experiencia post-venta del usuario:** Al tener analíticas y soporte en un mismo espacio, se facilita que agricultores y empresarios agrícolas encuentren ayuda contextual junto a la información que ya están consultando.
+
+5. **La revisión conjunta de código entre integrantes que trabajaron en los mismos Bounded Contexts mejoró la calidad de la integración:** Al tener varias personas familiarizadas con un mismo módulo, fue más sencillo detectar inconsistencias antes de fusionar los cambios en `develop`.
+
+6. **La integración progresiva y constante en `develop` permitió sostener el desarrollo simultáneo de tres productos sin generar conflictos mayores al cierre del Sprint:** Mantener commits frecuentes facilitó que el trabajo de frontend, backend y landing page se integrara de forma ordenada.
+
+---
+
+<br>
+
+
 ### 5.3.2. Registro de Entrevistas
 
 **Entrevista N° 1**
