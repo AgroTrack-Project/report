@@ -1,6 +1,6 @@
 #### 5.2.4.7. Software Deployment Evidence for Sprint Review.
 
-En el transcurso del Sprint 4, el equipo verificó y actualizó el despliegue productivo del **Web Service de AgroTrack**, confirmando la estabilidad de la infraestructura configurada en sprints previos y aplicando los ajustes necesarios derivados de los nuevos endpoints implementados. Se mantuvo el uso de **Aiven** como proveedor de la base de datos MySQL y **Render** como plataforma de hosting del backend.
+En el transcurso del Sprint 4, el equipo verificó, actualizó y validó el despliegue productivo de los tres productos que conforman la solución: el **Web Service de AgroTrack**, el **Landing Page** y la **Web Application**. Se confirmó la estabilidad de la infraestructura configurada en sprints previos y se aplicaron los ajustes necesarios derivados de las nuevas funcionalidades implementadas en este sprint. Se mantuvo el uso de **Aiven** para la base de datos MySQL, **Render** para el backend, **GitHub Pages** para el Landing Page y **Cloudflare Workers** para la Web Application.
 
 ---
 
@@ -43,8 +43,6 @@ Actualización de las credenciales de conexión utilizadas por el backend: host 
 ![BACKEND-6: Revalidación de credenciales de conexión MySQL](report/assets/BACKEND-6.png)
 
 ---
-
-<br>
 
 <br>
 
@@ -101,5 +99,70 @@ Actualización de las variables de entorno del servicio para incorporar nuevos p
 Confirmación del nuevo build en estado **Live**, validando que el backend actualizado quedó disponible públicamente con las funcionalidades incorporadas en el Sprint 4 y el auto-deploy habilitado desde `main`.
 
 ![BACKEND-15: Backend actualizado en estado Live tras el Sprint 4](report/assets/BACKEND-15.png)
+
+---
+
+<br>
+
+**Fase 3: Actualización del despliegue del Landing Page en GitHub Pages**
+
+Se verificó el repositorio **Landing-Page** dentro de la organización **AgroTrack-Project**, confirmando que la rama `develop` recibió pushes recientes con los últimos ajustes visuales y de contenido correspondientes al Sprint 4, y que la rama `main` mantenía integrados los cambios de las carpetas `assets`, `css` y `js`, junto con 44 commits acumulados, 4 tags y 2 releases publicados (siendo `release/v3.0.0` la versión vigente).
+
+![LANDING-1: Repositorio Landing-Page con la última versión integrada en main](report/assets/LANDING-1.png)
+
+<br>
+
+Ingreso a la sección **Actions** del repositorio para revisar la ejecución del workflow **pages-build-deployment**, encargado de automatizar la publicación del sitio estático. Se confirmó que las 6 ejecuciones registradas finalizaron de manera exitosa sobre el branch `main`, incluyendo las dos corridas más recientes generadas a raíz de los últimos cambios incorporados al Landing Page durante este sprint.
+
+![LANDING-2: Historial de ejecuciones exitosas del workflow pages-build-deployment](report/assets/LANDING-2.png)
+
+<br>
+
+Verificación del sitio publicado en producción mediante **GitHub Pages**, confirmando la correcta visualización de la sección hero ("Grow better with real data"), la propuesta de valor del producto, los botones de llamada a la acción (Get started now / Request demo) y la sección "The problem we solve", validando que el contenido, los estilos y las imágenes se cargaran correctamente en el entorno desplegado.
+
+![LANDING-3: Landing Page de AgroTrack desplegado y funcionando en producción](report/assets/LANDING-3.png)
+
+---
+
+<br>
+
+**Fase 4: Verificación del despliegue de la Web Application en Cloudflare Workers**
+
+Como parte del Sprint 4, se verificó y actualizó el despliegue de la Web Application de AgroTrack, previamente publicada en el Sprint 2 sobre la plataforma **Cloudflare Workers**. Se confirmó que las ramas feature de los integrantes del equipo con las nuevas funcionalidades del sprint fueron integradas a la rama `develop` mediante pull requests revisados por el Team Leader, y posteriormente fusionadas hacia `main` para disparar una nueva publicación del entorno de producción.
+
+Se comprobó el correcto funcionamiento de las vistas actualizadas desde distintos dispositivos, validando que los módulos de gestión de parcelas, cultivos, monitoreo del suelo, alertas climáticas y perfil de usuario continuaran operando correctamente en producción tras la incorporación de los cambios del Sprint 4.
+
+**Repositorio Frontend Web Application:**
+[https://github.com/AgroTrack-Project/web-Application](https://github.com/AgroTrack-Project/web-Application)
+
+**URL de la Web Application desplegada:**
+[https://agro-track.andessmart.workers.dev/home](https://agro-track.andessmart.workers.dev/home)
+
+<br>
+
+**Figura**
+*Evidencia de deployment 1*
+![Web Application - Vista 1](report/assets/web-app-1.png)
+*Nota.* Elaboración propia.
+
+**Figura**
+*Evidencia de deployment 2*
+![Web Application - Vista 2](report/assets/web-app-2.png)
+*Nota.* Elaboración propia.
+
+**Figura**
+*Evidencia de deployment 3*
+![Web Application - Vista 3](report/assets/web-app-3.png)
+*Nota.* Elaboración propia.
+
+**Figura**
+*Evidencia de deployment 4*
+![Web Application - Vista 4](report/assets/web-app-4.png)
+*Nota.* Elaboración propia.
+
+**Figura**
+*Evidencia de deployment 5*
+![Web Application - Vista 5](report/assets/web-app-5.png)
+*Nota.* Elaboración propia.
 
 <br>
