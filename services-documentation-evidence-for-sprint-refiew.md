@@ -20,12 +20,12 @@ Se incluyen a continuación capturas de la documentación interactiva accesible 
  
 **Captura 1: Ejecución interactiva del endpoint POST /authentication/sign-up**
  
-![Swagger UI - Endpoint POST sign-up](agregar imagen endopint) 
+![Swagger UI - Endpoint POST sign-up](report/assets/endpoint-sign.png) 
  
  
 **Captura 2: Detalle del endpoint GET /users/by-iam-user/{iamUserId}**
  
-![Swagger UI - Endpoint GET users by iam user](agregar imagen endpoint) 
+![Swagger UI - Endpoint GET users by iam user](report/assets/endpoint-user.png) 
  
  
  
