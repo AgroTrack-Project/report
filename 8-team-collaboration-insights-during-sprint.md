@@ -15,7 +15,7 @@ El equipo mantuvo un enfoque de trabajo colaborativo mediante reuniones de segui
     <b>Contributors de la Landing Page v4.0.0</b>
   </p>
   <img src="report/assets/contributors-sprint-4-landing-page.png" alt="Contributors landing page v4.0.0" width="600">
-  <p><i><b>Fuente</b>: GitHub Insights del repositorio agrotrack-landing-page.</i></p>
+  <p><i><b>Fuente</b>: GitHub Insights del repositorio agrotrack/landing-page.</i></p>
 </div>
 
 <div align="center">
@@ -23,7 +23,7 @@ El equipo mantuvo un enfoque de trabajo colaborativo mediante reuniones de segui
     <b>Contributors de la Web Application v3.0.0</b>
   </p>
   <img src="report/assets/contributors-sprint-4-web-application.png" alt="Contributors web application v3.0.0" width="600">
-  <p><i><b>Fuente</b>: GitHub Insights del repositorio agrotrack-frontend.</i></p>
+  <p><i><b>Fuente</b>: GitHub Insights del repositorio agrotrack/web-application.</i></p>
 </div>
 
 <div align="center">
@@ -31,20 +31,55 @@ El equipo mantuvo un enfoque de trabajo colaborativo mediante reuniones de segui
     <b>Contributors del Backend (AgroTrack Platform v2.0.0)</b>
   </p>
   <img src="report/assets/contributors-sprint-4-web-platform.png" alt="Contributors agrotrack platform v2.0.0" width="600">
-  <p><i><b>Fuente</b>: GitHub Insights del repositorio agrotrack-backend.</i></p>
+  <p><i><b>Fuente</b>: GitHub Insights del repositorio agrotrack/web-services.</i></p>
 </div>
 
 Los analíticos muestran la participación activa de todos los integrantes durante el Sprint, evidenciando un incremento en las contribuciones como resultado del desarrollo simultáneo de la Landing Page, la Web Application y el Backend.
 
 **Reflexiones del Equipo:**
 
-- Velasquez Laquihuanaco, Eduardo David: "En el Sprint 4 implementé el Bounded Context de Identity en el Backend, encargado del registro y autenticación de agricultores y empresarios agrícolas, y desarrollé la sección Home de la cuarta versión de la Landing Page. Trabajar en la puerta de entrada de la plataforma, tanto a nivel de backend como de primera impresión visual, me hizo pensar mucho en la experiencia del usuario desde el primer contacto con AgroTrack."
+- **Velasquez Laquihuanaco, Eduardo David:**
+    - **Bounded Context:** Identity (IAM)
+    - **Estructura desarrollada:**
+        - `application`
+            - `acl`
+            - `commandservices`
+            - `queryservices`
+        - `interfaces`
+            - `acl`
+            - `rest`
 
-- Alfaro Mallma, Alberto Joaquin: "Continué la evolución del Bounded Context de Dashboard en el Frontend y sumé el desarrollo del módulo de Support, encargado de canalizar consultas y soporte prioritario para los planes que lo incluyen. Combinar analíticas con soporte al usuario me permitió entender mejor qué información necesitan realmente los agricultores y empresarios agrícolas al usar la plataforma."
+  > "En el Sprint 4 implementé el Bounded Context de Identity en el Backend, encargado del registro y autenticación de agricultores y empresarios agrícolas, y desarrollé la sección Home de la cuarta versión de la Landing Page. Trabajar en la puerta de entrada de la plataforma, tanto a nivel de backend como de primera impresión visual, me hizo pensar mucho en la experiencia del usuario desde el primer contacto con AgroTrack."
 
-- Quispe Perez, Eder Edu: "Implementé el Bounded Context de Monitoring en el Backend de AgroTrack, encargado del seguimiento de las condiciones de las parcelas, y colaboré activamente en el desarrollo e integración de los demás Bounded Contexts. Trabajar de forma cruzada con los módulos de mis compañeros me ayudó a entender mejor cómo se conecta todo el ecosistema del backend agrícola."
+- **Alfaro Mallma, Alberto Joaquin:**
+    - **Bounded Context:** Dashboard / Support
+    - **Estructura desarrollada:**
+        - `infrastructure`
+            - `authorization/sfs`
+            - `hashing/bcrypt`
 
-- Rodriguez Rojas, Miler Alexander: "Desarrollé el Bounded Context de Alerts, encargado de generar las alertas básicas y avanzadas según el plan contratado (Basic, Pro o Enterprise), y colaboré en la implementación conjunta de los distintos Bounded Contexts del Backend. Diseñar las reglas de alerta a partir de los datos de Monitoring me permitió ver con claridad cómo dos Bounded Contexts distintos deben comunicarse manteniendo bajo acoplamiento."
+  > "Continué la evolución del Bounded Context de Dashboard en el Frontend y sumé el desarrollo del módulo de Support, encargado de canalizar consultas y soporte prioritario para los planes que lo incluyen. Combinar analíticas con soporte al usuario me permitió entender mejor qué información necesitan realmente los agricultores y empresarios agrícolas al usar la plataforma."
+
+- **Quispe Perez, Eder Edu:**
+    - **Bounded Context:** Monitoring
+    - **Estructura desarrollada:**
+        - `domain`
+            - `model`
+            - `repositories`
+        - `infrastructure`
+            - `persistence/jpa`
+
+  > "Implementé el Bounded Context de Monitoring en el Backend de AgroTrack, encargado del seguimiento de las condiciones de las parcelas, y colaboré activamente en el desarrollo e integración de los demás Bounded Contexts. Trabajar de forma cruzada con los módulos de mis compañeros me ayudó a entender mejor cómo se conecta todo el ecosistema del backend agrícola."
+
+- **Rodriguez Rojas, Miler Alexander:**
+    - **Bounded Context:** Alerts
+    - **Estructura desarrollada:**
+        - `application`
+            - `internal`
+        - `infrastructure`
+            - `tokens/jwt`
+
+  > "Desarrollé el Bounded Context de Alerts, encargado de generar las alertas básicas y avanzadas según el plan contratado (Basic, Pro o Enterprise), y colaboré en la implementación conjunta de los distintos Bounded Contexts del Backend. Diseñar las reglas de alerta a partir de los datos de Monitoring me permitió ver con claridad cómo dos Bounded Contexts distintos deben comunicarse manteniendo bajo acoplamiento."
 
 **Lección Aprendida:**
 
