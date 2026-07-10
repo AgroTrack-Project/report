@@ -10,7 +10,7 @@ El equipo mantuvo un enfoque de trabajo colaborativo mediante reuniones de segui
 
 **Métricas de Colaboración:**
 
-<div align="center">
+<div align="center">    
   <p>
     <b>Contributors de la Landing Page v4.0.0</b>
   </p>
