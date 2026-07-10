@@ -17,7 +17,7 @@ A continuación se presenta el video de demostración del Sprint 4, donde se mue
  
 ![swagger 2](report/assets/swagger1-sprint4.png) 
  
-**Link del video:** [Ver video de demostración - Sprint 4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202324623_upc_edu_pe/IQBe2DaJnk2nRITEOF8NEWw1AUNSwXuPQMT2jwS22LQeqag?e=6vj60X&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+**Link del video:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202324623_upc_edu_pe/IQBe2DaJnk2nRITEOF8NEWw1AUNSwXuPQMT2jwS22LQeqag?e=6vj60X&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
  
  
 <br>
