@@ -82,8 +82,6 @@ del trabajo fue la siguiente:
 | Eduardo David Velasquez Laquihuanaco | Elaboró los Lean UX Problem Statements, Assumptions, Hypothesis Statements y el Lean UX Canvas; los User Stories, el Impact Mapping y el Product Backlog; las secciones de Software Configuration Management, Source Code Management y los diagramas de arquitectura (Context, Components), Class Diagrams y Database Diagrams; además del Design-Level EventStorming |
 | Eder Edu Quispe Perez | Elaboró los User Persona, los Style Guidelines, el registro de la 5ta entrevista, el análisis de entrevistas, los User Task Matrix, el Labeling Systems, los SEO Tags and Meta Tags, los Searching Systems, los Navigation Systems, la introducción, las secciones de Source Code Style Guide & Coding Conventions, Software Deployment Configuration, Landing Page, Services & Applications Implementation y el Sprint 1; junto con los User Journey Mapping, los Empathy Mapping y el Ubiquitous Language |
 
-Los aportes de esta entrega corresponden a las versiones 0.1 a la 0.21 del
-Registro de Versiones del Informe.
 
 **Evidencias de colaboración — AV1:**
 
@@ -111,8 +109,7 @@ el 25 de mayo, con la siguiente participación:
 | Miler Alexander Rodriguez Rojas | Corrigió el Solution Profile, la sección de Antecedentes y problemática, los User Stories, el Impact Mapping y el Product Backlog; actualizó los User Goals y el Software Configuration Management; además añadió la tabla de Software Configuration Management, el Source Code Management y el Software Deployment Configuration |
 | Eder Edu Quispe Perez | Participó en la actualización de las secciones de implementación y documentación de la Landing Page y servicios iniciadas en la entrega anterior, y añadió los Web Applications User Flow Diagrams |
 
-Los aportes de esta entrega corresponden a las versiones 0.22 a la 0.37 del
-Registro de Versiones del Informe.
+
 
 **Evidencias de colaboración — TB1:**
 
@@ -137,8 +134,7 @@ participación:
 | Eder Edu Quispe Perez | Añadió la 1ra entrevista de validación, las Evaluaciones según heurísticas y el video de demostración; actualizó el Sprint 3, el Execution Evidence for Sprint Review, el registro de la 2da entrevista y corrigió el 1er User Persona |
 | Miler Alexander Rodriguez Rojas | Añadió la 4ta entrevista de validación, los Team Collaboration Insights de los Sprints 1, 2 y 3, el Student Outcome; corrigió la tabla de contenidos, el Hypothesis Statement y el Registro de Versiones del Informe en varias iteraciones; y actualizó los Lean UX Hypothesis Statements, el Lean UX Canvas, los segmentos objetivo, las estrategias y tácticas frente a competidores, las entrevistas, el glosario, el Product Backlog, la sección de Information Architecture, los Organization Systems, los Labeling Systems, la Landing Page UI Design y la Bibliografía |
 
-Los aportes de esta entrega corresponden a las versiones 0.38 a la 0.59 del
-Registro de Versiones del Informe.
+
 
 **Evidencias de colaboración — AV2:**
 
@@ -167,8 +163,7 @@ siguiente:
 | Eder Edu Quispe Perez | Actualizó el registro de la 2da entrevista y el Design-Level Event Storming, y corrigió el 1er User Persona conforme a las observaciones recibidas |
 | Eduardo David Velasquez Laquihuanaco | Actualizó la carátula, el video About The Team, los Sprint Planning y el Big Picture Event Storming |
 
-Los aportes de esta entrega corresponden a las versiones 0.47 a la 0.59 del
-Registro de Versiones del Informe.
+
 
 **Evidencias de colaboración — TB2:**
 
