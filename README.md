@@ -21,7 +21,7 @@
  
 <br>
 <h4 align="center">Equipo</h4>
-<h4 align="center">NexumDevs</h4>
+<h4 align="center">AndesSmart</h4>
  
 <br>
 <h4 align="center">Proyecto</h4>
