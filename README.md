@@ -1,38 +1,46 @@
 ![Logo UPC](report/assets/UPC_logo_transparente.png)
-
-<h1>
-Universidad Peruana de Ciencias Aplicadas
-</h1>
-
-**Facultad de Ingeniería**
-
-**Ingeniería de Software**
-
-**Ciclo:** 5
-
-**Desarrollo de Aplicaciones Open Source - 1ASI0729**
-
-**NRC:** 11959
-
-**Profesor:** Mori Paiva, Hugo Allan
-
-**"Informe de Trabajo Final"**
-
-**Startup:** Andes Smart
-
-**Producto:** AgroTrack
-
-**Integrantes:**
-
-- Alfaro Mallma, Alberto Joaquin - U20241A267
-- Martínez Gaona, Pablo Afranio - U202120011
-- Quispe Perez, Eder Edu - U202324623
-- Rodriguez Rojas, Miler Alexander - U20241A827
-- Velasquez Laquihuanaco, Eduardo David - U202323350
-
+ 
+<h1 align="center">Universidad Peruana de Ciencias Aplicadas</h1>
+ 
+<h3 align="center">Carrera de Ingeniería de Software</h3>
+ 
+<h3 align="center">1ASI0729</h3>
+ 
+<h3 align="center">Desarrollo de Aplicaciones Open Source</h3>
+ 
 <br>
-
-**Abril 2026-10**
+<h4 align="center">NRC</h4>
+<h4 align="center">11959</h4>
+ 
+<br>
+<h2 align="center">Informe del Trabajo Final</h2>
+ 
+<br>
+<h4 align="center">Docente</h4>
+<h4 align="center">Mori Paiva, Hugo Allan</h4>
+ 
+<br>
+<h4 align="center">Equipo</h4>
+<h4 align="center">NexumDevs</h4>
+ 
+<br>
+<h4 align="center">Proyecto</h4>
+<h4 align="center">AgroTrack</h4>
+ 
+<br>
+## Integrantes
+ 
+| Código      | Apellidos y Nombres                          |
+|-------------|-----------------------------------------------|
+| U20241A267  | Alfaro Mallma, Alberto Joaquin                 |
+| U202120011  | Martínez Gaona, Pablo Afranio                  |
+| U202324623  | Quispe Perez, Eder Edu                         |
+| U20241A827  | Rodriguez Rojas, Miler Alexander               |
+| U202323350  | Velasquez Laquihuanaco, Eduardo David          |
+ 
+<br>
+<h4 align="center">Período 202610</h4>
+<h4 align="center">Abril 2026</h4>
 
 # Registro de Versiones del Informe
 
