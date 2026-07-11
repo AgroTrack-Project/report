@@ -163,13 +163,15 @@ siguiente:
 | Eder Edu Quispe Perez | Actualizó el registro de la 2da entrevista y el Design-Level Event Storming, y corrigió el 1er User Persona conforme a las observaciones recibidas |
 | Eduardo David Velasquez Laquihuanaco | Actualizó la carátula, el video About The Team, los Sprint Planning y el Big Picture Event Storming |
 
-
+<br>
 
 **Evidencias de colaboración — TB2:**
 
-![Foto de la colaboración](report/assets/TB2.png)
+<br>
 
-![Foto de la colaboración](report/assets/TB2.png)
+![Foto de la colaboración](report/assets/contributors-sprint-4-report-pulse.png)
+
+![Foto de la colaboración](report/assets/contributors-sprint-4-report.png)
 
 
 ---
@@ -277,6 +279,37 @@ siguiente:
     - [5.2.3.6. Services Documentation Evidence for Sprint Review](#5236-services-documentation-evidence-for-sprint-review)
     - [5.2.3.7. Software Deployment Evidence for Sprint Review](#5237-software-deployment-evidence-for-sprint-review)
     - [5.2.3.8. Team Collaboration Insights during Sprint](#5238-team-collaboration-insights-during-sprint)
+  - [5.2.4. Sprint 4](#524-sprint-4)
+    - [5.2.4.1. Sprint Planning 4](#5241-sprint-planning-4)
+    - [5.2.4.2. Aspect Leaders and Collaborators](#5242-aspect-leaders-and-collaborators)
+    - [5.2.4.3. Sprint Backlog 4](#5243-sprint-backlog-4)
+    - [5.2.4.4. Development Evidence for Sprint Review](#5244-development-evidence-for-sprint-review)
+    - [5.2.4.5. Execution Evidence for Sprint Review](#5245-execution-evidence-for-sprint-review)
+    - [5.2.4.6. Services Documentation Evidence for Sprint Review](#5246-services-documentation-evidence-for-sprint-review)
+    - [5.2.4.7. Software Deployment Evidence for Sprint Review](#5247-software-deployment-evidence-for-sprint-review)
+    - [5.2.4.8. Team Collaboration Insights during Sprint](#5248-team-collaboration-insights-during-sprint)
+- [5.3.2. Registro de Entrevistas](#532-registro-de-entrevistas)
+- [5.3.3. Evaluaciones según heurísticas](#533-evaluaciones-según-heurísticas)
+- [5.4. Video About-the-Product](#54-video-about-the-product)
+
+# Conclusiones
+- [Conclusiones y recomendaciones](#conclusiones-y-recomendaciones)
+  - [Validación de Problem Statements, Assumptions e Hypothesis Statements](#validación-de-problem-statements-assumptions-e-hypothesis-statements)
+  - [Conclusiones por Sprint](#conclusiones-por-sprint)
+    - [Sprint 1 – Investigación, problema y Landing Page](#sprint-1--investigación-problema-y-landing-page)
+    - [Sprint 2 – Desarrollo del Frontend (Web Application)](#sprint-2--desarrollo-del-frontend-web-application)
+    - [Sprint 3 – Desarrollo del Backend (Web Services)](#sprint-3--desarrollo-del-backend-web-services)
+    - [Sprint 4 – Módulo IAM y consolidación del backend](#sprint-4--módulo-iam-y-consolidación-del-backend)
+  - [Recomendaciones (Roadmap post-curso)](#recomendaciones-roadmap-post-curso)
+- [Video About-the-Team](#video-about-the-team)
+
+- [Bibliografía](#bibliografía)
+
+# Anexos
+- [Repositorios de Código Fuente](#repositorios-de-código-fuente)
+- [Productos Desplegados](#productos-desplegados)
+- [Gestión del Proyecto – Tableros Trello](#gestión-del-proyecto--tableros-trello)
+- [Videos del Proyecto](#videos-del-proyecto)
 
 
 
@@ -4994,7 +5027,9 @@ De esta manera, el video permite comunicar el valor de la solución y facilitar 
 
 # Conclusiones
 
-## Validación de Problem Statements, Assumptions e Hypothesis Statements
+## Conclusiones y recomendaciones
+
+### Validación de Problem Statements, Assumptions e Hypothesis Statements
 
 **Problem Statement 1 (agricultores pequeños y decisiones de riego sin datos objetivos).** Las entrevistas de validación de usabilidad realizadas en el Sprint 3 (Lucía Alarcón y Jorge Ramírez) confirmaron que el problema identificado en el Capítulo I sigue siendo real y relevante: ambos usuarios señalaron que actualmente llevan el registro de sus cultivos en cuaderno o de memoria, y valoraron positivamente que la plataforma centralice el estado del suelo y las recomendaciones de riego en un solo lugar. Sin embargo, también se identificó que el mensaje de recomendación de riego (por ejemplo, "bajo") resultó **poco descriptivo** para el usuario, quien esperaba mayor contexto para confiar en la sugerencia. Esto valida parcialmente el problem statement: la necesidad existe, pero la solución actual todavía no comunica las recomendaciones con el nivel de claridad que un agricultor con poca experiencia tecnológica requiere.
 
@@ -5016,9 +5051,9 @@ De las ocho assumptions planteadas en el Lean UX Canvas, las validaciones realiz
 
 Los Hypothesis Statements definidos en el Capítulo I establecían umbrales cuantitativos de éxito (60% de consulta de monitoreo antes de regar, 50% de acción preventiva ante alertas, reducción de consumo de agua tras 30 días, 40% de registro activo de cultivos en el primer mes). Es importante señalar que **estas métricas no han podido validarse cuantitativamente aún**, dado que las validaciones realizadas hasta el Sprint 3 corresponden a pruebas de usabilidad puntuales y no a un despliegue con uso continuado en campo durante los periodos de tiempo especificados en las hipótesis (2 semanas, 24 horas, 30 días, 1 mes). Las entrevistas de Sprint 3 ofrecen evidencia cualitativa favorable (los usuarios afirman que usarían la plataforma y que resuelve un problema real), pero el equipo reconoce que la validación cuantitativa de estas hipótesis queda pendiente como trabajo futuro, una vez la plataforma cuente con una base de usuarios activos y datos de uso reales.
 
-## Conclusiones por Sprint
+### Conclusiones por Sprint
 
-### **Sprint 1 – Investigación, problema y Landing Page**
+#### **Sprint 1 – Investigación, problema y Landing Page**
 
 - **Sobre el análisis del problema y la investigación de usuario:** Se concluye que las seis entrevistas realizadas a agricultores pequeños y empresarios agrícolas de distintas regiones del Perú (Amazonas, Arequipa, Lima, Piura, Chachapoyas) permitieron validar la existencia de un problema recurrente: la toma de decisiones de riego por intuición, sin datos objetivos del estado del suelo, y la ausencia de herramientas de registro digital. Esta fase permitió construir el Problem Statement, los User Personas, los Empathy Maps, los User Journey Maps y el Big Picture Event Storming del dominio agrícola.
 
@@ -5028,7 +5063,7 @@ Los Hypothesis Statements definidos en el Capítulo I establecían umbrales cuan
 
 - **Sobre la definición de requerimientos:** La especificación inicial de User Stories con criterios de aceptación en formato Gherkin, junto con el Impact Mapping y el Product Backlog priorizado por valor de negocio, permitió transformar las necesidades identificadas en las entrevistas en funcionalidades concretas, sirviendo de guía estructurada para los sprints siguientes.
 
-### **Sprint 2 – Desarrollo del Frontend (Web Application)**
+#### **Sprint 2 – Desarrollo del Frontend (Web Application)**
 
 - **Sobre el diseño e implementación de interfaces:** Se concluye que el desarrollo del Frontend Web Application, construido con Angular y Angular Material, permitió transformar los requerimientos funcionales en interfaces visuales e interactivas para los bounded contexts de Identity, Farming, Soil Monitoring, Climate Alerts y Support & Dashboard, alineadas con las necesidades identificadas en el Sprint 1.
 
@@ -5038,7 +5073,7 @@ Los Hypothesis Statements definidos en el Capítulo I establecían umbrales cuan
 
 - **Sobre el avance funcional del producto:** El Sprint 2 permitió evidenciar un avance significativo hacia el producto mínimo viable (MVP), contando con vistas funcionales y navegables que representan los principales flujos del sistema, inicialmente sostenidas sobre datos simulados y posteriormente conectadas a los servicios backend reales en el Sprint 3.
 
-### **Sprint 3 – Desarrollo del Backend (Web Services)**
+#### **Sprint 3 – Desarrollo del Backend (Web Services)**
 
 - **Sobre el diseño e implementación de la API REST:** Se concluye que el desarrollo del backend permitió transformar los requerimientos funcionales en servicios REST documentados y desplegados, cubriendo los cinco bounded contexts definidos en la arquitectura DDD de AgroTrack: Identity, Farming, Soil Monitoring, Alerts y Support & Dashboard.
 
@@ -5050,7 +5085,7 @@ Los Hypothesis Statements definidos en el Capítulo I establecían umbrales cuan
 
 - **Sobre el avance funcional del producto:** El Sprint 3 permitió reemplazar los datos simulados del Frontend por servicios reales, aunque el backend aún exponía sus endpoints sin un mecanismo de autenticación real, una brecha que quedó identificada como prioridad para el Sprint 4.
 
-### **Sprint 4 – Módulo IAM y consolidación del backend**
+#### **Sprint 4 – Módulo IAM y consolidación del backend**
 
 - **Sobre la implementación del módulo IAM:** Se concluye que la incorporación del bounded context de Identity and Access Management permitió habilitar un mecanismo real de autenticación en AgroTrack mediante los endpoints `POST /authentication/sign-up` y `POST /authentication/sign-in` (Technical Stories TS32 y TS33), que retornan un token JWT y los roles derivados del plan contratado (`FARMER` para BASIC/PRO, `AGRICULTURAL_MANAGER` para ENTERPRISE), además de exponer el catálogo de roles mediante `GET /roles` (TS34).
 
@@ -5064,8 +5099,7 @@ Los Hypothesis Statements definidos en el Capítulo I establecían umbrales cuan
 <br>
 <br> 
 
-# Recomendaciones
-
+### Recomendaciones (Roadmap post-curso)
 
 Dado que el Sprint 4 marca el cierre del trabajo final del curso, las siguientes recomendaciones se plantean como el **Roadmap post-curso** de AgroTrack, es decir, los pasos que la startup Andes Smart debería priorizar si decide continuar evolucionando el producto más allá del alcance académico entregado:
 
@@ -5083,7 +5117,7 @@ Estas recomendaciones buscan asegurar que las siguientes iteraciones de AgroTrac
 
 ---
 
-# Video About-the-Team
+## Video About-the-Team
 
 En esta sección, el equipo presenta el Video About-the-Team, un recurso audiovisual diseñado para dar a conocer a los miembros fundadores de la startup **Andes Smart**, responsable del desarrollo de **AgroTrack**. El objetivo del video es generar confianza tanto a nivel técnico como profesional, mostrando a las personas detrás de la solución y destacando sus contribuciones dentro del proyecto.
 
