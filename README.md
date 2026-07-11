@@ -41,32 +41,142 @@ Universidad Peruana de Ciencias Aplicadas
 | AV1 | 26/04/2026 | Alberto Joaquin Alfaro Mallma, Pablo Afranio Martínez Gaona, Eder Edu Quispe Perez, Miler Alexander Rodriguez Rojas, Eduardo David Velasquez Laquihuanaco | Para esta primera entrega, elaboramos los cinco capítulos iniciales del informe y desarrollamos la versión inicial del landing page de AgroTrack. |
 | TB1 | 09/05/2026 | Alberto Joaquin Alfaro Mallma, Pablo Afranio Martínez Gaona, Eder Edu Quispe Perez, Miler Alexander Rodriguez Rojas, Eduardo David Velasquez Laquihuanaco | Para esta segunda entrega, se incorporó la sección 5.2.2 correspondiente al Sprint 2, incluyendo Sprint Planning, Aspect Leaders and Collaborators, Sprint Backlog, Development Evidence, Execution Evidence, Services Documentation Evidence, Software Deployment Evidence y Team Collaboration Insights. Asimismo, se desplegó una nueva versión del Landing Page y la primera versión del Frontend Web Application. Se corrigieron y mejoraron los Mock-ups y artefactos de entregas previas en base a la retroalimentación recibida. |
 | AV2 | 20/06/2026 | Alberto Joaquin Alfaro Mallma, Pablo Afranio Martínez Gaona, Eder Edu Quispe Perez, Miler Alexander Rodriguez Rojas, Eduardo David Velasquez Laquihuanaco | Para esta tercera entrega, se incorporó la sección 5.2.3 correspondiente al Sprint 3, incluyendo Sprint Planning, Aspect Leaders and Collaborators, Sprint Backlog, Development Evidence, Execution Evidence, Services Documentation Evidence, Software Deployment Evidence y Team Collaboration Insights. Se implementó la primera versión del Web Service (RESTful API) de AgroTrack con Spring Boot bajo arquitectura DDD, cubriendo los bounded contexts de Identity, Farming, Soil Monitoring, Alerts y Support & Dashboard. El backend fue desplegado en Render con base de datos MySQL en Aiven. |
+| TB2 | 10/07/2026 | Alberto Joaquin Alfaro Mallma, Eder Edu Quispe Perez, Miler Alexander Rodriguez Rojas, Eduardo David Velasquez Laquihuanaco | Para esta cuarta y última entrega, se incorporó la sección 5.2.4 correspondiente al Sprint 4, incluyendo Sprint Planning, Aspect Leaders and Collaborators, Sprint Backlog, Development Evidence, Execution Evidence y Services Documentation Evidence. Se implementó y desplegó el bounded context de Identity & Access Management, incorporando autenticación mediante sign-up/sign-in, gestión de roles y protección JWT sobre los endpoints de perfil de negocio, completando así los cinco bounded contexts planeados en el diseño original del backend. Se realizó el versionado semántico y la publicación de releases en GitHub para los repositorios de Landing Page, Web Application y Web Services. Finalmente, se redactó la sección de Conclusiones y Recomendaciones del informe, contrastando los Problem Statements, Assumptions e Hypothesis Statements planteados en el Lean UX Canvas con los resultados de las validaciones de usabilidad realizadas con usuarios reales durante el Sprint 3, y se elaboró la presentación de cierre resumiendo el trabajo de los cuatro sprints del proyecto. |
+ 
+
 
 <br>
 <br>
-
 
 # Project Report Collaboration Insights
 
-**Enlace del repositorio - Informe:**
-https://github.com/AgroTrack-Project/report
+El Project Report del equipo se encuentra alojado en el repositorio de informes
+dentro de la organización de GitHub del equipo:
 
-<br>
+- **Organización de GitHub:** https://github.com/AgroTrack-Project
+- **Repositorio del Project Report:** https://github.com/AgroTrack-Project/report.git
 
-![Foto de la claboracion](report/assets/contributors.png)
- 
+El informe se elaboró de manera colaborativa utilizando Git y GitHub como
+plataforma de control de versiones. Cada integrante trabajó las secciones
+asignadas y registró sus aportes mediante commits al repositorio del informe,
+lo cual queda evidenciado en los analíticos de colaboración de GitHub y en el
+Registro de Versiones del Informe. A continuación, se describe el desarrollo
+de las actividades por cada entrega.
+
+![Foto de la colaboración](report/assets/contributors.png)
+
+
+---
+
+### Entrega AV1
+
+Durante la primera entrega, el equipo se organizó mediante reuniones de
+coordinación para distribuir los capítulos iniciales del informe. Las
+actividades se desarrollaron entre el 14 y el 24 de abril, y la distribución
+del trabajo fue la siguiente:
 
 | Integrante | Tareas Designadas |
 |------------|-------------------|
-| Alberto Joaquin Alfaro Mallma | Desarrollo y redacción del Capítulo I, y apoyo en la elaboración de la Landing Page |
-| Pablo Afranio Martinez Gaona | Desarrollo y redacción del Capítulo II y apoyo en la elaboración de la Landing Page |
-| Eder Edu Quispe Perez | Desarrollo y redacción del Capítulo III y apoyo en la elaboración de la Landing Page |
-| Miler Alexander Rodriguez Rojas | Desarrollo y redacción del Capítulo IV y apoyo en la elaboración de la Landing Page |
-| Eduardo David Velasquez Laquihuanaco | Desarrollo y redacción del Capítulo V, consolidación del informe y apoyo en la elaboración de la Landing Page |
+| Miler Alexander Rodriguez Rojas | Elaboró la carátula, el registro de versiones, la tabla de Collaboration Insights, el Student Outcome, la descripción del startup, los perfiles de los integrantes, la sección de antecedentes y problemática, los wireframes y mock-ups de la Landing Page, y el Big Picture Event Storming |
+| Alberto Joaquin Alfaro Mallma | Desarrolló la sección de competidores, el análisis competitivo, las estrategias y tácticas frente a competidores, el diseño de entrevistas, las consideraciones metodológicas, el registro de las tres primeras entrevistas, el registro de la 4ta entrevista, y los Web Applications Wireframes, Mock-ups, User Flow Diagrams y Prototyping |
+| Eduardo David Velasquez Laquihuanaco | Elaboró los Lean UX Problem Statements, Assumptions, Hypothesis Statements y el Lean UX Canvas; los User Stories, el Impact Mapping y el Product Backlog; las secciones de Software Configuration Management, Source Code Management y los diagramas de arquitectura (Context, Components), Class Diagrams y Database Diagrams; además del Design-Level EventStorming |
+| Eder Edu Quispe Perez | Elaboró los User Persona, los Style Guidelines, el registro de la 5ta entrevista, el análisis de entrevistas, los User Task Matrix, el Labeling Systems, los SEO Tags and Meta Tags, los Searching Systems, los Navigation Systems, la introducción, las secciones de Source Code Style Guide & Coding Conventions, Software Deployment Configuration, Landing Page, Services & Applications Implementation y el Sprint 1; junto con los User Journey Mapping, los Empathy Mapping y el Ubiquitous Language |
+
+
+**Evidencias de colaboración — AV1:**
+
+*Analíticos de colaboración del repositorio:*
+
+![Foto de la AV1](report/assets/AV1-1.png)
+
+![Foto de la AV1](report/assets/AV1-2.png)
+
+![Foto de la AV1](report/assets/AV1-3.png)
+
+---
+
+### Entrega TB1
+
+Para la segunda entrega, el equipo se enfocó en corregir las observaciones
+recibidas en la entrega anterior y en completar las secciones de diseño y
+arquitectura de la solución. Las actividades se desarrollaron entre el 5 y
+el 25 de mayo, con la siguiente participación:
+
+| Integrante | Tareas Designadas |
+|------------|-------------------|
+| Eduardo David Velasquez Laquihuanaco | Corrigió el contenido del Capítulo 1, el Lean UX Process, los User Journey Mapping, los Empathy Maps, los Lean UX Problem Statements y los Assumptions; y añadió el Software Architecture Context Diagram, los Container Diagrams y los Components Diagrams |
+| Alberto Joaquin Alfaro Mallma | Corrigió los Segmentos Objetivo, el Startup Profile, la sección de Competidores, el Registro de Versiones, el Project Report Collaboration Insights, las entrevistas, el Big Picture Event Storming y el Ubiquitous Language; actualizó los User Stories y añadió el Web Applications Prototyping, el Sprint 2 y los Landing Page Wireframes y Mock-ups |
+| Miler Alexander Rodriguez Rojas | Corrigió el Solution Profile, la sección de Antecedentes y problemática, los User Stories, el Impact Mapping y el Product Backlog; actualizó los User Goals y el Software Configuration Management; además añadió la tabla de Software Configuration Management, el Source Code Management y el Software Deployment Configuration |
+| Eder Edu Quispe Perez | Participó en la actualización de las secciones de implementación y documentación de la Landing Page y servicios iniciadas en la entrega anterior, y añadió los Web Applications User Flow Diagrams |
+
+
+
+**Evidencias de colaboración — TB1:**
+
+*Analíticos de colaboración del repositorio:*
+
+![Foto de la colaboración](report/assets/TB1-COLABORATION.png)
+
+---
+
+### Entrega AV2
+
+En la entrega final, el equipo completó el Sprint 3, las entrevistas de
+validación, las evaluaciones heurísticas y las evidencias de despliegue,
+además de realizar una revisión integral del documento. Las actividades se
+desarrollaron entre el 26 de mayo y el 21 de junio, con la siguiente
+participación:
+
+| Integrante | Tareas Designadas |
+|------------|-------------------|
+| Eduardo David Velasquez Laquihuanaco | Corrigió los Sprint Backlog 1 y 2, el Development, Execution y Services Documentation Evidence for Sprint Review y el Design-Level EventStorming; actualizó las Technical Stories, la carátula, el video About The Team, los Sprint Planning y el Big Picture Event Storming; y añadió el Sprint 3, la 3ra entrevista de validación, los Validation Interviews y el Video About The Product |
+| Alberto Joaquin Alfaro Mallma | Actualizó la Configuración de Firebase y la Publicación de la aplicación, los links de las entrevistas 1 y 3, y el Design-Level Event Storming; y añadió las secciones de Software Deployment Evidence y Services Documentation Evidence for Sprint Review, así como la 2da entrevista de evaluación |
+| Eder Edu Quispe Perez | Añadió la 1ra entrevista de validación, las Evaluaciones según heurísticas y el video de demostración; actualizó el Sprint 3, el Execution Evidence for Sprint Review, el registro de la 2da entrevista y corrigió el 1er User Persona |
+| Miler Alexander Rodriguez Rojas | Añadió la 4ta entrevista de validación, los Team Collaboration Insights de los Sprints 1, 2 y 3, el Student Outcome; corrigió la tabla de contenidos, el Hypothesis Statement y el Registro de Versiones del Informe en varias iteraciones; y actualizó los Lean UX Hypothesis Statements, el Lean UX Canvas, los segmentos objetivo, las estrategias y tácticas frente a competidores, las entrevistas, el glosario, el Product Backlog, la sección de Information Architecture, los Organization Systems, los Labeling Systems, la Landing Page UI Design y la Bibliografía |
+
+
+
+**Evidencias de colaboración — AV2:**
+
+*Analíticos de colaboración del repositorio:*
+
+![Foto de la colaboración](report/assets/AV2-1.png)
+
+![Foto de la colaboración](report/assets/AV2-2.png)
+
+---
+
+### Entrega TB2
+
+Para esta entrega, el equipo desarrolló el Sprint 4, el cual se centró en la
+mejora integral del Project Report atendiendo las indicaciones y observaciones
+brindadas por el docente en las entregas anteriores. Las actividades se
+desarrollaron entre el 21 de junio y el 8 de julio, e incluyeron la corrección
+de secciones observadas, la actualización de evidencias y la consolidación del
+Registro de Versiones del Informe. La participación de los integrantes fue la
+siguiente:
+
+| Integrante | Tareas Designadas |
+|------------|-------------------|
+| Miler Alexander Rodriguez Rojas | Corrigió la tabla de contenidos, el Hypothesis Statement y la tabla del Registro de Versiones del Informe en sucesivas iteraciones; añadió los Team Collaboration Insights de los Sprints 1, 2 y 3 y el Student Outcome; y actualizó los Lean UX Hypothesis Statements, el Lean UX Canvas, la sección de segmentos objetivo, las estrategias y tácticas frente a competidores, las entrevistas, el glosario, el Product Backlog, la sección de Information Architecture, los Organization Systems, los Labeling Systems, la sección de Landing Page UI Design y la Bibliografía |
+| Alberto Joaquin Alfaro Mallma | Añadió el Software Deployment Evidence for Sprint Review y consolidó el Registro de Versiones del Informe añadiendo las versiones 0.1 a la 0.56; y actualizó los links de las entrevistas 1 y 3 |
+| Eder Edu Quispe Perez | Actualizó el registro de la 2da entrevista y el Design-Level Event Storming, y corrigió el 1er User Persona conforme a las observaciones recibidas |
+| Eduardo David Velasquez Laquihuanaco | Actualizó la carátula, el video About The Team, los Sprint Planning y el Big Picture Event Storming |
+
+
+
+**Evidencias de colaboración — TB2:**
+
+![Foto de la colaboración](report/assets/TB2.png)
+
+![Foto de la colaboración](report/assets/TB2.png)
+
+
+---
+
 
 <br>
 <br>
-
 
 # Índice
 
@@ -180,8 +290,8 @@ El curso contribuye al cumplimiento del Student Outcome ABET - EAC - Student Out
 
 | Criterio específico | Acciones realizadas | Conclusiones |
 |---------------------|---------------------|--------------|
-| Comunica oralmente con efectividad a diferentes rangos de audiencia. | <br>**Alberto Joaquin Alfaro Mallma** <br> **AV1:** Realizó la entrevista N°6 al empresario agrícola Cristofer Ordalla (Piura), adaptando el lenguaje técnico a un perfil no especializado en tecnología para obtener información sobre la gestión de sus parcelas y sus expectativas frente a una solución digital. <br><br> **TB1:** Expuso ante el equipo las decisiones de implementación del bounded context Support & Dashboard en la Web Application, explicando oralmente cómo se estructuraron los componentes Angular para la visualización del panel de control y el módulo de soporte al usuario. <br><br> **AV2:** Explicó la implementación backend de los Bounded Contexts Support y Dashboard, presentando los servicios desarrollados para la gestión de tickets de soporte y la consulta de métricas relacionadas con rendimiento, pérdidas y consumo de agua. <br><br> **Pablo Afranio Martinez Gaona** <br> **AV1:** Participó en la sesión colaborativa de Big Picture Event Storming, comunicando oralmente al equipo los eventos, comandos y actores del dominio agrícola identificados, facilitando la comprensión compartida del sistema entre miembros con distintos niveles de conocimiento del negocio. <br><br> **TB1:** Presentó al equipo el bounded context Soil Monitoring implementado en la Web Application, describiendo oralmente el flujo de visualización de datos de monitoreo de suelos y justificando las decisiones de diseño de componentes frente a los demás integrantes. <br><br> **AV2:** Explicó la implementación backend del Bounded Context Soil Monitoring, detallando el registro de lecturas de humedad y temperatura, la gestión de recomendaciones de riego, las validaciones del dominio y la integración preparada con Farming para eliminar los datos relacionados con una parcela. <br><br> **Eder Edu Quispe Perez** <br> **AV1:** Realizó las entrevistas N°2 y N°3 a las agricultoras Lucía Alarcón (Amazonas) y Luz Mamani (Arequipa), comunicando el propósito del proyecto de forma clara y accesible a usuarias con poca experiencia tecnológica, logrando que expresaran sus necesidades y frustraciones con confianza. <br><br> **TB1:** Sustentó ante el equipo las decisiones de implementación de los bounded contexts Identity y Farming en la Web Application, explicando oralmente cómo se estructuraron las vistas de autenticación y gestión de parcelas y cultivos en Angular para satisfacer las necesidades de los segmentos objetivo. <br><br> **AV2:** Explicó el funcionamiento del backend del Bounded Context Farming, incluyendo la gestión de parcelas y cultivos, sus principales reglas de negocio y la relación de este contexto con otros módulos del sistema. <br><br> **Miler Alexander Rodriguez Rojas** <br> **AV1:** Realizó las entrevistas N°1 y N°4 al agricultor Walter Medina (Chachapoyas) y al empresario agrícola Renzo Quispe (Lima), ajustando el tono y el nivel de detalle de las preguntas según el perfil de cada entrevistado para facilitar respuestas claras y comparables. <br><br> **TB1:** Expuso ante el equipo el bounded context Climate Alerts implementado en la Web Application, comunicando oralmente el flujo de visualización y gestión de alertas climáticas en Angular y coordinando con los responsables de Soil Monitoring y Farming la coherencia visual y funcional entre módulos. <br><br> **AV2:** Presentó la implementación backend del Bounded Context Climate Alerts, explicando cómo se gestionan las alertas climáticas y cómo estas pueden ser consultadas por la aplicación web.<br><br> **Eduardo David Velasquez Laquihuanaco** <br> **AV1:** Expuso ante el equipo los resultados del análisis de competidores (CropX, Trimble Ag, Agroptima), sintetizando verbalmente las diferencias estratégicas relevantes para orientar las decisiones de diseño del producto hacia el segmento peruano desatendido. <br><br> **TB1:** Comunicó oralmente al equipo el diseño e implementación del bounded context Identity en la Web Application, explicando las decisiones sobre las vistas de registro e inicio de sesión en Angular y articulando cómo este módulo actúa como punto de entrada transversal para los demás bounded contexts del sistema. <br><br> **AV2:** Explicó el desarrollo backend del Bounded Context Identity, incluyendo la gestión de usuarios, planes de suscripción y preferencias de alertas mediante endpoints REST. | El equipo demostró capacidad de comunicación oral efectiva al conducir seis entrevistas con agricultores y empresarios agrícolas de distintas regiones del Perú (Amazonas, Arequipa, Lima, Piura), adaptando el vocabulario y el nivel de detalle técnico según el perfil de cada entrevistado. En el TB1, cada integrante lideró la implementación de un bounded context en la Web Application y comunicó oralmente sus decisiones de diseño e implementación al resto del equipo, fortaleciendo la comprensión compartida de la arquitectura de la solución. En el AV2 el equipo comunicó de manera organizada los avances realizados en los distintos Bounded Contexts del backend, presentando las funcionalidades, endpoints y principales decisiones técnicas de cada implementación.|
-| Comunica por escrito con efectividad a diferentes rangos de audiencia. | <br>**Alberto Joaquin Alfaro Mallma** <br> **AV1:** Redactó las Style Guidelines del producto (tipografía, paleta de colores, espaciado, tono de voz), comunicando por escrito los criterios visuales y editoriales de AgroTrack de forma que sean comprensibles tanto para el equipo de desarrollo como para evaluadores externos. <br><br> **TB1:** Documentó por escrito la implementación del bounded context Support & Dashboard en la Web Application, redactando en el informe del Sprint 2 la descripción de los componentes Angular desarrollados y las vistas de panel de control y soporte, de forma comprensible para evaluadores técnicos y no técnicos.<br><br> **AV2:** Implementó y documentó los endpoints correspondientes a Support y Dashboard, registrando mediante commits el desarrollo de la gestión de tickets y de las métricas utilizadas por el dashboard. <br><br> **Pablo Afranio Martinez Gaona** <br> **AV1:** Redactó el análisis FODA de AgroTrack y las estrategias y tácticas frente a competidores, estructurando la información de forma clara para una audiencia de negocio que requiere argumentación estratégica y no solo descripción técnica del producto. <br><br> **TB1:** Documentó el bounded context Soil Monitoring en el informe del Sprint 2, describiendo por escrito los componentes Angular implementados para la visualización de datos de humedad y nutrientes del suelo, asegurando que la documentación sea interpretable por desarrolladores y evaluadores externos.<br><br> **AV2:** Implementó y documentó las Technical Stories del Bounded Context Soil Monitoring, correspondientes a los endpoints de lecturas de suelo y recomendaciones de riego. Asimismo, registró los avances mediante commits y documentó las reglas de negocio, validaciones, persistencia e integración con el BC Farming. <br><br> **Eder Edu Quispe Perez** <br> **AV1:** Desarrolló la Landing Page de AgroTrack con soporte bilingüe (EN/ES) mediante el sistema i18n implementado en JavaScript, garantizando que la propuesta de valor del producto se comunique por escrito de forma efectiva tanto a usuarios hispanohablantes como angloparlantes. <br><br> **TB1:** Redactó en el informe del Sprint 2 la documentación de los bounded contexts Identity y Farming implementados en la Web Application, detallando los componentes Angular de autenticación y gestión de parcelas y cultivos de forma clara para audiencias técnicas y evaluadores del curso.<br><br> **AV2:** Implementó y documentó los servicios REST del Bounded Context Farming para la gestión de parcelas y cultivos, incluyendo las operaciones necesarias para crear, consultar, actualizar y eliminar estos recursos. <br><br> **Miler Alexander Rodriguez Rojas** <br> **AV1:** Redactó las secciones de Needfinding (User Personas, User Task Matrix, User Journey Mapping y Empathy Mapping), traduciendo los hallazgos cualitativos de las entrevistas en documentos estructurados comprensibles para audiencias de diseño y de negocio. <br><br> **TB1:** Documentó el bounded context Climate Alerts en el informe del Sprint 2, redactando por escrito la descripción de los componentes Angular desarrollados para la visualización y gestión de alertas climáticas, garantizando que la especificación sea comprensible para desarrolladores y evaluadores con distintos niveles de familiaridad con el dominio agrícola.<br><br> **AV2:** Implementó y documentó los endpoints del Bounded Context Climate Alerts, dejando evidencia escrita de las funcionalidades desarrolladas para gestionar y consultar las alertas climáticas. <br><br> **Eduardo David Velasquez Laquihuanaco** <br> **AV1:** Redactó el Ubiquitous Language y contribuyó a la especificación de User Stories y Technical Stories, asegurando que los términos del dominio agrícola (Plot, Crop, Soil Moisture, Weather Alert) estén definidos con precisión para audiencias técnicas y no técnicas por igual. <br><br> **TB1:** Documentó por escrito el bounded context Identity en el informe del Sprint 2, describiendo los componentes Angular de registro, inicio de sesión y gestión de perfiles implementados en la Web Application, comunicando las decisiones de implementación de forma clara para audiencias técnicas y evaluadores del curso. <br><br> **AV2:** Implementó y documentó los endpoints del Bounded Context Identity para usuarios, planes de suscripción y preferencias de alertas, incluyendo sus criterios de aceptación y contratos REST.  | El equipo evidenció comunicación escrita efectiva a múltiples audiencias a lo largo del informe: los capítulos de introducción y problemática están redactados en lenguaje accesible orientado al lector no técnico, mientras que las secciones de User Stories, Technical Stories y especificaciones de API están dirigidas a una audiencia técnica especializada. La Landing Page, desarrollada en HTML/CSS/JS con soporte bilingüe (EN/ES), demuestra la capacidad del equipo de comunicar la propuesta de valor del producto de forma escrita clara y persuasiva a dos segmentos diferenciados de usuarios. En el TB1, cada integrante documentó por escrito su bounded context en el informe del Sprint 2, describiendo los componentes Angular desarrollados en la Web Application de forma comprensible para distintas audiencias. En el AV2, La documentación elaborada por los integrantes permitió dejar evidencia clara de las funcionalidades implementadas en cada Bounded Context. El uso de Technical Stories, criterios de aceptación, commits, documentación REST y evidencias de Swagger facilitó la revisión del trabajo, la integración de los módulos y la comprensión del backend por parte del equipo y de otros interesados en el proyecto.|
+| Comunica oralmente con efectividad a diferentes rangos de audiencia. | <br>**Alberto Joaquin Alfaro Mallma** <br> **AV1:** Realizó la entrevista N°6 al empresario agrícola Cristofer Ordalla (Piura), adaptando el lenguaje técnico a un perfil no especializado en tecnología para obtener información sobre la gestión de sus parcelas y sus expectativas frente a una solución digital. <br><br> **TB1:** Expuso ante el equipo las decisiones de implementación del bounded context Support & Dashboard en la Web Application, explicando oralmente cómo se estructuraron los componentes Angular para la visualización del panel de control y el módulo de soporte al usuario. <br><br> **AV2:** Explicó la implementación backend de los Bounded Contexts Support y Dashboard, presentando los servicios desarrollados para la gestión de tickets de soporte y la consulta de métricas relacionadas con rendimiento, pérdidas y consumo de agua. <br><br> **TB2:** Expuso ante el equipo la evolución del Bounded Context Support & Dashboard en el Frontend durante el Sprint 4, explicando cómo se integró el nuevo módulo de tickets de soporte con las analíticas del panel de control para centralizar la experiencia post-venta del usuario. <br><br> **Pablo Afranio Martinez Gaona** <br> **AV1:** Participó en la sesión colaborativa de Big Picture Event Storming, comunicando oralmente al equipo los eventos, comandos y actores del dominio agrícola identificados, facilitando la comprensión compartida del sistema entre miembros con distintos niveles de conocimiento del negocio. <br><br> **TB1:** Presentó al equipo el bounded context Soil Monitoring implementado en la Web Application, describiendo oralmente el flujo de visualización de datos de monitoreo de suelos y justificando las decisiones de diseño de componentes frente a los demás integrantes. <br><br> **AV2:** Explicó la implementación backend del Bounded Context Soil Monitoring, detallando el registro de lecturas de humedad y temperatura, la gestión de recomendaciones de riego, las validaciones del dominio y la integración preparada con Farming para eliminar los datos relacionados con una parcela. <br><br> **Eder Edu Quispe Perez** <br> **AV1:** Realizó las entrevistas N°2 y N°3 a las agricultoras Lucía Alarcón (Amazonas) y Luz Mamani (Arequipa), comunicando el propósito del proyecto de forma clara y accesible a usuarias con poca experiencia tecnológica, logrando que expresaran sus necesidades y frustraciones con confianza. <br><br> **TB1:** Sustentó ante el equipo las decisiones de implementación de los bounded contexts Identity y Farming en la Web Application, explicando oralmente cómo se estructuraron las vistas de autenticación y gestión de parcelas y cultivos en Angular para satisfacer las necesidades de los segmentos objetivo. <br><br> **AV2:** Explicó el funcionamiento del backend del Bounded Context Farming, incluyendo la gestión de parcelas y cultivos, sus principales reglas de negocio y la relación de este contexto con otros módulos del sistema. <br><br> **TB2:** Explicó ante el equipo la implementación del Bounded Context Monitoring en el Backend durante el Sprint 4, detallando el registro y seguimiento de las condiciones de las parcelas y sustentando su integración con los demás Bounded Contexts del sistema. <br><br> **Miler Alexander Rodriguez Rojas** <br> **AV1:** Realizó las entrevistas N°1 y N°4 al agricultor Walter Medina (Chachapoyas) y al empresario agrícola Renzo Quispe (Lima), ajustando el tono y el nivel de detalle de las preguntas según el perfil de cada entrevistado para facilitar respuestas claras y comparables. <br><br> **TB1:** Expuso ante el equipo el bounded context Climate Alerts implementado en la Web Application, comunicando oralmente el flujo de visualización y gestión de alertas climáticas en Angular y coordinando con los responsables de Soil Monitoring y Farming la coherencia visual y funcional entre módulos. <br><br> **AV2:** Presentó la implementación backend del Bounded Context Climate Alerts, explicando cómo se gestionan las alertas climáticas y cómo estas pueden ser consultadas por la aplicación web.<br><br> **TB2:** Sustentó ante el equipo el diseño del Bounded Context Alerts durante el Sprint 4, explicando cómo las reglas de alerta consumen la información generada por Monitoring para notificar a los agricultores según su plan contratado, manteniendo bajo acoplamiento entre ambos módulos. <br><br> **Eduardo David Velasquez Laquihuanaco** <br> **AV1:** Expuso ante el equipo los resultados del análisis de competidores (CropX, Trimble Ag, Agroptima), sintetizando verbalmente las diferencias estratégicas relevantes para orientar las decisiones de diseño del producto hacia el segmento peruano desatendido. <br><br> **TB1:** Comunicó oralmente al equipo el diseño e implementación del bounded context Identity en la Web Application, explicando las decisiones sobre las vistas de registro e inicio de sesión en Angular y articulando cómo este módulo actúa como punto de entrada transversal para los demás bounded contexts del sistema. <br><br> **AV2:** Explicó el desarrollo backend del Bounded Context Identity, incluyendo la gestión de usuarios, planes de suscripción y preferencias de alertas mediante endpoints REST. <br><br> **TB2:** Expuso ante el equipo la implementación del módulo de IAM dentro del Bounded Context Identity durante el Sprint 4, explicando el flujo de registro (sign-up), inicio de sesión (sign-in) y protección de endpoints mediante JWT, y sustentó las decisiones de diseño de la sección Home de la cuarta versión de la Landing Page. | El equipo demostró capacidad de comunicación oral efectiva al conducir seis entrevistas con agricultores y empresarios agrícolas de distintas regiones del Perú (Amazonas, Arequipa, Lima, Piura), adaptando el vocabulario y el nivel de detalle técnico según el perfil de cada entrevistado. En el TB1, cada integrante lideró la implementación de un bounded context en la Web Application y comunicó oralmente sus decisiones de diseño e implementación al resto del equipo, fortaleciendo la comprensión compartida de la arquitectura de la solución. En el AV2 el equipo comunicó de manera organizada los avances realizados en los distintos Bounded Contexts del backend, presentando las funcionalidades, endpoints y principales decisiones técnicas de cada implementación. En el TB2, cada integrante sustentó ante el equipo y en la evaluación síncrona final los avances del Bounded Context que lideró durante el Sprint 4, explicando las decisiones de diseño del módulo de autenticación (IAM), las alertas, el monitoreo de parcelas y el soporte al usuario, evidenciando comunicación oral efectiva en el cierre del ciclo de desarrollo del backend.|
+| Comunica por escrito con efectividad a diferentes rangos de audiencia. | <br>**Alberto Joaquin Alfaro Mallma** <br> **AV1:** Redactó las Style Guidelines del producto (tipografía, paleta de colores, espaciado, tono de voz), comunicando por escrito los criterios visuales y editoriales de AgroTrack de forma que sean comprensibles tanto para el equipo de desarrollo como para evaluadores externos. <br><br> **TB1:** Documentó por escrito la implementación del bounded context Support & Dashboard en la Web Application, redactando en el informe del Sprint 2 la descripción de los componentes Angular desarrollados y las vistas de panel de control y soporte, de forma comprensible para evaluadores técnicos y no técnicos.<br><br> **AV2:** Implementó y documentó los endpoints correspondientes a Support y Dashboard, registrando mediante commits el desarrollo de la gestión de tickets y de las métricas utilizadas por el dashboard. <br><br> **TB2:** Documentó por escrito la ampliación del Bounded Context Support & Dashboard para el informe del Sprint 4, registrando mediante commits el desarrollo del nuevo módulo de tickets de soporte y su integración con las métricas del panel de control. <br><br> **Pablo Afranio Martinez Gaona** <br> **AV1:** Redactó el análisis FODA de AgroTrack y las estrategias y tácticas frente a competidores, estructurando la información de forma clara para una audiencia de negocio que requiere argumentación estratégica y no solo descripción técnica del producto. <br><br> **TB1:** Documentó el bounded context Soil Monitoring en el informe del Sprint 2, describiendo por escrito los componentes Angular implementados para la visualización de datos de humedad y nutrientes del suelo, asegurando que la documentación sea interpretable por desarrolladores y evaluadores externos.<br><br> **AV2:** Implementó y documentó las Technical Stories del Bounded Context Soil Monitoring, correspondientes a los endpoints de lecturas de suelo y recomendaciones de riego. Asimismo, registró los avances mediante commits y documentó las reglas de negocio, validaciones, persistencia e integración con el BC Farming. <br><br> **Eder Edu Quispe Perez** <br> **AV1:** Desarrolló la Landing Page de AgroTrack con soporte bilingüe (EN/ES) mediante el sistema i18n implementado en JavaScript, garantizando que la propuesta de valor del producto se comunique por escrito de forma efectiva tanto a usuarios hispanohablantes como angloparlantes. <br><br> **TB1:** Redactó en el informe del Sprint 2 la documentación de los bounded contexts Identity y Farming implementados en la Web Application, detallando los componentes Angular de autenticación y gestión de parcelas y cultivos de forma clara para audiencias técnicas y evaluadores del curso.<br><br> **AV2:** Implementó y documentó los servicios REST del Bounded Context Farming para la gestión de parcelas y cultivos, incluyendo las operaciones necesarias para crear, consultar, actualizar y eliminar estos recursos. <br><br> **TB2:** Documentó por escrito la implementación del Bounded Context Monitoring para el informe del Sprint 4, incluyendo el registro y seguimiento de las condiciones de las parcelas, y redactó documentación técnica de los controladores y assemblers REST utilizados en la integración entre Bounded Contexts. <br><br> **Miler Alexander Rodriguez Rojas** <br> **AV1:** Redactó las secciones de Needfinding (User Personas, User Task Matrix, User Journey Mapping y Empathy Mapping), traduciendo los hallazgos cualitativos de las entrevistas en documentos estructurados comprensibles para audiencias de diseño y de negocio. <br><br> **TB1:** Documentó el bounded context Climate Alerts en el informe del Sprint 2, redactando por escrito la descripción de los componentes Angular desarrollados para la visualización y gestión de alertas climáticas, garantizando que la especificación sea comprensible para desarrolladores y evaluadores con distintos niveles de familiaridad con el dominio agrícola.<br><br> **AV2:** Implementó y documentó los endpoints del Bounded Context Climate Alerts, dejando evidencia escrita de las funcionalidades desarrolladas para gestionar y consultar las alertas climáticas. <br><br> **TB2:** Documentó por escrito el diseño del Bounded Context Alerts para el informe del Sprint 4, describiendo las reglas de generación de alertas básicas y avanzadas según el plan contratado y su relación de bajo acoplamiento con el Bounded Context Monitoring. <br><br> **Eduardo David Velasquez Laquihuanaco** <br> **AV1:** Redactó el Ubiquitous Language y contribuyó a la especificación de User Stories y Technical Stories, asegurando que los términos del dominio agrícola (Plot, Crop, Soil Moisture, Weather Alert) estén definidos con precisión para audiencias técnicas y no técnicas por igual. <br><br> **TB1:** Documentó por escrito el bounded context Identity en el informe del Sprint 2, describiendo los componentes Angular de registro, inicio de sesión y gestión de perfiles implementados en la Web Application, comunicando las decisiones de implementación de forma clara para audiencias técnicas y evaluadores del curso. <br><br> **AV2:** Implementó y documentó los endpoints del Bounded Context Identity para usuarios, planes de suscripción y preferencias de alertas, incluyendo sus criterios de aceptación y contratos REST. <br><br> **TB2:** Documentó por escrito la implementación del módulo de IAM en el Bounded Context Identity para el informe del Sprint 4, incluyendo los endpoints de autenticación (sign-up, sign-in) protegidos con JWT en la sección de Services Documentation Evidence, y registró mediante commits el desarrollo de la sección Home de la cuarta versión de la Landing Page. | El equipo evidenció comunicación escrita efectiva a múltiples audiencias a lo largo del informe: los capítulos de introducción y problemática están redactados en lenguaje accesible orientado al lector no técnico, mientras que las secciones de User Stories, Technical Stories y especificaciones de API están dirigidas a una audiencia técnica especializada. La Landing Page, desarrollada en HTML/CSS/JS con soporte bilingüe (EN/ES), demuestra la capacidad del equipo de comunicar la propuesta de valor del producto de forma escrita clara y persuasiva a dos segmentos diferenciados de usuarios. En el TB1, cada integrante documentó por escrito su bounded context en el informe del Sprint 2, describiendo los componentes Angular desarrollados en la Web Application de forma comprensible para distintas audiencias. En el AV2, La documentación elaborada por los integrantes permitió dejar evidencia clara de las funcionalidades implementadas en cada Bounded Context. El uso de Technical Stories, criterios de aceptación, commits, documentación REST y evidencias de Swagger facilitó la revisión del trabajo, la integración de los módulos y la comprensión del backend por parte del equipo y de otros interesados en el proyecto. En el TB2, el equipo dejó evidencia escrita del cierre del Sprint 4 mediante la tabla de commits de Development Evidence, la documentación de endpoints vía Swagger para el módulo de IAM y las reflexiones individuales sobre el desarrollo colaborativo de Alerts, Monitoring y Support & Dashboard.|
  
 <br>
 
@@ -654,8 +764,7 @@ cosecha esperaría para considerar que esta plataforma es un éxito?
   -----------------------------------------------------------------------
 
   ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  **URL:** [Entrevista - 1er seg obj - Miler Rodriguez                                                                                                                                                                                                                                                                              **Inicio de la          **Duración:** 6:34 min
-  1.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a827_upc_edu_pe/IQA7Y8rY1pOWRIXG-iCyIG6oAZ2IIM0sMFGl20NuTco6qfI?e=YgDGTl&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)   entrevista:** 00:00     
+  **URL:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a827_upc_edu_pe/IQA7Y8rY1pOWRIXG-iCyIG6oAZ2IIM0sMFGl20NuTco6qfI?e=YgDGTl&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D   entrevista:** 00:00     
   --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ----------------------- -----------------------
 
   ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -688,8 +797,7 @@ más eficiente que sus métodos actuales.
   -----------------------------------------------------------------------
 
   --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  **URL:** [Entrevista - 1er seg obj - Eder                                                                                                                                                                                                                                                                                              **Inicio de la          **Duración:** 4:12
-  Quispe.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202324623_upc_edu_pe/IQDidGgCC_E9QIX1GOCVgAAOAVuK1pcpOl7TY5HJ6ZAcxlY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=MifF7G)   entrevista:** 00:00     
+  **URL:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202324623_upc_edu_pe/IQDidGgCC_E9QIX1GOCVgAAOAVuK1pcpOl7TY5HJ6ZAcxlY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=MifF7G   entrevista:** 00:00     
   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ----------------------- -----------------------
 
   --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -723,8 +831,7 @@ producción, reducir pérdidas y sea fácil de usar.
   -----------------------------------------------------------------------
 
   ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  **URL:** [Entrevista - 1er seg obj - Eder Quispe                                                                                                                                                                                                                                                                                  **Inicio de la          **Duración:** 2:57
-  1.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202324623_upc_edu_pe/IQD12rOS9xukQKDOJngTl7w0Aa2RYMlbZo7YzQXCsVdR7tw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=u8jJHb)   entrevista:** 00:00     
+  **URL:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202324623_upc_edu_pe/IQD12rOS9xukQKDOJngTl7w0Aa2RYMlbZo7YzQXCsVdR7tw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=u8jJHb   entrevista:** 00:00     
   --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ----------------------- -----------------------
 
   ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -760,8 +867,7 @@ no consuma mucho internet.
   -----------------------------------------------------------------------
 
   -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  **URL:** [Entrevista - 2do seg obj - Miler                                                                                                                                                                                                                                                                                                **Inicio de la          **Duración:** 4:16 min
-  Rodriguez.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a827_upc_edu_pe/IQBpPA9-AgKuTYSsa7rfQ_3NAWt06SZe20fFxPk2vz_tj6o?e=cWepbS&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)   entrevista:** 00:00     
+  **URL:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a827_upc_edu_pe/IQBpPA9-AgKuTYSsa7rfQ_3NAWt06SZe20fFxPk2vz_tj6o?e=cWepbS&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D   entrevista:** 00:00     
   ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ----------------------- -----------------------
 
   -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -795,8 +901,7 @@ considerar exitosa una solución tecnológica.
   -----------------------------------------------------------------------
 
   --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  **URL:** [Entrevista - 2do seg obj - Eder                                                                                                                                                                                                                                                                                              **Inicio de la          **Duración:** 3:58
-  Quispe.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202324623_upc_edu_pe/IQBALW19b-Z_SIeQbTrZUZ1fAUpuk-2I7KrrwWEJK9rsHi0?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=lvIQ03)   entrevista:** 00:00     
+  **URL:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202324623_upc_edu_pe/IQBALW19b-Z_SIeQbTrZUZ1fAUpuk-2I7KrrwWEJK9rsHi0?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=lvIQ03   entrevista:** 00:00     
   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ----------------------- -----------------------
 
   --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -832,8 +937,7 @@ y disminuya pérdidas en un 10%.
   -----------------------------------------------------------------------
 
   ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  **URL:** [Entrevista - 2do seg obj - Joaquin                                                                                                                                                                                                                                                                                       **Inicio de la          **Duración:** 7:44
-  Alfaro](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a267_upc_edu_pe/IQDZaXNASBtjSqMs6HKMKmKSAVUVdK2ce6BrVstfl1zh2gk?e=CN8ApV&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)   entrevista:** 00:00     
+  **URL:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a267_upc_edu_pe/IQDZaXNASBtjSqMs6HKMKmKSAVUVdK2ce6BrVstfl1zh2gk?e=CN8ApV&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D   entrevista:** 00:00     
   ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ----------------------- -----------------------
 
   ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1063,6 +1167,7 @@ miembros del equipo y los stakeholders.
 | EP11 | RESTful API - Farming |
 | EP12 | RESTful API - Alerts |
 | EP13 | RESTful API - Support & Dashboard |
+| EP14 | RESTful API - IAM (Autenticación y Seguridad) |
 
 
 <br>
@@ -1143,6 +1248,12 @@ miembros del equipo y los stakeholders.
 | EP13 / TS29 | Endpoint para listar tickets de soporte | Como developer, quiero un endpoint GET `/support_tickets` para obtener todos los tickets de soporte filtrando opcionalmente por `user_id`, para que el frontend pueda mostrar el historial completo de solicitudes de soporte del agricultor con su estado actual. | **Escenario 1: Listado exitoso**<br>**Given** el developer envía una solicitud GET a `/support_tickets` con un `user_id` existente,<br>**When** el servidor procesa la solicitud,<br>**Then** responde con status 200 y un array de tickets (`id`, `user_id`, `subject`, `message`, `status`, `created_at`, `responded_at`).<br><br>**Escenario 2: Usuario sin tickets**<br>**Given** el developer envía una solicitud GET a `/support_tickets` con un `user_id` que no tiene tickets registrados,<br>**When** el servidor procesa la solicitud,<br>**Then** responde con status 200 y un array vacío. | EP13 |
 | EP13 / TS30 | Endpoint para obtener ticket de soporte por ID | Como developer, quiero un endpoint GET `/support_tickets/{id}` para recuperar un ticket de soporte específico por su identificador, para que el frontend pueda mostrar el detalle completo de un ticket. | **Escenario 1: Consulta exitosa**<br>**Given** el developer envía una solicitud GET a `/support_tickets/{id}` con un ID existente,<br>**When** el servidor procesa la solicitud,<br>**Then** responde con status 200 y el objeto completo (`subject`, `message`, `status`, `created_at`, `responded_at`).<br><br>**Escenario 2: Ticket no encontrado**<br>**Given** el developer envía una solicitud GET a `/support_tickets/{id}` con un ID inexistente,<br>**When** el servidor procesa la solicitud,<br>**Then** responde con status 404. | EP13 |
 | EP13 / TS31 | Endpoint para crear un ticket de soporte | Como developer, quiero un endpoint POST `/support_tickets` con body `{ user_id, subject, message }` para registrar un nuevo ticket de soporte con estado inicial OPEN, para que el frontend pueda permitir al usuario enviar una solicitud de ayuda al equipo de soporte. | **Escenario 1: Creación exitosa**<br>**Given** el developer envía una solicitud POST a `/support_tickets` con `user_id`, `subject` y `message` válidos,<br>**When** el servidor procesa la solicitud,<br>**Then** responde con status 201 y el ticket creado con `status: OPEN` y `created_at` poblado.<br><br>**Escenario 2: Datos inválidos**<br>**Given** el developer envía una solicitud POST a `/support_tickets` sin `subject` o `message`,<br>**When** el servidor procesa la solicitud,<br>**Then** responde con status 400 indicando los campos requeridos faltantes. | EP13 |
+| EP14 / TS32 | Endpoint para registrar credenciales de una cuenta (sign-up) | Como developer, quiero un endpoint POST /authentication/sign-up que reciba email, password y plan, para que el frontend pueda crear la credencial de acceso de un usuario nuevo y recibir de inmediato un token de sesión. | **Escenario 1: Registro exitoso** <br> **Given** el developer envía una solicitud POST con email, password y plan válidos (BASIC/PRO/ENTERPRISE), <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 201 y el id de la credencial creada, el email, los roles derivados del plan (FARMER para BASIC/PRO, AGRICULTURAL_MANAGER para ENTERPRISE) y un token JWT. <br><br> **Escenario 2: Email ya registrado** <br> **Given** el developer envía un email que ya existe como credencial IAM, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 409 indicando conflicto de correo duplicado. <br><br> **Escenario 3: Campos obligatorios faltantes** <br> **Given** el developer envía la solicitud sin email, password o plan, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 400 indicando los campos faltantes. | EP14 |
+| EP14 / TS33 | Endpoint para iniciar sesión (sign-in) | Como developer, quiero un endpoint POST /authentication/sign-in que reciba email y password, para que el frontend pueda autenticar a un usuario ya registrado y obtener su token de sesión. | **Escenario 1: Login exitoso** <br> **Given** el developer envía una solicitud POST con email y password válidos, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 200 y el id, email, roles y token JWT del usuario. <br><br> **Escenario 2: Password incorrecto** <br> **Given** el email existe pero el password no coincide, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 400 indicando credenciales inválidas. <br><br> **Escenario 3: Email no registrado** <br> **Given** el email no corresponde a ninguna credencial existente, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 404. | EP14 |
+| EP14 / TS34 | Endpoint para listar los roles disponibles | Como developer, quiero un endpoint GET /roles que devuelva todos los roles IAM sembrados en el sistema, para que el frontend pueda mostrarlos o validarlos donde se requiera. | **Escenario 1: Listado exitoso** <br> **Given** el sistema tiene los roles sembrados al arrancar (ROLE_FARMER, ROLE_AGRICULTURAL_MANAGER, ROLE_ADMIN), <br> **When** el developer envía una solicitud GET a /roles, <br> **Then** responde con status 200 y el arreglo con los roles disponibles. | EP14 |
+| EP14 / TS35 | Endpoint para completar el perfil de negocio de una cuenta registrada | Como developer, quiero un endpoint POST /users que reciba el iam_user_id devuelto por sign-up junto con nombre, plan y empresa, para que el frontend pueda completar el perfil de negocio de una cuenta ya autenticada, sin duplicar la creación de credenciales. | **Escenario 1: Perfil creado exitosamente** <br> **Given** el developer envía una solicitud POST con token válido, y un iam_user_id existente que aún no tiene perfil, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 201 con el perfil creado (incluyendo el user_type derivado del plan) y crea automáticamente una AlertPreference para ese usuario. <br><br> **Escenario 2: iam_user_id inexistente** <br> **Given** el iam_user_id enviado no corresponde a ninguna credencial IAM, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 404. <br><br> **Escenario 3: Perfil ya existente para esa credencial** <br> **Given** el iam_user_id enviado ya tiene un perfil de negocio enlazado, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 409. <br><br> **Escenario 4: Solicitud sin token** <br> **Given** la solicitud no incluye el header Authorization, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 401. | EP14 |
+| EP14 / TS36 | Endpoint para obtener el perfil propio a partir de la sesión activa | Como developer, quiero un endpoint GET /users/by-iam-user/{iamUserId} protegido, para que el frontend pueda traer el perfil completo del usuario justo después del login, usando el id de cuenta que devuelve sign-in o sign-up. | **Escenario 1: Consulta exitosa** <br> **Given** el token enviado pertenece al mismo iamUserId solicitado en la URL, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 200 y el perfil completo del usuario. <br><br> **Escenario 2: Intento de ver el perfil de otra cuenta** <br> **Given** el iamUserId de la URL no coincide con el del dueño del token, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 403. <br><br> **Escenario 3: Solicitud sin token** <br> **Given** la solicitud no incluye el header Authorization, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 401. | EP14 |
+| EP14 / TS37 | Protección de los endpoints de perfil con autenticación JWT | Como developer, quiero que todos los endpoints bajo /users/** exijan un token JWT válido, para evitar que cualquiera consulte o modifique perfiles de negocio de otros usuarios sin haberse autenticado primero. | **Escenario 1: Acceso sin token** <br> **Given** un cliente llama a cualquier endpoint de /users/** sin el header Authorization, <br> **When** el servidor procesa la solicitud, <br> **Then** responde con status 401. <br><br> **Escenario 2: Acceso con token válido** <br> **Given** un cliente incluye un token JWT válido y no expirado, <br> **When** el servidor procesa la solicitud, <br> **Then** la solicitud continúa normalmente hacia el controlador correspondiente. | EP14 |
 
 
 ### 3.2. Impact Mapping
@@ -1242,6 +1353,12 @@ Este artefacto estratégico permite al equipo de Andes Smart asegurar que cada f
 | **29** | **TS29** | Endpoint para listar tickets de soporte | Como developer, quiero un endpoint GET `/support_tickets?user_id={userId}` para obtener todos los tickets de soporte filtrando opcionalmente por usuario, para que el frontend pueda mostrar el historial completo de solicitudes de soporte del agricultor con su estado actual. | **2** |
 | **30** | **TS30** | Endpoint para obtener ticket de soporte por ID | Como developer, quiero un endpoint GET `/support_tickets/{id}` para recuperar un ticket de soporte específico por su identificador, para que el frontend pueda mostrar el detalle completo de un ticket. | **2** |
 | **31** | **TS31** | Endpoint para crear un ticket de soporte | Como developer, quiero un endpoint POST `/support_tickets` con body `{ user_id, subject, message }` para registrar un nuevo ticket de soporte con estado inicial OPEN, para que el frontend pueda permitir al usuario enviar una solicitud de ayuda al equipo de soporte. | **3** |
+| **32** | **TS32** | Endpoint para registrar credenciales de una cuenta (sign-up) | Como developer, quiero un endpoint POST /authentication/sign-up que reciba email, password y plan, para que el frontend pueda crear la credencial de acceso de un usuario nuevo y recibir de inmediato un token de sesión. | **3** |
+| **33** | **TS33** | Endpoint para iniciar sesión (sign-in) | Como developer, quiero un endpoint POST /authentication/sign-in que reciba email y password, para que el frontend pueda autenticar a un usuario ya registrado y obtener su token de sesión. | **2** |
+| **34** | **TS34** | Endpoint para listar los roles disponibles | Como developer, quiero un endpoint GET /roles que devuelva todos los roles IAM sembrados en el sistema, para que el frontend pueda mostrarlos o validarlos donde se requiera. | **1** |
+| **35** | **TS35** | Endpoint para completar el perfil de negocio de una cuenta registrada | Como developer, quiero un endpoint POST /users que reciba el iam_user_id devuelto por sign-up junto con nombre, plan y empresa, para que el frontend pueda completar el perfil de negocio de una cuenta ya autenticada, sin duplicar la creación de credenciales. | **3** |
+| **36** | **TS36** | Endpoint para obtener el perfil propio a partir de la sesión activa | Como developer, quiero un endpoint GET /users/by-iam-user/{iamUserId} protegido, para que el frontend pueda traer el perfil completo del usuario justo después del login, usando el id de cuenta que devuelve sign-in o sign-up. | **2** |
+| **37** | **TS37** | Protección de los endpoints de perfil con autenticación JWT | Como developer, quiero que todos los endpoints bajo /users/** exijan un token JWT válido, para evitar que cualquiera consulte o modifique perfiles de negocio de otros usuarios sin haberse autenticado primero. | **2** |
 
 
 <br>
@@ -1897,12 +2014,12 @@ puntos de fricción y a optimizar la experiencia del usuario.
 ### 4.5. Web Applications Prototyping
 
 Prototipo de la aplicación web AgroTrack en Figma:
-[Prototipo-AgroTrack](https://www.figma.com/design/tQSFHjZZpLcvBWkbzUfWLw/Untitled?node-id=0-1&p=f&t=VDnBfHM1uPU4jdXO-0)
+https://www.figma.com/design/tQSFHjZZpLcvBWkbzUfWLw/Untitled?node-id=0-1&p=f&t=VDnBfHM1uPU4jdXO-0
 
 ![FLUJO-PROTOTIPO](report/assets/FLUJO-PROTOTIPO.png)
 
 Video del flujo del prototipo:
-[FLUJO-PROTOTIPO-AGROTRACK.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a267_upc_edu_pe/IQBGdqAI0J_NR7IAsWPnBl3TAe0ieQNo8cg4MmurJ2Owfuc?e=2yMdi8&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a267_upc_edu_pe/IQBGdqAI0J_NR7IAsWPnBl3TAe0ieQNo8cg4MmurJ2Owfuc?e=2yMdi8&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
 
 ### 4.6. Domain-Driven Software Architecture.
 
@@ -3570,7 +3687,7 @@ junto con el video de navegación correspondiente.
 
 ![video de presentación](report/assets/evidencia_sprint_review.png)
 
-URL del video: [AgroTrack - Frontend Navigation Sprint 2](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120011_upc_edu_pe/IQAICJzo_YiLQ7CqTCNRwBTEAXCtfrOV6VxiAqzsegC73xo?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=fk0ICb)
+URL del video: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120011_upc_edu_pe/IQAICJzo_YiLQ7CqTCNRwBTEAXCtfrOV6VxiAqzsegC73xo?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=fk0ICb
 
 
 #### 5.2.2.6. Services Documentation Evidence for Sprint Review
@@ -3697,7 +3814,7 @@ URL base: `https://6a02c43e0d92f63dd25406d7.mockapi.io/api/v1`
 
 ---
 
-URL del repositorio Web Application: [AgroTrack-Project/web-Application](https://github.com/AgroTrack-Project/web-Application)
+URL del repositorio Web Application: https://github.com/AgroTrack-Project/web-Application
 
 Commits relacionados con la configuración de endpoints en este Sprint: `45ad493`, `cc941b4`, `31ff5e4`
 
@@ -3712,10 +3829,10 @@ Se verificó el correcto funcionamiento de las vistas implementadas desde cualqu
 dispositivo, comprobando que los módulos de gestión de parcelas, cultivos, monitoreo del suelo, alertas climáticas y perfil de usuario cargaran correctamente en producción.
 
 **Repositorio Frontend Web Application:**
-[https://github.com/AgroTrack-Project/web-Application](https://github.com/AgroTrack-Project/web-Application)
+https://github.com/AgroTrack-Project/web-Application
 
 **URL de la Web Application desplegada:**
-[https://agro-track.vitaltrek.workers.dev/home](https://agro-track.vitaltrek.workers.dev/home)
+https://agro-track.vitaltrek.workers.dev/home
 
 ---
 
@@ -3935,10 +4052,46 @@ ocumentados en Swagger y los endpoints implementados por el equipo.
 
 ![swagger 2](report/assets/swagger2.png) 
 
-**Link del video:** [Ver video de demostración - Sprint 3](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323350_upc_edu_pe/IQANSlaoHDAvRrqH_iFNWhu7AaJ-uZhcqpvZBazMZA5JOiE?e=HwAWli&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+**Link del video:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323350_upc_edu_pe/IQANSlaoHDAvRrqH_iFNWhu7AaJ-uZhcqpvZBazMZA5JOiE?e=HwAWli&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
 
 
 <br>
+#### 5.2.3.4 Development Evidence for Sprint Review.
+
+En este Sprint, el equipo avanzó en la implementación de los principales productos de la solución: Web Application, Web Services y la documentación del Report, cubriendo las funcionalidades priorizadas en el Sprint Backlog. A continuación se detallan los commits realizados por cada integrante en los repositorios correspondientes, evidenciando la colaboración del equipo durante el ciclo de desarrollo.
+
+**Web Application**
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+|---|---|---|---|---|---|
+| AgroTrack-Project/web-application | | | | | |
+| AgroTrack-Project/web-application | | | | | |
+| AgroTrack-Project/web-application | | | | | |
+
+**Web Services**
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+|---|---|---|---|---|---|
+| AgroTrack-Project/web-services | | | | | |
+| AgroTrack-Project/web-services | | | | | |
+| AgroTrack-Project/web-services | | | | | |
+
+**Report**
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+|---|---|---|---|---|---|
+| AgroTrack-Project/report | | | | | |
+| AgroTrack-Project/report | | | | | |
+| AgroTrack-Project/report | | | | | |
+
+**Commits por integrante:**
+
+| Integrante | GitHub Username |
+|---|---|
+| Alberto Joaquin Alfaro Mallma | elprrr |
+| Eder Edu Quispe Perez | DuDu-0912 |
+| Miler Alexander Rodriguez Rojas | Miler2003 |
+| Eduardo David Velasquez Laquihuanaco | Edu-VLL | |
 
 #### 5.2.3.6. Services Documentation Evidence for Sprint Review.
 
@@ -4137,6 +4290,440 @@ A continuación se presentan los analíticos de colaboración del repositorio we
 ![contribucion del equipo](report/assets/Sprint_3_Insight.png)
 
 
+<br>
+
+
+### 5.2.4. Sprint 4
+
+El cuarto sprint se centrará en completar el módulo de IAM (Identity and Access Management) del RESTful API de AgroTrack, implementando el registro y autenticación real de cuentas (sign-up / sign-in), la emisión y validación de tokens JWT, y la protección de los endpoints de perfil de usuario. El objetivo es cerrar el ciclo de seguridad del backend antes de avanzar hacia la integración completa con el Frontend Web Application.
+
+#### 5.2.4.1. Sprint Planning 4
+
+Se presenta a continuación el resumen del Sprint Planning Meeting para el Sprint 4.
+
+| Campo | Detalle |
+|-------|---------|
+| **Sprint #** | Sprint 4 |
+| **Sprint Planning Background** | |
+| **Date** | 2026-07-02 |
+| **Time** | 10:00 PM |
+| **Location** | Virtual – Discord (canal General) |
+| **Prepared By** | Velasquez Laquihuanaco, Eduardo David |
+| **Attendees (to planning meeting)** | Alfaro Mallma, Alberto Joaquin / Quispe Perez, Eder Edu / Rodriguez Rojas, Miler Alexander / Velasquez Laquihuanaco, Eduardo David |
+| **Sprint 3 – Review Summary** | Durante el Sprint 3 se implementó y desplegó la primera versión del RESTful API (Web Services) de AgroTrack, cubriendo los bounded contexts de Identity, Soil Monitoring, Farming, Alerts y Support & Dashboard bajo una arquitectura Domain-Driven Design con Spring Boot. El backend fue desplegado en Render con base de datos MySQL en Aiven, y documentado mediante OpenAPI/Swagger. |
+| **Sprint 3 – Retrospective Summary** | El equipo identificó que el bounded context Identity implementado en el Sprint 3 cubría únicamente el CRUD de usuarios, planes y preferencias de alerta, pero no contaba con un mecanismo real de autenticación (login) ni con protección de endpoints mediante tokens. Se acordó dedicar el Sprint 4 a construir el módulo de IAM (registro, inicio de sesión y seguridad JWT) como base necesaria antes de conectar el Frontend Web Application al backend real. |
+| **Sprint Goal & User Stories** | |
+| **Sprint 4 Goal** | Our focus is on completing the IAM (Identity and Access Management) module of AgroTrack's RESTful API, including account sign-up, sign-in and JWT-based protection of profile endpoints. We believe it delivers secure and reliable authentication to farmers and agricultural managers accessing the platform. This will be confirmed when users can register and log in through /authentication/sign-up and /authentication/sign-in, receive a valid JWT token, and every request to /users/** is rejected unless that token is present and valid. |
+| **Sprint 4 Velocity** | 13 |
+| **Sum of Story Points** | 13 |
+
+<br>
+
+#### 5.2.4.2. Aspect Leaders and Collaborators
+
+En el Sprint 4, el equipo mantiene la misma distribución de liderazgo por Bounded Context definida en el Sprint 3, este sprint se concentra principalmente en el IAM.
+
+| Team Member (Last Name, First Name) | GitHub Username | Identity BC | Farming BC | Soil Monitoring BC | Alerts BC | Support & Dashboard BC |
+|---|---|---|---|---|---|---|
+| Alfaro Mallma, Alberto Joaquin | elprrr | C | C | C | C | L | 
+| Quispe Perez, Eder Edu | Eder_09 | C | L | L | C | C |
+| Rodriguez Rojas, Miler Alexander | Miler2003 | C | C | C | L | C |
+| Velasquez Laquihuanaco, Eduardo David | Edu-VLL | L | C | C | C | C | 
+
+
+
+<br>
+
+
+#### 5.2.4.3. Sprint Backlog 4
+
+El objetivo principal del Sprint 4 fue completar el módulo de IAM (Identity and Access Management) del RESTful API de AgroTrack, implementando el registro y autenticación de cuentas, la emisión de tokens JWT y la protección de los endpoints de perfil de usuario, distribuyendo el desarrollo entre los integrantes del equipo. A continuación se presenta el tablero del sprint y la descomposición de Technical Stories en Work-Items/Tasks.
+
+
+![Sprint Backlog 4](report/assets/trelloSprint4.png)
+
+*Sprint 4 de AgroTrack*
+
+*Nota.* Elaboración propia.
+
+**Link del trello:** https://trello.com/b/GAgdFmxb/agrotrack-sprint-4
+
+| User Story Id | User Story | Work-Item / Task Id | Work-Item / Task Title | Work-Item / Task Description | Estimation (Hours) | Assigned To | Status |
+|---|---|---|---|---|---|---|---|
+| TS32 | Endpoint para registrar credenciales de una cuenta (sign-up) | T-044 | Implementar capa de dominio del BC IAM | Crear el agregado IamUser con sus value objects (Email, HashedPassword, Role) y el comando SignUpCommand para el registro de credenciales. | 4 | Velasquez Laquihuanaco, Eduardo David | Done |
+| | | T-045 | Implementar capa de aplicación del BC IAM | Implementar SignUpCommandServiceImpl, incluyendo el hasheo de la contraseña con BCrypt y la asignación automática del rol según el plan (FARMER para BASIC/PRO, AGRICULTURAL_MANAGER para ENTERPRISE). | 4 | Velasquez Laquihuanaco, Eduardo David | Done |
+| | | T-046 | Implementar capa de infraestructura del BC IAM | Crear IamUserPersistenceEntity, RolePersistenceEntity, repositorios JPA y un RoleSeeder que registre ROLE_FARMER, ROLE_AGRICULTURAL_MANAGER y ROLE_ADMIN al arrancar la aplicación. | 4 | Velasquez Laquihuanaco, Eduardo David | Done |
+| | | T-047 | Implementar endpoint POST /authentication/sign-up | Crear AuthenticationController con el endpoint POST /authentication/sign-up, retornando el token JWT generado y manejando el conflicto 409 por email duplicado. | 3 | Velasquez Laquihuanaco, Eduardo David | Done |
+| TS33 | Endpoint para iniciar sesión (sign-in) | T-048 | Implementar SignInCommand y servicio de autenticación | Implementar SignInCommandServiceImpl, validando credenciales con BCrypt y generando el token JWT correspondiente. | 3 | Velasquez Laquihuanaco, Eduardo David | Done |
+| | | T-049 | Implementar endpoint POST /authentication/sign-in | Agregar el endpoint POST /authentication/sign-in en AuthenticationController, manejando el error 400 por password incorrecto y 404 por email no registrado. | 2 | Velasquez Laquihuanaco, Eduardo David | Done |
+| TS34 | Endpoint para listar los roles disponibles | T-050 | Implementar RolesController con endpoint GET /roles | Crear el endpoint GET /roles que retorna los roles IAM sembrados en el sistema (ROLE_FARMER, ROLE_AGRICULTURAL_MANAGER, ROLE_ADMIN). | 1 | Velasquez Laquihuanaco, Eduardo David | Done |
+| TS35 | Endpoint para completar el perfil de negocio de una cuenta registrada | T-051 | Vincular el agregado User del BC Identity con la credencial IAM | Actualizar el agregado User para referenciar el iam_user_id y derivar el user_type a partir del plan recibido. | 3 | Alfaro Mallma, Alberto Joaquin | Done |
+| | | T-052 | Implementar endpoint POST /users para completar el perfil de negocio | Crear el endpoint POST /users que recibe el iam_user_id junto con nombre, plan y empresa, y crea automáticamente la AlertPreference asociada al nuevo perfil. | 3 | Alfaro Mallma, Alberto Joaquin | Done |
+| | | T-053 | Manejar validaciones del endpoint POST /users | Implementar el manejo de errores 404 (iam_user_id inexistente) y 409 (perfil ya existente para esa credencial). | 2 | Alfaro Mallma, Alberto Joaquin | Done |
+| TS36 | Endpoint para obtener el perfil propio a partir de la sesión activa | T-054 | Implementar endpoint GET /users/by-iam-user/{iamUserId} | Crear el endpoint protegido que retorna el perfil completo del usuario a partir de su iamUserId. | 2 | Rodriguez Rojas, Miler Alexander | Done |
+| | | T-055 | Implementar validación de propiedad del perfil consultado | Validar que el iamUserId de la URL coincida con el del dueño del token, retornando 403 en caso contrario. | 2 | Rodriguez Rojas, Miler Alexander | Done |
+| TS37 | Protección de los endpoints de perfil con autenticación JWT | T-056 | Configurar Spring Security y el filtro de autenticación JWT | Implementar JwtAuthenticationFilter y la configuración de Spring Security para exigir un token JWT válido en todos los endpoints bajo /users/**. | 4 | Quispe Perez, Eder Edu | Done |
+| | | T-057 | Manejar errores de autenticación en endpoints protegidos | Configurar el manejo de errores 401 para solicitudes sin token o con token inválido/expirado. | 2 | Quispe Perez, Eder Edu | Done |
+
+
+
+<br>
+
+
+#### 5.2.4.4. Development Evidence for Sprint Review
+
+En este Sprint, el equipo avanzó en la implementación de los principales productos de la solución: Landing Page, Web Application y Web Services, cubriendo las funcionalidades priorizadas en el Sprint Backlog. A continuación se detallan los commits realizados por cada integrante en los repositorios correspondientes, evidenciando la colaboración del equipo durante el ciclo de desarrollo.
+
+**Landing Page**
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+|---|---|---|---|---|---|
+| AgroTrack-Project/Landing-Page (DuDu-0912) | develop | a4c9970 | Merge branch 'develop' | Integrates the latest changes from develop into the main working branch to keep the Landing Page in sync with recent updates. | 10/07/2026 |
+| AgroTrack-Project/Landing-Page (DuDu-0912) | develop | 3b9c7db | Merge branch 'develop' | Merges pending feature updates from develop to consolidate progress before the next review. | 09/07/2026 |
+| AgroTrack-Project/Landing-Page (Miler2003) | develop | b33f4a1 | merge branch 'feature/changes' into develop | Brings recent UI adjustments from the feature branch into develop for integration testing. | 09/07/2026 |
+| AgroTrack-Project/Landing-Page (Miler2003) | feature/changes | 5f05ae4 | feat: update README to clarify landing page link and remove license section | Rewrites the README to point clearly to the deployed Landing Page URL and removes an outdated license reference no longer applicable to the project. | 09/07/2026 |
+| AgroTrack-Project/Landing-Page (Miler2003) | feature/changes | 0c94e42 | merge branch 'feature/changes' into develop | Consolidates documentation fixes from the feature branch into develop. | 09/07/2026 |
+| AgroTrack-Project/Landing-Page (elprrr) | develop | 4402245 | Merge branch 'develop' of https://github.com/AgroTrack-Project/Landing-Page into develop | Syncs local changes with the remote develop branch to avoid divergence before pushing new features. | 09/07/2026 |
+| AgroTrack-Project/Landing-Page (elprrr) | develop | 661e613 | feat: Update authentication buttons and navigation with animation support | Adds smooth transition animations to the login/register buttons and navigation menu to improve visual feedback on user interaction. | 09/07/2026 |
+| AgroTrack-Project/Landing-Page (Edu-VLL) | main | f12e53e | Merge branch 'main' of https://github.com/AgroTrack-Project/Landing-Page | Pulls the latest changes published on main to keep the local branch up to date before deploying. | 22/06/2026 |
+| AgroTrack-Project/Landing-Page (Edu-VLL) | main | 017b9f2 | feat: update url | Updates the external panel URL referenced in the navigation links to point to the correct production endpoint. | 22/06/2026 |
+| AgroTrack-Project/Landing-Page (Edu-VLL) | main | 6d82380 | Update panel URL for navigation | Fixes the navigation link so users are redirected to the correct dashboard panel after login. | 22/06/2026 |
+
+**Web Application**
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+|---|---|---|---|---|---|
+| AgroTrack-Project/web-application (elprrr) | main | e36b401 | feat: update logout method to redirect to landing page | Modifies the logout flow so that, after clearing the session, the user is redirected to the public Landing Page instead of the login screen. | 16/05/2026 |
+| AgroTrack-Project/web-application (elprrr) | main | 74af4bc | feat: implement entry animation for app layout and clean up imports | Adds a fade-in animation on the main app layout when it loads, and removes unused imports left over from previous refactors. | 16/05/2026 |
+| AgroTrack-Project/web-application (elprrr) | main | 263796b | feat: add support ticket functionality with CRUD operations | Implements the full CRUD flow for support tickets, allowing users to create, view, update and close tickets from the application. | 16/05/2026 |
+| AgroTrack-Project/web-application (DuDu-tech / Eder-09) | main | 3f18c9c | chore: remove .claude folder and add to gitignore | Removes local AI-assistant configuration files from version control and updates .gitignore to prevent them from being tracked in the future. | 16/05/2026 |
+| AgroTrack-Project/web-application (DuDu-tech / Eder-09) | main | 0f45ce0 | Merge branch 'develop' | Merges the latest updates from develop into main to prepare for the upcoming release. | 10/07/2026 |
+| AgroTrack-Project/web-application (Miler2003) | develop | 4bda6b2 | merge branch 'feature/changes' into develop | Integrates documentation and structural changes made in the feature branch into the shared develop branch. | 10/07/2026 |
+| AgroTrack-Project/web-application (Miler2003) | develop | e42e728 | docs: update README for clarity and structure improvements | Reorganizes the README sections and improves wording for better readability by new contributors. | 10/07/2026 |
+| AgroTrack-Project/web-application (Miler2003) | develop | 812c543 | docs: update README for clarity and structure improvements | Further refines the README structure, adding missing setup steps and correcting formatting inconsistencies. | 10/07/2026 |
+| AgroTrack-Project/web-application (Edu-VLL) | main | 2423fa8 | docs: add translations for login, register, alerts and profile | Adds Spanish and English translation strings for the login, register, alerts and profile views to support internationalization. | 09/07/2026 |
+| AgroTrack-Project/web-application (Edu-VLL) | main | 5f6e58e | chore: fix dev api base url and add missing auth endpoint path | Corrects the development environment's API base URL and adds a missing path for the authentication endpoint that was causing failed requests. | 09/07/2026 |
+| AgroTrack-Project/web-application (Edu-VLL) | main | bbf6c9c | fix: remove default 0 from numeric plot and soil-record inputs | Removes the default value of 0 pre-filled in numeric plot and soil-record form fields, preventing users from submitting unintended zero values. | 09/07/2026 |
+
+**Web Services**
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+|---|---|---|---|---|---|
+| AgroTrack-Project/web-services (elprrr) | main | 4658527 | feat(dashboard): implement REST interface layer with resources, assemblers and controllers | Adds the REST interface layer for the dashboard bounded context, including resources, assemblers and controllers to expose dashboard data through the API. | 19/06/2026 |
+| AgroTrack-Project/web-services (elprrr) | main | e613a62 | feat(dashboard): implement infrastructure layer with persistence entities, repositories, assemblers and data seeder | Implements the infrastructure layer for the dashboard context, including persistence entities, repositories, assemblers and a data seeder for local testing. | 19/06/2026 |
+| AgroTrack-Project/web-services (elprrr) | develop | ea29a76 | Merge branch 'develop' of https://github.com/AgroTrack-Project/web-services into develop | Synchronizes local develop branch with the remote repository to incorporate teammates' latest commits. | 19/06/2026 |
+| AgroTrack-Project/web-services (DuDu-tech) | feature/changes | 2f105e8 | merge branch 'origin/feature/changes' into feature/changes | Pulls remote updates into the local feature branch to keep it aligned before continuing work. | 09/07/2026 |
+| AgroTrack-Project/web-services (DuDu-tech) | feature/changes | e23b1d7 | docs(farming): document REST transform assemblers | Adds brief class-level Javadoc to each resource-to-command/query mapper and notes that path-variable ids take precedence over any id present in the request body. | 09/07/2026 |
+| AgroTrack-Project/web-services (DuDu-tech) | feature/changes | ed6dbac | docs(farming): document REST controllers and request/response resources | Adds Javadoc documentation to the farming REST controllers and their associated request/response resource classes to clarify their responsibilities. | 09/07/2026 |
+| AgroTrack-Project/web-services (Miler2003) | develop | 837e91d | docs: update README with project description, installation instructions, and deployment details | Expands the README with a clearer project description, step-by-step installation instructions and deployment details for the backend service. | 10/07/2026 |
+| AgroTrack-Project/web-services (Miler2003) | develop | 7eb3514 | docs: add description into readme.md | Adds a short project description section at the top of the README for better first-time context. | 10/07/2026 |
+| AgroTrack-Project/web-services (Miler2003) | develop | 9b6197c | docs: add newline at the end of README.md for consistency | Adds a trailing newline at the end of the README file to follow standard formatting conventions. | 10/07/2026 |
+| AgroTrack-Project/web-services (Edu-VLL) | main | 134bb9a | feat: add JWT authentication module with sign-up and sign-in | Implements the JWT-based authentication module, including sign-up and sign-in endpoints, token generation and validation logic. | 09/07/2026 |
+| AgroTrack-Project/web-services (Edu-VLL) | main | 7491fd5 | feat: link business profiles to IAM accounts via iam_useR_id | Adds a relationship between business profiles and IAM accounts using the iam_user_id field, enabling profile lookup by authenticated identity. | 09/07/2026 |
+| AgroTrack-Project/web-services (Edu-VLL) | main | 9412ced | fix: allow profile updates without resending the current password | Fixes the profile update endpoint so users can update their information without being required to re-enter their current password. | 09/07/2026 |
+
+
+
+<br>
+
+
+#### 5.2.4.5. Execution Evidence for Sprint Review
+
+Durante el Sprint 4, el equipo de Andes Smart completó la implementación del Bounded Context de Identity (IAM) del sistema AgroTrack. Se desarrollaron los endpoints de autenticación (sign-up y sign-in) y de gestión de perfil de negocio, protegidos mediante JWT, como parte de la RESTful API desplegada en Render, documentada mediante OpenAPI/Swagger y consumida exitosamente por la Web Application. A continuación se presentan las capturas de las principales vistas del funcionamiento del sistema.
+ 
+**Swagger UI - Documentación de endpoints desplegados**
+ 
+![swagger 1](report/assets/swagger1-sprint4.png) 
+![swagger 2](report/assets/swagger2-sprint4.png) 
+![swagger 3](report/assets/swagger3-sprint4.png) 
+![swagger 4](report/assets/swagger4-sprint4.png)  
+![swagger 5](report/assets/swagger5-sprint4.png)  
+![swagger 6](report/assets/swagger6-sprint4.png)  
+
+**Video de demostración**
+ 
+A continuación se presenta el video de demostración del Sprint 4, donde se muestra el funcionamiento de los Web Services de autenticación e identidad documentados en Swagger y los endpoints implementados por el equipo.
+ 
+![swagger 2](report/assets/swagger1-sprint4.png) 
+ 
+**Link del video:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202324623_upc_edu_pe/IQBe2DaJnk2nRITEOF8NEWw1AUNSwXuPQMT2jwS22LQeqag?e=6vj60X&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+ 
+
+
+<br>
+
+
+#### 5.2.4.6. Services Documentation Evidence for Sprint Review
+
+Durante el Sprint 4, el equipo documentó los Web Services de autenticación e identidad (IAM) de AgroTrack mediante **OpenAPI / Swagger UI**. La documentación se generó automáticamente a partir de las anotaciones de los controladores REST.
+ 
+A continuación se presenta la tabla con todos los endpoints documentados, junto con la sintaxis de llamada, parámetros, descripción de operación y códigos de respuesta:
+ 
+| Endpoint | Verbo HTTP | Sintaxis de llamada | Parámetros | Descripción | Response |
+|:---|:---:|:---|:---|:---|:---:|
+| Authentication | POST | `POST /api/v1/authentication/sign-up` | Body: `email`, `password`, `plan` | Registra una nueva credencial de acceso y retorna el id, email, roles derivados del plan y un token JWT | 201, 400, 409 |
+| Authentication | POST | `POST /api/v1/authentication/sign-in` | Body: `email`, `password` | Autentica a un usuario existente y retorna el id, email, roles y token JWT | 200, 400, 404 |
+| Roles | GET | `GET /api/v1/roles` | — | Retorna el catálogo completo de roles IAM sembrados en el sistema (ROLE_FARMER, ROLE_AGRICULTURAL_MANAGER, ROLE_ADMIN) | 200 |
+| Users | POST | `POST /api/v1/users` | Header: `Authorization`; Body: `iam_user_id`, `name`, `plan`, `company` | Completa el perfil de negocio de una cuenta ya autenticada y crea automáticamente una AlertPreference | 201, 401, 404, 409 |
+| Users | GET | `GET /api/v1/users/by-iam-user/{iamUserId}` | `iamUserId` (path, UUID); Header: `Authorization` | Obtiene el perfil de negocio completo del usuario autenticado a partir de su iamUserId | 200, 401, 403 |
+| Users | ALL | `/api/v1/users/**` | Header: `Authorization` (JWT requerido) | Middleware de protección que exige un token JWT válido para acceder a cualquier endpoint de perfil de usuario | 401 |
+ 
+### Documentación en Swagger UI
+ 
+Se incluyen a continuación capturas de la documentación interactiva accesible en Swagger:
+ 
+ 
+**Captura 1: Ejecución interactiva del endpoint POST /authentication/sign-up**
+ 
+![Swagger UI - Endpoint POST sign-up](report/assets/endpoint-sign.png) 
+ 
+ 
+**Captura 2: Detalle del endpoint GET /users/by-iam-user/{iamUserId}**
+ 
+![Swagger UI - Endpoint GET users by iam user](report/assets/endpoint-user.png) 
+ 
+ 
+ 
+### Referencias de Implementación
+ 
+**Repositorio de Web Services:** https://github.com/AgroTrack-Project/web-services
+ 
+**URL de la Documentación Swagger:** https://agotrack.onrender.com/api/v1/swagger-ui/index.html#/
+ 
+--- 
+
+
+<br>
+
+
+#### 5.2.4.7. Software Deployment Evidence for Sprint Review.
+
+En el transcurso del Sprint 4, el equipo verificó, actualizó y validó el despliegue productivo de los tres productos que conforman la solución: el **Web Service de AgroTrack**, el **Landing Page** y la **Web Application**. Se confirmó la estabilidad de la infraestructura configurada en sprints previos y se aplicaron los ajustes necesarios derivados de las nuevas funcionalidades implementadas en este sprint. Se mantuvo el uso de **Aiven** para la base de datos MySQL, **Render** para el backend, **GitHub Pages** para el Landing Page y **Cloudflare Workers** para la Web Application.
+
+---
+
+<br>
+
+**Fase 1: Verificación y ajuste de la base de datos en Aiven (MySQL)**
+
+Ingreso al panel de administración de Aiven (aiven.io) para validar la continuidad operativa del servicio de base de datos utilizado por el backend durante este sprint.
+
+![BACKEND-1: Panel principal de Aiven en Sprint 4](report/assets/BACKEND-1.png)
+
+<br>
+
+Verificación del estado del servicio `mysql-58d1d5c` en el dashboard de Aiven, confirmando que continuaba con estado **Running** en la infraestructura de DigitalOcean, región California, bajo el plan **Free-1-1gb**, sin incidencias reportadas durante el periodo del sprint.
+
+![BACKEND-2: Estado activo y estable del servicio MySQL](report/assets/BACKEND-2.png)
+
+<br>
+
+Revisión del apartado Services de Aiven para descartar la necesidad de aprovisionar servicios adicionales, dado que el esquema existente soportaba adecuadamente las nuevas entidades incorporadas al modelo de datos.
+
+![BACKEND-3: Revisión de la sección Services sin necesidad de nuevos servicios](report/assets/BACKEND-3.png)
+
+<br>
+
+Confirmación del motor de base de datos en uso, **MySQL**, como sustento relacional para las nuevas tablas y relaciones incorporadas al esquema durante el Sprint 4.
+
+![BACKEND-4: Confirmación del motor MySQL vigente](report/assets/BACKEND-4.png)
+
+<br>
+
+Revisión del plan de servicio contratado, manteniéndose el tier **Free** ($0/mes), región **North America**, plan **Free-1-1gb**, validando que la capacidad de almacenamiento (1 GB) seguía siendo suficiente para el volumen de datos generado hasta la fecha.
+
+![BACKEND-5: Verificación del plan Free vigente en Aiven](report/assets/BACKEND-5.png)
+
+<br>
+
+Actualización de las credenciales de conexión utilizadas por el backend: host `mysql-58d1d5c-joaquinaso5612-e97f.a.aivencloud.com`, puerto `27774`, usuario `avnadmin`, modo SSL `REQUIRED`, reconfirmando su vigencia como variables de entorno en el servicio desplegado en Render.
+
+![BACKEND-6: Revalidación de credenciales de conexión MySQL](report/assets/BACKEND-6.png)
+
+---
+
+<br>
+
+**Fase 2: Actualización del despliegue del API REST en Render**
+
+Ingreso a la plataforma Render (render.com) para gestionar la nueva versión del backend correspondiente a los avances del Sprint 4.
+
+![BACKEND-7: Acceso al panel de Render en Sprint 4](report/assets/BACKEND-7.png)
+
+<br>
+
+Revisión del historial de despliegues del servicio **AGOTRACK**, confirmando que el runtime **Docker** en la región **Ohio** continuaba operativo tras la incorporación de los nuevos endpoints (status: Deployed).
+
+![BACKEND-8: Historial de despliegues del servicio AGOTRACK](report/assets/BACKEND-8.png)
+
+<br>
+
+Verificación del estado general del proyecto en Render, donde el panel "My project" reportaba "All services are up and running", validando la disponibilidad continua de todos los servicios asociados.
+
+![BACKEND-9: Estado general de servicios operativos en Render](report/assets/BACKEND-9.png)
+
+<br>
+
+Revisión de la configuración de disparadores de despliegue automático (auto-deploy) desde el branch `main`, confirmando que los últimos merges de features del Sprint 4 dispararon correctamente un nuevo build.
+
+![BACKEND-10: Verificación del disparador de auto-deploy tras nuevos merges](report/assets/BACKEND-10.png)
+
+<br>
+
+Inspección del repositorio vinculado **BACKEND-AGROTRACK**, confirmando que el commit más reciente correspondiente a las funcionalidades del Sprint 4 fue tomado correctamente por Render para el nuevo build.
+
+![BACKEND-11: Verificación del último commit tomado por Render](report/assets/BACKEND-11.png)
+
+<br>
+
+Revisión de la configuración del Web Service: runtime, branch de despliegue (`main`) y región de hosting (**Ohio, US East**), sin cambios respecto a la configuración base, dado que la infraestructura existente soportaba los nuevos requerimientos.
+
+![BACKEND-12: Configuración vigente del Web Service](report/assets/BACKEND-12.png)
+
+<br>
+
+Verificación del plan de instancia activo, manteniéndose el plan **Free** (512 MB RAM, 0.1 CPU, $0/mes), suficiente para las necesidades del entorno de demostración en esta etapa del proyecto.
+
+![BACKEND-13: Confirmación del plan Free activo en Render](report/assets/BACKEND-13.png)
+
+<br>
+
+Actualización de las variables de entorno del servicio para incorporar nuevos parámetros requeridos por las funcionalidades del Sprint 4, manteniendo `DB_URL`, `DB_USERNAME`, `DB_PASSWORD` y `OPENWEATHER_API_KEY`, y ejecutando un nuevo despliegue mediante **Manual Deploy**.
+
+![BACKEND-14: Actualización de variables de entorno y nuevo despliegue](report/assets/BACKEND-14.png)
+
+<br>
+
+Confirmación del nuevo build en estado **Live**, validando que el backend actualizado quedó disponible públicamente con las funcionalidades incorporadas en el Sprint 4 y el auto-deploy habilitado desde `main`.
+
+![BACKEND-15: Backend actualizado en estado Live tras el Sprint 4](report/assets/BACKEND-15.png)
+
+---
+
+<br>
+
+**Fase 3: Actualización del despliegue del Landing Page en GitHub Pages**
+
+Se verificó el repositorio **Landing-Page** dentro de la organización **AgroTrack-Project**, confirmando que la rama `develop` recibió pushes recientes con los últimos ajustes visuales y de contenido correspondientes al Sprint 4, y que la rama `main` mantenía integrados los cambios de las carpetas `assets`, `css` y `js`, junto con 44 commits acumulados, 4 tags y 2 releases publicados (siendo `release/v3.0.0` la versión vigente).
+
+![LANDING-1: Repositorio Landing-Page con la última versión integrada en main](report/assets/LANDING-1.png)
+
+<br>
+
+Ingreso a la sección **Actions** del repositorio para revisar la ejecución del workflow **pages-build-deployment**, encargado de automatizar la publicación del sitio estático. Se confirmó que las 6 ejecuciones registradas finalizaron de manera exitosa sobre el branch `main`, incluyendo las dos corridas más recientes generadas a raíz de los últimos cambios incorporados al Landing Page durante este sprint.
+
+![LANDING-2: Historial de ejecuciones exitosas del workflow pages-build-deployment](report/assets/LANDING-2.png)
+
+<br>
+
+Verificación del sitio publicado en producción mediante **GitHub Pages**, confirmando la correcta visualización de la sección hero ("Grow better with real data"), la propuesta de valor del producto, los botones de llamada a la acción (Get started now / Request demo) y la sección "The problem we solve", validando que el contenido, los estilos y las imágenes se cargaran correctamente en el entorno desplegado.
+
+![LANDING-3: Landing Page de AgroTrack desplegado y funcionando en producción](report/assets/LANDING-3.png)
+
+---
+
+<br>
+
+**Fase 4: Verificación del despliegue de la Web Application en Cloudflare Workers**
+
+Como parte del Sprint 4, se verificó y actualizó el despliegue de la Web Application de AgroTrack, previamente publicada en el Sprint 2 sobre la plataforma **Cloudflare Workers**. Se confirmó que las ramas feature de los integrantes del equipo con las nuevas funcionalidades del sprint fueron integradas a la rama `develop` mediante pull requests revisados por el Team Leader, y posteriormente fusionadas hacia `main` para disparar una nueva publicación del entorno de producción.
+
+Se comprobó el correcto funcionamiento de las vistas actualizadas desde distintos dispositivos, validando que los módulos de gestión de parcelas, cultivos, monitoreo del suelo, alertas climáticas y perfil de usuario continuaran operando correctamente en producción tras la incorporación de los cambios del Sprint 4.
+
+<br>
+
+**Figura**
+*Evidencia de deployment 1*
+![Web Application - Vista 1](report/assets/web-app-1.png)
+*Nota.* Elaboración propia.
+
+**Figura**
+*Evidencia de deployment 2*
+![Web Application - Vista 2](report/assets/web-app-2.png)
+*Nota.* Elaboración propia.
+
+**Figura**
+*Evidencia de deployment 3*
+![Web Application - Vista 3](report/assets/web-app-3.png)
+*Nota.* Elaboración propia.
+
+**Figura**
+*Evidencia de deployment 4*
+![Web Application - Vista 4](report/assets/web-app-4.png)
+*Nota.* Elaboración propia.
+
+ 
+<br>
+
+
+### 5.2.4.8. Team Collaboration Insights during Sprint.
+
+En esta sección el equipo explica cómo se han desarrollado las actividades de implementación y se presenta los analíticos de colaboración y commits en GitHub, realizados por los miembros del equipo durante el Sprint 4.
+
+**Distribución de Trabajo:**
+
+Durante el Sprint 4, el equipo consolidó el desarrollo del proyecto atendiendo tres frentes en paralelo: completar la cuarta versión de la Landing Page, continuar la evolución de la Web Application hacia la versión v3.0.0 e iniciar el desarrollo de la versión v2.0.0 del Backend de AgroTrack Platform. A diferencia del Sprint anterior, donde cada integrante desarrolló un único Bounded Context de manera independiente, en este Sprint se adoptó una estrategia de colaboración cruzada, en la que todos los integrantes participaron activamente en el desarrollo de cada uno de los Bounded Contexts del Backend, compartiendo conocimientos y resolviendo problemas técnicos de manera conjunta.
+
+El equipo mantuvo un enfoque de trabajo colaborativo mediante reuniones de seguimiento, revisiones de código y la integración continua en GitHub, lo que permitió coordinar eficientemente las tareas desarrolladas por cada integrante y garantizar la correcta integración de todos los componentes implementados durante el Sprint.
+
+**Métricas de Colaboración:**
+
+<div align="center">    
+  <p>
+    <b>Contributors de la Landing Page v4.0.0</b>
+  </p>
+  <img src="report/assets/contributors-sprint-4-landing-page.png" alt="Contributors landing page v4.0.0" width="600">
+  <p><i><b>Fuente</b>: GitHub Insights del repositorio agrotrack/landing-page.</i></p>
+</div>
+
+<div align="center">
+  <p>
+    <b>Contributors de la Web Application v3.0.0</b>
+  </p>
+  <img src="report/assets/contributors-sprint-4-web-application.png" alt="Contributors web application v3.0.0" width="600">
+  <p><i><b>Fuente</b>: GitHub Insights del repositorio agrotrack/web-application.</i></p>
+</div>
+
+<div align="center">
+  <p>
+    <b>Contributors del Backend (AgroTrack Platform v2.0.0)</b>
+  </p>
+  <img src="report/assets/contributors-sprint-4-web-platform.png" alt="Contributors agrotrack platform v2.0.0" width="600">
+  <p><i><b>Fuente</b>: GitHub Insights del repositorio agrotrack/web-services.</i></p>
+</div>
+
+Los analíticos muestran la participación activa de todos los integrantes durante el Sprint, evidenciando un incremento en las contribuciones como resultado del desarrollo simultáneo de la Landing Page, la Web Application y el Backend.
+
+**Reflexiones del Equipo:**
+
+- **Velasquez Laquihuanaco, Eduardo David:** "En el Sprint 4 implementé la capa **Application** del Bounded Context de IAM, desarrollando los módulos `acl`, `commandservices` y `queryservices`, responsables de la lógica de aplicación, la ejecución de comandos y la atención de consultas. Trabajar en esta capa me permitió comprender la importancia de separar las operaciones de escritura y lectura, manteniendo una arquitectura limpia y escalable."
+
+- **Alfaro Mallma, Alberto Joaquin:** "En el Sprint 4 participé en el desarrollo de la capa **Domain** del Bounded Context de IAM, implementando los paquetes `model` y `repositories`. Esta parte fue fundamental para definir las entidades principales del dominio y los contratos de persistencia, fortaleciendo la base sobre la que funciona el contexto."
+
+- **Quispe Perez, Eder Edu:** "En el Sprint 4 desarrollé la capa **Infrastructure** del Bounded Context de IAM, implementando los módulos `authorization/sfs`, `hashing/bcrypt`, `persistence/jpa` y `tokens/jwt`. Esta experiencia me permitió integrar la autenticación, autorización, persistencia de datos y generación de tokens, comprendiendo cómo los servicios externos soportan el funcionamiento del sistema."
+
+- **Rodriguez Rojas, Miler Alexander:** "En el Sprint 4 implementé la capa **Interfaces** del Bounded Context de IAM, desarrollando los módulos `acl` y `rest`, encargados de exponer las funcionalidades del sistema y facilitar la comunicación con otros contextos y con el cliente. Esta parte me permitió entender la importancia de desacoplar la lógica de negocio de los mecanismos de acceso."
+**Lección Aprendida:**
+
+El equipo identifica las siguientes lecciones de este Sprint 4:
+
+1. **La colaboración cruzada en el desarrollo del Backend aceleró la implementación de los Bounded Contexts:** Trabajar todos sobre los mismos módulos permitió compartir conocimientos, resolver bloqueos técnicos más rápido y mantener consistencia entre Frontend y Backend.
+
+2. **Atender tres productos en paralelo (Landing Page, Web Application y Backend) exige una coordinación de prioridades más estricta:** Fue necesario planificar con cuidado el tiempo de cada integrante para no descuidar ninguno de los tres frentes de trabajo del Sprint.
+
+3. **Separar Monitoring y Alerts en dos Bounded Contexts distintos permitió un diseño más claro de responsabilidades:** Monitoring se enfoca en capturar y almacenar el estado de las parcelas, mientras que Alerts consume esa información para generar notificaciones según el plan del usuario, evitando mezclar ambas responsabilidades en un solo módulo.
+
+4. **Integrar el módulo de Support al Bounded Context de Dashboard permitió centralizar la experiencia post-venta del usuario:** Al tener analíticas y soporte en un mismo espacio, se facilita que agricultores y empresarios agrícolas encuentren ayuda contextual junto a la información que ya están consultando.
+
+5. **La revisión conjunta de código entre integrantes que trabajaron en los mismos Bounded Contexts mejoró la calidad de la integración:** Al tener varias personas familiarizadas con un mismo módulo, fue más sencillo detectar inconsistencias antes de fusionar los cambios en `develop`.
+
+6. **La integración progresiva y constante en `develop` permitió sostener el desarrollo simultáneo de tres productos sin generar conflictos mayores al cierre del Sprint:** Mantener commits frecuentes facilitó que el trabajo de frontend, backend y landing page se integrara de forma ordenada.
+
+---
+
+<br>
+
+
 ### 5.3.2. Registro de Entrevistas
 
 **Entrevista N° 1**
@@ -4147,7 +4734,7 @@ A continuación se presentan los analíticos de colaboración del repositorio we
 
 | **Segmento**          | **URL**            | **Inicio** | **Duración** |
 |-----------------------|--------------------|------------|--------------|
-| Empresario Agricola   | [Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a827_upc_edu_pe/IQAAri3xk_xURropEvsluVzmAXj4s7kSXhMjvGD23jlLV3I?e=ua1W4A&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) | 00:00      | 6:45 min     |
+| Empresario Agricola   | https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a827_upc_edu_pe/IQAAri3xk_xURropEvsluVzmAXj4s7kSXhMjvGD23jlLV3I?e=ua1W4A&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D | 00:00      | 6:45 min     |
 
 ![Entrevista-1](report/assets/entrevista-1-s3.png)
 
@@ -4161,7 +4748,7 @@ A continuación se presentan los analíticos de colaboración del repositorio we
 
 | **Segmento** | **URL** | **Inicio** | **Duración** |
 |--------------|---|---|--------------|
-| Empresaria Agricola  | [Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202324623_upc_edu_pe/IQAsdhz3gAqtRqfZKulI0qiAAb1ilpwoVd6NDvYrs-_WKio?e=xPs1e0&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) | 00:00 | 7:26 min  |
+| Empresaria Agricola  | https://upcedupe-my.sharepoint.com/:v:/g/personal/u202324623_upc_edu_pe/IQAsdhz3gAqtRqfZKulI0qiAAb1ilpwoVd6NDvYrs-_WKio?e=xPs1e0&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D | 00:00 | 7:26 min  |
 
 ![Entrevista-2](report/assets/Segmento-Valeri.png)
 
@@ -4175,7 +4762,7 @@ A continuación se presentan los analíticos de colaboración del repositorio we
 
 | **Segmento** | **URL** | **Inicio** | **Duración** |
 |--------------|---|---|--------------|
-| Agricultora   | [Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202324623_upc_edu_pe/IQBE_PFpJHzZSY8DPfCCjxgUAYq_Li89X4uKG9cjUehaKr0?e=8mXpdF&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) | 00:00 | 8:35 min      |
+| Agricultora   | https://upcedupe-my.sharepoint.com/:v:/g/personal/u202324623_upc_edu_pe/IQBE_PFpJHzZSY8DPfCCjxgUAYq_Li89X4uKG9cjUehaKr0?e=8mXpdF&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D | 00:00 | 8:35 min      |
 
 ![Entrevista-3](report/assets/Segmento-Lucia.png)
 
@@ -4189,7 +4776,7 @@ A continuación se presentan los analíticos de colaboración del repositorio we
 
 | **Segmento** | **URL** | **Inicio** | **Duración** |
 |--------------|---|---|--------------|
-| Empresario Agricola   | [Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202324623_upc_edu_pe/IQB0QuCKjIVyTJUrsuQBrtjnAQwPmiZGOUkIMTinESxiDiU?e=42L1Vu&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) | 00:00 | 9:58 min      |
+| Empresario Agricola   | https://upcedupe-my.sharepoint.com/:v:/g/personal/u202324623_upc_edu_pe/IQB0QuCKjIVyTJUrsuQBrtjnAQwPmiZGOUkIMTinESxiDiU?e=42L1Vu&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D | 00:00 | 9:58 min      |
 
 ![Entrevista-4](report/assets/Segmento-Cristopher.png)
 
@@ -4203,7 +4790,7 @@ A continuación se presentan los analíticos de colaboración del repositorio we
 
 | **Segmento** | **URL** | **Inicio** | **Duración** |
 |--------------|---|---|--------------|
-| Agricultor   | [Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a267_upc_edu_pe/IQCn1iiiJRjvTKpLXB4BILBdATYBcfP8wG8cSEe3SHraYPo?e=voT80Y&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) | 00:00 | 14:38 min |
+| Agricultor   | https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a267_upc_edu_pe/IQCn1iiiJRjvTKpLXB4BILBdATYBcfP8wG8cSEe3SHraYPo?e=voT80Y&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D | 00:00 | 14:38 min |
 
 ![Entrevista-5](report/assets/Segmento-Jorge.png)
 
@@ -4217,7 +4804,7 @@ A continuación se presentan los analíticos de colaboración del repositorio we
 
 | **Segmento** | **URL** | **Inicio** | **Duración** |
 |--------------|---|---|--------------|
-| Empresario Agricola   | [Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202324623_upc_edu_pe/IQC_3fMojx7QRpXxX_AI_lCEAVlwmCBCt3_sEttPiNL0n2Q?e=iuZLHA&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) | 00:00 | 7:55 min   |
+| Empresario Agricola   | https://upcedupe-my.sharepoint.com/:v:/g/personal/u202324623_upc_edu_pe/IQC_3fMojx7QRpXxX_AI_lCEAVlwmCBCt3_sEttPiNL0n2Q?e=iuZLHA&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D | 00:00 | 7:55 min   |
 
 ![Entrevista-6](report/assets/Segmento-Johan.png)
 
@@ -4401,44 +4988,98 @@ De esta manera, el video permite comunicar el valor de la solución y facilitar 
 
 | **URL**          | **Inicio** | **Duración** |
 |------------------|------------|--------------|
-| [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a827_upc_edu_pe/IQCkTU4cm894R6fEo-t8pc4-AVTzMh-HlJTa9Be-ru6pf6E?e=My3Hvs&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)    | 00:00      | 00:57 min    |
+| https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a827_upc_edu_pe/IQCkTU4cm894R6fEo-t8pc4-AVTzMh-HlJTa9Be-ru6pf6E?e=My3Hvs&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D    | 00:00      | 00:57 min    |
 
 ![Video About The Product](report/assets/about-the-product.png)
 
 # Conclusiones
 
-El desarrollo de AgroTrack nos permitió entender con mayor claridad los
-principales problemas que enfrentan los pequeños agricultores y
-empresarios agrícolas en el Perú. Se evidenció que muchas de sus
-decisiones todavía se basan en la experiencia o la intuición,
-principalmente por la falta de herramientas digitales accesibles y de
-información confiable para la gestión de sus cultivos. Esto termina
-afectando directamente la productividad, el uso del agua y, en muchos
-casos, las pérdidas económicas.
+## Validación de Problem Statements, Assumptions e Hypothesis Statements
 
-Durante el trabajo, el análisis de entrevistas, la revisión de
-competidores y el uso de Lean UX nos ayudaron a confirmar que sí existe
-una necesidad real por soluciones tecnológicas más simples y adaptadas
-al contexto local. En ese sentido, AgroTrack surge como una alternativa
-pensada para ser fácil de usar, accesible y útil desde el primer
-momento, sin requerir conocimientos técnicos avanzados.
+**Problem Statement 1 (agricultores pequeños y decisiones de riego sin datos objetivos).** Las entrevistas de validación de usabilidad realizadas en el Sprint 3 (Lucía Alarcón y Jorge Ramírez) confirmaron que el problema identificado en el Capítulo I sigue siendo real y relevante: ambos usuarios señalaron que actualmente llevan el registro de sus cultivos en cuaderno o de memoria, y valoraron positivamente que la plataforma centralice el estado del suelo y las recomendaciones de riego en un solo lugar. Sin embargo, también se identificó que el mensaje de recomendación de riego (por ejemplo, "bajo") resultó **poco descriptivo** para el usuario, quien esperaba mayor contexto para confiar en la sugerencia. Esto valida parcialmente el problem statement: la necesidad existe, pero la solución actual todavía no comunica las recomendaciones con el nivel de claridad que un agricultor con poca experiencia tecnológica requiere.
 
-También fue importante el trabajo en equipo, ya que permitió organizar
-mejor las ideas y darle forma a una propuesta más clara, alineada tanto
-a lo que necesita el usuario como a los objetivos del proyecto. Esto
-hizo posible construir una base sólida para el producto, sustentada en
-información recogida directamente de los usuarios.
+**Problem Statement 2 (alertas climáticas anticipadas).** Este statement fue el que obtuvo mayor validación positiva. Lucía Alarcón y Jorge Ramírez destacaron que las alertas climáticas les permiten "planificar actividades y proteger sus cultivos con anticipación". No obstante, la evaluación heurística (Problema #2) evidenció que las alertas informan el riesgo pero no sugieren una acción concreta a tomar, lo que limita el impacto práctico de la funcionalidad frente a la hipótesis original.
 
-En general, se puede concluir que AgroTrack tiene potencial para generar
-un impacto positivo en el sector agrícola, ayudando a mejorar la toma de
-decisiones, optimizar recursos y hacer más eficiente el trabajo en el
-campo. Sin embargo, su verdadero valor dependerá de seguir validándolo
-con usuarios reales y de ir incorporando mejoras progresivas, como la
-integración de sensores y datos en tiempo real.
+**Problem Statement 3 (registro y seguimiento digital de cultivos).** Validado positivamente por los empresarios agrícolas entrevistados (Valeri Rojas, Christopher Mejía, Johan Contreras), quienes coincidieron en que el panel de control centraliza información que hoy gestionan de forma manual o en Excel. Christopher Mejía señaló explícitamente que el registro por parcela "ayuda a identificar dónde se produce más y dónde se pierde", validando el valor central de la propuesta.
 
-Asimismo, el desarrollo de la arquitectura tecnológica de AgroTrack permitió establecer una base escalable para futuras mejoras del sistema. La implementación de los bounded contexts de Soil Monitoring, Alerts, Farming, Identity y Dashboard bajo una arquitectura basada en Domain-Driven Design (DDD) utilizando Java y Spring Boot facilita la evolución de la plataforma, permitiendo incorporar nuevas funcionalidades sin afectar los componentes existentes.
+**Problem Statement 4 (visibilidad centralizada para empresarios agrícolas PYMEs).** Fue el statement con mejor recepción cuantitativa: los cuatro empresarios entrevistados (Matías Carrillo, Valeri Rojas, Christopher Mejía, Johan Contreras) coincidieron en que el dashboard resuelve un problema real de dispersión de información. Sin embargo, todos ellos —de manera consistente— señalaron la misma brecha: **la ausencia de métricas financieras** (costo por hectárea, rentabilidad, costos operativos) necesarias para la toma de decisiones de inversión. Esto indica que el problem statement fue validado en su dimensión operativa, pero no cubre aún completamente la dimensión financiera del segmento empresarial.
 
-Finalmente, el proceso de desarrollo permitió reforzar la importancia de combinar una correcta comprensión del problema con una implementación tecnológica alineada a las necesidades del usuario. La aplicación de metodologías como Lean UX, la validación constante y el trabajo colaborativo fueron elementos clave para construir una solución orientada a generar valor real, estableciendo una base sólida para futuras versiones de AgroTrack con mayor automatización, integración de sensores y análisis avanzado de información agrícola.
+De las ocho assumptions planteadas en el Lean UX Canvas, las validaciones realizadas durante el Sprint 3 permiten concluir lo siguiente:
+
+- Se confirma que los agricultores **tienen dificultades reales** para decidir cuándo regar sin datos del suelo (Assumption 1), y que contar con datos de humedad les ayuda a tomar mejores decisiones (Assumption 2).
+- Se confirma que los agricultores **valoran recibir alertas climáticas anticipadas** (Assumption 3): Lucía Alarcón y Jorge Ramírez destacaron que estas les permiten planificar y proteger sus cultivos con anticipación; sin embargo, la evaluación heurística (Problema #2) mostró que las alertas informan el riesgo pero no sugieren una acción concreta, lo que matiza el valor percibido de esta assumption en su implementación actual.
+- Se confirma **parcialmente** que las recomendaciones automáticas de riego basadas en datos del suelo y del clima mejoran el uso del agua y reducen desperdicios (Assumption 4): los usuarios reconocen valor en recibir una recomendación automática, pero el mensaje actual (por ejemplo, "bajo") resultó poco descriptivo, por lo que el impacto real en el ahorro de agua todavía no puede confirmarse con el nivel de claridad necesario.
+- Se confirma la preferencia por **herramientas simples y visuales** (Assumption 5): todos los entrevistados de ambos segmentos describieron la navegación como "sencilla" o "intuitiva".
+- Se confirma que el registro digital **reemplaza favorablemente el papel o la memoria** (Assumption 6), validado explícitamente por Lucía Alarcón.
+- La disposición a usar la plataforma si perciben beneficio (Assumption 7) se sostiene, pero surge una nueva condición no anticipada originalmente: los empresarios agrícolas condicionan la adopción a la disponibilidad de métricas financieras, un matiz que no estaba explícito en la assumption original.
+- Se confirma que, aunque el ingreso de datos siga siendo manual en esta etapa del producto, los usuarios perciben valor en la plataforma en la medida en que las recomendaciones que reciben son útiles (Assumption 8): tanto agricultores como empresarios agrícolas valoraron positivamente centralizar en un solo lugar información que hoy gestionan en papel, de memoria o en Excel, aun sin automatización de la captura de datos.
+
+Los Hypothesis Statements definidos en el Capítulo I establecían umbrales cuantitativos de éxito (60% de consulta de monitoreo antes de regar, 50% de acción preventiva ante alertas, reducción de consumo de agua tras 30 días, 40% de registro activo de cultivos en el primer mes). Es importante señalar que **estas métricas no han podido validarse cuantitativamente aún**, dado que las validaciones realizadas hasta el Sprint 3 corresponden a pruebas de usabilidad puntuales y no a un despliegue con uso continuado en campo durante los periodos de tiempo especificados en las hipótesis (2 semanas, 24 horas, 30 días, 1 mes). Las entrevistas de Sprint 3 ofrecen evidencia cualitativa favorable (los usuarios afirman que usarían la plataforma y que resuelve un problema real), pero el equipo reconoce que la validación cuantitativa de estas hipótesis queda pendiente como trabajo futuro, una vez la plataforma cuente con una base de usuarios activos y datos de uso reales.
+
+## Conclusiones por Sprint
+
+### **Sprint 1 – Investigación, problema y Landing Page**
+
+- **Sobre el análisis del problema y la investigación de usuario:** Se concluye que las seis entrevistas realizadas a agricultores pequeños y empresarios agrícolas de distintas regiones del Perú (Amazonas, Arequipa, Lima, Piura, Chachapoyas) permitieron validar la existencia de un problema recurrente: la toma de decisiones de riego por intuición, sin datos objetivos del estado del suelo, y la ausencia de herramientas de registro digital. Esta fase permitió construir el Problem Statement, los User Personas, los Empathy Maps, los User Journey Maps y el Big Picture Event Storming del dominio agrícola.
+
+- **Sobre la propuesta de valor y validación inicial:** La primera versión de la Landing Page, desarrollada en HTML5, CSS3 y JavaScript con soporte bilingüe (EN/ES) mediante i18n, permitió comunicar de forma clara la propuesta de valor de AgroTrack. Su despliegue temprano funcionó como un medio de validación inicial de la idea de negocio frente a los dos segmentos objetivo (agricultores pequeños y empresarios agrícolas).
+
+- **Sobre la documentación y modelado del proyecto:** La construcción del informe permitió consolidar los hallazgos del Problem Statement, Needfinding, User Personas, Empathy Maps, Journey Maps, Big Picture Event Storming y Ubiquitous Language, generando una visión integral del dominio agrícola. El uso de Domain-Driven Design desde esta etapa temprana facilitó una primera identificación de posibles bounded contexts del sistema.
+
+- **Sobre la definición de requerimientos:** La especificación inicial de User Stories con criterios de aceptación en formato Gherkin, junto con el Impact Mapping y el Product Backlog priorizado por valor de negocio, permitió transformar las necesidades identificadas en las entrevistas en funcionalidades concretas, sirviendo de guía estructurada para los sprints siguientes.
+
+### **Sprint 2 – Desarrollo del Frontend (Web Application)**
+
+- **Sobre el diseño e implementación de interfaces:** Se concluye que el desarrollo del Frontend Web Application, construido con Angular y Angular Material, permitió transformar los requerimientos funcionales en interfaces visuales e interactivas para los bounded contexts de Identity, Farming, Soil Monitoring, Climate Alerts y Support & Dashboard, alineadas con las necesidades identificadas en el Sprint 1.
+
+- **Sobre la experiencia de usuario (UX/UI):** La construcción de vistas de registro, inicio de sesión, gestión de parcelas y cultivos, monitoreo del suelo y alertas climáticas, con soporte bilingüe (i18n) y atributos ARIA (a11y), permitió priorizar la facilidad de uso para agricultores con poca experiencia tecnológica.
+
+- **Sobre la arquitectura frontend:** La modularización de componentes Angular por bounded context permitió mantener un código organizado y reutilizable, sentando la base para su posterior integración con los servicios REST reales desarrollados en el Sprint 3.
+
+- **Sobre el avance funcional del producto:** El Sprint 2 permitió evidenciar un avance significativo hacia el producto mínimo viable (MVP), contando con vistas funcionales y navegables que representan los principales flujos del sistema, inicialmente sostenidas sobre datos simulados y posteriormente conectadas a los servicios backend reales en el Sprint 3.
+
+### **Sprint 3 – Desarrollo del Backend (Web Services)**
+
+- **Sobre el diseño e implementación de la API REST:** Se concluye que el desarrollo del backend permitió transformar los requerimientos funcionales en servicios REST documentados y desplegados, cubriendo los cinco bounded contexts definidos en la arquitectura DDD de AgroTrack: Identity, Farming, Soil Monitoring, Alerts y Support & Dashboard.
+
+- **Sobre la documentación de servicios:** La documentación de los endpoints mediante OpenAPI/Swagger permitió establecer un contrato claro entre el Frontend Web Application y el Web Service, facilitando la integración entre ambas capas y la validación de los flujos de usuario.
+
+- **Sobre la arquitectura backend:** La organización del backend por bounded contexts siguiendo Domain-Driven Design permitió mantener una separación clara de responsabilidades. El backend fue desplegado en Render con base de datos MySQL en Aiven, aplicando GitFlow y Conventional Commits para el control de versiones.
+
+- **Sobre la validación con usuarios reales:** Las entrevistas de validación (Lucía Alarcón, Jorge Ramírez, Valeri Rojas, Christopher Mejía, Johan Contreras, Matías Carrillo) y la evaluación heurística, detalladas en la subsección anterior, permitieron confirmar el valor central de la propuesta e identificar dos brechas relevantes: mensajes de recomendación poco descriptivos y ausencia de métricas financieras para el segmento empresarial.
+
+- **Sobre el avance funcional del producto:** El Sprint 3 permitió reemplazar los datos simulados del Frontend por servicios reales, aunque el backend aún exponía sus endpoints sin un mecanismo de autenticación real, una brecha que quedó identificada como prioridad para el Sprint 4.
+
+### **Sprint 4 – Módulo IAM y consolidación del backend**
+
+- **Sobre la implementación del módulo IAM:** Se concluye que la incorporación del bounded context de Identity and Access Management permitió habilitar un mecanismo real de autenticación en AgroTrack mediante los endpoints `POST /authentication/sign-up` y `POST /authentication/sign-in` (Technical Stories TS32 y TS33), que retornan un token JWT y los roles derivados del plan contratado (`FARMER` para BASIC/PRO, `AGRICULTURAL_MANAGER` para ENTERPRISE), además de exponer el catálogo de roles mediante `GET /roles` (TS34).
+
+- **Sobre la consolidación de endpoints pendientes:** El Sprint 4 cerró una brecha de diseño heredada del Sprint 3, en la que `POST /users` mezclaba la creación de credenciales con la gestión del perfil de negocio. Las Technical Stories TS35 y TS36 separaron explícitamente la credencial de acceso (IAM) del perfil de negocio (Users), y la TS37 generalizó la protección JWT a todos los endpoints bajo `/users/**`, cerrando el vector de acceso no autorizado por el cual, hasta ese momento, cualquier cliente podía consultar o modificar el perfil de otro usuario sin restricción alguna.
+
+- **Sobre la arquitectura y seguridad del sistema:** La incorporación de Spring Security y de un `JwtAuthenticationFilter` en el backend permitió establecer una capa de seguridad transversal a los demás bounded contexts del sistema, correspondiente a la implementación de este Sprint. Esto es especialmente relevante para el segmento de empresarios agrícolas (Problem Statement 4), cuya disposición a adoptar la plataforma depende en parte de la confianza en que su información de producción y rentabilidad no sea accesible por terceros.
+
+- **Conclusión general del proyecto:** Finalmente, se concluye que AgroTrack cuenta con una arquitectura full-stack funcional, donde la Landing Page, el Frontend Web Application y el Web Service trabajan de forma integrada sobre una base de datos MySQL en producción, protegida mediante autenticación JWT real. El trabajo desarrollado a lo largo de los cuatro sprints permitió validar el problema, estructurar la solución, materializar la experiencia de usuario y consolidar los servicios backend que la sustentan, incluyendo el cierre del ciclo de seguridad de acceso, estableciendo una base sólida para las recomendaciones de Roadmap presentadas a continuación.
+
+
+<br>
+<br> 
+
+# Recomendaciones
+
+
+Dado que el Sprint 4 marca el cierre del trabajo final del curso, las siguientes recomendaciones se plantean como el **Roadmap post-curso** de AgroTrack, es decir, los pasos que la startup Andes Smart debería priorizar si decide continuar evolucionando el producto más allá del alcance académico entregado:
+
+1. **Enriquecer las recomendaciones de riego y las alertas climáticas con mensajes accionables.** En lugar de mostrar únicamente un nivel ("bajo", "riesgo de helada"), incorporar una breve sugerencia de acción concreta (p. ej. "Riega hoy antes de las 10 a.m." o "Cubre los cultivos sensibles esta noche"). Esto responde directamente al Problema #2 identificado en la evaluación heurística y a lo señalado por Jorge Ramírez en la entrevista de validación.
+2. **Verificar de forma exhaustiva la integración end-to-end del módulo IAM entregado en el Sprint 4 con el Web Application**, confirmando que el flujo de sign-up/sign-in reemplace por completo cualquier lógica de autenticación remanente basada en MockAPI de sprints anteriores, y que el token JWT emitido se propague correctamente en todas las llamadas protegidas hacia `/users/**`.
+3. **Agregar tooltips y etiquetas de texto a los botones de acción** (editar, eliminar parcela) para resolver el Problema #4 de la evaluación heurística, mejorando la accesibilidad para usuarios con menor familiaridad tecnológica.
+4. **Incorporar métricas financieras básicas en el dashboard del empresario agrícola** (costo por hectárea, margen estimado, comparación entre parcelas), dado que fue la brecha señalada de forma consistente por los cuatro empresarios entrevistados. Esto requiere extender el bounded context de Dashboard con nuevos agregados de costos, y probablemente un nuevo Epic dedicado a "Gestión de Costos e Inversión".
+5. **Habilitar notificaciones fuera de la plataforma** (WhatsApp o SMS) para las alertas climáticas, tal como fue sugerido explícitamente por Jorge Ramírez, considerando que el segmento de agricultores pequeños no siempre tiene acceso constante a una computadora o a la aplicación.
+6. **Diseñar y ejecutar una validación cuantitativa de los Hypothesis Statements** una vez la plataforma tenga usuarios reales usándola de forma continua, para medir los umbrales originalmente planteados (60% de consulta antes de regar, 50% de acción preventiva, etc.) y así cerrar el ciclo de Lean UX con evidencia dura y no solo cualitativa.
+7. **Iniciar la integración de sensores IoT de humedad y temperatura**, tal como estaba previsto en la visión original de Andes Smart, para eliminar la dependencia del registro manual de datos del suelo y aumentar la precisión y frecuencia de las recomendaciones de riego.
+8. **Evaluar la migración hacia una aplicación móvil nativa o PWA**, dado que varios agricultores entrevistados mencionaron el celular como su dispositivo principal, y una experiencia optimizada para móvil facilitaría la adopción en zonas rurales con conectividad limitada.
+9. **Explorar alianzas institucionales** con el MIDAGRI y la ANA, como se planteó en el análisis competitivo (Capítulo II), para ganar acceso a una base de usuarios más amplia y reforzar la credibilidad de la plataforma ante agricultores tradicionalmente reacios a adoptar tecnología.
+
+Estas recomendaciones buscan asegurar que las siguientes iteraciones de AgroTrack no solo continúen expandiendo la cobertura funcional del backend y frontend, sino que respondan directamente a los vacíos identificados durante la validación con usuarios reales, consolidando el producto como una solución confiable y efectivamente adoptada por agricultores pequeños y empresarios agrícolas del Perú.
 
 ---
 
@@ -4452,7 +5093,7 @@ Finalmente, el material transmite la visión compartida de Andes Smart: impulsar
 
 | **URL**        | **Inicio** | **Duración** |
 |----------------|------------|--------------|
-| [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a827_upc_edu_pe/IQAnzAghm3OvSbTwzSgvdHzSAdNmZKDTy05qS8Njy7f2gEw?e=aYAcrB&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)  | 00:00      | 06:22 min    |
+| https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a827_upc_edu_pe/IQAnzAghm3OvSbTwzSgvdHzSAdNmZKDTy05qS8Njy7f2gEw?e=aYAcrB&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D  | 00:00      | 06:22 min    |
 
 ![Video About The Team](report/assets/about-the-team.png)
 
@@ -4512,36 +5153,38 @@ https://www.w3schools.com/html/html5_syntax.asp
 
 | Recurso | Enlace |
 |---------|--------|
-| Organización GitHub – AgroTrack Project | [github.com/AgroTrack-Project](https://github.com/AgroTrack-Project) |
-| Repositorio – Informe del Proyecto | [AgroTrack-Project/report](https://github.com/AgroTrack-Project/report) |
-| Repositorio – Landing Page | [AgroTrack-Project/Landing-Page](https://github.com/AgroTrack-Project/Landing-Page) |
-| Repositorio – Frontend Web Application | [AgroTrack-Project/web-Application](https://github.com/AgroTrack-Project/web-Application) |
-| Repositorio – Backend Web Services | [AgroTrack-Project/web-services](https://github.com/AgroTrack-Project/web-services) |
+| Organización GitHub – AgroTrack Project | https://github.com/AgroTrack-Project |
+| Repositorio – Informe del Proyecto | https://github.com/AgroTrack-Project/report |
+| Repositorio – Landing Page | https://github.com/AgroTrack-Project/Landing-Page |
+| Repositorio – Frontend Web Application | https://github.com/AgroTrack-Project/web-Application |
+| Repositorio – Backend Web Services | https://github.com/AgroTrack-Project/web-services |
 
 ### Productos Desplegados
 
 | Producto | URL |
 |---------|-----|
-| Landing Page | [Landing Page](https://agrotrack-project.github.io/Landing-Page/) |
-| Frontend Web Application (Cloudflare Workers) | [Web Application](https://agro-track.vitaltrek.workers.dev/home) | 
-| Documentación interactiva API – Swagger UI | [Backend](https://agotrack.onrender.com/api/v1/swagger-ui/index.html#/) |
+| Landing Page | https://agrotrack-project.github.io/Landing-Page/ |
+| Frontend Web Application (Cloudflare Workers) | https://agro-track.vitaltrek.workers.dev/home | 
+| Documentación interactiva API – Swagger UI | https://agotrack.onrender.com/api/v1/swagger-ui/index.html#/ |
 
 ### Gestión del Proyecto – Tableros Trello
 
 | Sprint | Enlace |
 |--------|--------|
-| Sprint 1 – Landing Page | [Ver tablero Sprint 1](https://trello.com/invite/b/69ec6b9c1f448409979be07f/ATTI57cb684f86da5dce34b16c20796587777599AEFD/agrotrack-sprint-backlog-1) |
-| Sprint 2 – Frontend Web Application | [Ver tablero Sprint 2](https://trello.com/invite/b/6a082c484e76c24a6bf159db/ATTIeacb888e3799fbf438b8caf8a0d78ced55CA92BA/agrotrack-sprint-backlog-2) |
-| Sprint 3 – Backend Web Services | [Ver tablero Sprint 3](https://trello.com/invite/b/6a386dfb1297005b1b046b88/ATTIf29aeadd54f0dac60d77b9b1cc2cf2ce5B4F6107/agrotrack-sprint-3) |
+| Sprint 1 – Landing Page | https://trello.com/invite/b/69ec6b9c1f448409979be07f/ATTI57cb684f86da5dce34b16c20796587777599AEFD/agrotrack-sprint-backlog-1 |
+| Sprint 2 – Frontend Web Application | https://trello.com/invite/b/6a082c484e76c24a6bf159db/ATTIeacb888e3799fbf438b8caf8a0d78ced55CA92BA/agrotrack-sprint-backlog-2 |
+| Sprint 3 – Backend Web Services | https://trello.com/invite/b/6a386dfb1297005b1b046b88/ATTIf29aeadd54f0dac60d77b9b1cc2cf2ce5B4F6107/agrotrack-sprint-3 |
+| Sprint 4 – Backend Web Services (IAM) | https://trello.com/b/GAgdFmxb/agrotrack-sprint-4 |
 
 ### Videos del Proyecto
 
 | Descripción | Enlace |
 |-------------|--------|
-| Video de demostración – Sprint 1 (Landing Page) | [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a827_upc_edu_pe/IQCHKXSXfiGjTKYe4gDB3oUZAWgYlplm50CGrMfFiBHi4aI?e=fnoiA6&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
-| Video de demostración – Sprint 2 (Web Application) | [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120011_upc_edu_pe/IQAICJzo_YiLQ7CqTCNRwBTEAXCtfrOV6VxiAqzsegC73xo?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=fk0ICb) |
-| Video de demostración – Sprint 3 (Web Services API) | [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323350_upc_edu_pe/IQANSlaoHDAvRrqH_iFNWhu7AaJ-uZhcqpvZBazMZA5JOiE?e=HwAWli&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
-| Video – Flujo del Prototipo (Prototype Walkthrough) | [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a267_upc_edu_pe/IQBGdqAI0J_NR7IAsWPnBl3TAe0ieQNo8cg4MmurJ2Owfuc?e=2yMdi8&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
-| Video About-the-Product | [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a827_upc_edu_pe/IQCkTU4cm894R6fEo-t8pc4-AVTzMh-HlJTa9Be-ru6pf6E?e=My3Hvs&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
+| Video de demostración – Sprint 1 (Landing Page) | https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a827_upc_edu_pe/IQCHKXSXfiGjTKYe4gDB3oUZAWgYlplm50CGrMfFiBHi4aI?e=fnoiA6&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D |
+| Video de demostración – Sprint 2 (Web Application) | https://upcedupe-my.sharepoint.com/:v:/g/personal/u202120011_upc_edu_pe/IQAICJzo_YiLQ7CqTCNRwBTEAXCtfrOV6VxiAqzsegC73xo?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=fk0ICb |
+| Video de demostración – Sprint 3 (Web Services API) | https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323350_upc_edu_pe/IQANSlaoHDAvRrqH_iFNWhu7AaJ-uZhcqpvZBazMZA5JOiE?e=HwAWli&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D |
+| Video de demostración – Sprint 4 (IAM / Web Services API) | https://upcedupe-my.sharepoint.com/:v:/g/personal/u202324623_upc_edu_pe/IQBe2DaJnk2nRITEOF8NEWw1AUNSwXuPQMT2jwS22LQeqag?e=6vj60X&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D |
+| Video – Flujo del Prototipo (Prototype Walkthrough) | https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a267_upc_edu_pe/IQBGdqAI0J_NR7IAsWPnBl3TAe0ieQNo8cg4MmurJ2Owfuc?e=2yMdi8&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D |
+| Video About-the-Product | https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a827_upc_edu_pe/IQCkTU4cm894R6fEo-t8pc4-AVTzMh-HlJTa9Be-ru6pf6E?e=My3Hvs&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D |
 
 
